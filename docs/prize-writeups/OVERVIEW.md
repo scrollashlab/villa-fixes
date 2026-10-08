@@ -28,7 +28,7 @@
 - **Corollaries.**
   - Matrix errors propagate exactly into every derived mesh, so fixing a matrix (e.g. #1843's PHerc1667 1.129 µm chain, 19 meshes) means regenerating meshes.
   - **67.2 GB** (480 meshes) of finer-frame meshes are bilinear up-sampled only. Counting any regrid factor > 1 gives 518 instead (FINDINGS §4).
-- **Tests:** 19/19 in a clean venv (16 offline synthetic + 3 live bucket), re-run independently by the parent and again from the handoff copy.
+- **Tests:** 19/19 in a clean venv (16 offline synthetic + 3 live bucket), re-run independently by a separate AI agent and again from the handoff copy.
 - **Caveats:** consistency ≠ correctness (no matrix, placement or ink claims); single catalog snapshot; AI-assisted.
 - **Credits:** #1468/#1469 `tifxyz-audit` (jaideepsaipadhi; distinct tool despite the name overlap with the lab's earlier entry point), #1522 (jonmarrs), PR #1944, #1835 / PR #1994, #1843, #1845 / PR #1851, #1734, #1727.
 
@@ -46,7 +46,7 @@
 - **Checks.**
   - Pre-registered sample: 29/29 present; controls 15/15.
   - Wrong-mesh control: no other mesh matches where the named mesh was regridded.
-  - Parent independent spot-check: 10/10.
+  - Independent spot-check by a separate AI agent: 10/10.
 - **Caveats.**
   - Canvas sizes only, not voxel correctness.
   - We cannot tell whether `metadata.json` had the source fields in September.

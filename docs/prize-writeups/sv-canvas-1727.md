@@ -31,7 +31,7 @@ Public metadata only, catalog snapshot 2026-10-07 09:14 HST. Source: `sv-canvas-
 | All catalog surface volumes | **692/692** (canvas and level-0 shape) |
 | #1727's inventory still in the catalog | **627/627** (of 628) |
 | Wrong-mesh control (other meshes, same segment) | 53/1,563 match, all byte-identical-grid ties. No other mesh matches when the named mesh was regridded |
-| Parent independent spot-check (own code, live bucket; the w025 example + 9 random, seed 1727) | **10/10** |
+| Independent spot-check by a separate AI agent (own code, live bucket; the w025 example + 9 random, seed 1727) | **10/10** |
 
 Renderer formula lines are identical at all five villa commits that built the renders (530584554c, 650bd566, 862bd172, bc28564d, ae2ecce9).
 

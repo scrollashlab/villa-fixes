@@ -66,7 +66,7 @@ On "nothing in the bucket says which mesh produced a volume":
   - All 53 are expected ties: the named mesh is a byte-copy of the normalized grid, and the other is an unregridded derived mesh with the identical grid.
   - For every volume whose named mesh was regridded, no other mesh matches.
 - **Cross-check.** For all 688 transformed meshes, the stored grid read from the x.tif header equals xframe's independently predicted and verified shape.
-- **Parent spot-check.** The lab's parent agent independently re-fetched 10 volumes live from the bucket with its own code: the w025 1.129 µm example plus 9 chosen at random with seed 1727. **10/10** match on `canvas_size` and level-0 shape. It also confirmed that the inventory skips dotted names and that `pairs.json` has 0 `-on-` meshes.
+- **Independent spot-check.** A separate AI agent independently re-fetched 10 volumes live from the bucket with its own code: the w025 1.129 µm example plus 9 chosen at random with seed 1727. **10/10** match on `canvas_size` and level-0 shape. It also confirmed that the inventory skips dotted names and that `pairs.json` has 0 `-on-` meshes.
 
 ## Caveats
 

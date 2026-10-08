@@ -33,7 +33,7 @@ Public `vesuvius-challenge-open-data` only (CC BY-NC); catalog snapshot 2026-10-
 | | Result |
 | --- | ---: |
 | Published cross-frame meshes | **902/902 CONSISTENT** (707 derived + 195 byte-identical copies) |
-| Segments / samples | 307 / 13 |
+| Segments / samples | 307 / 11 (13 sample × downscale groups) |
 | Downscale meshes | PHercParis4 ×4 **204/204** · PHerc0139 ×4 **189/189** · PHerc0500P2 ×2 **21/21** |
 | Grid shape predicted from the source alone = published | **902/902** |
 | Cells compared / validity mismatches | 4,787,278,260 / **0** |
@@ -60,7 +60,7 @@ There are **19 passed** in a clean venv with a non-editable install (Python 3.13
 - **16 offline**, on synthetic fixtures. The resample port is checked against a per-pixel reference implementation. A fake bucket includes downscale ×4 and a shifted-mesh negative control, and the CLI is tested end to end.
 - **3 live-bucket** tests on PHerc0139 w029: CONSISTENT, a wrong-prescale negative control that is caught, and convert == published.
 
-The parent re-ran the suite independently (19/19). The handoff copy was re-run from a fresh venv as well (19/19). The clean venv also exposed a real missing dependency, `imagecodecs` (needed for LZW TIFFs), which is now declared.
+A separate AI agent re-ran the suite independently (19/19). The handoff copy was re-run from a fresh venv as well (19/19). The clean venv also exposed a real missing dependency, `imagecodecs` (needed for LZW TIFFs), which is now declared.
 
 ## Limitations
 
