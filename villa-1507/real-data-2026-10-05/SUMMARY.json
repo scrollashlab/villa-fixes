@@ -1,0 +1,20 @@
+{
+  "status": "wiring-verified only",
+  "claim": "Native full-3D loader must pass config.model.input_pad_depth_to into TargetModel",
+  "published_checkpoint_survey_2026-10-05": {
+    "candidate": "scrollprize/ink_3d_dino_guided (ckpt_78k_fullsup.pth, ~1.70 GB)",
+    "config_json_url": "https://huggingface.co/scrollprize/ink_3d_dino_guided/resolve/main/config.json",
+    "input_pad_depth_to_in_config": null,
+    "note": "model_config has autoconfigure/z_projection_mode only; no input_pad_depth_to key. Running this checkpoint before vs after #1507 would not exercise the bug.",
+    "cpu_feasibility": "142M-param 256^3 native U-Net on CPU is not a practical real-chunk validation path for a before/after numeric demo in this lab window; disk budget would allow the download (~1.7 GB) but would not create #1507 evidence without a non-null pad setting."
+  },
+  "wiring_checks": {
+    "origin_main__load_native_model_passes_kwarg": false,
+    "v8clean__load_native_model_passes_kwarg": true,
+    "TargetModel_without_kwarg_seen_depth": 3,
+    "TargetModel_with_input_pad_depth_to_5_seen_depth": 5,
+    "unit_tests": "15 passed in test_native_full3d_inference.py on patched tree (see pytest-patched-full.log)"
+  },
+  "limits": "No published villa native-3D checkpoint surveyed here sets non-null input_pad_depth_to. Therefore #1507 is wiring-verified + unit-tested only — not real-data before/after under villa CONTRIBUTING.",
+  "env": "/tmp/v8clean + /workspace/envs/zarr3"
+}

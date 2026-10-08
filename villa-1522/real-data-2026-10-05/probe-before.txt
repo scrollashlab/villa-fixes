@@ -1,0 +1,35 @@
+mode=before
+villa_src=/workspace/vesuvius-lab/experiments/villa-1522-evidence/before
+python=/workspace/envs/zarr3/bin/python
+meta_frames.py exists=False path=/workspace/vesuvius-lab/experiments/villa-1522-evidence/before/vesuvius/src/vesuvius/tifxyz/meta_frames.py
+confirmed: no meta_frames on unmodified main
+
+===== BEFORE (unmodified main) /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures/paris4-40x/mesh =====
+  20230702185753-on-20230205180739-7.91um.tifxyz: um=7.91 scale=[0.05, 0.05] meta.voxel_size_um=None true_µm/cell=158.2000 naive_µm/cell=158.2000 diag_vox=14356.52 true_diag_µm=113560.08 naive_diag_µm=113560.08 ratio=1.0000
+  20230702185753-on-20260310170716-45.532um.tifxyz: um=45.532 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=910.6400 naive_µm/cell=158.2000 diag_vox=2466.76 true_diag_µm=112316.47 naive_diag_µm=19512.06 ratio=0.1737
+  20230702185753-on-20260411134726-2.4um.tifxyz: um=2.4 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=48.0000 naive_µm/cell=158.2000 diag_vox=46830.83 true_diag_µm=112393.99 naive_diag_µm=370431.87 ratio=3.2958
+  20230702185753-on-20260608103018-1.129um.tifxyz: um=1.129 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=22.5800 naive_µm/cell=158.2000 diag_vox=99526.90 true_diag_µm=112365.88 naive_diag_µm=787257.82 ratio=7.0062
+  NAIVE: 4 meshes share scale=[0.05, 0.05] → treated as ONE frame; dirname_um spread=40.33×; ref_um=7.91
+  TIFF 20230702185753-on-20230205180739-7.91um.tifxyz: med_edge_vox=19.9984 true_um=158.1877 naive_um(ref=7.91)=158.1877 ratio=1.0000
+  TIFF 20230702185753-on-20260310170716-45.532um.tifxyz: med_edge_vox=19.8270 true_um=902.7632 naive_um(ref=7.91)=156.8316 ratio=0.1737
+
+===== BEFORE (unmodified main) /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures/paris4-19x/mesh =====
+  20230929220926-on-20230205180739-7.91um.tifxyz: um=7.91 scale=[0.05, 0.05] meta.voxel_size_um=None true_µm/cell=158.2000 naive_µm/cell=158.2000 diag_vox=9345.41 true_diag_µm=73922.20 naive_diag_µm=73922.20 ratio=1.0000
+  20230929220926-on-20260310170716-45.532um.tifxyz: um=45.532 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=910.6400 naive_µm/cell=158.2000 diag_vox=1619.88 true_diag_µm=73756.37 naive_diag_µm=12813.25 ratio=0.1737
+  20230929220926-on-20260411134726-2.4um.tifxyz: um=2.4 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=48.0000 naive_µm/cell=158.2000 diag_vox=30822.32 true_diag_µm=73973.56 naive_diag_µm=243804.53 ratio=3.2958
+  NAIVE: 3 meshes share scale=[0.05, 0.05] → treated as ONE frame; dirname_um spread=18.97×; ref_um=7.91
+
+===== BEFORE (unmodified main) /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures/pherc0172-same-um/mesh =====
+  20250917143559-on-20241024131838-7.91um.tifxyz: um=7.91 scale=[0.05, 0.05] meta.voxel_size_um=None true_µm/cell=158.2000 naive_µm/cell=158.2000 diag_vox=13627.34 true_diag_µm=107792.24 naive_diag_µm=107792.24 ratio=1.0000
+  20250917143559-on-20241024131839-7.91um.tifxyz: um=7.91 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=158.2000 naive_µm/cell=158.2000 diag_vox=13627.34 true_diag_µm=107792.24 naive_diag_µm=107792.24 ratio=1.0000
+  NAIVE: 2 meshes share scale=[0.05, 0.05] → treated as ONE frame; dirname_um spread=1.00×; ref_um=7.91
+
+===== BEFORE (unmodified main) /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures/pherc0139-8x/mesh =====
+  20250108000000-on-20250728140407-9.362um.tifxyz: um=9.362 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=187.2400 naive_µm/cell=187.2400 diag_vox=7353.16 true_diag_µm=68840.32 naive_diag_µm=68840.32 ratio=1.0000
+  20250108000000-on-20250820105138-2.403um.tifxyz: um=2.403 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=48.0600 naive_µm/cell=187.2400 diag_vox=28793.86 true_diag_µm=69191.64 naive_diag_µm=269568.08 ratio=3.8960
+  20250108000000-on-20260102150214-2.399um.tifxyz: um=2.399 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=47.9800 naive_µm/cell=187.2400 diag_vox=28711.67 true_diag_µm=68879.30 naive_diag_µm=268798.67 ratio=3.9025
+  20250108000000-on-20260319133554-2.403um.tifxyz: um=2.403 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=48.0600 naive_µm/cell=187.2400 diag_vox=28793.86 true_diag_µm=69191.64 naive_diag_µm=269568.08 ratio=3.8960
+  20250108000000-on-20260413113053-1.129um.tifxyz: um=1.129 scale=[0.05000000074505806, 0.05000000074505806] meta.voxel_size_um=None true_µm/cell=22.5800 naive_µm/cell=187.2400 diag_vox=61126.35 true_diag_µm=69011.65 naive_diag_µm=572264.86 ratio=8.2923
+  NAIVE: 5 meshes share scale=[0.05, 0.05] → treated as ONE frame; dirname_um spread=8.29×; ref_um=9.362
+
+Wrote /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/probe-before.json

@@ -1,0 +1,294 @@
+[
+  {
+    "mesh_root": "/workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures/paris4-40x/mesh",
+    "naive_same_scale_groups": [
+      {
+        "scale": [
+          0.05,
+          0.05
+        ],
+        "ref_um": 7.91,
+        "dirname_um_spread": 40.329495128432235,
+        "rows": [
+          {
+            "name": "20230702185753-on-20230205180739-7.91um.tifxyz",
+            "dirname_um": 7.91,
+            "scale": [
+              0.05,
+              0.05
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 158.2,
+            "naive_um_per_grid_cell": 158.2,
+            "bbox_diag_vox": 14356.520338204547,
+            "true_bbox_diag_um": 113560.07587519797,
+            "naive_bbox_diag_um": 113560.07587519797,
+            "naive_over_true_ratio": 1.0
+          },
+          {
+            "name": "20230702185753-on-20260310170716-45.532um.tifxyz",
+            "dirname_um": 45.532,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 910.6399864304067,
+            "naive_um_per_grid_cell": 158.19999764263633,
+            "bbox_diag_vox": 2466.7590245175884,
+            "true_bbox_diag_um": 112316.47190433483,
+            "naive_bbox_diag_um": 19512.063883934123,
+            "naive_over_true_ratio": 0.1737239743477115
+          },
+          {
+            "name": "20230702185753-on-20260411134726-2.4um.tifxyz",
+            "dirname_um": 2.4,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 47.99999928474427,
+            "naive_um_per_grid_cell": 158.19999764263633,
+            "bbox_diag_vox": 46830.83080481638,
+            "true_bbox_diag_um": 112393.99393155931,
+            "naive_bbox_diag_um": 370431.8716660976,
+            "naive_over_true_ratio": 3.295833333333334
+          },
+          {
+            "name": "20230702185753-on-20260608103018-1.129um.tifxyz",
+            "dirname_um": 1.129,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 22.579999663531783,
+            "naive_um_per_grid_cell": 158.19999764263633,
+            "bbox_diag_vox": 99526.90494401613,
+            "true_bbox_diag_um": 112365.87568179422,
+            "naive_bbox_diag_um": 787257.8181071676,
+            "naive_over_true_ratio": 7.006200177147918
+          }
+        ]
+      }
+    ],
+    "tiff_edges": [
+      {
+        "name": "20230702185753-on-20230205180739-7.91um.tifxyz",
+        "median_edge_vox": 19.99844002823894,
+        "dirname_um": 7.91,
+        "true_edge_um": 158.18766062337002,
+        "naive_edge_um": 158.18766062337002,
+        "naive_over_true": 1.0
+      },
+      {
+        "name": "20230702185753-on-20260310170716-45.532um.tifxyz",
+        "median_edge_vox": 19.82700513190354,
+        "dirname_um": 45.532,
+        "true_edge_um": 902.763197665832,
+        "naive_edge_um": 156.831610593357,
+        "naive_over_true": 0.1737239743477115
+      }
+    ],
+    "label": "paris4-40x"
+  },
+  {
+    "mesh_root": "/workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures/paris4-19x/mesh",
+    "naive_same_scale_groups": [
+      {
+        "scale": [
+          0.05,
+          0.05
+        ],
+        "ref_um": 7.91,
+        "dirname_um_spread": 18.971666666666668,
+        "rows": [
+          {
+            "name": "20230929220926-on-20230205180739-7.91um.tifxyz",
+            "dirname_um": 7.91,
+            "scale": [
+              0.05,
+              0.05
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 158.2,
+            "naive_um_per_grid_cell": 158.2,
+            "bbox_diag_vox": 9345.41140382688,
+            "true_bbox_diag_um": 73922.20420427062,
+            "naive_bbox_diag_um": 73922.20420427062,
+            "naive_over_true_ratio": 1.0
+          },
+          {
+            "name": "20230929220926-on-20260310170716-45.532um.tifxyz",
+            "dirname_um": 45.532,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 910.6399864304067,
+            "naive_um_per_grid_cell": 158.19999764263633,
+            "bbox_diag_vox": 1619.8798167469135,
+            "true_bbox_diag_um": 73756.36781612046,
+            "naive_bbox_diag_um": 12813.249350468086,
+            "naive_over_true_ratio": 0.17372397434771153
+          },
+          {
+            "name": "20230929220926-on-20260411134726-2.4um.tifxyz",
+            "dirname_um": 2.4,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 47.99999928474427,
+            "naive_um_per_grid_cell": 158.19999764263633,
+            "bbox_diag_vox": 30822.31677795707,
+            "true_bbox_diag_um": 73973.56026709697,
+            "naive_bbox_diag_um": 243804.5257136404,
+            "naive_over_true_ratio": 3.2958333333333334
+          }
+        ]
+      }
+    ],
+    "label": "paris4-19x"
+  },
+  {
+    "mesh_root": "/workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures/pherc0172-same-um/mesh",
+    "naive_same_scale_groups": [
+      {
+        "scale": [
+          0.05,
+          0.05
+        ],
+        "ref_um": 7.91,
+        "dirname_um_spread": 1.0,
+        "rows": [
+          {
+            "name": "20250917143559-on-20241024131838-7.91um.tifxyz",
+            "dirname_um": 7.91,
+            "scale": [
+              0.05,
+              0.05
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 158.2,
+            "naive_um_per_grid_cell": 158.2,
+            "bbox_diag_vox": 13627.338017800734,
+            "true_bbox_diag_um": 107792.2437208038,
+            "naive_bbox_diag_um": 107792.2437208038,
+            "naive_over_true_ratio": 1.0
+          },
+          {
+            "name": "20250917143559-on-20241024131839-7.91um.tifxyz",
+            "dirname_um": 7.91,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 158.19999764263633,
+            "naive_um_per_grid_cell": 158.19999764263633,
+            "bbox_diag_vox": 13627.338017800734,
+            "true_bbox_diag_um": 107792.2437208038,
+            "naive_bbox_diag_um": 107792.2437208038,
+            "naive_over_true_ratio": 1.0
+          }
+        ]
+      }
+    ],
+    "label": "pherc0172-same-um"
+  },
+  {
+    "mesh_root": "/workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures/pherc0139-8x/mesh",
+    "naive_same_scale_groups": [
+      {
+        "scale": [
+          0.05,
+          0.05
+        ],
+        "ref_um": 9.362,
+        "dirname_um_spread": 8.29229406554473,
+        "rows": [
+          {
+            "name": "20250108000000-on-20250728140407-9.362um.tifxyz",
+            "dirname_um": 9.362,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 187.23999720990662,
+            "naive_um_per_grid_cell": 187.23999720990662,
+            "bbox_diag_vox": 7353.164202421836,
+            "true_bbox_diag_um": 68840.32326307324,
+            "naive_bbox_diag_um": 68840.32326307324,
+            "naive_over_true_ratio": 1.0
+          },
+          {
+            "name": "20250108000000-on-20250820105138-2.403um.tifxyz",
+            "dirname_um": 2.403,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 48.0599992838502,
+            "naive_um_per_grid_cell": 187.23999720990662,
+            "bbox_diag_vox": 28793.8561522886,
+            "true_bbox_diag_um": 69191.63633394951,
+            "naive_bbox_diag_um": 269568.0812977259,
+            "naive_over_true_ratio": 3.8959633791094466
+          },
+          {
+            "name": "20250108000000-on-20260102150214-2.399um.tifxyz",
+            "dirname_um": 2.399,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 47.9799992850423,
+            "naive_um_per_grid_cell": 187.23999720990662,
+            "bbox_diag_vox": 28711.671274716868,
+            "true_bbox_diag_um": 68879.29938804577,
+            "naive_bbox_diag_um": 268798.6664738993,
+            "naive_over_true_ratio": 3.902459358065861
+          },
+          {
+            "name": "20250108000000-on-20260319133554-2.403um.tifxyz",
+            "dirname_um": 2.403,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 48.0599992838502,
+            "naive_um_per_grid_cell": 187.23999720990662,
+            "bbox_diag_vox": 28793.8561522886,
+            "true_bbox_diag_um": 69191.63633394951,
+            "naive_bbox_diag_um": 269568.0812977259,
+            "naive_over_true_ratio": 3.8959633791094466
+          },
+          {
+            "name": "20250108000000-on-20260413113053-1.129um.tifxyz",
+            "dirname_um": 1.129,
+            "scale": [
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "voxel_size_um_in_meta": null,
+            "true_um_per_grid_cell": 22.579999663531783,
+            "naive_um_per_grid_cell": 187.23999720990662,
+            "bbox_diag_vox": 61126.34681466883,
+            "true_bbox_diag_um": 69011.64555376112,
+            "naive_bbox_diag_um": 572264.8588789296,
+            "naive_over_true_ratio": 8.292294065544729
+          }
+        ]
+      }
+    ],
+    "label": "pherc0139-8x"
+  }
+]

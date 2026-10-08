@@ -1,0 +1,882 @@
+From 8280e07ef84f308d8e0273f4310789895537f7af Mon Sep 17 00:00:00 2001
+From: Scroll Ash Lab <scrollash.lab@gmail.com>
+Date: Mon, 5 Oct 2026 13:42:33 -1000
+Subject: [PATCH] tifxyz: add vesuvius.tifxyz_audit CLI for mesh metadata QA
+
+Wraps meta_frames (#1522) with a CI-friendly auditor: meta/scale checks,
+optional TIFF sampling, JSON/text reports, and annotate-voxel-size helper.
+Tolerant scale matching lives in #1522 (SCALE_RTOL); this commit no longer
+patches meta_frames.
+---
+ vesuvius/pyproject.toml                       |   1 +
+ vesuvius/src/vesuvius/tifxyz/__init__.py      |   2 +
+ vesuvius/src/vesuvius/tifxyz/audit_checks.py  | 453 ++++++++++++++++++
+ vesuvius/src/vesuvius/tifxyz/audit_cli.py     | 160 +++++++
+ vesuvius/src/vesuvius/tifxyz/audit_report.py  |  47 ++
+ .../src/vesuvius/tifxyz/audit_tiff_util.py    |  62 +++
+ vesuvius/tests/tifxyz/test_tifxyz_audit.py    |  81 ++++
+ 7 files changed, 806 insertions(+)
+ create mode 100644 vesuvius/src/vesuvius/tifxyz/audit_checks.py
+ create mode 100644 vesuvius/src/vesuvius/tifxyz/audit_cli.py
+ create mode 100644 vesuvius/src/vesuvius/tifxyz/audit_report.py
+ create mode 100644 vesuvius/src/vesuvius/tifxyz/audit_tiff_util.py
+ create mode 100644 vesuvius/tests/tifxyz/test_tifxyz_audit.py
+
+diff --git a/vesuvius/pyproject.toml b/vesuvius/pyproject.toml
+index 8675cb6..b2c88c7 100644
+--- a/vesuvius/pyproject.toml
++++ b/vesuvius/pyproject.toml
+@@ -207,6 +207,7 @@ all = [
+ Homepage = "https://github.com/ScrollPrize/villa"
+ 
+ [project.scripts]
++"vesuvius.tifxyz_audit" = "vesuvius.tifxyz.audit_cli:main"
+ "vesuvius.accept_terms" = "vesuvius.install.accept_terms:main"
+ "vesuvius.predict" = "vesuvius.models.run.inference:main"
+ "vesuvius.blend_logits" = "vesuvius.models.run.blending:main"
+diff --git a/vesuvius/src/vesuvius/tifxyz/__init__.py b/vesuvius/src/vesuvius/tifxyz/__init__.py
+index d5c730e..32d8173 100644
+--- a/vesuvius/src/vesuvius/tifxyz/__init__.py
++++ b/vesuvius/src/vesuvius/tifxyz/__init__.py
+@@ -82,3 +82,5 @@ __all__ = [
+     "frames_comparable",
+     "scale_pairs_close",
+ ]
++
++# CLI: vesuvius.tifxyz_audit -> vesuvius.tifxyz.audit_cli:main
+diff --git a/vesuvius/src/vesuvius/tifxyz/audit_checks.py b/vesuvius/src/vesuvius/tifxyz/audit_checks.py
+new file mode 100644
+index 0000000..d215719
+--- /dev/null
++++ b/vesuvius/src/vesuvius/tifxyz/audit_checks.py
+@@ -0,0 +1,453 @@
++"""QA checks for one tifxyz directory and for sibling mesh groups."""
++
++from __future__ import annotations
++
++import math
++from dataclasses import asdict, dataclass, field
++from pathlib import Path
++from typing import Any, Iterable, Sequence
++
++from . import meta_frames
++from .audit_tiff_util import read_tiff_shape, sample_invalid_fraction, tiff_available
++
++SEVERITIES = ("error", "warning", "info")
++
++
++@dataclass
++class Finding:
++    code: str
++    severity: str  # error | warning | info
++    message: str
++    path: str | None = None
++    data: dict[str, Any] = field(default_factory=dict)
++
++    def to_dict(self) -> dict[str, Any]:
++        return asdict(self)
++
++
++def _is_tifxyz_dir(path: Path) -> bool:
++    return path.is_dir() and (path / "meta.json").is_file()
++
++
++def discover_tifxyz_dirs(inputs: Sequence[Path]) -> list[Path]:
++    """Resolve CLI inputs to tifxyz directories (contain meta.json)."""
++    found: list[Path] = []
++    seen: set[Path] = set()
++
++    def add(p: Path) -> None:
++        rp = p.resolve()
++        if rp not in seen:
++            seen.add(rp)
++            found.append(rp)
++
++    for raw in inputs:
++        path = Path(raw).expanduser()
++        if not path.exists():
++            continue
++        if _is_tifxyz_dir(path):
++            add(path)
++            continue
++        # segment/mesh/ layout
++        mesh = path / "mesh"
++        if mesh.is_dir():
++            for child in sorted(mesh.iterdir()):
++                if _is_tifxyz_dir(child):
++                    add(child)
++            continue
++        # parent of many tifxyz dirs
++        if path.is_dir():
++            for child in sorted(path.iterdir()):
++                if _is_tifxyz_dir(child):
++                    add(child)
++            # also one-level mesh/
++            for child in sorted(path.glob("*/mesh")):
++                if child.is_dir():
++                    for gchild in sorted(child.iterdir()):
++                        if _is_tifxyz_dir(gchild):
++                            add(gchild)
++    return found
++
++
++def check_meta(path: Path) -> tuple[list[Finding], dict[str, Any] | None]:
++    findings: list[Finding] = []
++    meta_path = path / "meta.json"
++    if not meta_path.is_file():
++        findings.append(
++            Finding("meta_missing", "error", "meta.json is missing", str(path))
++        )
++        return findings, None
++    try:
++        meta = meta_frames.load_meta_dict(meta_path)
++    except Exception as exc:  # noqa: BLE001 - report parse failures
++        findings.append(
++            Finding(
++                "meta_unparseable",
++                "error",
++                f"meta.json could not be parsed: {exc}",
++                str(meta_path),
++            )
++        )
++        return findings, None
++
++    scale = meta_frames.scale_pair(meta)
++    if scale is None:
++        findings.append(
++            Finding(
++                "scale_missing",
++                "error",
++                "meta.json has no usable scale [sx, sy]",
++                str(meta_path),
++            )
++        )
++    else:
++        sx, sy = scale
++        if not (math.isfinite(sx) and math.isfinite(sy) and sx > 0 and sy > 0):
++            findings.append(
++                Finding(
++                    "scale_invalid",
++                    "error",
++                    f"scale must be finite and > 0, got {[sx, sy]}",
++                    str(meta_path),
++                    {"scale": [sx, sy]},
++                )
++            )
++        else:
++            # Common tracer scale is ~0.05; stretch-factor misuse can be tiny (e.g. 0.0005).
++            if min(sx, sy) < 1e-4:
++                findings.append(
++                    Finding(
++                        "scale_suspicious_small",
++                        "warning",
++                        f"scale {[sx, sy]} is unusually small "
++                        "(possible stretch-factor misuse; see villa #1319)",
++                        str(meta_path),
++                        {"scale": [sx, sy]},
++                    )
++                )
++            findings.append(
++                Finding(
++                    "scale_ok",
++                    "info",
++                    f"scale={[sx, sy]} (grid cells per voxel of this mesh's scan)",
++                    str(meta_path),
++                    {"scale": [sx, sy]},
++                )
++            )
++
++    vox = None
++    try:
++        vox = (
++            meta_frames.get_voxel_size_um(meta)
++            if meta_frames.VOXEL_SIZE_UM_KEY in meta
++            else None
++        )
++    except ValueError as exc:
++        findings.append(
++            Finding("voxel_size_um_invalid", "error", str(exc), str(meta_path))
++        )
++
++    parsed = meta_frames.parse_voxel_size_um_from_name(path)
++    if vox is not None:
++        findings.append(
++            Finding(
++                "voxel_size_um_present",
++                "info",
++                f"voxel_size_um={vox}",
++                str(meta_path),
++                {"voxel_size_um": vox},
++            )
++        )
++        if parsed is not None and abs(parsed - vox) / max(vox, parsed) > 0.01:
++            findings.append(
++                Finding(
++                    "voxel_size_um_dirname_mismatch",
++                    "warning",
++                    f"voxel_size_um={vox} disagrees with dirname token {parsed}um",
++                    str(path),
++                    {"voxel_size_um": vox, "parsed_um": parsed},
++                )
++            )
++    elif parsed is not None:
++        findings.append(
++            Finding(
++                "voxel_size_um_inferable",
++                "warning",
++                f"voxel_size_um missing; dirname implies {parsed}um "
++                "(run --fix-meta --in-place or --fix-meta --output-dir ...)",
++                str(path),
++                {"parsed_um": parsed},
++            )
++        )
++    else:
++        findings.append(
++            Finding(
++                "voxel_size_um_unknown",
++                "warning",
++                "voxel_size_um missing and not inferable from directory name",
++                str(path),
++            )
++        )
++
++    return findings, meta
++
++
++def check_tiffs(path: Path, *, sample_invalid: bool = True) -> list[Finding]:
++    findings: list[Finding] = []
++    names = ("x.tif", "y.tif", "z.tif")
++    present = {n: (path / n).is_file() for n in names}
++    missing = [n for n, ok in present.items() if not ok]
++    if missing:
++        findings.append(
++            Finding(
++                "tiff_missing",
++                "error",
++                f"missing required TIFF(s): {', '.join(missing)}",
++                str(path),
++                {"missing": missing},
++            )
++        )
++        return findings
++
++    if not tiff_available():
++        findings.append(
++            Finding(
++                "tiff_checks_skipped",
++                "warning",
++                "tifffile/numpy not installed; skipped shape and invalid-point checks",
++                str(path),
++            )
++        )
++        return findings
++
++    shapes = {}
++    for n in names:
++        try:
++            shapes[n] = read_tiff_shape(path / n)
++        except Exception as exc:  # noqa: BLE001
++            findings.append(
++                Finding(
++                    "tiff_header_unreadable",
++                    "error",
++                    f"{n}: could not read TIFF header: {exc}",
++                    str(path / n),
++                )
++            )
++            return findings
++
++    if len(set(shapes.values())) != 1:
++        findings.append(
++            Finding(
++                "tiff_shape_mismatch",
++                "error",
++                f"x/y/z shapes differ: {shapes}",
++                str(path),
++                {"shapes": {k: list(v) for k, v in shapes.items()}},
++            )
++        )
++    else:
++        shape = shapes["x.tif"]
++        findings.append(
++            Finding(
++                "tiff_shape_ok",
++                "info",
++                f"x/y/z shape={list(shape)}",
++                str(path),
++                {"shape": list(shape)},
++            )
++        )
++
++    if sample_invalid:
++        try:
++            stats = sample_invalid_fraction(path / "z.tif")
++            frac = stats["sentinel_neg1_fraction"]
++            sev = "info" if frac < 0.99 else "warning"
++            # High -1 fraction can be normal (sparse surface); report as info/warn only.
++            findings.append(
++                Finding(
++                    "invalid_point_stats",
++                    sev,
++                    (
++                        f"z.tif sentinel=-1 fraction={frac:.4f} "
++                        f"(nonfinite={stats['nonfinite_fraction']:.4f}; "
++                        f"{'sampled' if stats['sampled'] else 'exact'})"
++                    ),
++                    str(path / "z.tif"),
++                    stats,
++                )
++            )
++        except Exception as exc:  # noqa: BLE001
++            findings.append(
++                Finding(
++                    "invalid_point_unreadable",
++                    "warning",
++                    f"could not sample z.tif for invalid points: {exc}",
++                    str(path / "z.tif"),
++                )
++            )
++    return findings
++
++
++def check_bbox(
++    path: Path,
++    meta: dict[str, Any] | None,
++    volume_shape: tuple[int, int, int] | None,
++) -> list[Finding]:
++    findings: list[Finding] = []
++    if meta is None:
++        return findings
++    bbox = meta.get("bbox")
++    if bbox is None:
++        findings.append(
++            Finding("bbox_missing", "info", "meta.json has no bbox", str(path))
++        )
++        return findings
++    try:
++        mins = [float(x) for x in bbox[0]]
++        maxs = [float(x) for x in bbox[1]]
++    except Exception:  # noqa: BLE001
++        findings.append(
++            Finding("bbox_unparseable", "error", f"bbox not usable: {bbox!r}", str(path))
++        )
++        return findings
++
++    if any(v == -1 for v in mins + maxs):
++        findings.append(
++            Finding(
++                "bbox_missing_marker",
++                "warning",
++                "bbox contains the -1 missing-point marker (villa #1618 class)",
++                str(path / "meta.json"),
++                {"bbox": bbox},
++            )
++        )
++
++    if volume_shape is None:
++        findings.append(
++            Finding(
++                "bbox_volume_unchecked",
++                "info",
++                "bbox present; pass --volume-shape Z,Y,X to check containment",
++                str(path),
++                {"bbox": bbox},
++            )
++        )
++        return findings
++
++    # volume_shape is Z,Y,X; bbox is [[min_x,min_y,min_z],[max_x,max_y,max_z]]
++    vz, vy, vx = volume_shape
++    limits = (vx, vy, vz)
++    outside = False
++    for i, (lo, hi, lim) in enumerate(zip(mins, maxs, limits)):
++        if lo < -1e-3 or hi > lim + 1e-3:
++            outside = True
++    if outside:
++        findings.append(
++            Finding(
++                "bbox_outside_volume",
++                "error",
++                f"bbox {bbox} extends outside volume shape ZYX={list(volume_shape)} "
++                f"(XYZ limits {list(limits)})",
++                str(path),
++                {"bbox": bbox, "volume_shape_zyx": list(volume_shape)},
++            )
++        )
++    else:
++        findings.append(
++            Finding(
++                "bbox_inside_volume",
++                "info",
++                f"bbox inside volume shape ZYX={list(volume_shape)}",
++                str(path),
++                {"bbox": bbox, "volume_shape_zyx": list(volume_shape)},
++            )
++        )
++    return findings
++
++
++def check_sibling_ambiguity(dirs: Sequence[Path]) -> list[Finding]:
++    """Group by parent and run #1522 same-scale / different-um detection."""
++    findings: list[Finding] = []
++    by_parent: dict[Path, list[Path]] = {}
++    for d in dirs:
++        by_parent.setdefault(d.parent, []).append(d)
++
++    for parent, children in sorted(by_parent.items()):
++        if len(children) < 2:
++            continue
++        # find_ambiguous_scale_frames expects a mesh root whose children are tifxyz dirs
++        try:
++            groups = meta_frames.find_ambiguous_scale_frames(parent)
++        except Exception as exc:  # noqa: BLE001
++            findings.append(
++                Finding(
++                    "ambiguity_check_failed",
++                    "warning",
++                    f"could not run ambiguity check on {parent}: {exc}",
++                    str(parent),
++                )
++            )
++            continue
++        if not groups:
++            findings.append(
++                Finding(
++                    "scale_frames_ok",
++                    "info",
++                    f"no same-scale / different-voxel-size ambiguity under {parent}",
++                    str(parent),
++                )
++            )
++            continue
++        for g in groups:
++            findings.append(
++                Finding(
++                    "scale_frame_ambiguity",
++                    "warning",
++                    (
++                        f"villa #1522: {len(g.records)} meshes share scale={list(g.scale)} "
++                        f"but voxel sizes differ: {list(g.voxel_sizes_um)} "
++                        f"(spread≈{g.spread_ratio:.2f}x)"
++                    ),
++                    str(parent),
++                    {
++                        "scale": list(g.scale),
++                        "voxel_sizes_um": list(g.voxel_sizes_um),
++                        "spread_ratio": g.spread_ratio,
++                        "paths": [str(r.path) for r in g.records],
++                    },
++                )
++            )
++    return findings
++
++
++def audit_paths(
++    inputs: Sequence[Path],
++    *,
++    volume_shape: tuple[int, int, int] | None = None,
++    sample_invalid: bool = True,
++    skip_tiff: bool = False,
++) -> tuple[list[Path], list[Finding]]:
++    dirs = discover_tifxyz_dirs(inputs)
++    findings: list[Finding] = []
++    if not dirs:
++        findings.append(
++            Finding(
++                "no_tifxyz_found",
++                "error",
++                "no tifxyz directories (with meta.json) found under inputs",
++                None,
++                {"inputs": [str(p) for p in inputs]},
++            )
++        )
++        return dirs, findings
++
++    metas: dict[Path, dict[str, Any] | None] = {}
++    for d in dirs:
++        f, meta = check_meta(d)
++        findings.extend(f)
++        metas[d] = meta
++        if not skip_tiff:
++            findings.extend(check_tiffs(d, sample_invalid=sample_invalid))
++        findings.extend(check_bbox(d, meta, volume_shape))
++
++    findings.extend(check_sibling_ambiguity(dirs))
++    return dirs, findings
+diff --git a/vesuvius/src/vesuvius/tifxyz/audit_cli.py b/vesuvius/src/vesuvius/tifxyz/audit_cli.py
+new file mode 100644
+index 0000000..705ee49
+--- /dev/null
++++ b/vesuvius/src/vesuvius/tifxyz/audit_cli.py
+@@ -0,0 +1,160 @@
++"""CLI entry: ``vesuvius.tifxyz_audit``."""
++
++from __future__ import annotations
++
++import argparse
++import shutil
++import sys
++from pathlib import Path
++
++from . import meta_frames
++from .audit_checks import audit_paths
++from .audit_report import exit_code, format_json, format_text
++
++
++def _parse_volume_shape(text: str | None) -> tuple[int, int, int] | None:
++    if not text:
++        return None
++    parts = [p.strip() for p in text.split(",")]
++    if len(parts) != 3:
++        raise argparse.ArgumentTypeError("volume shape must be Z,Y,X")
++    return tuple(int(p) for p in parts)  # type: ignore[return-value]
++
++
++def build_parser() -> argparse.ArgumentParser:
++    p = argparse.ArgumentParser(
++        prog="vesuvius.tifxyz_audit",
++        description=(
++            "Audit tifxyz / mesh metadata for missing fields, TIFF consistency, "
++            "and same-scale / different-voxel-size frame ambiguity (villa #1522)."
++        ),
++    )
++    p.add_argument(
++        "paths",
++        nargs="+",
++        type=Path,
++        help="tifxyz dirs, segment dirs (with mesh/), or parent folders",
++    )
++    p.add_argument("--json", action="store_true", help="machine-readable JSON report")
++    p.add_argument(
++        "--strict",
++        action="store_true",
++        help="nonzero exit if any warning is present (default: only errors)",
++    )
++    p.add_argument(
++        "--skip-tiff",
++        action="store_true",
++        help="skip x/y/z presence, header shape, and invalid-point checks",
++    )
++    p.add_argument(
++        "--no-sample-invalid",
++        action="store_true",
++        help="do not sample z.tif for NaN / -1 fractions",
++    )
++    p.add_argument(
++        "--volume-shape",
++        type=_parse_volume_shape,
++        default=None,
++        metavar="Z,Y,X",
++        help="optional volume shape to test bbox containment",
++    )
++    p.add_argument(
++        "--fix-meta",
++        action="store_true",
++        help="write voxel_size_um into meta.json (requires --in-place or --output-dir)",
++    )
++    p.add_argument(
++        "--in-place",
++        action="store_true",
++        help="with --fix-meta, modify meta.json in place (explicit; never default)",
++    )
++    p.add_argument(
++        "--output-dir",
++        type=Path,
++        default=None,
++        help="with --fix-meta, copy each tifxyz dir here then write meta in the copy",
++    )
++    p.add_argument(
++        "--overwrite-voxel-size",
++        action="store_true",
++        help="with --fix-meta, overwrite an existing voxel_size_um value",
++    )
++    return p
++
++
++def _apply_fix_meta(
++    dirs: list[Path],
++    *,
++    in_place: bool,
++    output_dir: Path | None,
++    overwrite: bool,
++) -> list[str]:
++    notes: list[str] = []
++    if not in_place and output_dir is None:
++        raise SystemExit(
++            "--fix-meta requires --in-place or --output-dir (refusing silent writes)"
++        )
++    if in_place and output_dir is not None:
++        raise SystemExit("use only one of --in-place or --output-dir")
++
++    targets: list[Path] = []
++    if output_dir is not None:
++        output_dir.mkdir(parents=True, exist_ok=True)
++        for d in dirs:
++            dest = output_dir / d.name
++            if dest.exists():
++                raise SystemExit(f"refusing to overwrite existing copy: {dest}")
++            shutil.copytree(d, dest)
++            targets.append(dest)
++            notes.append(f"copied {d} -> {dest}")
++    else:
++        targets = list(dirs)
++
++    for d in targets:
++        value = meta_frames.annotate_meta_voxel_size_um(d, overwrite=overwrite)
++        notes.append(f"annotate {d}: voxel_size_um={value!r}")
++    return notes
++
++
++def main(argv: list[str] | None = None) -> int:
++    args = build_parser().parse_args(argv)
++    dirs, findings = audit_paths(
++        args.paths,
++        volume_shape=args.volume_shape,
++        sample_invalid=not args.no_sample_invalid,
++        skip_tiff=args.skip_tiff,
++    )
++
++    fix_notes: list[str] = []
++    if args.fix_meta:
++        if not dirs:
++            print("no tifxyz dirs to annotate", file=sys.stderr)
++            return 2
++        fix_notes = _apply_fix_meta(
++            dirs,
++            in_place=args.in_place,
++            output_dir=args.output_dir,
++            overwrite=args.overwrite_voxel_size,
++        )
++        re_inputs = [args.output_dir] if args.output_dir else dirs
++        dirs, findings = audit_paths(
++            re_inputs,
++            volume_shape=args.volume_shape,
++            sample_invalid=not args.no_sample_invalid,
++            skip_tiff=args.skip_tiff,
++        )
++
++    if args.json:
++        sys.stdout.write(format_json(findings, dirs))
++        for n in fix_notes:
++            print(n, file=sys.stderr)
++    else:
++        for n in fix_notes:
++            print(n)
++        sys.stdout.write(format_text(findings, dirs))
++
++    return exit_code(findings, strict=args.strict)
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/vesuvius/src/vesuvius/tifxyz/audit_report.py b/vesuvius/src/vesuvius/tifxyz/audit_report.py
+new file mode 100644
+index 0000000..50effc6
+--- /dev/null
++++ b/vesuvius/src/vesuvius/tifxyz/audit_report.py
+@@ -0,0 +1,47 @@
++"""Human and JSON report formatting."""
++
++from __future__ import annotations
++
++import json
++from collections import Counter
++from typing import Any, Sequence
++
++from .audit_checks import Finding
++
++
++def summarize(findings: Sequence[Finding]) -> dict[str, int]:
++    c = Counter(f.severity for f in findings)
++    return {k: int(c.get(k, 0)) for k in ("error", "warning", "info")}
++
++
++def exit_code(findings: Sequence[Finding], *, strict: bool = False) -> int:
++    counts = summarize(findings)
++    if counts["error"]:
++        return 2
++    if strict and counts["warning"]:
++        return 1
++    return 0
++
++
++def format_text(findings: Sequence[Finding], dirs: Sequence[Any]) -> str:
++    lines: list[str] = []
++    lines.append(f"tifxyz-audit: scanned {len(dirs)} tifxyz director{'y' if len(dirs)==1 else 'ies'}")
++    counts = summarize(findings)
++    lines.append(
++        f"summary: {counts['error']} error(s), {counts['warning']} warning(s), "
++        f"{counts['info']} info"
++    )
++    order = {"error": 0, "warning": 1, "info": 2}
++    for f in sorted(findings, key=lambda x: (order.get(x.severity, 9), x.code, x.path or "")):
++        loc = f" @ {f.path}" if f.path else ""
++        lines.append(f"[{f.severity.upper():7}] {f.code}: {f.message}{loc}")
++    return "\n".join(lines) + "\n"
++
++
++def format_json(findings: Sequence[Finding], dirs: Sequence[Any]) -> str:
++    payload = {
++        "scanned": [str(d) for d in dirs],
++        "summary": summarize(findings),
++        "findings": [f.to_dict() for f in findings],
++    }
++    return json.dumps(payload, indent=2) + "\n"
+diff --git a/vesuvius/src/vesuvius/tifxyz/audit_tiff_util.py b/vesuvius/src/vesuvius/tifxyz/audit_tiff_util.py
+new file mode 100644
+index 0000000..a4836a1
+--- /dev/null
++++ b/vesuvius/src/vesuvius/tifxyz/audit_tiff_util.py
+@@ -0,0 +1,62 @@
++"""Optional TIFF header / light sampling helpers (requires tifffile + numpy)."""
++
++from __future__ import annotations
++
++from pathlib import Path
++from typing import Any
++
++
++def tiff_available() -> bool:
++    try:
++        import numpy  # noqa: F401
++        import tifffile  # noqa: F401
++
++        return True
++    except ImportError:
++        return False
++
++
++def read_tiff_shape(path: Path) -> tuple[int, ...]:
++    import tifffile
++
++    with tifffile.TiffFile(str(path)) as tf:
++        series = tf.series[0]
++        return tuple(int(x) for x in series.shape)
++
++
++def sample_invalid_fraction(
++    path: Path,
++    *,
++    max_values: int = 2_000_000,
++) -> dict[str, Any]:
++    """Estimate fraction of non-finite and sentinel -1 values.
++
++    For arrays larger than ``max_values``, reads a strided subsample so large
++    open-data meshes stay tractable. Returns exact counts when the array is
++    fully read.
++    """
++    import numpy as np
++    import tifffile
++
++    arr = tifffile.imread(str(path))
++    flat = np.asarray(arr, dtype=np.float64).ravel()
++    total = int(flat.size)
++    sampled = False
++    if total > max_values:
++        step = int(np.ceil(total / max_values))
++        flat = flat[::step]
++        sampled = True
++    n = int(flat.size)
++    nonfinite = int(np.sum(~np.isfinite(flat)))
++    # Invalid-point convention in tifxyz: coordinates marked -1
++    sentinel = int(np.sum(flat == -1.0))
++    return {
++        "path": str(path),
++        "total_values": total,
++        "values_examined": n,
++        "sampled": sampled,
++        "nonfinite": nonfinite,
++        "sentinel_neg1": sentinel,
++        "nonfinite_fraction": (nonfinite / n) if n else 0.0,
++        "sentinel_neg1_fraction": (sentinel / n) if n else 0.0,
++    }
+diff --git a/vesuvius/tests/tifxyz/test_tifxyz_audit.py b/vesuvius/tests/tifxyz/test_tifxyz_audit.py
+new file mode 100644
+index 0000000..56f3337
+--- /dev/null
++++ b/vesuvius/tests/tifxyz/test_tifxyz_audit.py
+@@ -0,0 +1,81 @@
++"""Tests for vesuvius.tifxyz audit CLI helpers (light imports)."""
++
++from __future__ import annotations
++
++import importlib.util
++import json
++import sys
++from pathlib import Path
++
++import numpy as np
++import pytest
++import tifffile
++
++
++def _load(name: str, path: Path, package: str = "vesuvius.tifxyz"):
++    spec = importlib.util.spec_from_file_location(
++        f"{package}.{name}", path, submodule_search_locations=[str(path.parent)]
++    )
++    mod = importlib.util.module_from_spec(spec)
++    sys.modules[spec.name] = mod
++    assert spec.loader is not None
++    spec.loader.exec_module(mod)
++    return mod
++
++
++_TIFXYZ = Path(__file__).resolve().parents[2] / "src" / "vesuvius" / "tifxyz"
++# Prefer source-tree modules under test; fall back to installed package path.
++if not (_TIFXYZ / "meta_frames.py").is_file():
++    import vesuvius
++
++    _TIFXYZ = Path(vesuvius.__file__).resolve().parent / "tifxyz"
++
++meta_frames = _load("meta_frames", _TIFXYZ / "meta_frames.py")
++sys.modules["vesuvius.tifxyz.meta_frames"] = meta_frames
++tiff_util = _load("audit_tiff_util", _TIFXYZ / "audit_tiff_util.py")
++sys.modules["vesuvius.tifxyz.audit_tiff_util"] = tiff_util
++
++# audit_checks imports vesuvius.tifxyz.meta_frames / audit_tiff_util
++checks = _load("audit_checks", _TIFXYZ / "audit_checks.py")
++report = _load("audit_report", _TIFXYZ / "audit_report.py")
++# Patch report's Finding import already bound
++
++audit_paths = checks.audit_paths
++discover_tifxyz_dirs = checks.discover_tifxyz_dirs
++exit_code = report.exit_code
++
++
++def _write_tifxyz(path: Path, *, scale=(0.05, 0.05), voxel_size_um=None, shape=(8, 10)):
++    path.mkdir(parents=True, exist_ok=True)
++    meta = {"uuid": path.name, "scale": list(scale), "type": "seg", "format": "tifxyz"}
++    if voxel_size_um is not None:
++        meta["voxel_size_um"] = voxel_size_um
++    (path / "meta.json").write_text(json.dumps(meta, indent=2) + "\n")
++    h, w = shape
++    z = np.zeros((h, w), dtype=np.float32)
++    for name in ("x.tif", "y.tif", "z.tif"):
++        tifffile.imwrite(path / name, z)
++    return path
++
++
++def test_float_tolerant_ambiguity(tmp_path: Path):
++    mesh = tmp_path / "mesh"
++    _write_tifxyz(mesh / "a-1.129um.tifxyz", scale=(0.05, 0.05))
++    _write_tifxyz(
++        mesh / "b-45.532um.tifxyz",
++        scale=(0.05000000074505806, 0.05000000074505806),
++    )
++    assert len(discover_tifxyz_dirs([tmp_path])) == 2
++    _, findings = audit_paths([mesh], skip_tiff=True)
++    amb = [f for f in findings if f.code == "scale_frame_ambiguity"]
++    assert len(amb) == 1
++    assert exit_code(findings) == 0
++    assert exit_code(findings, strict=True) == 1
++
++
++def test_meta_error_exit(tmp_path: Path):
++    d = tmp_path / "bad.tifxyz"
++    d.mkdir()
++    (d / "meta.json").write_text("{")
++    _, findings = audit_paths([d], skip_tiff=True)
++    assert exit_code(findings) == 2
+-- 
+2.47.3
+

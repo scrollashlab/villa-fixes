@@ -1,0 +1,644 @@
+From e6ebd4f835009c134c027335a8cca768802f4ab2 Mon Sep 17 00:00:00 2001
+From: Scroll Ash Lab <scrollash.lab@gmail.com>
+Date: Sun, 4 Oct 2026 21:59:51 -1000
+Subject: [PATCH] tifxyz: record optional voxel_size_um and detect scale/frame
+ ambiguity
+
+meta.json "scale" is grid cells per voxel of that mesh's own scan. Segments
+often ship several meshes that declare the same scale while voxel sizes differ
+by up to ~40x (#1522). Add optional voxel_size_um, document the trap, helpers
+to annotate from the conventional -<float>um directory token, and a metadata-
+only ambiguity check across a segment mesh/ tree.
+---
+ vesuvius/src/vesuvius/tifxyz/API.md         |  21 ++
+ vesuvius/src/vesuvius/tifxyz/__init__.py    |  18 ++
+ vesuvius/src/vesuvius/tifxyz/meta_frames.py | 281 ++++++++++++++++++++
+ vesuvius/src/vesuvius/tifxyz/reader.py      |  16 +-
+ vesuvius/src/vesuvius/tifxyz/writer.py      |  11 +-
+ vesuvius/tests/tifxyz/test_meta_frames.py   | 190 +++++++++++++
+ 6 files changed, 532 insertions(+), 5 deletions(-)
+ create mode 100644 vesuvius/src/vesuvius/tifxyz/meta_frames.py
+ create mode 100644 vesuvius/tests/tifxyz/test_meta_frames.py
+
+diff --git a/vesuvius/src/vesuvius/tifxyz/API.md b/vesuvius/src/vesuvius/tifxyz/API.md
+index 86a43ea..84ac4e2 100644
+--- a/vesuvius/src/vesuvius/tifxyz/API.md
++++ b/vesuvius/src/vesuvius/tifxyz/API.md
+@@ -22,6 +22,27 @@ segment_name/
+ └── *_label.*    # Optional grayscale labels (.tif, .png, .jpg)
+ ```
+ 
++### `meta.json` scale vs physical frame
++
++`scale` is **grid cells per voxel of this mesh's own scan** (e.g. `0.05` means a
++20-voxel step).  It is correct within one file.  It does **not** identify which
++physical scan the coordinates belong to.  Segments often ship several meshes
++that all declare the same `scale` while their voxel sizes differ by up to ~40×
++(villa #1522).  Coordinates from those meshes must not be compared using `scale`
++alone.
++
++Optional field:
++
++| Field | Meaning |
++|-------|---------|
++| `voxel_size_um` | Isotropic µm per voxel of the scan this mesh was written in |
++
++When present, consumers can tell frames apart without parsing directory names.
++`vesuvius.tifxyz.meta_frames` can parse the conventional `-<float>um` token from
++a directory name, annotate an existing `meta.json`, and report same-`scale` /
++different-voxel-size ambiguity across a segment `mesh/` tree.
++
++
+ ## Quick Start
+ 
+ ```python
+diff --git a/vesuvius/src/vesuvius/tifxyz/__init__.py b/vesuvius/src/vesuvius/tifxyz/__init__.py
+index d09b3cf..d5c730e 100644
+--- a/vesuvius/src/vesuvius/tifxyz/__init__.py
++++ b/vesuvius/src/vesuvius/tifxyz/__init__.py
+@@ -44,6 +44,16 @@ from .upsampling import (
+ )
+ from .writer import TifxyzWriter, write_tifxyz
+ 
++from .meta_frames import (
++    SCALE_RTOL,
++    VOXEL_SIZE_UM_KEY,
++    annotate_meta_voxel_size_um,
++    find_ambiguous_scale_frames,
++    frames_comparable,
++    parse_voxel_size_um_from_name,
++    scale_pairs_close,
++)
++
+ __all__ = [
+     # Main class
+     "Tifxyz",
+@@ -63,4 +73,12 @@ __all__ = [
+     "interpolate_at_points",
+     "compute_grid_bounds",
+     "catmull_rom_smooth_1d",
++    # Frame / voxel-size metadata (#1522)
++    "SCALE_RTOL",
++    "VOXEL_SIZE_UM_KEY",
++    "parse_voxel_size_um_from_name",
++    "annotate_meta_voxel_size_um",
++    "find_ambiguous_scale_frames",
++    "frames_comparable",
++    "scale_pairs_close",
+ ]
+diff --git a/vesuvius/src/vesuvius/tifxyz/meta_frames.py b/vesuvius/src/vesuvius/tifxyz/meta_frames.py
+new file mode 100644
+index 0000000..17d0702
+--- /dev/null
++++ b/vesuvius/src/vesuvius/tifxyz/meta_frames.py
+@@ -0,0 +1,281 @@
++"""Frame-aware helpers for tifxyz ``meta.json`` (villa #1522).
++
++``scale`` in ``meta.json`` means grid cells per voxel of *that mesh's own
++scan*.  It is correct within one file and does not identify the physical
++scan frame.  When a segment ships several meshes (different ``um`` in the
++directory name) they often declare the same ``scale`` while voxel sizes
++differ by tens of times.  Consumers that compare coordinates across those
++meshes using only ``scale`` silently mix frames.
++
++This module:
++
++* documents and standardises an optional ``voxel_size_um`` field (µm per
++  voxel, isotropic) so a consumer can tell frames apart without parsing
++  directory names;
++* parses the conventional ``-<float>um`` token from a tifxyz directory name;
++* annotates an existing ``meta.json`` from its directory name;
++* reports same-``scale`` / different-``voxel_size_um`` ambiguity across a
++  segment ``mesh/`` tree (metadata only; no TIFF reads).
++
++Scale equality uses a relative tolerance (see ``SCALE_RTOL``): open-data
++``meta.json`` files mix the JSON literal ``0.05`` with the float64 expansion
++of float32 ``0.05`` (``0.05000000074505806``).  Exact float equality falsely
++split those siblings and broke ``frames_comparable`` on same-µm twins.
++"""
++
++from __future__ import annotations
++
++import json
++import math
++import re
++from dataclasses import dataclass
++from pathlib import Path
++from typing import Any, Iterator, Mapping, Sequence
++
++VOXEL_SIZE_UM_KEY = "voxel_size_um"
++
++# Relative tolerance for comparing meta.scale pairs.
++#
++# Justification from public open-data metas (PHercParis4 / PHerc0172, 2026-10-05):
++# observed pair ``0.05`` vs ``0.05000000074505806`` (= float(np.float32(0.05)))
++# has relative difference ≈ 1.49e-8.  ``rel_tol=1e-6`` is ~67× that gap (covers
++# float32↔float64 round-trip with margin) while remaining far tighter than any
++# intentional scale change (e.g. 0.05 vs 0.1 → rel 1.0).  ``abs_tol=0``: scales
++# in this corpus are O(1e-2)–O(1), so relative comparison dominates.
++SCALE_RTOL = 1e-6
++SCALE_ATOL = 0.0
++
++# Directory names look like:
++#   -on-20260608103018-1.129um.tifxyz
++#   20230702185753-7.91um
++_UM_TOKEN = re.compile(r"(?P<um>\d+(?:\.\d+)?)um(?=$|[^A-Za-z0-9])", re.IGNORECASE)
++
++
++def parse_voxel_size_um_from_name(name: str | Path) -> float | None:
++    """Return µm/voxel parsed from a path or directory name, or None."""
++    text = Path(name).name
++    matches = list(_UM_TOKEN.finditer(text))
++    if not matches:
++        return None
++    # Prefer the last token (directory names put um near the end).
++    return float(matches[-1].group("um"))
++
++
++def load_meta_dict(meta_path: str | Path) -> dict[str, Any]:
++    path = Path(meta_path)
++    with path.open("r", encoding="utf-8") as fh:
++        data = json.load(fh)
++    if not isinstance(data, dict):
++        raise ValueError(f"{path}: meta.json root must be an object")
++    return data
++
++
++def write_meta_dict(meta_path: str | Path, meta: Mapping[str, Any]) -> None:
++    path = Path(meta_path)
++    with path.open("w", encoding="utf-8") as fh:
++        json.dump(dict(meta), fh, indent=2)
++        fh.write("\n")
++
++
++def get_voxel_size_um(meta: Mapping[str, Any]) -> float | None:
++    """Return ``voxel_size_um`` from a meta dict if present and numeric."""
++    if VOXEL_SIZE_UM_KEY not in meta:
++        return None
++    value = meta[VOXEL_SIZE_UM_KEY]
++    if isinstance(value, (int, float)) and not isinstance(value, bool):
++        return float(value)
++    raise ValueError(
++        f"{VOXEL_SIZE_UM_KEY!r} must be a number when present, got {value!r}"
++    )
++
++
++def scale_pair(meta: Mapping[str, Any]) -> tuple[float, float] | None:
++    """Return ``(scale_x, scale_y)`` as stored in meta.json, or None."""
++    raw = meta.get("scale")
++    if not isinstance(raw, (list, tuple)) or len(raw) < 2:
++        return None
++    return (float(raw[0]), float(raw[1]))
++
++
++def scale_pairs_close(
++    a: tuple[float, float],
++    b: tuple[float, float],
++    *,
++    rel_tol: float = SCALE_RTOL,
++    abs_tol: float = SCALE_ATOL,
++) -> bool:
++    """Return True if two scale pairs agree within ``rel_tol`` / ``abs_tol``."""
++    return math.isclose(a[0], b[0], rel_tol=rel_tol, abs_tol=abs_tol) and math.isclose(
++        a[1], b[1], rel_tol=rel_tol, abs_tol=abs_tol
++    )
++
++
++def annotate_meta_voxel_size_um(
++    tifxyz_dir: str | Path,
++    *,
++    voxel_size_um: float | None = None,
++    overwrite: bool = False,
++) -> float | None:
++    """Write ``voxel_size_um`` into ``meta.json`` if missing (or overwrite).
++
++    When ``voxel_size_um`` is omitted, the value is parsed from the directory
++    name.  Returns the value written or already present, or None if neither a
++    value nor a parseable name was available.
++    """
++    root = Path(tifxyz_dir)
++    meta_path = root / "meta.json"
++    if not meta_path.is_file():
++        raise FileNotFoundError(f"Missing meta.json in {root}")
++
++    meta = load_meta_dict(meta_path)
++    existing = None
++    if VOXEL_SIZE_UM_KEY in meta:
++        existing = get_voxel_size_um(meta)
++
++    resolved = voxel_size_um
++    if resolved is None:
++        resolved = parse_voxel_size_um_from_name(root)
++
++    if existing is not None and not overwrite:
++        return existing
++    if resolved is None:
++        return existing
++
++    meta[VOXEL_SIZE_UM_KEY] = float(resolved)
++    write_meta_dict(meta_path, meta)
++    return float(resolved)
++
++
++@dataclass(frozen=True)
++class MeshMetaRecord:
++    """One mesh directory's metadata used for frame comparison."""
++
++    path: Path
++    scale: tuple[float, float] | None
++    voxel_size_um: float | None
++    parsed_um_from_name: float | None
++
++    @property
++    def effective_voxel_size_um(self) -> float | None:
++        if self.voxel_size_um is not None:
++            return self.voxel_size_um
++        return self.parsed_um_from_name
++
++
++def iter_mesh_meta_records(mesh_root: str | Path) -> Iterator[MeshMetaRecord]:
++    """Yield records for each child directory that contains ``meta.json``."""
++    root = Path(mesh_root)
++    if not root.is_dir():
++        raise NotADirectoryError(root)
++    for child in sorted(p for p in root.iterdir() if p.is_dir()):
++        meta_path = child / "meta.json"
++        if not meta_path.is_file():
++            continue
++        meta = load_meta_dict(meta_path)
++        yield MeshMetaRecord(
++            path=child,
++            scale=scale_pair(meta),
++            voxel_size_um=get_voxel_size_um(meta) if VOXEL_SIZE_UM_KEY in meta else None,
++            parsed_um_from_name=parse_voxel_size_um_from_name(child),
++        )
++
++
++@dataclass(frozen=True)
++class ScaleFrameAmbiguity:
++    """Meshes that share ``scale`` but disagree on voxel size."""
++
++    scale: tuple[float, float]
++    records: tuple[MeshMetaRecord, ...]
++    voxel_sizes_um: tuple[float, ...]
++
++    @property
++    def spread_ratio(self) -> float:
++        sizes = self.voxel_sizes_um
++        return max(sizes) / min(sizes) if sizes else 1.0
++
++
++def _group_records_by_scale(
++    records: Sequence[MeshMetaRecord],
++) -> list[tuple[tuple[float, float], list[MeshMetaRecord]]]:
++    """Cluster records whose scale pairs are close under ``SCALE_RTOL``."""
++    groups: list[tuple[tuple[float, float], list[MeshMetaRecord]]] = []
++    for record in records:
++        if record.scale is None:
++            continue
++        placed = False
++        for i, (rep_scale, members) in enumerate(groups):
++            if scale_pairs_close(record.scale, rep_scale):
++                members.append(record)
++                placed = True
++                break
++        if not placed:
++            groups.append((record.scale, [record]))
++    return groups
++
++
++def find_ambiguous_scale_frames(
++    mesh_root: str | Path,
++    *,
++    use_dirname_fallback: bool = True,
++) -> list[ScaleFrameAmbiguity]:
++    """Find groups with matching ``scale`` (within ``SCALE_RTOL``) but differing voxel sizes.
++
++    This is the metadata-only check described in villa #1522.  Voxel size is
++    taken from ``voxel_size_um`` when present; if ``use_dirname_fallback`` is
++    true, a missing field falls back to the ``um`` token in the directory name.
++    Groups where fewer than two members have a known voxel size are skipped.
++
++    Scale matching is tolerant: open-data metas store both ``0.05`` and the
++    float32 expansion ``0.05000000074505806`` for the same intended step.
++    """
++    all_records = list(iter_mesh_meta_records(mesh_root))
++    ambiguous: list[ScaleFrameAmbiguity] = []
++    for scale, records in _group_records_by_scale(all_records):
++        sizes: list[float] = []
++        sized_records: list[MeshMetaRecord] = []
++        for record in records:
++            size = record.voxel_size_um
++            if size is None and use_dirname_fallback:
++                size = record.parsed_um_from_name
++            if size is None:
++                continue
++            sizes.append(float(size))
++            sized_records.append(record)
++        if len(sizes) < 2:
++            continue
++        if max(sizes) / min(sizes) <= 1.0 + 1e-9:
++            continue
++        # Distinct sizes under one scale → ambiguity.
++        unique = tuple(sorted(set(sizes)))
++        if len(unique) < 2:
++            continue
++        ambiguous.append(
++            ScaleFrameAmbiguity(
++                scale=scale,
++                records=tuple(sized_records),
++                voxel_sizes_um=unique,
++            )
++        )
++    return ambiguous
++
++
++def frames_comparable(
++    metas: Sequence[Mapping[str, Any]],
++) -> bool:
++    """Return True only if every meta shares scale *and* voxel_size_um.
++
++    Scale pairs are compared with ``scale_pairs_close`` (``SCALE_RTOL``), not
++    exact float equality.  Without ``voxel_size_um``, same ``scale`` is not
++    enough to claim a shared frame (#1522).
++    """
++    if len(metas) < 2:
++        return True
++    scales = [scale_pair(m) for m in metas]
++    voxels = [get_voxel_size_um(m) if VOXEL_SIZE_UM_KEY in m else None for m in metas]
++    if any(s is None for s in scales) or any(v is None for v in voxels):
++        return False
++    assert scales[0] is not None
++    if not all(scale_pairs_close(s, scales[0]) for s in scales[1:] if s is not None):
++        return False
++    # Voxel sizes: exact equality is fine (µm tokens are short decimals).
++    return len(set(voxels)) == 1
+diff --git a/vesuvius/src/vesuvius/tifxyz/reader.py b/vesuvius/src/vesuvius/tifxyz/reader.py
+index 6a477f3..e7c74bc 100644
+--- a/vesuvius/src/vesuvius/tifxyz/reader.py
++++ b/vesuvius/src/vesuvius/tifxyz/reader.py
+@@ -434,15 +434,22 @@ class TifxyzReader:
+                 float(max_coords[2]),  # z_max
+             )
+ 
+-        # Extract known fields and put rest in extra
+-        known_keys = {"uuid", "scale", "bbox", "area"}
++        # Extract known fields and put rest in extra.
++        # voxel_size_um is optional (villa #1522): µm per voxel of this mesh's
++        # scan.  scale alone does not identify the physical frame.
++        known_keys = {"uuid", "scale", "bbox", "area", "voxel_size_um"}
+         extra = {k: v for k, v in meta_dict.items() if k not in known_keys}
+ 
++        voxel_size_um = meta_dict.get("voxel_size_um")
++        if voxel_size_um is not None:
++            voxel_size_um = float(voxel_size_um)
++
+         return {
+             "uuid": meta_dict.get("uuid", self.path.name),
+             "scale": scale,
+             "bbox": bbox,
+             "area": meta_dict.get("area"),
++            "voxel_size_um": voxel_size_um,
+             "extra": extra,
+         }
+ 
+@@ -701,6 +708,9 @@ class TifxyzReader:
+                 "using the extent of the valid coordinates instead",
+                 self.path,
+             )
++        extra = dict(meta["extra"])
++        if meta.get("voxel_size_um") is not None:
++            extra["voxel_size_um"] = meta["voxel_size_um"]
+         return Tifxyz(
+             _x=x,
+             _y=y,
+@@ -709,7 +719,7 @@ class TifxyzReader:
+             _scale=meta["scale"],
+             bbox=bbox,
+             area=meta["area"],
+-            extra=meta["extra"],
++            extra=extra,
+             _mask=mask,
+             path=self.path,
+             _labels=labels,
+diff --git a/vesuvius/src/vesuvius/tifxyz/writer.py b/vesuvius/src/vesuvius/tifxyz/writer.py
+index 811110e..562a6b4 100644
+--- a/vesuvius/src/vesuvius/tifxyz/writer.py
++++ b/vesuvius/src/vesuvius/tifxyz/writer.py
+@@ -189,8 +189,15 @@ class TifxyzWriter:
+         if surface.area is not None:
+             meta_dict["area"] = surface.area
+ 
+-        # Add extra fields
+-        meta_dict.update(surface.extra)
++        # Optional physical voxel size (µm).  scale is scan-relative grid density
++        # only; voxel_size_um is what lets consumers compare frames (#1522).
++        voxel_size_um = surface.extra.get("voxel_size_um")
++        if voxel_size_um is not None:
++            meta_dict["voxel_size_um"] = float(voxel_size_um)
++
++        # Add extra fields (do not duplicate voxel_size_um under extra-only)
++        extras = {k: v for k, v in surface.extra.items() if k != "voxel_size_um"}
++        meta_dict.update(extras)
+ 
+         # Write JSON
+         output_path = self.path / "meta.json"
+diff --git a/vesuvius/tests/tifxyz/test_meta_frames.py b/vesuvius/tests/tifxyz/test_meta_frames.py
+new file mode 100644
+index 0000000..869ae5f
+--- /dev/null
++++ b/vesuvius/tests/tifxyz/test_meta_frames.py
+@@ -0,0 +1,190 @@
++"""Tests for tifxyz frame / voxel_size_um helpers (villa #1522)."""
++
++from __future__ import annotations
++
++import importlib.util
++import json
++import math
++import sys
++from pathlib import Path
++
++import pytest
++
++# Avoid pulling OpenCV via vesuvius.tifxyz.__init__ -> reader on light CPU boxes.
++_HERE = Path(__file__).resolve()
++_SRC_META = (
++    _HERE.parents[2] / "src" / "vesuvius" / "tifxyz" / "meta_frames.py"
++)
++if not _SRC_META.is_file():
++    # Installed / editable layout
++    import vesuvius
++
++    _SRC_META = (
++        Path(vesuvius.__file__).resolve().parent / "tifxyz" / "meta_frames.py"
++    )
++
++
++def _load_meta_frames():
++    spec = importlib.util.spec_from_file_location(
++        "vesuvius_tifxyz_meta_frames_under_test", _SRC_META
++    )
++    mod = importlib.util.module_from_spec(spec)
++    assert spec.loader is not None
++    sys.modules[spec.name] = mod
++    spec.loader.exec_module(mod)
++    return mod
++
++
++meta_frames = _load_meta_frames()
++VOXEL_SIZE_UM_KEY = meta_frames.VOXEL_SIZE_UM_KEY
++SCALE_RTOL = meta_frames.SCALE_RTOL
++annotate_meta_voxel_size_um = meta_frames.annotate_meta_voxel_size_um
++find_ambiguous_scale_frames = meta_frames.find_ambiguous_scale_frames
++frames_comparable = meta_frames.frames_comparable
++parse_voxel_size_um_from_name = meta_frames.parse_voxel_size_um_from_name
++scale_pairs_close = meta_frames.scale_pairs_close
++
++# Exact floats observed in public open-data meta.json (2026-10-05 HST):
++# JSON literal 0.05 vs float64 expansion of float32(0.05).
++SCALE_JSON_0_05 = (0.05, 0.05)
++SCALE_F32_0_05 = (0.05000000074505806, 0.05000000074505806)
++
++
++def _write_mesh(root: Path, name: str, *, scale, voxel_size_um=None) -> Path:
++    path = root / name
++    path.mkdir(parents=True)
++    meta = {"uuid": name, "scale": list(scale), "type": "seg", "format": "tifxyz"}
++    if voxel_size_um is not None:
++        meta[VOXEL_SIZE_UM_KEY] = voxel_size_um
++    (path / "meta.json").write_text(json.dumps(meta, indent=2) + "\n")
++    return path
++
++
++@pytest.mark.parametrize(
++    "name,expected",
++    [
++        ("-on-20260608103018-1.129um.tifxyz", 1.129),
++        ("-on-20230205180739-7.91um.tifxyz", 7.91),
++        ("-on-20260310170716-45.532um.tifxyz", 45.532),
++        ("plain-no-um.tifxyz", None),
++    ],
++)
++def test_parse_voxel_size_um_from_name(name, expected):
++    got = parse_voxel_size_um_from_name(name)
++    if expected is None:
++        assert got is None
++    else:
++        assert got == pytest.approx(expected)
++
++
++def test_annotate_meta_from_dirname(tmp_path: Path):
++    mesh = _write_mesh(tmp_path, "-on-20260411134726-2.4um.tifxyz", scale=(0.05, 0.05))
++    assert annotate_meta_voxel_size_um(mesh) == pytest.approx(2.4)
++    meta = json.loads((mesh / "meta.json").read_text())
++    assert meta[VOXEL_SIZE_UM_KEY] == pytest.approx(2.4)
++    assert annotate_meta_voxel_size_um(mesh, voxel_size_um=9.0) == pytest.approx(2.4)
++    assert annotate_meta_voxel_size_um(mesh, voxel_size_um=9.0, overwrite=True) == pytest.approx(9.0)
++
++
++def test_find_ambiguous_scale_frames_matches_issue_example(tmp_path: Path):
++    mesh_root = tmp_path / "mesh"
++    mesh_root.mkdir()
++    for name in [
++        "-on-20260608103018-1.129um.tifxyz",
++        "-on-20260411134726-2.4um.tifxyz",
++        "-on-20230205180739-7.91um.tifxyz",
++        "-on-20260310170716-45.532um.tifxyz",
++    ]:
++        _write_mesh(mesh_root, name, scale=(0.05, 0.05))
++
++    ambiguous = find_ambiguous_scale_frames(mesh_root)
++    assert len(ambiguous) == 1
++    group = ambiguous[0]
++    assert group.scale == (0.05, 0.05)
++    assert group.voxel_sizes_um == (1.129, 2.4, 7.91, 45.532)
++    assert group.spread_ratio == pytest.approx(45.532 / 1.129, rel=1e-6)
++
++
++def test_find_ambiguous_scale_frames_clear_when_voxel_sizes_match(tmp_path: Path):
++    mesh_root = tmp_path / "mesh"
++    mesh_root.mkdir()
++    _write_mesh(mesh_root, "a-7.91um.tifxyz", scale=(0.05, 0.05), voxel_size_um=7.91)
++    _write_mesh(mesh_root, "b-7.91um.tifxyz", scale=(0.05, 0.05), voxel_size_um=7.91)
++    assert find_ambiguous_scale_frames(mesh_root) == []
++
++
++def test_frames_comparable_requires_voxel_size():
++    a = {"scale": [0.05, 0.05]}
++    b = {"scale": [0.05, 0.05]}
++    assert frames_comparable([a, b]) is False
++    a[VOXEL_SIZE_UM_KEY] = 7.91
++    b[VOXEL_SIZE_UM_KEY] = 7.91
++    assert frames_comparable([a, b]) is True
++    b[VOXEL_SIZE_UM_KEY] = 1.129
++    assert frames_comparable([a, b]) is False
++
++
++def test_scale_pairs_close_covers_float32_roundtrip():
++    """Real open-data pair: JSON 0.05 vs float32(0.05) as float64."""
++    assert SCALE_RTOL == 1e-6
++    assert scale_pairs_close(SCALE_JSON_0_05, SCALE_F32_0_05) is True
++    # Sanity: intentional different scales stay apart
++    assert scale_pairs_close((0.05, 0.05), (0.1, 0.1)) is False
++    rel = abs(SCALE_JSON_0_05[0] - SCALE_F32_0_05[0]) / SCALE_F32_0_05[0]
++    assert rel < SCALE_RTOL
++    assert math.isclose(
++        SCALE_JSON_0_05[0], SCALE_F32_0_05[0], rel_tol=SCALE_RTOL, abs_tol=0.0
++    )
++
++
++def test_find_ambiguous_merges_float32_and_json_scale_paris4_pattern(tmp_path: Path):
++    """Paris4 footgun: 7.91 meta uses 0.05; siblings use float32 expansion.
++
++    Without tolerance the 7.91 mesh was dropped (3 of 4). Must list all four.
++    """
++    mesh_root = tmp_path / "mesh"
++    mesh_root.mkdir()
++    _write_mesh(
++        mesh_root,
++        "20230702185753-on-20230205180739-7.91um.tifxyz",
++        scale=SCALE_JSON_0_05,
++    )
++    _write_mesh(
++        mesh_root,
++        "20230702185753-on-20260310170716-45.532um.tifxyz",
++        scale=SCALE_F32_0_05,
++    )
++    _write_mesh(
++        mesh_root,
++        "20230702185753-on-20260411134726-2.4um.tifxyz",
++        scale=SCALE_F32_0_05,
++    )
++    _write_mesh(
++        mesh_root,
++        "20230702185753-on-20260608103018-1.129um.tifxyz",
++        scale=SCALE_F32_0_05,
++    )
++    ambiguous = find_ambiguous_scale_frames(mesh_root)
++    assert len(ambiguous) == 1
++    group = ambiguous[0]
++    assert len(group.records) == 4
++    assert group.voxel_sizes_um == (1.129, 2.4, 7.91, 45.532)
++    assert group.spread_ratio == pytest.approx(45.532 / 1.129, rel=1e-6)
++
++
++def test_frames_comparable_same_um_twins_with_scale_jitter():
++    """PHerc0172 twins: same 7.91um, scales 0.05 vs float32 expansion."""
++    a = {"scale": list(SCALE_JSON_0_05), VOXEL_SIZE_UM_KEY: 7.91}
++    b = {"scale": list(SCALE_F32_0_05), VOXEL_SIZE_UM_KEY: 7.91}
++    assert frames_comparable([a, b]) is True
++    # Cross-µm must stay False even with matching float32 scales
++    c = {"scale": list(SCALE_F32_0_05), VOXEL_SIZE_UM_KEY: 1.129}
++    assert frames_comparable([b, c]) is False
++
++
++def test_reader_known_keys_include_voxel_size_um():
++    """Contract: reader promotes voxel_size_um out of extra (#1522)."""
++    reader_py = _SRC_META.with_name("reader.py")
++    src = reader_py.read_text(encoding="utf-8")
++    assert 'known_keys = {"uuid", "scale", "bbox", "area", "voxel_size_um"}' in src
++    assert '"voxel_size_um": voxel_size_um' in src
+-- 
+2.47.3
+

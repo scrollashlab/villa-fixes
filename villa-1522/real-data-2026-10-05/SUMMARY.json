@@ -1,0 +1,96 @@
+{
+  "villa_main": "0e14cf48c8cee74b11e5e40a9d1d520b74e35423",
+  "env": "/workspace/envs/zarr3",
+  "scale_rtol": 1e-06,
+  "scale_atol": 0.0,
+  "tolerance_note": "SCALE_RTOL=1e-6 via math.isclose; observed open-data pair 0.05 vs 0.05000000074505806 has rel\u22481.49e-8 (~67\u00d7 margin).",
+  "groups": {
+    "paris4-40x": {
+      "before_dirname_um_spread": 40.329495128432235,
+      "before_ref_um": 7.91,
+      "before_worst_naive_over_true_bbox_diag_ratio": 7.006200177147918,
+      "after_n_ambiguous_groups": 1,
+      "after_ambiguous_spreads": [
+        40.329495128432235
+      ],
+      "after_ambiguous_n_meshes": [
+        4
+      ],
+      "after_frames_comparable_pre_annotate": false,
+      "after_pairwise_true": 0,
+      "after_pairwise_false": 6,
+      "after_voxel_size_um_written": [
+        7.91,
+        45.532,
+        2.4,
+        1.129
+      ],
+      "scale_rtol": 1e-06
+    },
+    "paris4-19x": {
+      "before_dirname_um_spread": 18.971666666666668,
+      "before_ref_um": 7.91,
+      "before_worst_naive_over_true_bbox_diag_ratio": 3.2958333333333334,
+      "after_n_ambiguous_groups": 1,
+      "after_ambiguous_spreads": [
+        18.971666666666668
+      ],
+      "after_ambiguous_n_meshes": [
+        3
+      ],
+      "after_frames_comparable_pre_annotate": false,
+      "after_pairwise_true": 0,
+      "after_pairwise_false": 3,
+      "after_voxel_size_um_written": [
+        7.91,
+        45.532,
+        2.4
+      ],
+      "scale_rtol": 1e-06
+    },
+    "pherc0172-same-um": {
+      "before_dirname_um_spread": 1.0,
+      "before_ref_um": 7.91,
+      "before_worst_naive_over_true_bbox_diag_ratio": 1.0,
+      "after_n_ambiguous_groups": 0,
+      "after_ambiguous_spreads": [],
+      "after_ambiguous_n_meshes": [],
+      "after_frames_comparable_pre_annotate": false,
+      "after_pairwise_true": 1,
+      "after_pairwise_false": 0,
+      "after_voxel_size_um_written": [
+        7.91,
+        7.91
+      ],
+      "scale_rtol": 1e-06
+    },
+    "pherc0139-8x": {
+      "before_dirname_um_spread": 8.29229406554473,
+      "before_ref_um": 9.362,
+      "before_worst_naive_over_true_bbox_diag_ratio": 8.292294065544729,
+      "after_n_ambiguous_groups": 1,
+      "after_ambiguous_spreads": [
+        8.29229406554473
+      ],
+      "after_ambiguous_n_meshes": [
+        5
+      ],
+      "after_frames_comparable_pre_annotate": false,
+      "after_pairwise_true": 1,
+      "after_pairwise_false": 9,
+      "after_voxel_size_um_written": [
+        9.362,
+        2.403,
+        2.399,
+        2.403,
+        1.129
+      ],
+      "scale_rtol": 1e-06
+    }
+  },
+  "verification": {
+    "paris4_40x_ambiguous_lists_4_of_4": true,
+    "pherc0172_same_um_comparable_true": true,
+    "cross_um_stay_false": true
+  }
+}

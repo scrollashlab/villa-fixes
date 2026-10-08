@@ -1,0 +1,6 @@
+base {"z0": 0, "chunks_read": 20, "nonempty_chunks": 20, "cache_bytes": 29360128, "budget_bytes": 30000000, "ratio": 0.979}
+base {"z0": 4, "chunks_read": 20, "nonempty_chunks": 20, "cache_bytes": 58720256, "budget_bytes": 30000000, "ratio": 1.957}
+base {"z0": 8, "chunks_read": 20, "nonempty_chunks": 20, "cache_bytes": 54525952, "budget_bytes": 30000000, "ratio": 1.818}
+patched {"z0": 0, "chunks_read": 20, "nonempty_chunks": 20, "cache_bytes": 29360128, "budget_bytes": 30000000, "ratio": 0.979}
+patched {"z0": 4, "chunks_read": 20, "nonempty_chunks": 20, "cache_bytes": 29360128, "budget_bytes": 30000000, "ratio": 0.979}
+patched {"z0": 8, "chunks_read": 20, "nonempty_chunks": 20, "cache_bytes": 29360128, "budget_bytes": 30000000, "ratio": 0.979}

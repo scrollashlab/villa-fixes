@@ -1,0 +1,49 @@
+From 098264432fa9ffa2ad00233c2fea8f163953a1f5 Mon Sep 17 00:00:00 2001
+From: Scroll Ash Lab <scrollash.lab@gmail.com>
+Date: Sun, 4 Oct 2026 22:30:35 -1000
+Subject: [PATCH] readme: warn that pip on Python 3.14 installs vesuvius 0.1.10
+ (#1300)
+
+main requires Python >=3.14,<3.15 while PyPI 0.2.4 caps at <3.14, so the
+README's `pip install vesuvius` resolves to the last unrestricted release
+(0.1.10). Document the mismatch and a git install path until PyPI catches up.
+---
+ vesuvius/README.md                        | 6 ++++++
+ vesuvius/tests/test_readme_entrypoints.py | 7 +++++++
+ 2 files changed, 13 insertions(+)
+
+diff --git a/vesuvius/README.md b/vesuvius/README.md
+index e47de94..f0f3b8c 100644
+--- a/vesuvius/README.md
++++ b/vesuvius/README.md
+@@ -68,6 +68,12 @@ $ pip install vesuvius
+ $ vesuvius.accept_terms --yes
+ ```
+ 
++> **Python version note (see [#1300](https://github.com/ScrollPrize/villa/issues/1300)):**
++> This repository's `pyproject.toml` currently requires Python `>=3.14,<3.15`, while the latest PyPI release (`vesuvius` 0.2.4) declares `requires_python` `<3.14,>=3.10`. On Python 3.14, `pip install vesuvius` therefore resolves to the older PyPI release `0.1.10` (which allows `>=3.8`) rather than current `main`. Prefer installing from this repository until PyPI ships a 3.14-compatible build, for example:
++> ```sh
++> pip install "vesuvius @ git+https://github.com/ScrollPrize/villa.git#subdirectory=vesuvius"
++> ```
++
+ ___
+ **Note:** 
+ 
+diff --git a/vesuvius/tests/test_readme_entrypoints.py b/vesuvius/tests/test_readme_entrypoints.py
+index dba16a8..60a6ff2 100644
+--- a/vesuvius/tests/test_readme_entrypoints.py
++++ b/vesuvius/tests/test_readme_entrypoints.py
+@@ -65,3 +65,10 @@ def test_readme_does_not_instruct_running_proofreader_console_script():
+     text = README.read_text(encoding="utf-8")
+     assert "Run `vesuvius.proofreader`" not in text
+     assert "/utils/vc_proofreader/config.py" not in text
++
++
++def test_readme_warns_about_python314_pypi_lag():
++    text = README.read_text(encoding="utf-8")
++    assert "0.1.10" in text
++    assert "Python version note" in text or "python version note" in text.lower()
++    assert "git+https://github.com/ScrollPrize/villa.git#subdirectory=vesuvius" in text
+-- 
+2.47.3
+

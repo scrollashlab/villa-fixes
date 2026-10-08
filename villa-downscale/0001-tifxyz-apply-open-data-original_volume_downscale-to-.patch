@@ -1,0 +1,589 @@
+From f18316b86e5a336d27fecb88a69e50fd68a269dc Mon Sep 17 00:00:00 2001
+From: Scroll Ash Lab <scrollash.lab@gmail.com>
+Date: Wed, 7 Oct 2026 11:31:40 -1000
+Subject: [PATCH] tifxyz: apply open-data original_volume_downscale to
+ tifxyz_normalized meshes
+
+In the open-data bucket the tifxyz_normalized mesh of 112 of 323 segments
+(PHercParis4 x4, PHerc0139 x4, PHerc0500P2 x2; catalog of 2026-10-07) is
+stored at 1/original_volume_downscale of the segment's original volume. The
+factor is in the bucket catalog (metadata.json, segment
+properties.original_volume_downscale); the mesh's meta.json does not carry it,
+and vesuvius.tifxyz had no way to apply it, so read_tifxyz returned
+coordinates that are centimetres off in the original volume. VC3D's Open
+Data cache already applies the factor; this brings the Python reader level.
+
+- read_tifxyz(path, downscale=s): multiply valid coordinates by s via the
+  existing Tifxyz.retarget(1/s) (bbox recomputed, grid scale divided by s)
+  and record extra["original_volume_downscale_applied"]. A mesh carrying
+  that marker, or VC3D's vc_open_data_coordinates_scaled_to_original_volume,
+  is never scaled again (downscale != 1 raises).
+- vesuvius.tifxyz.open_data: original_volume_downscale(catalog, sample,
+  segment) reads the catalog field (segment id or long_id; plain or gzip
+  metadata.json), read_open_data_normalized(path, catalog) infers
+  sample/segment from the bucket layout and applies the factor.
+- Without downscale=, reading a .../mesh/intermediate/tifxyz_normalized
+  directory emits OpenDataDownscaleWarning; downscale=1 silences it.
+  Default behaviour is otherwise unchanged.
+
+Related: #1734 (catalog bbox through the downscale), #1522, #1727.
+---
+ vesuvius/src/vesuvius/tifxyz/API.md           |  53 +++++
+ vesuvius/src/vesuvius/tifxyz/__init__.py      |  11 +
+ vesuvius/src/vesuvius/tifxyz/open_data.py     | 155 +++++++++++++
+ vesuvius/src/vesuvius/tifxyz/reader.py        |  40 ++++
+ .../tests/tifxyz/test_open_data_downscale.py  | 211 ++++++++++++++++++
+ 5 files changed, 470 insertions(+)
+ create mode 100644 vesuvius/src/vesuvius/tifxyz/open_data.py
+ create mode 100644 vesuvius/tests/tifxyz/test_open_data_downscale.py
+
+diff --git a/vesuvius/src/vesuvius/tifxyz/API.md b/vesuvius/src/vesuvius/tifxyz/API.md
+index 86a43ea51..7f49fee64 100644
+--- a/vesuvius/src/vesuvius/tifxyz/API.md
++++ b/vesuvius/src/vesuvius/tifxyz/API.md
+@@ -520,3 +520,56 @@ z_valid = z[valid]
+ # Get all valid coordinates as point cloud
+ points = np.stack([x[valid], y[valid], z[valid]], axis=1)
+ ```
++
++---
++
++## Open data: `original_volume_downscale` (`tifxyz_normalized` meshes)
++
++In the open-data bucket every segment has a normalized mesh at
++`<sample>/segments/<segment>/mesh/intermediate/tifxyz_normalized/`. For some
++segments its coordinates are stored at `1 / original_volume_downscale` of the
++segment's original volume. On the 2026-10-07 catalog the factor is 4 or 2 for
++112 of 323 segments, in PHercParis4, PHerc0139 and PHerc0500P2.
++
++The factor is recorded in the bucket catalog `metadata.json`, under
++`samples[<sample>].segments[<segment>].properties.original_volume_downscale`.
++The mesh's own `meta.json` does not record it. Using those coordinates as
++voxels of the original volume, or applying a catalog transform to them, is
++off by that factor. The published transformed meshes
++(`mesh/<id>-on-<volume>-<um>.tifxyz`) already include it.
++
++```python
++from vesuvius.tifxyz import read_tifxyz, read_open_data_normalized, original_volume_downscale
++
++# Catalog-aware: sample/segment are taken from the bucket-layout path
++surface = read_open_data_normalized(
++    "PHerc0139/segments/20250108000004-w029_2025010827/mesh/intermediate/tifxyz_normalized",
++    "metadata.json",            # local copy of the bucket's metadata.json (plain or .gz)
++)
++
++# Explicit factor
++s = original_volume_downscale("metadata.json", "PHerc0139", "20250108000004")  # 4.0
++surface = read_tifxyz(path, downscale=s)
++surface.extra["original_volume_downscale_applied"]  # 4.0
++```
++
++What `downscale=s` does:
++
++- It calls `retarget(1 / s)`. Valid coordinates are multiplied by `s`, and
++  invalid points stay `-1`.
++- `bbox` is recomputed from the scaled valid points.
++- The grid `scale` is divided by `s`, so `full_resolution_shape` stays one
++  pixel per original-volume voxel.
++- It records `extra["original_volume_downscale_applied"]`, which `write_tifxyz`
++  saves to `meta.json`. A mesh that carries this key, or VC3D's
++  `vc_open_data_coordinates_scaled_to_original_volume` (written by VC3D's Open
++  Data cache after it scales a segment), is already in original-volume voxels:
++  `downscale=` other than 1 raises `ValueError` instead of scaling twice.
++
++With `downscale=None` (the default), nothing is applied. If the directory is an
++open-data `mesh/intermediate/tifxyz_normalized` path, an
++`OpenDataDownscaleWarning` is emitted. Pass `downscale=1` when the factor is
++known to be 1.
++
++`list_tifxyz` / `TifxyzInfo.bbox` report the stored, unscaled bbox, because
++they never see the catalog. `TifxyzInfo.load(downscale=s)` applies the factor.
+diff --git a/vesuvius/src/vesuvius/tifxyz/__init__.py b/vesuvius/src/vesuvius/tifxyz/__init__.py
+index d09b3cf7d..e6fdc51ad 100644
+--- a/vesuvius/src/vesuvius/tifxyz/__init__.py
++++ b/vesuvius/src/vesuvius/tifxyz/__init__.py
+@@ -35,6 +35,12 @@ from .reader import (
+     load_folder,
+     read_tifxyz,
+ )
++from .open_data import (
++    OpenDataDownscaleWarning,
++    load_open_data_catalog,
++    original_volume_downscale,
++    read_open_data_normalized,
++)
+ from .types import Tifxyz
+ from .upsampling import (
+     catmull_rom_smooth_1d,
+@@ -55,6 +61,11 @@ __all__ = [
+     "list_tifxyz",
+     "load_folder",
+     "TifxyzInfo",
++    # Open-data original_volume_downscale (tifxyz_normalized meshes)
++    "read_open_data_normalized",
++    "original_volume_downscale",
++    "load_open_data_catalog",
++    "OpenDataDownscaleWarning",
+     # Writer
+     "write_tifxyz",
+     "TifxyzWriter",
+diff --git a/vesuvius/src/vesuvius/tifxyz/open_data.py b/vesuvius/src/vesuvius/tifxyz/open_data.py
+new file mode 100644
+index 000000000..f28d1ccfb
+--- /dev/null
++++ b/vesuvius/src/vesuvius/tifxyz/open_data.py
+@@ -0,0 +1,155 @@
++"""Open-data helpers: ``original_volume_downscale`` for ``tifxyz_normalized`` meshes.
++
++In the Vesuvius Challenge open-data bucket every segment ships a normalized mesh at
++``<sample>/segments/<segment>/mesh/intermediate/tifxyz_normalized/``. For some segments
++those coordinates are stored at ``1 / original_volume_downscale`` of the segment's
++original volume (factor 4 or 2 on the 2026-10-07 catalog). The factor is recorded in
++the bucket catalog (``metadata.json``)::
++
++    samples[<sample>]["segments"][<segment id>]["properties"]["original_volume_downscale"]
++
++The mesh's own ``meta.json`` does not record it. A caller that uses those
++coordinates as voxels of the original volume, or applies a catalog transform to
++them, is off by a factor of ``original_volume_downscale``. That is centimetres
++on the published scrolls.
++
++``read_tifxyz(path, downscale=...)`` applies the factor explicitly. The helpers
++here look it up from a local copy of the catalog. Nothing here downloads
++anything.
++"""
++
++from __future__ import annotations
++
++import gzip
++import json
++import math
++import warnings
++from pathlib import Path
++from typing import Any, Mapping, Optional, Tuple, Union
++
++DOWNSCALE_PROPERTY = "original_volume_downscale"
++DOWNSCALE_APPLIED_KEY = "original_volume_downscale_applied"
++# VC3D's Open Data cache writes this meta.json key after it has scaled a cached segment
++# (apps/VC3D/OpenDataSegmentCache.cpp, applyOriginalVolumeDownscale). Either key means the
++# coordinates are already original-volume voxels.
++VC3D_SCALED_KEY = "vc_open_data_coordinates_scaled_to_original_volume"
++ALREADY_SCALED_KEYS = (DOWNSCALE_APPLIED_KEY, VC3D_SCALED_KEY)
++NORMALIZED_MESH_PARTS = ("mesh", "intermediate", "tifxyz_normalized")
++
++CatalogLike = Union[Mapping[str, Any], str, Path]
++
++
++class OpenDataDownscaleWarning(UserWarning):
++    """A ``tifxyz_normalized`` mesh was read without an explicit ``downscale``."""
++
++
++def load_open_data_catalog(path: Union[str, Path]) -> dict:
++    """Load a local copy of the open-data ``metadata.json`` (plain or gzip-compressed)."""
++    raw = Path(path).read_bytes()
++    if raw[:2] == b"\x1f\x8b":
++        raw = gzip.decompress(raw)
++    return json.loads(raw)
++
++
++def _catalog(catalog: CatalogLike) -> Mapping[str, Any]:
++    if isinstance(catalog, (str, Path)):
++        return load_open_data_catalog(catalog)
++    return catalog
++
++
++def _find_segment(catalog: Mapping[str, Any], sample: str, segment: str) -> Mapping[str, Any]:
++    try:
++        segments = catalog["samples"][sample]["segments"]
++    except KeyError:
++        raise KeyError(f"sample {sample!r} not found in the open-data catalog") from None
++    if segment in segments:
++        return segments[segment]
++    # The bucket directory name is the segment's long_id (e.g. "20250108000004-w029_2025010827").
++    hits = [g for g in segments.values() if g.get("long_id") == segment]
++    if len(hits) != 1:
++        raise KeyError(f"segment {segment!r} not found in sample {sample!r} of the open-data catalog")
++    return hits[0]
++
++
++def original_volume_downscale(catalog: CatalogLike, sample: str, segment: str) -> float:
++    """Return ``properties.original_volume_downscale`` for a segment (1.0 if absent).
++
++    ``catalog`` is the parsed ``metadata.json`` or a path to a local copy.
++    ``segment`` may be the catalog segment id or its ``long_id`` (the bucket directory name).
++    """
++    seg = _find_segment(_catalog(catalog), sample, segment)
++    value = (seg.get("properties") or {}).get(DOWNSCALE_PROPERTY)
++    factor = 1.0 if value is None else float(value)
++    _check_factor(factor)
++    return factor
++
++
++def parse_open_data_normalized_path(path: Union[str, Path]) -> Optional[Tuple[str, str]]:
++    """Return ``(sample, segment_dir)`` if ``path`` follows the bucket layout
++    ``<sample>/segments/<segment_dir>/mesh/intermediate/tifxyz_normalized``, else None."""
++    parts = Path(path).parts
++    n = len(NORMALIZED_MESH_PARTS)
++    if len(parts) < n + 3 or tuple(parts[-n:]) != NORMALIZED_MESH_PARTS:
++        return None
++    if parts[-n - 2] != "segments":
++        return None
++    return parts[-n - 3], parts[-n - 1]
++
++
++def is_open_data_normalized_path(path: Union[str, Path]) -> bool:
++    """True if the directory is named like an open-data ``.../mesh/intermediate/tifxyz_normalized``."""
++    return tuple(Path(path).parts[-len(NORMALIZED_MESH_PARTS):]) == NORMALIZED_MESH_PARTS
++
++
++def _check_factor(factor: float) -> None:
++    if not (isinstance(factor, (int, float)) and math.isfinite(factor) and factor > 0):
++        raise ValueError(f"downscale must be a finite number > 0, got {factor!r}")
++
++
++def applied_downscale_marker(extra: Mapping[str, Any]) -> Optional[Tuple[str, Any]]:
++    """Return ``(key, value)`` of the first already-scaled marker in a mesh's ``meta.json`` extras, or None."""
++    for key in ALREADY_SCALED_KEYS:
++        if extra.get(key) is not None:
++            return key, extra[key]
++    return None
++
++
++def warn_missing_downscale(path: Union[str, Path]) -> None:
++    """Warn that a ``tifxyz_normalized`` mesh was read without an explicit ``downscale``."""
++    warnings.warn(
++        f"{path}: open-data tifxyz_normalized coordinates may be stored at "
++        f"1/{DOWNSCALE_PROPERTY} of the segment's original volume (e.g. x4 or x2), and "
++        "meta.json does not record the factor. Pass downscale=<catalog "
++        f"properties.{DOWNSCALE_PROPERTY}> (or downscale=1 if you know it is 1), or use "
++        "vesuvius.tifxyz.read_open_data_normalized(path, catalog).",
++        OpenDataDownscaleWarning,
++        stacklevel=3,
++    )
++
++
++def read_open_data_normalized(
++    path: Union[str, Path],
++    catalog: CatalogLike,
++    *,
++    sample: Optional[str] = None,
++    segment: Optional[str] = None,
++    **read_kwargs: Any,
++):
++    """Read an open-data ``tifxyz_normalized`` mesh in original-volume voxel coordinates.
++
++    Looks up ``original_volume_downscale`` in ``catalog`` (parsed ``metadata.json`` or a
++    path to a local copy) and passes it to ``read_tifxyz(..., downscale=...)``. ``sample``
++    and ``segment`` default to the names in a bucket-layout ``path``.
++    """
++    from .reader import read_tifxyz
++
++    if sample is None or segment is None:
++        parsed = parse_open_data_normalized_path(path)
++        if parsed is None:
++            raise ValueError(
++                f"{path}: cannot infer sample/segment from the path; pass sample= and segment="
++            )
++        sample = parsed[0] if sample is None else sample
++        segment = parsed[1] if segment is None else segment
++    factor = original_volume_downscale(catalog, sample, segment)
++    return read_tifxyz(path, downscale=factor, **read_kwargs)
+diff --git a/vesuvius/src/vesuvius/tifxyz/reader.py b/vesuvius/src/vesuvius/tifxyz/reader.py
+index 6a477f38e..2c63df4a5 100644
+--- a/vesuvius/src/vesuvius/tifxyz/reader.py
++++ b/vesuvius/src/vesuvius/tifxyz/reader.py
+@@ -17,6 +17,13 @@ import cv2
+ import numpy as np
+ import tifffile
+ 
++from .open_data import (
++    DOWNSCALE_APPLIED_KEY,
++    _check_factor as _check_downscale_factor,
++    applied_downscale_marker,
++    is_open_data_normalized_path,
++    warn_missing_downscale,
++)
+ from .types import Tifxyz
+ 
+ logger = logging.getLogger(__name__)
+@@ -309,6 +316,7 @@ def read_tifxyz(
+     validate: bool = True,
+     volume_path: Optional[Union[str, Path]] = None,
+     discover_label_shapes: bool = False,
++    downscale: Optional[float] = None,
+ ) -> Tifxyz:
+     """Read a tifxyz directory into a Tifxyz object.
+ 
+@@ -326,6 +334,17 @@ def read_tifxyz(
+     discover_label_shapes : bool
+         If True, read candidate label images during discovery to validate their
+         shapes. Default False keeps label discovery metadata-only.
++    downscale : float, optional
++        Open-data ``original_volume_downscale`` of the segment (catalog
++        ``metadata.json``: ``samples[s].segments[g].properties``). The stored
++        coordinates are multiplied by it (``Tifxyz.retarget(1 / downscale)``:
++        valid points and bbox scaled, grid ``scale`` divided), giving voxels of
++        the segment's original volume. ``tifxyz_normalized`` meshes from the
++        open-data bucket need this when the factor is not 1; their ``meta.json``
++        does not record it. Default None applies nothing and warns
++        (``OpenDataDownscaleWarning``) if the path is an open-data
++        ``mesh/intermediate/tifxyz_normalized`` directory; pass 1 to silence.
++        See also ``read_open_data_normalized``.
+ 
+     Returns
+     -------
+@@ -340,6 +359,8 @@ def read_tifxyz(
+     ValueError
+         If validation fails (shape mismatch, invalid data).
+     """
++    if downscale is not None:
++        _check_downscale_factor(downscale)
+     reader = TifxyzReader(path)
+     tifxyz = reader.read(
+         load_mask=load_mask,
+@@ -347,6 +368,25 @@ def read_tifxyz(
+         discover_label_shapes=discover_label_shapes,
+     )
+ 
++    already = applied_downscale_marker(tifxyz.extra)
++    if downscale is None:
++        if already is None and is_open_data_normalized_path(reader.path):
++            warn_missing_downscale(reader.path)
++    else:
++        factor = float(downscale)
++        if already is not None:
++            # Written after a downscale was handled (by this package or by VC3D's Open Data
++            # cache): the coordinates are already original-volume voxels. Never scale twice.
++            if factor != 1.0:
++                raise ValueError(
++                    f"{reader.path}: meta.json says {already[0]}={already[1]}; "
++                    "the coordinates are already in original-volume voxels"
++                )
++        else:
++            if factor != 1.0:
++                tifxyz = tifxyz.retarget(1.0 / factor)
++            tifxyz.extra[DOWNSCALE_APPLIED_KEY] = factor
++
+     if volume_path is not None:
+         import zarr
+ 
+diff --git a/vesuvius/tests/tifxyz/test_open_data_downscale.py b/vesuvius/tests/tifxyz/test_open_data_downscale.py
+new file mode 100644
+index 000000000..c0d26cfa7
+--- /dev/null
++++ b/vesuvius/tests/tifxyz/test_open_data_downscale.py
+@@ -0,0 +1,211 @@
++"""Open-data ``original_volume_downscale`` for ``tifxyz_normalized`` meshes.
++
++Normalized meshes of some open-data segments are stored at 1/original_volume_downscale
++of the original volume (x4 for PHercParis4 and PHerc0139, x2 for PHerc0500P2 on the
++2026-10-07 catalog). The factor is in the bucket catalog
++(samples[s].segments[g].properties.original_volume_downscale), not in meta.json.
++The fixtures below reproduce that layout and catalog shape with synthetic coordinates.
++"""
++
++from __future__ import annotations
++
++import gzip
++import json
++import warnings
++from pathlib import Path
++
++import numpy as np
++import pytest
++import tifffile
++
++import vesuvius.tifxyz as tx
++from vesuvius.tifxyz import list_tifxyz, read_tifxyz, write_tifxyz
++
++# New names are looked up as tx.<name> inside each test (not imported at module level), so on a
++# tree without this change every test fails on its own instead of one collection error.
++
++SCALE = 0.05000000074505806  # float32 0.05 as the tracer meshes store it
++
++
++def _grid(rows: int = 12, cols: int = 9) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
++    r, c = np.mgrid[0:rows, 0:cols].astype(np.float32)
++    x = 1000.0 + 20.0 * c + 0.25 * r
++    y = 2000.0 + 20.0 * r
++    z = 3000.0 + 1.5 * c - 0.75 * r
++    x[0, 0] = y[0, 0] = z[0, 0] = -1.0  # holes, as published meshes have
++    x[5, 7] = y[5, 7] = z[5, 7] = -1.0
++    return x.astype(np.float32), y.astype(np.float32), z.astype(np.float32)
++
++
++def _write_mesh(d: Path, bbox_from_points: bool = True) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
++    d.mkdir(parents=True)
++    x, y, z = _grid()
++    for name, a in (("x", x), ("y", y), ("z", z)):
++        tifffile.imwrite(str(d / f"{name}.tif"), a)
++    v = z > 0
++    bbox = [[float(x[v].min()), float(y[v].min()), float(z[v].min())],
++            [float(x[v].max()), float(y[v].max()), float(z[v].max())]]
++    # the same keys a published tifxyz_normalized meta.json carries -- no downscale field
++    (d / "meta.json").write_text(json.dumps(
++        {"format": "tifxyz", "type": "seg", "uuid": d.parts[-4], "scale": [SCALE, SCALE], "bbox": bbox}))
++    return x, y, z
++
++
++def _normalized_dir(root: Path, sample: str, seg_dir: str) -> Path:
++    return root / sample / "segments" / seg_dir / "mesh" / "intermediate" / "tifxyz_normalized"
++
++
++CATALOG = {
++    "samples": {
++        "PHercTest": {
++            "segments": {
++                "20250108000004": {
++                    "id": "20250108000004",
++                    "long_id": "20250108000004-w029_test",
++                    "properties": {"original_volume_downscale": 4},
++                },
++                "20250101000000": {
++                    "id": "20250101000000",
++                    "long_id": "20250101000000-w001_test",
++                    "properties": {"original_volume_downscale": 1},
++                },
++                "20250102000000": {
++                    "id": "20250102000000",
++                    "long_id": "20250102000000-legacy",
++                    "properties": {},
++                },
++            }
++        }
++    }
++}
++
++
++@pytest.fixture()
++def ds4(tmp_path):
++    d = _normalized_dir(tmp_path, "PHercTest", "20250108000004-w029_test")
++    return d, _write_mesh(d)
++
++
++def test_downscale_scales_valid_points_bbox_and_grid_scale(ds4) -> None:
++    d, (x, y, z) = ds4
++    plain = read_tifxyz(d, downscale=1)
++    s = read_tifxyz(d, downscale=4)
++    v = z > 0
++    assert np.array_equal(s._valid_mask, v)
++    np.testing.assert_array_equal(s._x[v], 4 * x[v])
++    np.testing.assert_array_equal(s._y[v], 4 * y[v])
++    np.testing.assert_array_equal(s._z[v], 4 * z[v])
++    assert (s._x[~v] == -1).all() and (s._z[~v] == -1).all()  # holes keep the -1 marker
++    assert s.bbox == tuple(4 * b for b in plain.bbox)
++    assert s.get_scale_tuple() == (plain._scale[0] / 4, plain._scale[1] / 4)
++    # one full-resolution pixel is still one voxel -- of the original volume now
++    assert s.full_resolution_shape == (4 * plain.full_resolution_shape[0], 4 * plain.full_resolution_shape[1])
++    assert s.extra["original_volume_downscale_applied"] == 4.0
++    assert plain.extra["original_volume_downscale_applied"] == 1.0
++
++
++def test_normalized_path_without_downscale_warns(ds4) -> None:
++    d, (x, _, _) = ds4
++    with pytest.warns(tx.OpenDataDownscaleWarning, match="original_volume_downscale"):
++        s = read_tifxyz(d)
++    np.testing.assert_array_equal(s._x[1:], x[1:])  # default still applies nothing
++
++
++def test_explicit_downscale_and_other_paths_do_not_warn(ds4, tmp_path) -> None:
++    d, _ = ds4
++    other = tmp_path / "some" / "segment"
++    _write_mesh(other)
++    with warnings.catch_warnings():
++        warnings.simplefilter("error", tx.OpenDataDownscaleWarning)
++        read_tifxyz(d, downscale=1)
++        read_tifxyz(d, downscale=4)
++        read_tifxyz(other)
++
++
++def test_catalog_lookup_by_id_and_long_id(tmp_path) -> None:
++    assert tx.original_volume_downscale(CATALOG, "PHercTest", "20250108000004") == 4.0
++    assert tx.original_volume_downscale(CATALOG, "PHercTest", "20250108000004-w029_test") == 4.0
++    assert tx.original_volume_downscale(CATALOG, "PHercTest", "20250101000000-w001_test") == 1.0
++    assert tx.original_volume_downscale(CATALOG, "PHercTest", "20250102000000") == 1.0  # absent -> 1
++    with pytest.raises(KeyError):
++        tx.original_volume_downscale(CATALOG, "PHercTest", "29990101000000")
++    with pytest.raises(KeyError):
++        tx.original_volume_downscale(CATALOG, "PHercNope", "20250108000004")
++    gz = tmp_path / "metadata.json"
++    gz.write_bytes(gzip.compress(json.dumps(CATALOG).encode()))  # the bucket serves it gzip-compressed
++    assert tx.load_open_data_catalog(gz) == CATALOG
++    assert tx.original_volume_downscale(gz, "PHercTest", "20250108000004") == 4.0
++    plain = tmp_path / "metadata-plain.json"
++    plain.write_text(json.dumps(CATALOG))
++    assert tx.original_volume_downscale(str(plain), "PHercTest", "20250108000004") == 4.0
++
++
++def test_read_open_data_normalized_uses_catalog_factor(ds4, tmp_path) -> None:
++    d, (x, y, z) = ds4
++    s = tx.read_open_data_normalized(d, CATALOG)
++    v = z > 0
++    np.testing.assert_array_equal(s._z[v], 4 * z[v])
++    d1 = _normalized_dir(tmp_path, "PHercTest", "20250101000000-w001_test")
++    _, _, z1 = _write_mesh(d1)
++    with warnings.catch_warnings():
++        warnings.simplefilter("error", tx.OpenDataDownscaleWarning)
++        s1 = tx.read_open_data_normalized(d1, CATALOG)
++    np.testing.assert_array_equal(s1._z[z1 > 0], z1[z1 > 0])
++    with pytest.raises(ValueError, match="cannot infer"):
++        tx.read_open_data_normalized(tmp_path, CATALOG)
++    s2 = tx.read_open_data_normalized(tmp_path / "PHercTest" / "segments" / "20250108000004-w029_test" / "mesh"
++                                   / "intermediate" / "tifxyz_normalized", CATALOG,
++                                   sample="PHercTest", segment="20250108000004")
++    np.testing.assert_array_equal(s2._z[v], 4 * z[v])
++
++
++def test_written_scaled_mesh_is_not_scaled_twice(ds4, tmp_path) -> None:
++    d, (_, _, z) = ds4
++    out = tmp_path / "rescaled"
++    write_tifxyz(out, read_tifxyz(d, downscale=4), overwrite=True)
++    again = read_tifxyz(out)
++    np.testing.assert_array_equal(again._z[z > 0], 4 * z[z > 0])
++    assert again.extra["original_volume_downscale_applied"] == 4.0
++    with pytest.raises(ValueError, match="already"):
++        read_tifxyz(out, downscale=4)
++    # downscale=1 on an already-scaled mesh changes nothing and keeps the marker
++    same = read_tifxyz(out, downscale=1)
++    np.testing.assert_array_equal(same._z[z > 0], 4 * z[z > 0])
++    assert same.extra["original_volume_downscale_applied"] == 4.0
++    # a mesh written after an explicit downscale=1 is also marked; a later x4 is refused
++    out1 = tmp_path / "marked-1"
++    write_tifxyz(out1, read_tifxyz(d, downscale=1), overwrite=True)
++    with pytest.raises(ValueError, match="already"):
++        read_tifxyz(out1, downscale=4)
++
++
++def test_vc3d_scaled_cache_marker_is_respected(tmp_path) -> None:
++    # VC3D's Open Data cache scales a cached segment itself and records
++    # vc_open_data_coordinates_scaled_to_original_volume in meta.json.
++    d = _normalized_dir(tmp_path, "PHercTest", "20250108000004-w029_test")
++    _, _, z = _write_mesh(d)
++    meta = json.loads((d / "meta.json").read_text())
++    meta["vc_open_data_coordinates_scaled_to_original_volume"] = 4.0
++    (d / "meta.json").write_text(json.dumps(meta))
++    with warnings.catch_warnings():
++        warnings.simplefilter("error", tx.OpenDataDownscaleWarning)
++        s = read_tifxyz(d)
++    np.testing.assert_array_equal(s._z[z > 0], z[z > 0])
++    with pytest.raises(ValueError, match="vc_open_data_coordinates_scaled_to_original_volume"):
++        read_tifxyz(d, downscale=4)
++    with pytest.raises(ValueError, match="already"):
++        tx.read_open_data_normalized(d, CATALOG)
++
++
++@pytest.mark.parametrize("bad", [0, -4, float("nan"), float("inf")])
++def test_invalid_downscale_rejected(ds4, bad) -> None:
++    d, _ = ds4
++    with pytest.raises(ValueError):
++        read_tifxyz(d, downscale=bad)
++
++
++def test_tifxyz_info_load_passes_downscale(ds4, tmp_path) -> None:
++    d, (_, _, z) = ds4
++    (info,) = list_tifxyz(tmp_path)
++    s = info.load(downscale=4)
++    np.testing.assert_array_equal(s._z[z > 0], 4 * z[z > 0])
+-- 
+2.47.3
+

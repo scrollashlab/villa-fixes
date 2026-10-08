@@ -1,0 +1,44 @@
+## stacking, plain 'git am' (no --3way), git 2.47.3; run 2026-10-07 11:45:56 HST
+## env /workspace/envs/zarr3: Python 3.13.5 numpy 2.5.3 tifffile 2026.9.20 cv2 5.0.0 zarr 3.4.0 pytest 9.1.1; vesuvius not installed, PYTHONPATH=src
+## patch: 0001-tifxyz-apply-open-data-original_volume_downscale-to-.patch sha256 f94dde2d2e646682dafafd09f98390c769a3965d404a9f4de9fe82c728bade2d
+### bare on e0bbb8b40a2d
+OK   villa-downscale -> 6bd24c53f ti
+### stack on e0bbb8b40a2d
+OK   villa-1970
+OK   villa-1481
+OK   villa-1522
+OK   villa-tifxyz-audit
+OK   villa-1520
+OK   villa-1586
+OK   villa-1300
+OK   villa-1507
+OK   villa-1648
+OK   villa-downscale -> af2a299b6 ti
+#### suite on stacked tree: tests/tifxyz src/vesuvius/tifxyz/test_reader_bbox.py src/vesuvius/tifxyz/test_labels.py tests/tifxyz_label_transfer tests/test_surface_preflight.py tests/test_imports.py
+        ), f"{module} -h failed: {result.stderr}\n{result.stdout}"
+E       AssertionError: vesuvius.models.training.train -h failed: Traceback (most recent call last):
+        ), f"{module} -h failed: {result.stderr}\n{result.stdout}"
+E       AssertionError: vesuvius.models.run.inference -h failed: Traceback (most recent call last):
+FAILED tests/test_imports.py::test_cli_entrypoints_show_help[vesuvius.models.training.train]
+FAILED tests/test_imports.py::test_cli_entrypoints_show_help[vesuvius.models.run.inference]
+2 failed, 253 passed, 6 skipped, 6 subtests passed in 23.65s
+### stack on 0e14cf48c8ce
+OK   villa-1970
+OK   villa-1481
+OK   villa-1522
+OK   villa-tifxyz-audit
+OK   villa-1520
+OK   villa-1586
+OK   villa-1300
+OK   villa-1507
+OK   villa-1648
+OK   villa-downscale -> bf10a2260 ti
+#### suite on stacked tree: tests/tifxyz src/vesuvius/tifxyz/test_reader_bbox.py src/vesuvius/tifxyz/test_labels.py tests/tifxyz_label_transfer tests/test_surface_preflight.py tests/test_imports.py
+        ), f"{module} -h failed: {result.stderr}\n{result.stdout}"
+E       AssertionError: vesuvius.models.training.train -h failed: Traceback (most recent call last):
+        ), f"{module} -h failed: {result.stderr}\n{result.stdout}"
+E       AssertionError: vesuvius.models.run.inference -h failed: Traceback (most recent call last):
+FAILED tests/test_imports.py::test_cli_entrypoints_show_help[vesuvius.models.training.train]
+FAILED tests/test_imports.py::test_cli_entrypoints_show_help[vesuvius.models.run.inference]
+2 failed, 253 passed, 6 skipped, 6 subtests passed in 24.58s
+## note: the 2 test_imports CLI-help failures are environment-only (ModuleNotFoundError: nnunetv2 / pytorch_optimizer not installed in this env) and identical with and without the patch

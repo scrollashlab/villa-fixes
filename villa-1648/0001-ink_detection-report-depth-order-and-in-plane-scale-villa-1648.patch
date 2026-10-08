@@ -1,0 +1,397 @@
+From d15d1ade804111a527efdff1c20a2140ea3b7621 Mon Sep 17 00:00:00 2001
+From: Scroll Ash Lab <scrollash.lab@gmail.com>
+Date: Mon, 5 Oct 2026 17:10:20 -1000
+Subject: [PATCH] ink_detection: report depth order and in-plane scale
+ (villa#1648)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Log effective depth_order and in_plane_scale_um during flat inference.
+Depth orientation is segment/render-dependent: emit an INFO note to try
+--direction both when undeclared; do not prescribe reverse. WARN only when
+in-plane scale is much finer than the ~9.6 µm aligned training grid.
+Default --direction remains forward.
+---
+ vesuvius/docs/ink_detection.md                |   2 +-
+ .../vesuvius/ink_detection/inference/infer.py | 135 +++++++++++-
+ .../test_inference_orientation_1648.py        | 194 ++++++++++++++++++
+ 3 files changed, 329 insertions(+), 2 deletions(-)
+ create mode 100644 vesuvius/tests/ink_detection/test_inference_orientation_1648.py
+
+diff --git a/vesuvius/docs/ink_detection.md b/vesuvius/docs/ink_detection.md
+index db25b294..bb17709e 100644
+--- a/vesuvius/docs/ink_detection.md
++++ b/vesuvius/docs/ink_detection.md
+@@ -442,7 +442,7 @@ the second output.
+ | `--blend-mode` | `auto`, `constant`, `gaussian`, or `hann`; default `auto` (constant without overlap, Hann otherwise). |
+ | `--layer-start`, `--layer-end` | Half-open source-Z selection before centered depth cropping; negative indices count from the end. |
+ | `--batch-size` | Batch size per selected device, default `1`. |
+-| `--direction` | `forward`, `reverse`, or `both`; default `forward`. |
++| `--direction` | `forward`, `reverse`, or `both`; default `forward`. Logs effective depth order and in-plane scale; notes that orientation is segment-dependent (prefer `both` when unknown); warns when in-plane scale is much finer than ~9.6 µm (villa#1648). |
+ | `--amp-dtype` | `auto`, `default`, `fp16`, or `bf16`; `auto` reads checkpoint precision. |
+ | `--tta-mirror` | Average valid mirror variants. |
+ | `--tta-batch-size` | Maximum mirror variants evaluated together. |
+diff --git a/vesuvius/src/vesuvius/ink_detection/inference/infer.py b/vesuvius/src/vesuvius/ink_detection/inference/infer.py
+index f6649e3f..8a2037af 100644
+--- a/vesuvius/src/vesuvius/ink_detection/inference/infer.py
++++ b/vesuvius/src/vesuvius/ink_detection/inference/infer.py
+@@ -952,6 +952,126 @@ def _volume_axes(array: Any) -> tuple[bool, int, int, int, int, int]:
+     return depth_first, depth, height, width, chunk_h, chunk_w
+ 
+ 
++
++def _multiscale_xy_um(root: Any, resolution: str) -> float | None:
++    """Return in-plane micrometers/pixel for ``resolution`` from OME multiscales."""
++
++    attrs = getattr(root, "attrs", None)
++    if attrs is None:
++        return None
++    try:
++        payload = dict(attrs)
++    except Exception:
++        return None
++    # Bare prepare_9um outputs record source_level / format instead of OME scales.
++    fmt = str(payload.get("format", "") or "")
++    if "zmean4" in fmt or "21slice" in fmt:
++        source_level = str(payload.get("source_level", "") or "")
++        # level 2 of 2.399 µm → ~9.596 µm; level 0 → 2.399 µm
++        if source_level in {"2", "2.0"}:
++            return 9.596
++        if source_level in {"0", "0.0"}:
++            return 2.399
++        return 9.596
++    multiscales = payload.get("multiscales")
++    if not isinstance(multiscales, list) or not multiscales:
++        return None
++    datasets = multiscales[0].get("datasets") if isinstance(multiscales[0], Mapping) else None
++    if not isinstance(datasets, list):
++        return None
++    for entry in datasets:
++        if not isinstance(entry, Mapping):
++            continue
++        if str(entry.get("path", "")) != str(resolution):
++            continue
++        transforms = entry.get("coordinateTransformations")
++        if not isinstance(transforms, list):
++            continue
++        for transform in transforms:
++            if not isinstance(transform, Mapping):
++                continue
++            if transform.get("type") != "scale":
++                continue
++            scale = transform.get("scale")
++            if isinstance(scale, (list, tuple)) and len(scale) >= 3:
++                # OME order Z,Y,X — in-plane is Y/X; they match for isotropic renders.
++                return float(scale[1])
++    return None
++
++
++def describe_inference_orientation(
++    *,
++    layer_direction: str,
++    resolution: str,
++    in_plane_scale_um: float | None,
++    expected_in_plane_um: float = 9.6,
++) -> dict[str, Any]:
++    """Report effective depth order and in-plane scale for flat inference.
++
++    Depth order is segment/render-dependent: the same CLI value can be correct
++    on one surface and near-chance on another (villa#1648). This helper never
++    steers toward ``forward`` or ``reverse``; it only recommends verifying both
++    (``--direction both``) when orientation is undeclared.
++
++    A WARNING is emitted only for a *fine* in-plane grid relative to the
++    ~9.6 µm aligned training recipe (e.g. ~2.4 µm / prepare ``--level 0``),
++    which underperforms the coarse ~9.6 µm grid in measured public w035 runs
++    for both depth orders.
++    """
++
++    direction = str(layer_direction).strip().lower()
++    if direction not in {"forward", "reverse"}:
++        raise ValueError(f"layer_direction must be forward or reverse, got {layer_direction!r}")
++    scale = None if in_plane_scale_um is None else float(in_plane_scale_um)
++    # Fine relative to the ~9.6 µm aligned recipe (prepare --level 0 is 2.399 µm).
++    fine_scale = scale is not None and scale < 0.55 * float(expected_in_plane_um)
++    notes: list[str] = [
++        "depth_order is segment/render-dependent; do not assume forward or "
++        "reverse is universally correct. When orientation is undeclared, run "
++        "--direction both (or compare forward and reverse) and keep the better "
++        "map (villa#1648)."
++    ]
++    warnings: list[str] = []
++    if fine_scale:
++        warnings.append(
++            f"in_plane_scale_um={scale:.3f} is much finer than the ~{expected_in_plane_um:.1f} µm "
++            "aligned training grid. On public PHerc0139 w035 checks (two windows, "
++            "both seeds), the fine (~2.4 µm) grid underperformed the coarse "
++            "(~9.6 µm) grid for the better-performing depth order; prefer a "
++            "~9 µm / prepare --level 2 (or native ~9 µm) input with the aligned21 "
++            "hybrid checkpoints (villa#1648)."
++        )
++    summary = (
++        f"effective depth_order={direction}; "
++        f"zarr_level={resolution}; "
++        + (
++            f"in_plane_scale_um={scale:.3f}"
++            if scale is not None
++            else "in_plane_scale_um=unknown"
++        )
++    )
++    return {
++        "depth_order": direction,
++        "zarr_level": str(resolution),
++        "in_plane_scale_um": scale,
++        "expected_in_plane_um": float(expected_in_plane_um),
++        "fine_scale_vs_training": fine_scale,
++        "summary": summary,
++        "notes": notes,
++        "warnings": warnings,
++    }
++
++
++def log_inference_orientation(report: Mapping[str, Any]) -> None:
++    """Emit orientation summary/notes at INFO and scale warnings at WARNING."""
++
++    LOGGER.info("Ink input orientation: %s", report["summary"])
++    for message in report.get("notes") or ():
++        LOGGER.info("%s", message)
++    for message in report.get("warnings") or ():
++        LOGGER.warning("%s", message)
++
++
+ def infer_single_zarr(
+     *,
+     args: argparse.Namespace,
+@@ -986,6 +1106,12 @@ def infer_single_zarr(
+         output_depth=configured_model.input_depth,
+         direction=layer_direction,
+     )
++    orientation = describe_inference_orientation(
++        layer_direction=layer_direction,
++        resolution=resolution,
++        in_plane_scale_um=_multiscale_xy_um(root, resolution),
++    )
++    log_inference_orientation(orientation)
+     LOGGER.info("Selected source layer indices=%s", layer_indices.tolist())
+     LOGGER.info(
+         "Input level=%s shape=(depth=%d, height=%d, width=%d) "
+@@ -1330,7 +1456,14 @@ def parse_args(argv: Sequence[str] | None = None):
+     parser.add_argument("--layer-end", type=int)
+     parser.add_argument("--batch-size", type=int, default=1)
+     parser.add_argument(
+-        "--direction", choices=("forward", "reverse", "both"), default="forward"
++        "--direction",
++        choices=("forward", "reverse", "both"),
++        default="forward",
++        help=(
++            "Depth-axis order through the surface volume. Default: forward. "
++            "Orientation is segment/render-dependent; when undeclared, prefer "
++            "--direction both and keep the better map (villa#1648)."
++        ),
+     )
+     parser.add_argument(
+         "--amp-dtype",
+diff --git a/vesuvius/tests/ink_detection/test_inference_orientation_1648.py b/vesuvius/tests/ink_detection/test_inference_orientation_1648.py
+new file mode 100644
+index 00000000..ab705bfb
+--- /dev/null
++++ b/vesuvius/tests/ink_detection/test_inference_orientation_1648.py
+@@ -0,0 +1,194 @@
++"""villa#1648: flat inference reports depth/scale; warns on fine scale only."""
++
++from __future__ import annotations
++
++import logging
++from pathlib import Path
++
++import numpy as np
++import pytest
++import zarr
++
++from vesuvius.ink_detection.inference.infer import (
++    _multiscale_xy_um,
++    describe_inference_orientation,
++    infer_single_zarr,
++    log_inference_orientation,
++    parse_args,
++)
++
++
++def test_default_direction_remains_forward():
++    args = parse_args(["in.zarr", "ckpt.pth", "out.tif"])
++    assert args.direction == "forward"
++
++
++def test_describe_reports_neutrally_and_does_not_warn_on_forward_alone():
++    report = describe_inference_orientation(
++        layer_direction="forward",
++        resolution="2",
++        in_plane_scale_um=9.596,
++    )
++    assert report["depth_order"] == "forward"
++    assert report["in_plane_scale_um"] == pytest.approx(9.596)
++    assert report["fine_scale_vs_training"] is False
++    assert report["warnings"] == []
++    assert any("segment/render-dependent" in n for n in report["notes"])
++    assert any("--direction both" in n for n in report["notes"])
++    assert "depth_order=forward" in report["summary"]
++    # Must not steer users toward reverse:
++    blob = " ".join(report["notes"] + report["warnings"]).lower()
++    assert "need --direction reverse" not in blob
++    assert "often need" not in blob
++
++
++def test_describe_warns_only_on_fine_in_plane_scale():
++    fine = describe_inference_orientation(
++        layer_direction="reverse",
++        resolution="0",
++        in_plane_scale_um=2.399,
++    )
++    assert fine["fine_scale_vs_training"] is True
++    assert len(fine["warnings"]) == 1
++    assert "2.399" in fine["warnings"][0]
++    assert "underperformed" in fine["warnings"][0].lower() or "finer" in fine["warnings"][0].lower()
++
++    coarse_forward = describe_inference_orientation(
++        layer_direction="forward",
++        resolution="0",
++        in_plane_scale_um=9.596,
++    )
++    assert coarse_forward["warnings"] == []
++
++
++def test_log_emits_info_notes_and_scale_warning(caplog):
++    report = describe_inference_orientation(
++        layer_direction="forward",
++        resolution="0",
++        in_plane_scale_um=2.399,
++    )
++    with caplog.at_level(logging.INFO):
++        log_inference_orientation(report)
++    assert "Ink input orientation:" in caplog.text
++    assert "depth_order=forward" in caplog.text
++    assert "segment/render-dependent" in caplog.text
++    warnings = [r for r in caplog.records if r.levelno >= logging.WARNING]
++    assert len(warnings) == 1
++    assert "2.399" in warnings[0].getMessage()
++
++
++def test_multiscale_xy_um_reads_ome_and_prepare_attrs(tmp_path):
++    root = zarr.open_group(tmp_path / "vol.zarr", mode="w", zarr_format=2)
++    root.attrs["multiscales"] = [
++        {
++            "datasets": [
++                {
++                    "path": "0",
++                    "coordinateTransformations": [
++                        {"type": "scale", "scale": [2.399, 2.399, 2.399]}
++                    ],
++                },
++                {
++                    "path": "2",
++                    "coordinateTransformations": [
++                        {"type": "scale", "scale": [2.399, 9.596, 9.596]}
++                    ],
++                },
++            ]
++        }
++    ]
++    assert _multiscale_xy_um(root, "0") == pytest.approx(2.399)
++    assert _multiscale_xy_um(root, "2") == pytest.approx(9.596)
++
++    prep = zarr.open_group(tmp_path / "prep.zarr", mode="w", zarr_format=2)
++    prep.attrs.update({"format": "level2-zmean4-21slice-v1", "source_level": "0"})
++    assert _multiscale_xy_um(prep, "0") == pytest.approx(2.399)
++
++
++def _write_tiny_prep(path: Path, *, source_level: str, xy_um: float, shape=(21, 64, 64)):
++    root = zarr.open_group(str(path), mode="w", zarr_format=2)
++    data = np.random.randint(0, 255, size=shape, dtype=np.uint8)
++    root.create_array("0", shape=shape, chunks=shape, dtype="u1")
++    root["0"][:] = data
++    root.attrs.update(
++        {
++            "format": "level2-zmean4-21slice-v1",
++            "source_level": source_level,
++            "multiscales": [
++                {
++                    "datasets": [
++                        {
++                            "path": "0",
++                            "coordinateTransformations": [
++                                {"type": "scale", "scale": [xy_um, xy_um, xy_um]}
++                            ],
++                        }
++                    ]
++                }
++            ],
++        }
++    )
++
++
++def test_infer_single_zarr_logs_orientation_and_fine_scale_warning(
++    tmp_path, caplog, monkeypatch
++):
++    """Behavioral path: infer_single_zarr must log report before tiling work."""
++
++    import torch
++    from torch import nn
++
++    from vesuvius.ink_detection.inference import infer as infer_mod
++    from vesuvius.ink_detection.inference.infer import ConfiguredModel
++
++    prep = tmp_path / "fine.zarr"
++    _write_tiny_prep(prep, source_level="0", xy_um=2.399)
++
++    class _Tiny(nn.Module):
++        def forward(self, x):
++            # x: N,C,Z,Y,X → map to N,1,Y,X
++            return x.mean(dim=2)
++
++    configured = ConfiguredModel(
++        model=_Tiny().eval(),
++        patch_size=64,
++        input_depth=17,
++        preprocessing="divide_255",
++        amp_dtype=None,
++    )
++    args = parse_args(
++        [str(prep), str(tmp_path / "ckpt.pth"), str(tmp_path / "out.tif"), "--no-compile"]
++    )
++    # Avoid DataLoader / full pipeline hang: stub block iteration to empty after logs.
++    monkeypatch.setattr(infer_mod, "iter_blocks", lambda *a, **k: [])
++    monkeypatch.setattr(
++        infer_mod,
++        "build_lowres_block_mask",
++        lambda *a, **k: (None, (1, 1), None),
++    )
++    monkeypatch.setattr(infer_mod, "write_output_tiff", lambda *a, **k: None)
++    monkeypatch.setattr(
++        infer_mod,
++        "open_temp_zarr_array",
++        lambda path, shape, chunks: zarr.open_array(
++            str(path), mode="w", shape=shape, chunks=chunks, dtype="f4", zarr_format=2
++        ),
++    )
++
++    with caplog.at_level(logging.INFO):
++        infer_single_zarr(
++            args=args,
++            input_zarr=str(prep),
++            configured_model=configured,
++            device=torch.device("cpu"),
++            output_tiff=tmp_path / "out.tif",
++            layer_direction="forward",
++        )
++
++    assert "Ink input orientation:" in caplog.text
++    assert "depth_order=forward" in caplog.text
++    assert "in_plane_scale_um=2.399" in caplog.text
++    assert "segment/render-dependent" in caplog.text
++    warn_msgs = [r.getMessage() for r in caplog.records if r.levelno >= logging.WARNING]
++    assert any("2.399" in m for m in warn_msgs)
++    assert not any("need --direction reverse" in m.lower() for m in warn_msgs)
+-- 
+2.47.3
+

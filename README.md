@@ -1,0 +1,69 @@
+# Scroll Ash Lab — villa fixes
+
+Small, tested patches for [ScrollPrize/villa](https://github.com/ScrollPrize/villa),
+plus a standalone `tifxyz-audit` CLI.
+
+**Authorship:** AI-assisted lab engineering (Grok Bot / Scroll Ash Lab).
+
+**Contact:** scrollash.lab@gmail.com  
+**Public mirror:** https://gitlab.com/scroll-ash-lab/villa-fixes  
+**Base tip:** villa `main` @ `0e14cf48`  
+**Hold / excluded:** #1855
+
+See [`docs/prize-writeups/`](docs/prize-writeups/) for honest evidence classes, caveats,
+and reproduction pointers to public S3/HF data. We do **not** redistribute CC BY-NC
+open-data payloads.
+
+See [`docs/negative-results-2026-10/`](docs/negative-results-2026-10/) for two pre-registered negative results (Oct 2026).
+
+See [`xframe/`](xframe/) for the cross-frame mesh audit tool (Oct 2026).
+See [`sv-canvas-1727/`](sv-canvas-1727/) for a pre-registered check that all 692 published surface volumes reproduce their canvas size from the catalog-named mesh (villa #1727, Oct 2026).
+See [`villa-downscale/`](villa-downscale/) for a patch that makes `vesuvius.tifxyz` apply the open data's `original_volume_downscale` to `tifxyz_normalized` meshes; pre-registered before/after on 23 published meshes (Oct 2026).
+
+## Shipping fixes
+
+| Folder | What | Evidence class |
+|--------|------|----------------|
+| `villa-1648/` | report `depth_order` + `in_plane_scale_um`; INFO both-dirs; WARN fine scale | Real-data holdout AUC (w/ caveats) |
+| `villa-1586/` | seed CacheStore LRU so `cache_max_gb` bounds disk | Real-data cache-byte probe |
+| `villa-1522/` | optional `voxel_size_um` + `meta_frames` (`SCALE_RTOL=1e-6`) | Real-data open-data metas |
+| `villa-tifxyz-audit/` + `tools/tifxyz-audit/` | mesh meta QA CLI (apply after 1522) | Real-data smoke + unit tests |
+| `villa-1481/` | flat ink `robust_mad` excludes reader padding | Real-data Paris4 CT window |
+| `villa-1507/` | native full-3D loader passes `input_pad_depth_to` | **Wiring-only** |
+| `villa-1520/` | README entrypoints match `[project.scripts]` | Docs + tests |
+| `villa-1300/` | README: pip on Python 3.14 → vesuvius 0.1.10 | Live pip dry-run |
+| `villa-1970/` | plain zarr + `valid_patch_find_resolution` ≥ 1 | Synthetic; **prefer upstream [PR #1980](https://github.com/ScrollPrize/villa/pull/1980)** |
+
+## Apply order (verified clean on `0e14cf48`)
+
+```bash
+git am villa-1970/0001-*.patch
+git am villa-1481/0001-*.patch
+git am villa-1522/0001-*.patch
+git am villa-tifxyz-audit/0001-*.patch   # requires 1522 first
+git am villa-1520/0001-*.patch
+git am villa-1586/0001-*.patch
+git am villa-1300/0001-*.patch           # requires 1520 first
+git am villa-1507/0001-*.patch
+git am villa-1648/0001-*.patch
+```
+
+Do **not** apply `villa-1855/` (on hold).
+
+## Explicit non-claims
+
+- Not claiming Grand Prize / ink-reading breakthroughs — tooling and correctness fixes.
+- Not claiming #1507 real-data before/after.
+- Not claiming w035 ~0.99 AUC as held-out generalization (#1648 primary table is validation_mask carve-out on 46527).
+- Not claiming we reproduced issue #1648’s reverse-better w035 table on public S3.
+- Not redistributing open-data scan payloads (see per-folder `OPEN_DATA_NOTE` / `OPEN_DATA_NOTE.txt`).
+- #1970: recommend independent upstream PR #1980 over our earlier patch.
+
+## Credits
+
+@mg255 (#1970 diagnosis); prior unmerged #1481 work (#1483/#1646/#1773); @flummoxjr (#1586/#1587); prior unmerged #1507 work (#1645/#1772).
+
+## Bundle hygiene
+
+This directory must not contain open-data scan payloads or stub/`DO-NOT-CITE` logs.
+See `REMOVED_OPEN_DATA_PAYLOADS.txt` and `../check_bundle.sh` in the lab handoff.

@@ -1,0 +1,92 @@
+{
+ "id": "A-ink-emptiness-triage",
+ "closed": "2026-10-07 HST",
+ "ai_assisted": true,
+ "question": "Do published ink-detection outputs (presence, or ink-like pixel fraction in ink-detection/downsampled/*-ds8.jpg) separate windcheck-v0.3.2 self-crossing (\"dirty\") segments from clean ones?",
+ "answer": "NO",
+ "thresholds_frozen_label_blind": {
+  "V": 1,
+  "T": 128,
+  "E": 0.0393,
+  "source": "docs/thresholds.md (frozen label-blind)"
+ },
+ "pilot": {
+  "n_segments": 63,
+  "n_scored": 61,
+  "n_dirty": 38,
+  "n_clean": 23,
+  "presence": "63/63 present",
+  "empty_flag_table_dirty_clean_x_empty_nonempty": [
+   [
+    3,
+    35
+   ],
+   [
+    0,
+    23
+   ]
+  ],
+  "empty_flag_fisher_p": 0.2836065573770492,
+  "pooled_auc_ink_frac_max": 0.4839816933638444,
+  "pooled_auc_ci95": [
+   0.33752860411899316,
+   0.631578947368421
+  ],
+  "exploratory_within_scroll_segment_perm": {
+   "strata": [
+    "PHerc0139|L1-1um",
+    "PHerc0139|canon2.4",
+    "PHercParis4|L1-1um",
+    "PHercParis4|canon2.4"
+   ],
+   "rank_diff": -0.23537157287157282,
+   "p": 0.0257,
+   "size_resid_rank_diff": -0.27663540163540157,
+   "size_resid_p": 0.00585
+  }
+ },
+ "replication_preregistered": {
+  "verdict": "FAIL",
+  "qualifying_strata": [
+   "PHerc0500P2|canon2.4"
+  ],
+  "segments": {
+   "PHerc0500P2": {
+    "n": 36,
+    "dirty": 19
+   }
+  },
+  "rank_diff": -0.11304732419283503,
+  "p": 0.27365,
+  "size_resid_p": 0.44525,
+  "empty_flag_table_dirty_clean_x_empty_nonempty": [
+   [
+    6,
+    126
+   ],
+   [
+    8,
+    37
+   ]
+  ],
+  "empty_flag_fisher_or": 0.22023809523809523,
+  "empty_flag_fisher_p": 0.008620061256601596,
+  "empty_flag_note": "opposite direction; driven by clean-only scrolls",
+  "replication_empty_by_scroll": {
+   "PHerc0009B|already_clean": 4,
+   "PHerc0343P|already_clean": 2,
+   "PHerc0500P2|already_clean": 2,
+   "PHerc0500P2|transformed": 2,
+   "PHerc1667|transformed": 1,
+   "PHercParis4|transformed": 3
+  }
+ },
+ "confounds": [
+  "scroll mix: several scrolls are clean-only or dirty-only in windcheck dispositions",
+  "ink-model/recipe mix: TimeSformer 7.91um (PHerc0172) vs canonical-2um / 1um L1 elsewhere",
+  "mesh size: dirty meshes larger (pilot stratified canvas permutation p=0.0001)",
+  "base_kind: displacement_repaired concentrated in dirty traces",
+  "only one replication stratum (PHerc0500P2 x canon2.4) had both classes"
+ ],
+ "data": "vesuvius-challenge-open-data (CC BY-NC 4.0) + windcheck v0.3.2 benchmark; no payloads redistributed"
+}

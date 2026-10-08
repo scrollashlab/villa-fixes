@@ -1,0 +1,29 @@
+## UNPATCHED main e0bbb8b40a2d + only the new test file; run 2026-10-07 11:44:58 HST
+## env /workspace/envs/zarr3: Python 3.13.5 numpy 2.5.3 tifffile 2026.9.20 cv2 5.0.0 zarr 3.4.0 pytest 9.1.1; vesuvius not installed, PYTHONPATH=src
+## patch: 0001-tifxyz-apply-open-data-original_volume_downscale-to-.patch sha256 f94dde2d2e646682dafafd09f98390c769a3965d404a9f4de9fe82c728bade2d
+$ pytest -q -rf tests/tifxyz/test_open_data_downscale.py
+E       TypeError: read_tifxyz() got an unexpected keyword argument 'downscale'
+E       AttributeError: module 'vesuvius.tifxyz' has no attribute 'OpenDataDownscaleWarning'
+E           AttributeError: module 'vesuvius.tifxyz' has no attribute 'OpenDataDownscaleWarning'
+E       AttributeError: module 'vesuvius.tifxyz' has no attribute 'original_volume_downscale'
+E       AttributeError: module 'vesuvius.tifxyz' has no attribute 'read_open_data_normalized'
+E       TypeError: read_tifxyz() got an unexpected keyword argument 'downscale'
+E           AttributeError: module 'vesuvius.tifxyz' has no attribute 'OpenDataDownscaleWarning'
+E           TypeError: read_tifxyz() got an unexpected keyword argument 'downscale'
+E           TypeError: read_tifxyz() got an unexpected keyword argument 'downscale'
+E           TypeError: read_tifxyz() got an unexpected keyword argument 'downscale'
+E           TypeError: read_tifxyz() got an unexpected keyword argument 'downscale'
+E       TypeError: read_tifxyz() got an unexpected keyword argument 'downscale'
+FAILED tests/tifxyz/test_open_data_downscale.py::test_downscale_scales_valid_points_bbox_and_grid_scale
+FAILED tests/tifxyz/test_open_data_downscale.py::test_normalized_path_without_downscale_warns
+FAILED tests/tifxyz/test_open_data_downscale.py::test_explicit_downscale_and_other_paths_do_not_warn
+FAILED tests/tifxyz/test_open_data_downscale.py::test_catalog_lookup_by_id_and_long_id
+FAILED tests/tifxyz/test_open_data_downscale.py::test_read_open_data_normalized_uses_catalog_factor
+FAILED tests/tifxyz/test_open_data_downscale.py::test_written_scaled_mesh_is_not_scaled_twice
+FAILED tests/tifxyz/test_open_data_downscale.py::test_vc3d_scaled_cache_marker_is_respected
+FAILED tests/tifxyz/test_open_data_downscale.py::test_invalid_downscale_rejected[0]
+FAILED tests/tifxyz/test_open_data_downscale.py::test_invalid_downscale_rejected[-4]
+FAILED tests/tifxyz/test_open_data_downscale.py::test_invalid_downscale_rejected[nan]
+FAILED tests/tifxyz/test_open_data_downscale.py::test_invalid_downscale_rejected[inf]
+FAILED tests/tifxyz/test_open_data_downscale.py::test_tifxyz_info_load_passes_downscale
+12 failed in 1.87s

@@ -1,0 +1,2973 @@
+{
+ "generated": "2026-10-07 10:26:34 HST",
+ "stage": "stage1",
+ "catalog": "/workspace/vesuvius-lab/experiments/cross-frame-toolkit/data/cache/metadata-2026-10-07.json",
+ "n": 44,
+ "missing_from_catalog": [
+  [
+   "T",
+   "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/surface-volumes/1.129um-0.22m-59keV-volume-20260521123630-L1.zarr"
+  ]
+ ],
+ "summary": {
+  "T": {
+   "match": 29
+  },
+  "C1": {
+   "match": 10
+  },
+  "C2": {
+   "match": 5
+  }
+ },
+ "rows": [
+  {
+   "group": "T",
+   "volume": "PHercParis4/segments/20260623164141-w113-115/surface-volumes/45.532um-11.0m-74keV-volume-20260310170716.zarr",
+   "sample": "PHercParis4",
+   "segment": "20260623164141",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-03T11:09:17.460889Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHercParis4/segments/20260623164141-w113-115/mesh/20260623164141-on-20260310170716-45.532um.tifxyz",
+   "seg_path_param": "PHercParis4/segments/20260623164141-w113-115/mesh/20260623164141-on-20260310170716-45.532um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "862bd17259eb3bd64faf7c20a5ac1dd353fc6688",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260310170716",
+   "canvas_size": [
+    10340,
+    2640
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    6,
+    2640,
+    10340
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    132,
+    517
+   ],
+   "mesh_x_last_modified": "Fri, 03 Jul 2026 09:04:08 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    10340,
+    2640
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHercParis4/segments/20231012184424/surface-volumes/1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+   "sample": "PHercParis4",
+   "segment": "20231012184424",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T08:11:32.729771Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHercParis4/segments/20231012184424/mesh/20231012184424-on-20260608103018-1.129um.tifxyz",
+   "seg_path_param": "PHercParis4/segments/20231012184424/mesh/20231012184424-on-20260608103018-1.129um.tifxyz",
+   "scale": "1",
+   "group_idx": "1",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260608103018",
+   "canvas_size": [
+    80420,
+    53950
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    116,
+    53950,
+    80420
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    5395,
+    8042
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:57:00 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    80420,
+    53950
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHercParis4/segments/20260623154006-w085-088/surface-volumes/1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+   "sample": "PHercParis4",
+   "segment": "20260623154006",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T14:15:37.072600Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHercParis4/segments/20260623154006-w085-088/mesh/20260623154006-on-20260608103018-1.129um.tifxyz",
+   "seg_path_param": "PHercParis4/segments/20260623154006-w085-088/mesh/20260623154006-on-20260608103018-1.129um.tifxyz",
+   "scale": "1",
+   "group_idx": "1",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260608103018",
+   "canvas_size": [
+    219620,
+    52850
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    116,
+    52850,
+    219620
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    5285,
+    21962
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 10:03:24 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    219620,
+    52850
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHercParis4/segments/20230702185753/surface-volumes/45.532um-11.0m-74keV-volume-20260310170716.zarr",
+   "sample": "PHercParis4",
+   "segment": "20230702185753",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-24T07:30:16.053747Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHercParis4/segments/20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz",
+   "seg_path_param": "PHercParis4/segments/20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260310170716",
+   "canvas_size": [
+    1920,
+    2680
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    6,
+    2680,
+    1920
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    134,
+    96
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:46:06 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    1920,
+    2680
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHercParis4/segments/20260623164704-w116-117/surface-volumes/45.532um-11.0m-74keV-volume-20260310170716.zarr",
+   "sample": "PHercParis4",
+   "segment": "20260623164704",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-03T11:14:53.046134Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHercParis4/segments/20260623164704-w116-117/mesh/20260623164704-on-20260310170716-45.532um.tifxyz",
+   "seg_path_param": "PHercParis4/segments/20260623164704-w116-117/mesh/20260623164704-on-20260310170716-45.532um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "862bd17259eb3bd64faf7c20a5ac1dd353fc6688",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260310170716",
+   "canvas_size": [
+    7080,
+    2600
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    6,
+    2600,
+    7080
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    130,
+    354
+   ],
+   "mesh_x_last_modified": "Fri, 03 Jul 2026 09:12:52 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    7080,
+    2600
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0139/segments/20260318000000-w049_20260318/surface-volumes/9.362um-1.2m-113keV-volume-20250728140407.zarr",
+   "sample": "PHerc0139",
+   "segment": "20260318000000",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T17:49:47.502565Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0139/segments/20260318000000-w049_20260318/mesh/20260318000000-on-20250728140407-9.362um.tifxyz",
+   "seg_path_param": "PHerc0139/segments/20260318000000-w049_20260318/mesh/20260318000000-on-20250728140407-9.362um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250728140407",
+   "canvas_size": [
+    9400,
+    5660
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    28,
+    5660,
+    9400
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    283,
+    470
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 15:37:20 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    9400,
+    5660
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0139/segments/20260206000001-w047_2026020613/surface-volumes/1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+   "sample": "PHerc0139",
+   "segment": "20260206000001",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-16T10:17:56.710810Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0139/segments/20260206000001-w047_2026020613/mesh/20260206000001-on-20260413113053-1.129um.tifxyz",
+   "seg_path_param": "PHerc0139/segments/20260206000001-w047_2026020613/mesh/20260206000001-on-20260413113053-1.129um.tifxyz",
+   "scale": "1",
+   "group_idx": "1",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260413113053",
+   "canvas_size": [
+    34890,
+    24160
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    116,
+    24160,
+    34890
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    2416,
+    3489
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 15:37:08 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    34890,
+    24160
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0139/segments/20250108000000-w025_2025010863/surface-volumes/1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+   "sample": "PHerc0139",
+   "segment": "20250108000000",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T18:03:49.943300Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0139/segments/20250108000000-w025_2025010863/mesh/20250108000000-on-20260413113053-1.129um.tifxyz",
+   "seg_path_param": "PHerc0139/segments/20250108000000-w025_2025010863/mesh/20250108000000-on-20260413113053-1.129um.tifxyz",
+   "scale": "1",
+   "group_idx": "1",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260413113053",
+   "canvas_size": [
+    28170,
+    30120
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    116,
+    30120,
+    28170
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    3012,
+    2817
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 15:37:35 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    28170,
+    30120
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0139/segments/20260206000002-w054_2026020617/surface-volumes/9.362um-1.2m-113keV-volume-20250728140407.zarr",
+   "sample": "PHerc0139",
+   "segment": "20260206000002",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T17:49:46.171506Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0139/segments/20260206000002-w054_2026020617/mesh/20260206000002-on-20250728140407-9.362um.tifxyz",
+   "seg_path_param": "PHerc0139/segments/20260206000002-w054_2026020617/mesh/20260206000002-on-20250728140407-9.362um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250728140407",
+   "canvas_size": [
+    11140,
+    7660
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    28,
+    7660,
+    11140
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    383,
+    557
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 15:36:44 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    11140,
+    7660
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0139/segments/20260219000001-w048_2026021912/surface-volumes/9.362um-1.2m-113keV-volume-20250728140407.zarr",
+   "sample": "PHerc0139",
+   "segment": "20260219000001",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T17:49:45.200958Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0139/segments/20260219000001-w048_2026021912/mesh/20260219000001-on-20250728140407-9.362um.tifxyz",
+   "seg_path_param": "PHerc0139/segments/20260219000001-w048_2026021912/mesh/20260219000001-on-20250728140407-9.362um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250728140407",
+   "canvas_size": [
+    8520,
+    5720
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    28,
+    5720,
+    8520
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    286,
+    426
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 15:36:24 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    8520,
+    5720
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0500P2/segments/20250922024644-0500P2-wrap11_0919/surface-volumes/9.362um-1.2m-113keV-volume-20250820143440.zarr",
+   "sample": "PHerc0500P2",
+   "segment": "20250922024644",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-21T15:17:47.572262Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0500P2/segments/20250922024644-0500P2-wrap11_0919/mesh/20250922024644-on-20250820143440-9.362um.tifxyz",
+   "seg_path_param": "PHerc0500P2/segments/20250922024644-0500P2-wrap11_0919/mesh/20250922024644-on-20250820143440-9.362um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250820143440",
+   "canvas_size": [
+    1040,
+    720
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    28,
+    720,
+    1040
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    36,
+    52
+   ],
+   "mesh_x_last_modified": "Tue, 21 Jul 2026 13:15:30 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    1040,
+    720
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0500P2/segments/20250716055227-z_dbg_gen_00260_inp_hr/surface-volumes/9.362um-1.2m-113keV-volume-20250820143440.zarr",
+   "sample": "PHerc0500P2",
+   "segment": "20250716055227",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-21T15:13:28.956468Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0500P2/segments/20250716055227-z_dbg_gen_00260_inp_hr/mesh/20250716055227-on-20250820143440-9.362um.tifxyz",
+   "seg_path_param": "PHerc0500P2/segments/20250716055227-z_dbg_gen_00260_inp_hr/mesh/20250716055227-on-20250820143440-9.362um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250820143440",
+   "canvas_size": [
+    1760,
+    2660
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    28,
+    2660,
+    1760
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    133,
+    88
+   ],
+   "mesh_x_last_modified": "Tue, 21 Jul 2026 13:09:10 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    1760,
+    2660
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0500P2/segments/20250611153347-z_dbg_gen_00105_inp_hr/surface-volumes/9.362um-1.2m-113keV-volume-20250820143440.zarr",
+   "sample": "PHerc0500P2",
+   "segment": "20250611153347",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-21T15:16:01.961709Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0500P2/segments/20250611153347-z_dbg_gen_00105_inp_hr/mesh/20250611153347-on-20250820143440-9.362um.tifxyz",
+   "seg_path_param": "PHerc0500P2/segments/20250611153347-z_dbg_gen_00105_inp_hr/mesh/20250611153347-on-20250820143440-9.362um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250820143440",
+   "canvas_size": [
+    2060,
+    4380
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    28,
+    4380,
+    2060
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    219,
+    103
+   ],
+   "mesh_x_last_modified": "Tue, 21 Jul 2026 13:10:26 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    2060,
+    4380
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0500P2/segments/20250716055232-z_dbg_gen_00505_inp_hr/surface-volumes/9.362um-1.2m-113keV-volume-20250820143440.zarr",
+   "sample": "PHerc0500P2",
+   "segment": "20250716055232",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-21T15:16:01.228993Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0500P2/segments/20250716055232-z_dbg_gen_00505_inp_hr/mesh/20250716055232-on-20250820143440-9.362um.tifxyz",
+   "seg_path_param": "PHerc0500P2/segments/20250716055232-z_dbg_gen_00505_inp_hr/mesh/20250716055232-on-20250820143440-9.362um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250820143440",
+   "canvas_size": [
+    3480,
+    5020
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    28,
+    5020,
+    3480
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    251,
+    174
+   ],
+   "mesh_x_last_modified": "Tue, 21 Jul 2026 13:10:07 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    3480,
+    5020
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0500P2/segments/20250919184428-0500P2-wrap01_0919/surface-volumes/2.215um-0.4m-111keV-volume-20250526151718.zarr",
+   "sample": "PHerc0500P2",
+   "segment": "20250919184428",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-21T14:25:03.061911Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0500P2/segments/20250919184428-0500P2-wrap01_0919/mesh/20250919184428-on-20250526151718-2.215um.tifxyz",
+   "seg_path_param": "PHerc0500P2/segments/20250919184428-0500P2-wrap01_0919/mesh/20250919184428-on-20250526151718-2.215um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250526151718",
+   "canvas_size": [
+    1400,
+    1160
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    118,
+    1160,
+    1400
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    58,
+    70
+   ],
+   "mesh_x_last_modified": "Tue, 21 Jul 2026 12:22:15 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    1400,
+    1160
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr",
+   "sample": "PHerc1667",
+   "segment": "20260108140509",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-19T09:24:42.329405Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi/mesh/20260108140509-on-20251217075048-2.399um.tifxyz",
+   "seg_path_param": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi/mesh/20260108140509-on-20251217075048-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20251217075048",
+   "canvas_size": [
+    14720,
+    39500
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    39500,
+    14720
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    1975,
+    736
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:36:59 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    14720,
+    39500
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr",
+   "sample": "PHerc1667",
+   "segment": "20260130150000",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-18T18:17:44.015870Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi/mesh/20260130150000-on-20251217075048-2.399um.tifxyz",
+   "seg_path_param": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi/mesh/20260130150000-on-20251217075048-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20251217075048",
+   "canvas_size": [
+    33280,
+    36100
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    36100,
+    33280
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    1805,
+    1664
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:34:42 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    33280,
+    36100
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr",
+   "sample": "PHerc1667",
+   "segment": "20240304161941",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-19T09:24:43.154308Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi/mesh/20240304161941-on-20251217075048-2.399um.tifxyz",
+   "seg_path_param": "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi/mesh/20240304161941-on-20251217075048-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20251217075048",
+   "canvas_size": [
+    102360,
+    41860
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    41860,
+    102360
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    2093,
+    5118
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:37:22 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    102360,
+    41860
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi/surface-volumes/1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+   "sample": "PHerc1667",
+   "segment": "20260119120000",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T08:11:32.884624Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi/mesh/20260119120000-on-20260323082859-1.129um.tifxyz",
+   "seg_path_param": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi/mesh/20260119120000-on-20260323082859-1.129um.tifxyz",
+   "scale": "1",
+   "group_idx": "1",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260323082859",
+   "canvas_size": [
+    34970,
+    42670
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    116,
+    42670,
+    34970
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    4267,
+    3497
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:32:14 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    34970,
+    42670
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr",
+   "sample": "PHerc1667",
+   "segment": "20260128140000",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-18T18:10:47.020788Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi/mesh/20260128140000-on-20251217075048-2.399um.tifxyz",
+   "seg_path_param": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi/mesh/20260128140000-on-20251217075048-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20251217075048",
+   "canvas_size": [
+    32900,
+    35180
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    35180,
+    32900
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    1759,
+    1645
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:35:26 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    32900,
+    35180
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715/surface-volumes/1.129um-0.22m-59keV-volume-20260521123630.zarr",
+   "sample": "PHerc0814",
+   "segment": "20250925182632",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-03T13:21:57.477800Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715/mesh/20250925182632-on-20260521123630-1.129um.tifxyz",
+   "seg_path_param": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715/mesh/20250925182632-on-20260521123630-1.129um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "862bd17259eb3bd64faf7c20a5ac1dd353fc6688",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260521123630",
+   "canvas_size": [
+    179420,
+    39560
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    231,
+    39560,
+    179420
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    1978,
+    8971
+   ],
+   "mesh_x_last_modified": "Fri, 03 Jul 2026 10:58:25 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    179420,
+    39560
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr",
+   "sample": "PHerc0814",
+   "segment": "20250925161630",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-03T11:28:21.597573Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635/mesh/20250925161630-on-20260309142202-2.399um.tifxyz",
+   "seg_path_param": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635/mesh/20250925161630-on-20260309142202-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "862bd17259eb3bd64faf7c20a5ac1dd353fc6688",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260309142202",
+   "canvas_size": [
+    73920,
+    20080
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    20080,
+    73920
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    1004,
+    3696
+   ],
+   "mesh_x_last_modified": "Fri, 03 Jul 2026 10:58:06 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    73920,
+    20080
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/surface-volumes/9.362um-1.2m-113keV-volume-20250804134230.zarr",
+   "sample": "PHerc0814",
+   "segment": "20260226121302",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T16:24:08.248658Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/20260226121302-on-20250804134230-9.362um.tifxyz",
+   "seg_path_param": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/20260226121302-on-20250804134230-9.362um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250804134230",
+   "canvas_size": [
+    980,
+    600
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    28,
+    600,
+    980
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    30,
+    49
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 14:22:41 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    980,
+    600
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr",
+   "sample": "PHerc0814",
+   "segment": "20250925212701",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-03T11:15:12.254407Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145/mesh/20250925212701-on-20260309142202-2.399um.tifxyz",
+   "seg_path_param": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145/mesh/20250925212701-on-20260309142202-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "862bd17259eb3bd64faf7c20a5ac1dd353fc6688",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260309142202",
+   "canvas_size": [
+    26840,
+    15880
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    15880,
+    26840
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    794,
+    1342
+   ],
+   "mesh_x_last_modified": "Fri, 03 Jul 2026 10:58:38 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    26840,
+    15880
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0343P/segments/20250904233748-0_b2/surface-volumes/2.215um-0.4m-111keV-volume-20260304131111.zarr",
+   "sample": "PHerc0343P",
+   "segment": "20250904233748",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-22T13:18:31.815561Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0343P/segments/20250904233748-0_b2/mesh/20250904233748-on-20260304131111-2.215um.tifxyz",
+   "seg_path_param": "PHerc0343P/segments/20250904233748-0_b2/mesh/20250904233748-on-20260304131111-2.215um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260304131111",
+   "canvas_size": [
+    9740,
+    14120
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    118,
+    14120,
+    9740
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    706,
+    487
+   ],
+   "mesh_x_last_modified": "Wed, 22 Jul 2026 11:14:52 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    9740,
+    14120
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0343P/segments/20250902170441--4_b2/surface-volumes/2.215um-0.4m-111keV-volume-20260304131111.zarr",
+   "sample": "PHerc0343P",
+   "segment": "20250902170441",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-22T13:18:30.653495Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0343P/segments/20250902170441--4_b2/mesh/20250902170441-on-20260304131111-2.215um.tifxyz",
+   "seg_path_param": "PHerc0343P/segments/20250902170441--4_b2/mesh/20250902170441-on-20260304131111-2.215um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260304131111",
+   "canvas_size": [
+    9820,
+    12880
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    118,
+    12880,
+    9820
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    644,
+    491
+   ],
+   "mesh_x_last_modified": "Wed, 22 Jul 2026 11:13:26 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    9820,
+    12880
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0343P/segments/20250905172054-1_b2/surface-volumes/2.215um-0.4m-111keV-volume-20260304131111.zarr",
+   "sample": "PHerc0343P",
+   "segment": "20250905172054",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-22T13:18:30.937929Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0343P/segments/20250905172054-1_b2/mesh/20250905172054-on-20260304131111-2.215um.tifxyz",
+   "seg_path_param": "PHerc0343P/segments/20250905172054-1_b2/mesh/20250905172054-on-20260304131111-2.215um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260304131111",
+   "canvas_size": [
+    8880,
+    11780
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    118,
+    11780,
+    8880
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    589,
+    444
+   ],
+   "mesh_x_last_modified": "Wed, 22 Jul 2026 11:13:26 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    8880,
+    11780
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0343P/segments/20250902170435--5_b2/surface-volumes/2.215um-0.4m-111keV-volume-20260304131111.zarr",
+   "sample": "PHerc0343P",
+   "segment": "20250902170435",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-22T13:19:14.564427Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0343P/segments/20250902170435--5_b2/mesh/20250902170435-on-20260304131111-2.215um.tifxyz",
+   "seg_path_param": "PHerc0343P/segments/20250902170435--5_b2/mesh/20250902170435-on-20260304131111-2.215um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260304131111",
+   "canvas_size": [
+    9440,
+    12800
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    118,
+    12800,
+    9440
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    640,
+    472
+   ],
+   "mesh_x_last_modified": "Wed, 22 Jul 2026 11:14:52 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    9440,
+    12800
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "T",
+   "volume": "PHerc0343P/segments/20250902170447--3_b2/surface-volumes/2.215um-0.4m-111keV-volume-20260304131111.zarr",
+   "sample": "PHerc0343P",
+   "segment": "20250902170447",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-22T13:18:31.288221Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0343P/segments/20250902170447--3_b2/mesh/20250902170447-on-20260304131111-2.215um.tifxyz",
+   "seg_path_param": "PHerc0343P/segments/20250902170447--3_b2/mesh/20250902170447-on-20260304131111-2.215um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260304131111",
+   "canvas_size": [
+    10140,
+    13880
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    118,
+    13880,
+    10140
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    694,
+    507
+   ],
+   "mesh_x_last_modified": "Wed, 22 Jul 2026 11:14:52 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    10140,
+    13880
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc0500P2/segments/20250716055235-z_dbg_gen_00779_inp_hr/surface-volumes/4.317um-1.2m-111keV-volume-20250528085330.zarr",
+   "sample": "PHerc0500P2",
+   "segment": "20250716055235",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-21T15:18:41.143859Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0500P2/segments/20250716055235-z_dbg_gen_00779_inp_hr/mesh/20250716055235-on-20250528085330-4.317um.tifxyz",
+   "seg_path_param": "PHerc0500P2/segments/20250716055235-z_dbg_gen_00779_inp_hr/mesh/20250716055235-on-20250528085330-4.317um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250528085330",
+   "canvas_size": [
+    12660,
+    12180
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    61,
+    12180,
+    12660
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    609,
+    633
+   ],
+   "mesh_x_last_modified": "Tue, 21 Jul 2026 13:08:47 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    12660,
+    12180
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc0172/segments/20251106170358-w076_20251106170358232_flatboi/surface-volumes/7.91um-53keV-volume-20241024131838.zarr",
+   "sample": "PHerc0172",
+   "segment": "20251106170358",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-23T15:50:45.122921Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0172/segments/20251106170358-w076_20251106170358232_flatboi/mesh/20251106170358-on-20241024131838-7.91um.tifxyz",
+   "seg_path_param": "PHerc0172/segments/20251106170358-w076_20251106170358232_flatboi/mesh/20251106170358-on-20241024131838-7.91um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20241024131838",
+   "canvas_size": [
+    12160,
+    13460
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    33,
+    13460,
+    12160
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    673,
+    608
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:13:13 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    12160,
+    13460
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc0172/segments/20251115002741-auto_grown_20251115002740308_1_flatboi/surface-volumes/7.91um-53keV-volume-20241024131838.zarr",
+   "sample": "PHerc0172",
+   "segment": "20251115002741",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-09-01T16:34:20.089342Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0172/segments/20251115002741-auto_grown_20251115002740308_1_flatboi/mesh/20251115002741-on-20241024131838-7.91um.tifxyz",
+   "seg_path_param": "PHerc0172/segments/20251115002741-auto_grown_20251115002740308_1_flatboi/mesh/20251115002741-on-20241024131838-7.91um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20241024131838",
+   "canvas_size": [
+    56300,
+    12580
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    33,
+    12580,
+    56300
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    629,
+    2815
+   ],
+   "mesh_x_last_modified": "Tue, 01 Sep 2026 14:05:02 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    56300,
+    12580
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc0500P2/segments/20250716055230-z_dbg_gen_00377_inp_hr/surface-volumes/4.317um-1.2m-111keV-volume-20250528085330.zarr",
+   "sample": "PHerc0500P2",
+   "segment": "20250716055230",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-21T15:17:46.206253Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0500P2/segments/20250716055230-z_dbg_gen_00377_inp_hr/mesh/20250716055230-on-20250528085330-4.317um.tifxyz",
+   "seg_path_param": "PHerc0500P2/segments/20250716055230-z_dbg_gen_00377_inp_hr/mesh/20250716055230-on-20250528085330-4.317um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250528085330",
+   "canvas_size": [
+    7220,
+    11160
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    61,
+    11160,
+    7220
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    558,
+    361
+   ],
+   "mesh_x_last_modified": "Tue, 21 Jul 2026 13:08:37 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    7220,
+    11160
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc1447/segments/20250502205333-auto_grown_20250502181030065/surface-volumes/8.64um-1.2m-116keV-volume-20250521151220.zarr",
+   "sample": "PHerc1447",
+   "segment": "20250502205333",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-09-07T11:12:30.522851Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc1447/segments/20250502205333-auto_grown_20250502181030065/mesh/20250502205333-on-20250521151220-8.64um.tifxyz",
+   "seg_path_param": "PHerc1447/segments/20250502205333-auto_grown_20250502181030065/mesh/20250502205333-on-20250521151220-8.64um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250521151220",
+   "canvas_size": [
+    2580,
+    3760
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    31,
+    3760,
+    2580
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    188,
+    129
+   ],
+   "mesh_x_last_modified": "Mon, 07 Sep 2026 09:10:12 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    2580,
+    3760
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc1447/segments/20250502184658-auto_grown_20250502163923577/surface-volumes/8.64um-1.2m-116keV-volume-20250521151220.zarr",
+   "sample": "PHerc1447",
+   "segment": "20250502184658",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-09-07T11:12:57.314386Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc1447/segments/20250502184658-auto_grown_20250502163923577/mesh/20250502184658-on-20250521151220-8.64um.tifxyz",
+   "seg_path_param": "PHerc1447/segments/20250502184658-auto_grown_20250502163923577/mesh/20250502184658-on-20250521151220-8.64um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250521151220",
+   "canvas_size": [
+    2860,
+    4220
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    31,
+    4220,
+    2860
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    211,
+    143
+   ],
+   "mesh_x_last_modified": "Mon, 07 Sep 2026 09:10:39 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    2860,
+    4220
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc0814/segments/20260226000000-46527_2um_try2/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr",
+   "sample": "PHerc0814",
+   "segment": "20260226000000",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T16:27:13.139105Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0814/segments/20260226000000-46527_2um_try2/mesh/20260226000000-on-20260309142202-2.399um.tifxyz",
+   "seg_path_param": "PHerc0814/segments/20260226000000-46527_2um_try2/mesh/20260226000000-on-20260309142202-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260309142202",
+   "canvas_size": [
+    13820,
+    8520
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    8520,
+    13820
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    426,
+    691
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 14:22:40 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    13820,
+    8520
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc0172/segments/20251109232817-w065_20251109232817724_flatboi/surface-volumes/7.91um-53keV-volume-20241024131838.zarr",
+   "sample": "PHerc0172",
+   "segment": "20251109232817",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-23T15:43:36.260435Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0172/segments/20251109232817-w065_20251109232817724_flatboi/mesh/20251109232817-on-20241024131838-7.91um.tifxyz",
+   "seg_path_param": "PHerc0172/segments/20251109232817-w065_20251109232817724_flatboi/mesh/20251109232817-on-20241024131838-7.91um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20241024131838",
+   "canvas_size": [
+    14860,
+    15180
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    33,
+    15180,
+    14860
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    759,
+    743
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:11:43 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    14860,
+    15180
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc0500P2/segments/20250716055231-z_dbg_gen_00473_inp_hr/surface-volumes/4.317um-1.2m-111keV-volume-20250528085330.zarr",
+   "sample": "PHerc0500P2",
+   "segment": "20250716055231",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-21T15:12:43.962301Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0500P2/segments/20250716055231-z_dbg_gen_00473_inp_hr/mesh/20250716055231-on-20250528085330-4.317um.tifxyz",
+   "seg_path_param": "PHerc0500P2/segments/20250716055231-z_dbg_gen_00473_inp_hr/mesh/20250716055231-on-20250528085330-4.317um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20250528085330",
+   "canvas_size": [
+    7160,
+    11580
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    61,
+    11580,
+    7160
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    579,
+    358
+   ],
+   "mesh_x_last_modified": "Tue, 21 Jul 2026 13:06:49 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    7160,
+    11580
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C1",
+   "volume": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr",
+   "sample": "PHerc0814",
+   "segment": "20260226113324",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T16:31:16.929130Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/20260226113324-on-20260309142202-2.399um.tifxyz",
+   "seg_path_param": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/20260226113324-on-20260309142202-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260309142202",
+   "canvas_size": [
+    3840,
+    2320
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    2320,
+    3840
+   ],
+   "mesh_scale": [
+    0.05,
+    0.05
+   ],
+   "mesh_hw": [
+    116,
+    192
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 14:22:40 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    3840,
+    2320
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C2",
+   "volume": "PHercParis4/segments/20260623150417-w064-068/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr",
+   "sample": "PHercParis4",
+   "segment": "20260623150417",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-24T11:04:50.673392Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHercParis4/segments/20260623150417-w064-068/mesh/20260623150417-on-20260411134726-2.4um.tifxyz",
+   "seg_path_param": "PHercParis4/segments/20260623150417-w064-068/mesh/20260623150417-on-20260411134726-2.4um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260411134726",
+   "canvas_size": [
+    191440,
+    49280
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    49280,
+    191440
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    2464,
+    9572
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:48:27 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    191440,
+    49280
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C2",
+   "volume": "PHerc0139/segments/20260215000000-w024_2026021572/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr",
+   "sample": "PHerc0139",
+   "segment": "20260215000000",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-19T14:09:19.926346Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0139/segments/20260215000000-w024_2026021572/mesh/20260215000000-on-20260102150214-2.399um.tifxyz",
+   "seg_path_param": "PHerc0139/segments/20260215000000-w024_2026021572/mesh/20260215000000-on-20260102150214-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260102150214",
+   "canvas_size": [
+    25760,
+    27600
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    27600,
+    25760
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    1380,
+    1288
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:22:52 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    25760,
+    27600
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C2",
+   "volume": "PHerc0139/segments/20260206000000-w042_2026020613/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr",
+   "sample": "PHerc0139",
+   "segment": "20260206000000",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-06-19T14:11:39.229552Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHerc0139/segments/20260206000000-w042_2026020613/mesh/20260206000000-on-20260102150214-2.399um.tifxyz",
+   "seg_path_param": "PHerc0139/segments/20260206000000-w042_2026020613/mesh/20260206000000-on-20260102150214-2.399um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "650bd56663efb7225fdba73fe267ba86b8e29368",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260102150214",
+   "canvas_size": [
+    30640,
+    23280
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    109,
+    23280,
+    30640
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    1164,
+    1532
+   ],
+   "mesh_x_last_modified": "Wed, 24 Jun 2026 23:23:38 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    30640,
+    23280
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C2",
+   "volume": "PHercParis4/segments/20260623141649-w053-058_jordi/surface-volumes/1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+   "sample": "PHercParis4",
+   "segment": "20260623141649",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-15T14:15:39.340988Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHercParis4/segments/20260623141649-w053-058_jordi/mesh/20260623141649-on-20260608103018-1.129um.tifxyz",
+   "seg_path_param": "PHercParis4/segments/20260623141649-w053-058_jordi/mesh/20260623141649-on-20260608103018-1.129um.tifxyz",
+   "scale": "1",
+   "group_idx": "1",
+   "commit": "530584554c031c982ba3aa243e1ea39c4bef9818",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260608103018",
+   "canvas_size": [
+    197530,
+    51910
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    116,
+    51910,
+    197530
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    5191,
+    19753
+   ],
+   "mesh_x_last_modified": "Wed, 15 Jul 2026 10:04:14 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    197530,
+    51910
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  },
+  {
+   "group": "C2",
+   "volume": "PHercParis4/segments/20260623162614-w107-109/surface-volumes/45.532um-11.0m-74keV-volume-20260310170716.zarr",
+   "sample": "PHercParis4",
+   "segment": "20260623162614",
+   "process": "render-tifxyz-to-zarr",
+   "render_date": "2026-07-03T11:28:34.787718Z",
+   "derived_type": "tifxyz-transformed",
+   "mesh": "PHercParis4/segments/20260623162614-w107-109/mesh/20260623162614-on-20260310170716-45.532um.tifxyz",
+   "seg_path_param": "PHercParis4/segments/20260623162614-w107-109/mesh/20260623162614-on-20260310170716-45.532um.tifxyz",
+   "scale": "1",
+   "group_idx": "0",
+   "commit": "862bd17259eb3bd64faf7c20a5ac1dd353fc6688",
+   "affine": [
+    "",
+    "",
+    ""
+   ],
+   "crop": [
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "scale_seg": "",
+   "target_volume": "20260310170716",
+   "canvas_size": [
+    9980,
+    2640
+   ],
+   "zattrs_keys": [
+    "canvas_size",
+    "chunk_size",
+    "multiscales",
+    "note_axes_order",
+    "num_slices",
+    "slice_step",
+    "source_group",
+    "source_zarr"
+   ],
+   "level0_shape": [
+    6,
+    2640,
+    9980
+   ],
+   "mesh_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "mesh_hw": [
+    132,
+    499
+   ],
+   "mesh_x_last_modified": "Fri, 03 Jul 2026 09:18:00 GMT",
+   "applicable": true,
+   "predicted_canvas_WH": [
+    9980,
+    2640
+   ],
+   "match_canvas": true,
+   "match_level0": true,
+   "delta_WH": [
+    0,
+    0
+   ],
+   "xframe_shape_agrees": true
+  }
+ ]
+}

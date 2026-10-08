@@ -1,0 +1,107 @@
+{
+ "id": "B-fiber-continuity-seam-darkening",
+ "closed": "2026-10-07 HST",
+ "ai_assisted": true,
+ "question": "On published flattened surface-volume renders (voxel-matched, level 2, middle slice), are texture-continuity breaks (1 - structure-tensor coherence) enriched near real windcheck-v0.3.2 self-crossing contacts vs spatially shifted zones in the same segment?",
+ "answer": "NO",
+ "design": {
+  "null": "1000 within-segment spatial shifts (|shift|>10 cells, shifted zone >=50% of |Z|)",
+  "primary": "S = mean_B(zone) - mean_B(rest), b = 1 - coherence (sigma_d=1, sigma_i=3 px)",
+  "secondary": "S_I = intensity darkening near contacts (#1641-like)",
+  "decision": "Fisher combined p<0.05 AND z>0 in >= half of segments",
+  "labels": "windcheck transformed traces with base_kind==original"
+ },
+ "pilot": {
+  "summary": {
+   "set": "pilot",
+   "n_scored": 8,
+   "n_total": 8,
+   "fisher_combined_p_primary": 0.9467047416390675,
+   "n_z_positive": 3,
+   "enrichment": false,
+   "fisher_combined_p_intensity_secondary": 9.030732616983463e-08,
+   "n_zI_positive": 7,
+   "median_z_primary": -0.6955150648044965
+  },
+  "per_scroll_z": {
+   "PHerc0139": {
+    "n": 1,
+    "median": -1.0555832706911263,
+    "n_pos": 0
+   },
+   "PHerc0172": {
+    "n": 4,
+    "median": -0.7951473403519386,
+    "n_pos": 2
+   },
+   "PHerc0814": {
+    "n": 3,
+    "median": -0.3354468589178667,
+    "n_pos": 1
+   }
+  },
+  "per_scroll_zI": {
+   "PHerc0139": {
+    "n": 1,
+    "median": 1.6791656234267907,
+    "n_pos": 1
+   },
+   "PHerc0172": {
+    "n": 4,
+    "median": 4.2524285717303005,
+    "n_pos": 4
+   },
+   "PHerc0814": {
+    "n": 3,
+    "median": 0.06766941690890987,
+    "n_pos": 2
+   }
+  }
+ },
+ "heldout": {
+  "summary": {
+   "set": "heldout",
+   "n_scored": 19,
+   "n_total": 19,
+   "fisher_combined_p_primary": 0.9322929580080879,
+   "n_z_positive": 6,
+   "enrichment": false,
+   "fisher_combined_p_intensity_secondary": 0.027559372331682045,
+   "n_zI_positive": 8,
+   "median_z_primary": -0.8254875094436985
+  },
+  "per_scroll_z": {
+   "PHerc0139": {
+    "n": 3,
+    "median": -0.6602672560701996,
+    "n_pos": 1
+   },
+   "PHerc0172": {
+    "n": 16,
+    "median": -0.9820962766776369,
+    "n_pos": 5
+   }
+  },
+  "per_scroll_zI": {
+   "PHerc0139": {
+    "n": 3,
+    "median": -0.00833229919046849,
+    "n_pos": 1
+   },
+   "PHerc0172": {
+    "n": 16,
+    "median": -0.05884444073368644,
+    "n_pos": 7
+   }
+  },
+  "secondary_confirmation_rule": "Addendum A1 (written before held-out scoring): Fisher pI<0.05 AND zI>0 in >= half",
+  "secondary_confirmation": "FAIL (pI=0.028 but 8/19 positive)"
+ },
+ "confounds": [
+  "scroll mix: pilot darkening large in PHerc0172 and ~null in PHerc0814; held-out has no PHerc0814",
+  "segment-family mix: 9/19 held-out segments are one auto_grown parent run (null); strong darkening only in some hand-named wNNN flatboi segments",
+  "mesh/zone size varies 22 to 203,663 zone cells",
+  "single middle slice at level 2, fixed sigma; structure-tensor metrics are resolution-dependent (sheetcheck caveat)"
+ ],
+ "data": "vesuvius-challenge-open-data (CC BY-NC 4.0) + windcheck v0.3.2 witness contacts; no payloads redistributed"
+}

@@ -1,0 +1,26 @@
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /tmp/xframe-venv/bin/python
+rootdir: /tmp/xframe-tests
+collecting ... collected 19 items
+
+test_catalog_and_io.py::test_catalog_lookup PASSED                       [  5%]
+test_catalog_and_io.py::test_tifxyz_roundtrip PASSED                     [ 10%]
+test_cli_offline.py::test_verify_classes_and_exit_code PASSED            [ 15%]
+test_cli_offline.py::test_explain_warns_downscale PASSED                 [ 21%]
+test_cli_offline.py::test_convert_csv_roundtrip PASSED                   [ 26%]
+test_cli_offline.py::test_convert_tifxyz_from_normalized PASSED          [ 31%]
+test_geom.py::test_resample_matches_reference[37-23] PASSED              [ 36%]
+test_geom.py::test_resample_matches_reference[80-100] PASSED             [ 42%]
+test_geom.py::test_resample_matches_reference[13-11] PASSED              [ 47%]
+test_geom.py::test_resample_row_blocks_equal_full PASSED                 [ 52%]
+test_geom.py::test_vc_median PASSED                                      [ 57%]
+test_geom.py::test_measure_spacing_plane_grid PASSED                     [ 63%]
+test_geom.py::test_transform_surface_prescale_only_upsamples_4x PASSED   [ 68%]
+test_geom.py::test_transform_surface_downscale_by_matrix PASSED          [ 73%]
+test_geom.py::test_no_regrid_for_identity PASSED                         [ 78%]
+test_geom.py::test_invert_and_uniform_scale PASSED                       [ 84%]
+test_real_bucket.py::test_real_verify_downscale_segment PASSED           [ 89%]
+test_real_bucket.py::test_real_wrong_prescale_is_caught PASSED           [ 94%]
+test_real_bucket.py::test_real_convert_matches_published PASSED          [100%]
+
+============================= 19 passed in 16.76s ==============================
+rerun after read_tifxyz memory change: 19 passed in 14.90s (XFRAME_REAL=1, clean venv /tmp/xframe-venv, xframe 0.1.0, numpy 2.5.3, tifffile 2026.9.20, imagecodecs 2026.8.16, Python 3.13.5)

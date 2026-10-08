@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /workspace/envs/zarr3/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/vesuvius-lab/experiments/villa-1522-evidence/after/vesuvius
+configfile: pytest.ini
+plugins: zarr-3.4.0
+collecting ... collected 9 items
+
+vesuvius/tests/tifxyz/test_meta_frames.py::test_parse_voxel_size_um_from_name[-on-20260608103018-1.129um.tifxyz-1.129] PASSED [ 11%]
+vesuvius/tests/tifxyz/test_meta_frames.py::test_parse_voxel_size_um_from_name[-on-20230205180739-7.91um.tifxyz-7.91] PASSED [ 22%]
+vesuvius/tests/tifxyz/test_meta_frames.py::test_parse_voxel_size_um_from_name[-on-20260310170716-45.532um.tifxyz-45.532] PASSED [ 33%]
+vesuvius/tests/tifxyz/test_meta_frames.py::test_parse_voxel_size_um_from_name[plain-no-um.tifxyz-None] PASSED [ 44%]
+vesuvius/tests/tifxyz/test_meta_frames.py::test_annotate_meta_from_dirname PASSED [ 55%]
+vesuvius/tests/tifxyz/test_meta_frames.py::test_find_ambiguous_scale_frames_matches_issue_example PASSED [ 66%]
+vesuvius/tests/tifxyz/test_meta_frames.py::test_find_ambiguous_scale_frames_clear_when_voxel_sizes_match PASSED [ 77%]
+vesuvius/tests/tifxyz/test_meta_frames.py::test_frames_comparable_requires_voxel_size PASSED [ 88%]
+vesuvius/tests/tifxyz/test_meta_frames.py::test_reader_known_keys_include_voxel_size_um PASSED [100%]
+
+============================== 9 passed in 0.07s ===============================

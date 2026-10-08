@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /workspace/vesuvius-lab/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/vesuvius-lab/experiments/robust-mad-padding-1481
+collecting ... collected 3 items
+
+test_robust_mad_padding_1481.py::test_issue_1481_bug_numbers_still_match_pad_then_normalize PASSED [ 33%]
+test_robust_mad_padding_1481.py::test_flat_robust_excludes_padding PASSED [ 66%]
+test_robust_mad_padding_1481.py::test_divide_255_unchanged PASSED        [100%]
+
+=============================== warnings summary ===============================
+test_robust_mad_padding_1481.py::test_flat_robust_excludes_padding
+test_robust_mad_padding_1481.py::test_divide_255_unchanged
+  /workspace/vesuvius-lab/.venv/lib/python3.13/site-packages/zarr/creation.py:610: UserWarning: ignoring keyword argument 'zarr_format'
+    compressor, fill_value = _kwargs_compat(compressor, fill_value, kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 3 passed, 2 warnings in 2.56s =========================

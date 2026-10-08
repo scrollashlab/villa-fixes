@@ -1,0 +1,152 @@
+[
+ {
+  "sample": "PHerc0139",
+  "segment": "20260422000000",
+  "long_id": "20260422000000-title_2026042222_zmid_flatboi",
+  "downscale": 4,
+  "key": "PHerc0139/segments/20260422000000-title_2026042222_zmid_flatboi/mesh/intermediate/tifxyz_normalized",
+  "files": {
+   "meta.json": {
+    "bytes": 283,
+    "sha256": "73da04c37a4e78bcae24b20acd6fd93bf1338403362b248e74f1204a6e0db8f0"
+   },
+   "x.tif": {
+    "bytes": 74910,
+    "sha256": "4c6b4a79e6207e640725681dbd8008759feb7046f21f6e77a88d3802e80d1a44"
+   },
+   "y.tif": {
+    "bytes": 78362,
+    "sha256": "d74d51d81c8388c9261fb7372a77ddcf3ab0785c6ad03891c6bfe9bdf9874cca"
+   },
+   "z.tif": {
+    "bytes": 67530,
+    "sha256": "4d0b3201cdba6fea4a401b694a9a9c948289b63cec39b9399c5128bc467e3831"
+   }
+  }
+ },
+ {
+  "sample": "PHerc0139",
+  "segment": "20250108000002",
+  "long_id": "20250108000002-w027_2025010845",
+  "downscale": 4,
+  "key": "PHerc0139/segments/20250108000002-w027_2025010845/mesh/intermediate/tifxyz_normalized",
+  "files": {
+   "meta.json": {
+    "bytes": 291,
+    "sha256": "c0adcdd94661bae61ce8f6c58c27c2eb013e312472238497c0b9886264f64458"
+   },
+   "x.tif": {
+    "bytes": 334974,
+    "sha256": "14a9c2a423390a233ba8dbb69a6426b0dfb8015482a5d2b3496393d26a8174e9"
+   },
+   "y.tif": {
+    "bytes": 345258,
+    "sha256": "4742b9bfcf065c6f0ac38879c126cdd81fd9cda7cde2aa05f821c58f407e398a"
+   },
+   "z.tif": {
+    "bytes": 290744,
+    "sha256": "20f185a15f92afbd8fa87923e518b7b57255c0ccc6bbfe66d92b7f3311718470"
+   }
+  }
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260602204401",
+  "long_id": "20260602204401-5753_-7",
+  "downscale": 4,
+  "key": "PHercParis4/segments/20260602204401-5753_-7/mesh/intermediate/tifxyz_normalized",
+  "files": {
+   "meta.json": {
+    "bytes": 285,
+    "sha256": "9834f31e1640a32ee71089052f8f0e9f7695c29f81978a5ea1b1f41bfa6f0ff6"
+   },
+   "x.tif": {
+    "bytes": 570374,
+    "sha256": "b3f5d55797dc306d467979b2520ca142c68f5be725c4ea17707e92421af184a6"
+   },
+   "y.tif": {
+    "bytes": 570374,
+    "sha256": "c05d60b2e2da3a75447c52ab94a8e6d876faa6f48ead5382b117178bc273b398"
+   },
+   "z.tif": {
+    "bytes": 570374,
+    "sha256": "cebdee13adc0bec5eb8a4cd15b7807c83308ffb1279a6d3586ee0ea04cddbb4f"
+   }
+  }
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260623153216",
+  "long_id": "20260623153216-w081-084",
+  "downscale": 4,
+  "key": "PHercParis4/segments/20260623153216-w081-084/mesh/intermediate/tifxyz_normalized",
+  "files": {
+   "meta.json": {
+    "bytes": 283,
+    "sha256": "5a53951fbbebc0522e132f614e572720426a597f545d26dfc4b73f0faeee50a5"
+   },
+   "x.tif": {
+    "bytes": 3908320,
+    "sha256": "bcfe05489df972002ea1ac1c331a6d2c8a1db7e8a28442b1deb73cd8150cc210"
+   },
+   "y.tif": {
+    "bytes": 4007930,
+    "sha256": "8af337744cfe9e14c772f818c129ee1b59f344128d26624dcd427d6ad2776814"
+   },
+   "z.tif": {
+    "bytes": 3141590,
+    "sha256": "3d9f2b75aaa7ba8283fac2b9e834ca2b190cf7587044d13797a1234b05d36815"
+   }
+  }
+ },
+ {
+  "sample": "PHerc0500P2",
+  "segment": "20250825181939",
+  "long_id": "20250825181939-4",
+  "downscale": 2,
+  "key": "PHerc0500P2/segments/20250825181939-4/mesh/intermediate/tifxyz_normalized",
+  "files": {
+   "meta.json": {
+    "bytes": 293,
+    "sha256": "f6602df0196b5562ac387a7c1e0a6d07aca879035ea7fc1e9137715f2718c424"
+   },
+   "x.tif": {
+    "bytes": 197862,
+    "sha256": "18b81188d295610379da20647f57ae4918eba1313f277c5ce27f818b73dd4d2e"
+   },
+   "y.tif": {
+    "bytes": 197862,
+    "sha256": "17c1e8d0d85f51d2e31c114ee5a430437ed5c3c2847e01beb6e87b00d981a35c"
+   },
+   "z.tif": {
+    "bytes": 197862,
+    "sha256": "7abfdb1332bdc4f7e03b7dcfa0cb02b6400a173b91c5171927ea83038c1f7a08"
+   }
+  }
+ },
+ {
+  "sample": "PHerc0500P2",
+  "segment": "20250825181917",
+  "long_id": "20250825181917--2",
+  "downscale": 2,
+  "key": "PHerc0500P2/segments/20250825181917--2/mesh/intermediate/tifxyz_normalized",
+  "files": {
+   "meta.json": {
+    "bytes": 288,
+    "sha256": "97df25341b5333861df6ba93832a46cbc52128f6862b30c0aa915b32d0171040"
+   },
+   "x.tif": {
+    "bytes": 209434,
+    "sha256": "27cba29db7cd3bc3a52707a4def36d93e8fba2f189eb883796258f64ae7535bb"
+   },
+   "y.tif": {
+    "bytes": 209434,
+    "sha256": "6b42dd99d78182867e4ac2067be477694321baafb74ccb69b18b083d02c502c8"
+   },
+   "z.tif": {
+    "bytes": 209434,
+    "sha256": "eec2501817ad6ea4adc990201f87f4a3f7d81b0f3391bca538e28e1abb101c31"
+   }
+  }
+ }
+]

@@ -1,0 +1,16 @@
+
+==================================== ERRORS ====================================
+___ ERROR collecting tests/ink_detection/test_inference_orientation_1648.py ____
+ImportError while importing test module '/tmp/villa-1648-main-test/vesuvius/tests/ink_detection/test_inference_orientation_1648.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../villa-1648-main-test/vesuvius/tests/ink_detection/test_inference_orientation_1648.py:12: in <module>
+    from vesuvius.ink_detection.inference.infer import (
+E   ImportError: cannot import name '_multiscale_xy_um' from 'vesuvius.ink_detection.inference.infer' (/tmp/villa-1648-main-test/vesuvius/src/vesuvius/ink_detection/inference/infer.py)
+=========================== short test summary info ============================
+ERROR ../villa-1648-main-test/vesuvius/tests/ink_detection/test_inference_orientation_1648.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 4.33s

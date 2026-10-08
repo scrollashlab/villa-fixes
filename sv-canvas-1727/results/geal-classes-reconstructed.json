@@ -1,0 +1,3142 @@
+[
+{
+"seg": "PHerc0139/segments/20250108000000-w025_2025010863",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000000-w025_2025010863",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250108000000-w025_2025010863",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000001-w026_2025010854",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000001-w026_2025010854",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250108000001-w026_2025010854",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000002-w027_2025010845",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000002-w027_2025010845",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250108000002-w027_2025010845",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250108000003-w028_2025010836",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000003-w028_2025010836",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250108000003-w028_2025010836",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000004-w029_2025010827",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000004-w029_2025010827",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250108000004-w029_2025010827",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000005-w030_2025010818",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250108000005-w030_2025010818",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250108000005-w030_2025010818",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250223000000-w059_2025022312",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250223000000-w059_2025022312",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250223000000-w059_2025022312",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250831000000-w040_2025083102",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20250831000000-w040_2025083102",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20250831000000-w040_2025083102",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20251226000000-w055_2025122611",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20251226000000-w055_2025122611",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20251226000000-w055_2025122611",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260108000000-w041_2026010816",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260108000000-w041_2026010816",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260108000000-w041_2026010816",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260112000000-w043_2026011217",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260112000000-w043_2026011217",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260112000000-w043_2026011217",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260115000000-w044_2026011522",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260115000000-w044_2026011522",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260115000000-w044_2026011522",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260115000001-w056_2026011514",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260115000001-w056_2026011514",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260115000001-w056_2026011514",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260126000000-w045_2026012619",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260126000000-w045_2026012619",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260126000000-w045_2026012619",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260127000000-w057_2026012713",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260127000000-w057_2026012713",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260127000000-w057_2026012713",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260130000000-w031_2026013019",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260130000000-w031_2026013019",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260130000000-w031_2026013019",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260203000000-w032_2026020303",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260203000000-w032_2026020303",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260203000000-w032_2026020303",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260206000000-w042_2026020613",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260206000000-w042_2026020613",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260206000000-w042_2026020613",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260206000001-w047_2026020613",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260206000001-w047_2026020613",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260206000001-w047_2026020613",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260206000002-w054_2026020617",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260206000002-w054_2026020617",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260206000002-w054_2026020617",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260210000000-w058_2026021020",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260210000000-w058_2026021020",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260210000000-w058_2026021020",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260215000000-w024_2026021572",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260215000000-w024_2026021572",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260215000000-w024_2026021572",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260219000000-w033_2026021913",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260219000000-w033_2026021913",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260219000000-w033_2026021913",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260219000001-w048_2026021912",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260219000001-w048_2026021912",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260219000001-w048_2026021912",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260220000000-w053_2026022021",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260220000000-w053_2026022021",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260220000000-w053_2026022021",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260227000000-w052_2026022705",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260227000000-w052_2026022705",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260227000000-w052_2026022705",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260302000000-w039_2026030210",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260302000000-w039_2026030210",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260302000000-w039_2026030210",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260302000001-w050_2026030220",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260302000001-w050_2026030220",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260302000001-w050_2026030220",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260302000001-w050_2026030220",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260303000000-w034_2026030317",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260303000000-w034_2026030317",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260303000000-w034_2026030317",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260306000000-w038_2026030608",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260306000000-w038_2026030608",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260306000000-w038_2026030608",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260306000001-w051_2026030600",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260306000001-w051_2026030600",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260306000001-w051_2026030600",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260310000000-w037_2026031015",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260310000000-w037_2026031015",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260310000000-w037_2026031015",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260311000000-w023_202603112281",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260311000000-w023_202603112281",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260311000000-w023_202603112281",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260316000000-w036_2026031607",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260316000000-w036_2026031607",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260316000000-w036_2026031607",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260317000000-w035_2026031718",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260317000000-w035_2026031718",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260317000000-w035_2026031718",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260318000000-w049_20260318",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260318000000-w049_20260318",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260318000000-w049_20260318",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260325000000-w046_20260325",
+"sv": "1.129um-0.22m-59keV-volume-20260413113053-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0139/segments/20260325000000-w046_20260325",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260325000000-w046_20260325",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260422000000-title_2026042222_zmid_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20260102150214.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0139/segments/20260422000000-title_2026042222_zmid_flatboi",
+"sv": "9.362um-1.2m-113keV-volume-20250728140407.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0172/segments/20250917143559-w062_20250917143559205_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20250926112011-w078_20250926112011918_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20250926113336-w079_20250926113336891_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20250926114310-w080_20250926114310705_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20250926122938-w082_20250926122938619_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20250926132117-w083_20250926132117595_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20250926145427-w084_20250926145427439_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20250926150345-w086_20250926150345176_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20250926153406-w088_20250926153406704_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251106133152-w077_20251106133152767_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251106170358-w076_20251106170358232_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251107063327-w063_20251107063327215_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251107110950-w064_20251107110950052_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251107175958-w061_20251107175958270_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251109232817-w065_20251109232817724_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251110110112-w066_20251110110112608_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251110135146-w085_20251110135146457_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251110135803-w067_20251110135803677_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251111010954-w068_20251111010954408_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251111151836-w069_20251111151836406_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251111210734-w070_20251111210734722_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251112000002-w087_20251112000002214_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251112163527-w071_20251112163527854_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251113021010-w072_20251113021010674_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251113130119-w073_20251113130119516_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251113152136-w074_20251113152136889_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251113204233-w075_20251113204233755_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251114202035-w081_20251114202035261_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002740-auto_grown_20251115002740308_0_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002741-auto_grown_20251115002740308_1_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002742-auto_grown_20251115002740308_2_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002743-auto_grown_20251115002740308_3_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002744-auto_grown_20251115002740308_4_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002745-auto_grown_20251115002740308_5_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002746-auto_grown_20251115002740308_6_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002747-auto_grown_20251115002740308_7_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251115002748-auto_grown_20251115002740308_8_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251203230500-w089_20251203230500465_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251204060522-w090_20251204060522416_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251204071911-w091_20251204071911070_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251204101314-w092_20251204101314959_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251204192708-w093_20251204192708445_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251205115859-w094_20251205115859448_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251206184729-w095_20251206184729906_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251207123912-w060_20251207123912611_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251210142414-w059_20251210142414060_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251210153304-w058_20251210153304503_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251210160810-w057_20251210160810301_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251211095724-w056_20251211095724922_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251211111451-w055_20251211111451620_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251211135303-w054_20251211135303394_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251211152543-w053_20251211152543204_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0172/segments/20251212105627-w052_20251212105627148_flatboi",
+"sv": "7.91um-53keV-volume-20241024131838.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0343P/segments/20250511003658-tifxyz",
+"sv": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0343P/segments/20250511003658-tifxyz",
+"sv": "8.64um-1.2m-116keV-volume-20250521134555.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0343P/segments/20250902170435--5_b2",
+"sv": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0343P/segments/20250902170435--5_b2",
+"sv": "8.64um-1.2m-116keV-volume-20250521134555.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0343P/segments/20250902170441--4_b2",
+"sv": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0343P/segments/20250902170441--4_b2",
+"sv": "8.64um-1.2m-116keV-volume-20250521134555.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0343P/segments/20250902170447--3_b2",
+"sv": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0343P/segments/20250902170447--3_b2",
+"sv": "8.64um-1.2m-116keV-volume-20250521134555.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0343P/segments/20250902171202--2_b2",
+"sv": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0343P/segments/20250902171202--2_b2",
+"sv": "8.64um-1.2m-116keV-volume-20250521134555.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0343P/segments/20250902171204--1_b2",
+"sv": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0343P/segments/20250902171204--1_b2",
+"sv": "8.64um-1.2m-116keV-volume-20250521134555.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0343P/segments/20250904233748-0_b2",
+"sv": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0343P/segments/20250904233748-0_b2",
+"sv": "8.64um-1.2m-116keV-volume-20250521134555.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0343P/segments/20250905172054-1_b2",
+"sv": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0343P/segments/20250905172054-1_b2",
+"sv": "8.64um-1.2m-116keV-volume-20250521134555.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250609204953-z_dbg_gen_00612",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250609204953-z_dbg_gen_00612",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250609204953-z_dbg_gen_00612",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611132918-z_dbg_gen_00302_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611132918-z_dbg_gen_00302_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611132918-z_dbg_gen_00302_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611133823-z_dbg_gen_00130_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611133823-z_dbg_gen_00130_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611133823-z_dbg_gen_00130_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611134135-z_dbg_gen_00331_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611134135-z_dbg_gen_00331_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611134135-z_dbg_gen_00331_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611153340-z_dbg_gen_00275",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611153340-z_dbg_gen_00275",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611153340-z_dbg_gen_00275",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611153346-z_dbg_gen_00286_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611153346-z_dbg_gen_00286_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611153346-z_dbg_gen_00286_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611153347-z_dbg_gen_00105_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611153347-z_dbg_gen_00105_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611153347-z_dbg_gen_00105_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611154256-z_dbg_gen_00354_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611154256-z_dbg_gen_00354_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611154256-z_dbg_gen_00354_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611161023-z_dbg_gen_00205_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611161023-z_dbg_gen_00205_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611161023-z_dbg_gen_00205_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611161415-z_dbg_gen_00411_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611161415-z_dbg_gen_00411_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611161415-z_dbg_gen_00411_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611170257-z_dbg_gen_00308_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611170257-z_dbg_gen_00308_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611170257-z_dbg_gen_00308_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611171318-z_dbg_gen_00440_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611171318-z_dbg_gen_00440_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611171318-z_dbg_gen_00440_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611171745-z_dbg_gen_00225_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611171745-z_dbg_gen_00225_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611171745-z_dbg_gen_00225_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611172135-z_dbg_gen_00346_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611172135-z_dbg_gen_00346_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611172135-z_dbg_gen_00346_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611173014-z_dbg_gen_00506_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250611173014-z_dbg_gen_00506_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250611173014-z_dbg_gen_00506_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250628074500-500P2_front",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250628074500-500P2_front",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250628074500-500P2_front",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055227-z_dbg_gen_00260_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055227-z_dbg_gen_00260_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055227-z_dbg_gen_00260_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055228-z_dbg_gen_00333_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055228-z_dbg_gen_00333_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055228-z_dbg_gen_00333_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055229-z_dbg_gen_00371_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055229-z_dbg_gen_00371_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055229-z_dbg_gen_00371_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055230-z_dbg_gen_00377_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055230-z_dbg_gen_00377_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055230-z_dbg_gen_00377_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055231-z_dbg_gen_00473_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055231-z_dbg_gen_00473_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055231-z_dbg_gen_00473_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055232-z_dbg_gen_00505_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055232-z_dbg_gen_00505_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055232-z_dbg_gen_00505_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055233-z_dbg_gen_00565_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055233-z_dbg_gen_00565_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055233-z_dbg_gen_00565_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055234-z_dbg_gen_00709_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055234-z_dbg_gen_00709_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055234-z_dbg_gen_00709_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055235-z_dbg_gen_00779_inp_hr",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055235-z_dbg_gen_00779_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250716055235-z_dbg_gen_00779_inp_hr",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250716055236-z_dbg_gen_00356_inp_hr",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184428-0500P2-wrap01_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184428-0500P2-wrap01_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184428-0500P2-wrap01_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184429-0500P2-wrap02_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184429-0500P2-wrap02_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184429-0500P2-wrap02_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184430-0500P2-wrap03_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184430-0500P2-wrap03_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184430-0500P2-wrap03_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184431-0500P2-wrap04_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184431-0500P2-wrap04_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184431-0500P2-wrap04_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184432-0500P2-wrap05_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184432-0500P2-wrap05_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184432-0500P2-wrap05_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184433-0500P2-wrap06_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184433-0500P2-wrap06_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184433-0500P2-wrap06_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184434-0500P2-wrap07_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184434-0500P2-wrap07_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184434-0500P2-wrap07_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184435-0500P2-wrap08_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184435-0500P2-wrap08_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184435-0500P2-wrap08_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184436-0500P2-wrap09_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250919184436-0500P2-wrap09_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250919184436-0500P2-wrap09_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250920020222-0500P2-wrap10_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250920020222-0500P2-wrap10_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250920020222-0500P2-wrap10_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250920020223-0500P2-wrap12_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250920020223-0500P2-wrap12_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250920020223-0500P2-wrap12_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250920020224-0500P2-wrap13_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250920020224-0500P2-wrap13_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250920020224-0500P2-wrap13_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250922024644-0500P2-wrap11_0919",
+"sv": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0500P2/segments/20250922024644-0500P2-wrap11_0919",
+"sv": "4.317um-1.2m-111keV-volume-20250528085330.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0500P2/segments/20250922024644-0500P2-wrap11_0919",
+"sv": "9.362um-1.2m-113keV-volume-20250820143440.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0800/segments/20251028213516-auto_grown_20251028213516907",
+"sv": "8.64um-1.2m-116keV-volume-20250521135224.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0800/segments/20251028220042-auto_grown_20251028220042762",
+"sv": "8.64um-1.2m-116keV-volume-20250521135224.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0800/segments/20251028220955-auto_grown_20251028220955262",
+"sv": "8.64um-1.2m-116keV-volume-20250521135224.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0800/segments/20251028222030-auto_grown_20251028222030940",
+"sv": "8.64um-1.2m-116keV-volume-20250521135224.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0800/segments/20251028225813-auto_grown_20251028225813045",
+"sv": "8.64um-1.2m-116keV-volume-20250521135224.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0800/segments/20251029010146-auto_grown_20251029010146642",
+"sv": "8.64um-1.2m-116keV-volume-20250521135224.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250925204843-auto_grown_20250925204843950",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925204843-auto_grown_20250925204843950",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925204843-auto_grown_20250925204843950",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250925222237-auto_grown_20250925222237459",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250925222237-auto_grown_20250925222237459",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250925222237-auto_grown_20250925222237459",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250925222237-auto_grown_20250925222237459",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250926051122-auto_grown_20250926051122829",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250926051122-auto_grown_20250926051122829",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250926051122-auto_grown_20250926051122829",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250926165636-auto_trace_20250926165636789",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250926165636-auto_trace_20250926165636789",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250926165636-auto_trace_20250926165636789",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250926203608-auto_grown_20250926203608932",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250926203608-auto_grown_20250926203608932",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250926203608-auto_grown_20250926203608932",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250926203608-auto_grown_20250926203608932",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250928235953-auto_grown_20250928235953722",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250928235953-auto_grown_20250928235953722",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250928235953-auto_grown_20250928235953722",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250929040153-auto_grown_20250929040153260",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250929040153-auto_grown_20250929040153260",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250929040153-auto_grown_20250929040153260",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250929040153-auto_grown_20250929040153260",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20250930083742-auto_grown_20250930083742882",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250930083742-auto_grown_20250930083742882",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250930083742-auto_grown_20250930083742882",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20250930083742-auto_grown_20250930083742882",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20251001060526-auto_grown_20251001060526760",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20251001060526-auto_grown_20251001060526760",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20251001060526-auto_grown_20251001060526760",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20251001060526-auto_grown_20251001060526760",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20260226000000-46527_2um_try2",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226000000-46527_2um_try2",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20260226000000-46527_2um_try2",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106",
+"sv": "1.129um-0.22m-59keV-volume-20260521123630-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106",
+"sv": "2.399um-0.22m-78keV-volume-20260309142202.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106",
+"sv": "9.362um-1.2m-113keV-volume-20250804134230.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1447/segments/20250502180708-auto_grown_20250502160708188",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502180748-auto_grown_20250502160748721",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502182142-auto_grown_20250502161324419",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502182456-auto_grown_20250502161202782",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502183138-auto_grown_20250502162038685",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502183421-auto_grown_20250502161744358",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502184201-auto_grown_20250502163549332",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502184658-auto_grown_20250502163923577",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502184845-auto_grown_20250502164121265",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502185519-auto_grown_20250502164303733",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250502205333-auto_grown_20250502181030065",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250702235910-auto_grown_20250702235910292",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250703025628-auto_grown_20250703025628283",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20250703034159-auto_grown_20250703034159599",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1447/segments/20251105093211-z_dbg_gen_00320",
+"sv": "8.64um-1.2m-116keV-volume-20250521151220.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1667/segments/20240304141531-w013_20240304141531_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20240304141531-w013_20240304141531_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20240304144031-w018_20240304144031_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20240304144031-w018_20240304144031_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251206103305-w012_20251206103305555_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251206103305-w012_20251206103305555_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251206103305-w012_20251206103305555_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251208130119-w028_20251208130119156_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251208130119-w028_20251208130119156_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251212185248-w029_20251212185248662_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251212185248-w029_20251212185248662_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHerc1667/segments/20251220020000-w030_2025122002_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251220020000-w030_2025122002_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251223230000-w031_2025122323_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20251223230000-w031_2025122323_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260110010000-w033_2026011001_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260110010000-w033_2026011001_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260115160000-w034_2026011516_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260115160000-w034_2026011516_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260116230000-w035_2026011623_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260116230000-w035_2026011623_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260123230000-w037_2026012323_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260123230000-w037_2026012323_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260123230000-w037_2026012323_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260203210000-w040_2026020321_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260203210000-w040_2026020321_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260203210000-w040_2026020321_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260205070000-w041_2026020507_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260205070000-w041_2026020507_flatboi",
+"sv": "1.129um-0.22m-59keV-volume-20260323082859.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHerc1667/segments/20260205070000-w041_2026020507_flatboi",
+"sv": "2.399um-0.22m-78keV-volume-20251217075048.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20230702185753",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20230702185753",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20230702185753",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20230929220926",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20230929220926",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231005123336",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231005123336",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20231007101619",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231007101619",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231007101619",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231012184424",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231012184424",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231012184424",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20231016151002",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231016151002",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231022170901",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231022170901",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231031143852",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231031143852",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231031143852",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231106155351",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231106155351",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231106155351",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231210121321",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231210121321",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231210121321",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231221180251",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231221180251",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20231221180251",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260602204401-5753_-7",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260602204401-5753_-7",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260602204401-5753_-7",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260602225659-5753_0",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260602225659-5753_0",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260602230115-20230702185753_v14",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260602230115-20230702185753_v14",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603005223-5753_-1",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260603005223-5753_-1",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603024952-5753_-2",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603024952-5753_-2",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260603024952-5753_-2",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603042357-5753_-3",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603042357-5753_-3",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260603042357-5753_-3",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603145540-5753_-4",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603145540-5753_-4",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260603145540-5753_-4",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603185441-5753_-6",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603185441-5753_-6",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260603185441-5753_-6",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603190005-5753_-5",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603190005-5753_-5",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260603190005-5753_-5",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603193311-5753_-1_copy",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603193311-5753_-1_copy",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260603193311-5753_-1_copy",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603222816-20231005123336_v2_flatboi",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260603222816-20231005123336_v2_flatboi",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260603222816-20231005123336_v2_flatboi",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260604223808-20231210121321_v8",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260604223808-20231210121321_v8",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260604223808-20231210121321_v8",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623141135-w046-052_jordi",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623141135-w046-052_jordi",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623141135-w046-052_jordi",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623141649-w053-058_jordi",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623141649-w053-058_jordi",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623141649-w053-058_jordi",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623141924-w010-027",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623141924-w010-027",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623141924-w010-027",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623142658-w028-037",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623142658-w028-037",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623142658-w028-037",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623143441-w038-045",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623143441-w038-045",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623143441-w038-045",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623144224-w046-052",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623144224-w046-052",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623144224-w046-052",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623144957-w053-058",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623144957-w053-058",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623144957-w053-058",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623145652-w059-063",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623145652-w059-063",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623145652-w059-063",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623150417-w064-068",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623150417-w064-068",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623150417-w064-068",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623151041-w069-072",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623151041-w069-072",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623151041-w069-072",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623151729-w073-076",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623151729-w073-076",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623151729-w073-076",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623152443-w077-080",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623152443-w077-080",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623152443-w077-080",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623153216-w081-084",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623153216-w081-084",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623153216-w081-084",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623154006-w085-088",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623154006-w085-088",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623154006-w085-088",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623154617-w089-091",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623154617-w089-091",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623154617-w089-091",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623155240-w092-094",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623155240-w092-094",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623155240-w092-094",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623155914-w095-097",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623155914-w095-097",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623160554-w098-100",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623160554-w098-100",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623161233-w101-103",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623161233-w101-103",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623161921-w104-106",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623162614-w107-109",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623162614-w107-109",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623163339-w110-112",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623163339-w110-112",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623164141-w113-115",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623164141-w113-115",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623164141-w113-115",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623164704-w116-117",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623164704-w116-117",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623164704-w116-117",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623165230-w118-119",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623165230-w118-119",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623165230-w118-119",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623165742-w120-121",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623165742-w120-121",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623165742-w120-121",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623170305-w122-123",
+"sv": "1.129um-0.23m-78keV-volume-20260608103018-L1.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623170305-w122-123",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623170305-w122-123",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623170833-w124-125",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623170833-w124-125",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623171400-w126-127",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623171400-w126-127",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260623171929-w128-129",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260623171929-w128-129",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183124-w010-027",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183124-w010-027",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183125-w028-037",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183125-w028-037",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183126-w038-045",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183126-w038-045",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183127-w046-052",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183127-w046-052",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183128-w053-058",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183128-w053-058",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183129-w059-063",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183129-w059-063",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183130-w064-068",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183130-w064-068",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183131-w069-072",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183131-w069-072",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183132-w073-076",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183132-w073-076",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183133-w077-080",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183133-w077-080",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183134-w081-084",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183134-w081-084",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183135-w085-088",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183135-w085-088",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183136-w089-091",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183136-w089-091",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183137-w092-094",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183137-w092-094",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183138-w095-097",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183138-w095-097",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183139-w098-100",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183139-w098-100",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183140-w101-103",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183140-w101-103",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183141-w104-106",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183141-w104-106",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183142-w107-109",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183142-w107-109",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183143-w110-112",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183143-w110-112",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183144-w113-115",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183144-w113-115",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183145-w116-117",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183145-w116-117",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183146-w118-119",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183146-w118-119",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183147-w120-121",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183147-w120-121",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183148-w122-123",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183148-w122-123",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183149-w124-125",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183149-w124-125",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183150-w126-127",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183150-w126-127",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+},
+{
+"seg": "PHercParis4/segments/20260701183151-w128-129",
+"sv": "2.4um-0.22m-78keV-volume-20260411134726.zarr",
+"geal_reproduced": true
+},
+{
+"seg": "PHercParis4/segments/20260701183151-w128-129",
+"sv": "45.532um-11.0m-74keV-volume-20260310170716.zarr",
+"geal_reproduced": false
+}
+]

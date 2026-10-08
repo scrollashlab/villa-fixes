@@ -1,0 +1,7 @@
+tifxyz-audit: scanned 1 tifxyz directory
+summary: 0 error(s), 1 warning(s), 4 info
+[WARNING] voxel_size_um_inferable: voxel_size_um missing; dirname implies 45.532um (run --fix-meta --in-place or --fix-meta --output-dir ...) @ /workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz
+[INFO   ] bbox_volume_unchecked: bbox present; pass --volume-shape Z,Y,X to check containment @ /workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz
+[INFO   ] invalid_point_stats: z.tif sentinel=-1 fraction=0.1244 (nonfinite=0.0000; exact) @ /workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz/z.tif
+[INFO   ] scale_ok: scale=[0.05000000074505806, 0.05000000074505806] (grid cells per voxel of this mesh's scan) @ /workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz/meta.json
+[INFO   ] tiff_shape_ok: x/y/z shape=[134, 96] @ /workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz

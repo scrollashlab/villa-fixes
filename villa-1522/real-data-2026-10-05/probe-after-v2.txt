@@ -1,0 +1,74 @@
+mode=after
+villa_src=/workspace/vesuvius-lab/experiments/villa-1522-evidence/after-v2
+python=/workspace/envs/zarr3/bin/python
+meta_frames.py exists=True path=/workspace/vesuvius-lab/experiments/villa-1522-evidence/after-v2/vesuvius/src/vesuvius/tifxyz/meta_frames.py
+loaded meta_frames from /workspace/vesuvius-lab/experiments/villa-1522-evidence/after-v2/vesuvius/src/vesuvius/tifxyz/meta_frames.py
+
+===== AFTER (patched) /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures-after-v2/paris4-40x/mesh =====
+find_ambiguous_scale_frames → 1
+  scale=[0.05, 0.05] voxel_sizes_um=[1.129, 2.4, 7.91, 45.532] spread≈40.33× n=4
+frames_comparable(all metas, pre-annotate) = False
+  annotate 20230702185753-on-20230205180739-7.91um.tifxyz: wrote=7.91 None→7.91
+  annotate 20230702185753-on-20260310170716-45.532um.tifxyz: wrote=45.532 None→45.532
+  annotate 20230702185753-on-20260411134726-2.4um.tifxyz: wrote=2.4 None→2.4
+  annotate 20230702185753-on-20260608103018-1.129um.tifxyz: wrote=1.129 None→1.129
+  frames_comparable(20230702185753-on-20230205180739-7.91um.…, 20230702185753-on-20260310170716-45.532u…) = False
+  frames_comparable(20230702185753-on-20230205180739-7.91um.…, 20230702185753-on-20260411134726-2.4um.t…) = False
+  frames_comparable(20230702185753-on-20230205180739-7.91um.…, 20230702185753-on-20260608103018-1.129um…) = False
+  frames_comparable(20230702185753-on-20260310170716-45.532u…, 20230702185753-on-20260411134726-2.4um.t…) = False
+  frames_comparable(20230702185753-on-20260310170716-45.532u…, 20230702185753-on-20260608103018-1.129um…) = False
+  frames_comparable(20230702185753-on-20260411134726-2.4um.t…, 20230702185753-on-20260608103018-1.129um…) = False
+  physical µm/grid-cell 20230702185753-on-20230205180739-7.91um.tifxyz: 158.2000
+  physical µm/grid-cell 20230702185753-on-20260310170716-45.532um.tifxyz: 910.6400
+  physical µm/grid-cell 20230702185753-on-20260411134726-2.4um.tifxyz: 48.0000
+  physical µm/grid-cell 20230702185753-on-20260608103018-1.129um.tifxyz: 22.5800
+
+===== AFTER (patched) /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures-after-v2/paris4-19x/mesh =====
+find_ambiguous_scale_frames → 1
+  scale=[0.05, 0.05] voxel_sizes_um=[2.4, 7.91, 45.532] spread≈18.97× n=3
+frames_comparable(all metas, pre-annotate) = False
+  annotate 20230929220926-on-20230205180739-7.91um.tifxyz: wrote=7.91 None→7.91
+  annotate 20230929220926-on-20260310170716-45.532um.tifxyz: wrote=45.532 None→45.532
+  annotate 20230929220926-on-20260411134726-2.4um.tifxyz: wrote=2.4 None→2.4
+  frames_comparable(20230929220926-on-20230205180739-7.91um.…, 20230929220926-on-20260310170716-45.532u…) = False
+  frames_comparable(20230929220926-on-20230205180739-7.91um.…, 20230929220926-on-20260411134726-2.4um.t…) = False
+  frames_comparable(20230929220926-on-20260310170716-45.532u…, 20230929220926-on-20260411134726-2.4um.t…) = False
+  physical µm/grid-cell 20230929220926-on-20230205180739-7.91um.tifxyz: 158.2000
+  physical µm/grid-cell 20230929220926-on-20260310170716-45.532um.tifxyz: 910.6400
+  physical µm/grid-cell 20230929220926-on-20260411134726-2.4um.tifxyz: 48.0000
+
+===== AFTER (patched) /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures-after-v2/pherc0172-same-um/mesh =====
+find_ambiguous_scale_frames → 0
+frames_comparable(all metas, pre-annotate) = False
+  annotate 20250917143559-on-20241024131838-7.91um.tifxyz: wrote=7.91 None→7.91
+  annotate 20250917143559-on-20241024131839-7.91um.tifxyz: wrote=7.91 None→7.91
+  frames_comparable(20250917143559-on-20241024131838-7.91um.…, 20250917143559-on-20241024131839-7.91um.…) = True
+  physical µm/grid-cell 20250917143559-on-20241024131838-7.91um.tifxyz: 158.2000
+  physical µm/grid-cell 20250917143559-on-20241024131839-7.91um.tifxyz: 158.2000
+
+===== AFTER (patched) /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures-after-v2/pherc0139-8x/mesh =====
+find_ambiguous_scale_frames → 1
+  scale=[0.05000000074505806, 0.05000000074505806] voxel_sizes_um=[1.129, 2.399, 2.403, 9.362] spread≈8.29× n=5
+frames_comparable(all metas, pre-annotate) = False
+  annotate 20250108000000-on-20250728140407-9.362um.tifxyz: wrote=9.362 None→9.362
+  annotate 20250108000000-on-20250820105138-2.403um.tifxyz: wrote=2.403 None→2.403
+  annotate 20250108000000-on-20260102150214-2.399um.tifxyz: wrote=2.399 None→2.399
+  annotate 20250108000000-on-20260319133554-2.403um.tifxyz: wrote=2.403 None→2.403
+  annotate 20250108000000-on-20260413113053-1.129um.tifxyz: wrote=1.129 None→1.129
+  frames_comparable(20250108000000-on-20250728140407-9.362um…, 20250108000000-on-20250820105138-2.403um…) = False
+  frames_comparable(20250108000000-on-20250728140407-9.362um…, 20250108000000-on-20260102150214-2.399um…) = False
+  frames_comparable(20250108000000-on-20250728140407-9.362um…, 20250108000000-on-20260319133554-2.403um…) = False
+  frames_comparable(20250108000000-on-20250728140407-9.362um…, 20250108000000-on-20260413113053-1.129um…) = False
+  frames_comparable(20250108000000-on-20250820105138-2.403um…, 20250108000000-on-20260102150214-2.399um…) = False
+  frames_comparable(20250108000000-on-20250820105138-2.403um…, 20250108000000-on-20260319133554-2.403um…) = True
+  frames_comparable(20250108000000-on-20250820105138-2.403um…, 20250108000000-on-20260413113053-1.129um…) = False
+  frames_comparable(20250108000000-on-20260102150214-2.399um…, 20250108000000-on-20260319133554-2.403um…) = False
+  frames_comparable(20250108000000-on-20260102150214-2.399um…, 20250108000000-on-20260413113053-1.129um…) = False
+  frames_comparable(20250108000000-on-20260319133554-2.403um…, 20250108000000-on-20260413113053-1.129um…) = False
+  physical µm/grid-cell 20250108000000-on-20250728140407-9.362um.tifxyz: 187.2400
+  physical µm/grid-cell 20250108000000-on-20250820105138-2.403um.tifxyz: 48.0600
+  physical µm/grid-cell 20250108000000-on-20260102150214-2.399um.tifxyz: 47.9800
+  physical µm/grid-cell 20250108000000-on-20260319133554-2.403um.tifxyz: 48.0600
+  physical µm/grid-cell 20250108000000-on-20260413113053-1.129um.tifxyz: 22.5800
+
+Wrote /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/probe-after-v2.json

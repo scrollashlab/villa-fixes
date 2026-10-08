@@ -1,0 +1,5 @@
+Open-data scan payloads used for the before/after check are CC BY-NC 4.0.
+They are NOT included in this bundle. Re-fetch anonymously from
+https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/ with
+scripts/fetch_normalized.py (paths and sha256 in results/normalized-inputs-2026-10-07.json).
+Do not redistribute TIFs / npy / zarr.

@@ -1,0 +1,9 @@
+Public data only.
+Checkpoints: Hugging Face scrollprize/ink_9um (hybrid_3d2d-seed42/43, step-075000.pth).
+Training labels / validation_mask: HF bucket scrollprize/datasets ink_9um
+(aligned-scrollprizeorg-21slices).
+Volumes: vesuvius-challenge-open-data S3
+  - PHerc0139 .../w035/... (train-overlap probes only)
+  - PHerc0814 .../46527_2um_try2/... (held-out validation_mask re-score)
+No proprietary segments. Checkpoints and windowed arrays stay under
+experiments/villa-1648-evidence/ and are excluded from this handoff package.

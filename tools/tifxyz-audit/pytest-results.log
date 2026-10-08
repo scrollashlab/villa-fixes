@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /workspace/vesuvius-lab/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/vesuvius-lab/experiments/tifxyz-auditor
+configfile: pyproject.toml
+collecting ... collected 15 items
+
+tests/test_auditor.py::test_discover_segment_mesh_layout PASSED          [  6%]
+tests/test_auditor.py::test_meta_missing_is_error PASSED                 [ 13%]
+tests/test_auditor.py::test_meta_unparseable PASSED                      [ 20%]
+tests/test_auditor.py::test_scale_missing PASSED                         [ 26%]
+tests/test_auditor.py::test_voxel_size_inferable_warning PASSED          [ 33%]
+tests/test_auditor.py::test_scale_frame_ambiguity PASSED                 [ 40%]
+tests/test_auditor.py::test_tiff_shape_mismatch PASSED                   [ 46%]
+tests/test_auditor.py::test_tiff_missing PASSED                          [ 53%]
+tests/test_auditor.py::test_bbox_outside_volume PASSED                   [ 60%]
+tests/test_auditor.py::test_bbox_inside_volume PASSED                    [ 66%]
+tests/test_auditor.py::test_cli_fix_meta_requires_flag_subprocess PASSED [ 73%]
+tests/test_auditor.py::test_cli_fix_meta_output_dir PASSED               [ 80%]
+tests/test_auditor.py::test_cli_json_and_exit_codes PASSED               [ 86%]
+tests/test_auditor.py::test_invalid_point_stats PASSED                   [ 93%]
+tests/test_auditor.py::test_scale_frame_ambiguity_float_noise PASSED     [100%]
+
+============================== 15 passed in 0.30s ==============================

@@ -1,0 +1,666 @@
+{
+  "verdict": {
+    "w035_windows_A_B": "TRAINING OVERLAP \u2014 pherc0139-w035 is in aligned21_hybrid_3d2d datasets (public_2p4 + native9). No validation_mask. L2-forward AUC\u22480.995\u20130.999 is consistent with memorization on train pixels.",
+    "issue_author_w035": "Also scored training labels (pherc0139-w035_inklabels ch10), not held-out. Their w024 table is non-train but uses proxy labels.",
+    "primary_evidence": "pherc0814-46527 validation_mask pixels (online_validation_cases; only HF-aligned segment we found with a validation_mask). Caveat: segment is still in the training corpus; holdout is spatial mask carve-out (adjacency leakage possible)."
+  },
+  "training_membership": {
+    "checkpoints": "scrollprize/ink_9um hybrid_3d2d-seed42/43 step-075000 (aligned21_hybrid_3d2d)",
+    "w035_in_training": true,
+    "w035_representations": [
+      "public_2p4_level2_zmean4:pherc0139-w035",
+      "native_9p362_level0:w035"
+    ],
+    "w035_in_online_validation_cases": false,
+    "w035_in_reserved_validation_cases": false,
+    "w035_has_validation_mask": false,
+    "windows_A_B_are_training_pixels": true,
+    "issue_author_w035_AUCs_held_out": false,
+    "issue_author_note": "Issue #1648 scored pherc0139-w035_inklabels.zarr ch10 (training corpus). Separate w024 table used a non-training segment with proxy labels (published prediction intersection).",
+    "held_out_segment_used": "pherc0814-46527 (online_validation_cases; has validation_mask)"
+  },
+  "depth_order_flip_investigation": {
+    "summary": "On the public S3 2.399\u00b5m w035 volume, CLI forward beats reverse for both open-data L2 labels and HF aligned ch10, with either the training source_z_slice [13,97] pool or a center pool. HF ch10 vs open-data L2 agree 99.31% on window A. We therefore could not reproduce the issue's reverse-better table on this store. Tutorial (07_tutorial5.md) states `--flip-normals` reproduces published-render / training-label depth orientation; the issue's 'as the renderer writes it' vs 'reversed' cells likely assume a prepare/render path whose native Z convention differs from the raw public zarr we read. Limitation: we did not re-run the author's exact prepare_9um_isotropic_input CLI end-to-end. Holdout 46527 likewise prefers forward at L2 (0.87/0.85 vs reverse 0.61/0.61). Neutral CLI wording (recommend --direction both) remains correct.",
+    "hf_vs_open_agree_windowA": 0.9931,
+    "cells": [
+      {
+        "prep": "trainZ_hf",
+        "labels": "hf_ch10",
+        "direction": "forward",
+        "seed": "seed42",
+        "auc": 0.9994,
+        "pos": 32827,
+        "neg": 32709,
+        "seconds": 2.93
+      },
+      {
+        "prep": "trainZ_hf",
+        "labels": "hf_ch10",
+        "direction": "forward",
+        "seed": "seed43",
+        "auc": 0.9991,
+        "pos": 32827,
+        "neg": 32709,
+        "seconds": 2.09
+      },
+      {
+        "prep": "trainZ_hf",
+        "labels": "hf_ch10",
+        "direction": "reverse",
+        "seed": "seed42",
+        "auc": 0.5811,
+        "pos": 32827,
+        "neg": 32709,
+        "seconds": 2.91
+      },
+      {
+        "prep": "trainZ_hf",
+        "labels": "hf_ch10",
+        "direction": "reverse",
+        "seed": "seed43",
+        "auc": 0.3038,
+        "pos": 32827,
+        "neg": 32709,
+        "seconds": 2.22
+      },
+      {
+        "prep": "trainZ_open",
+        "labels": "open_L2",
+        "direction": "forward",
+        "seed": "seed42",
+        "auc": 0.9993,
+        "pos": 32462,
+        "neg": 33074,
+        "seconds": 2.17
+      },
+      {
+        "prep": "trainZ_open",
+        "labels": "open_L2",
+        "direction": "forward",
+        "seed": "seed43",
+        "auc": 0.9989,
+        "pos": 32462,
+        "neg": 33074,
+        "seconds": 2.0
+      },
+      {
+        "prep": "trainZ_open",
+        "labels": "open_L2",
+        "direction": "reverse",
+        "seed": "seed42",
+        "auc": 0.5817,
+        "pos": 32462,
+        "neg": 33074,
+        "seconds": 2.27
+      },
+      {
+        "prep": "trainZ_open",
+        "labels": "open_L2",
+        "direction": "reverse",
+        "seed": "seed43",
+        "auc": 0.3045,
+        "pos": 32462,
+        "neg": 33074,
+        "seconds": 2.55
+      },
+      {
+        "prep": "centerZ_hf",
+        "labels": "hf_ch10",
+        "direction": "forward",
+        "seed": "seed42",
+        "auc": 0.999,
+        "pos": 32827,
+        "neg": 32709,
+        "seconds": 2.32
+      },
+      {
+        "prep": "centerZ_hf",
+        "labels": "hf_ch10",
+        "direction": "forward",
+        "seed": "seed43",
+        "auc": 0.999,
+        "pos": 32827,
+        "neg": 32709,
+        "seconds": 2.28
+      },
+      {
+        "prep": "centerZ_hf",
+        "labels": "hf_ch10",
+        "direction": "reverse",
+        "seed": "seed42",
+        "auc": 0.5657,
+        "pos": 32827,
+        "neg": 32709,
+        "seconds": 2.16
+      },
+      {
+        "prep": "centerZ_hf",
+        "labels": "hf_ch10",
+        "direction": "reverse",
+        "seed": "seed43",
+        "auc": 0.2913,
+        "pos": 32827,
+        "neg": 32709,
+        "seconds": 2.47
+      },
+      {
+        "prep": "centerZ_open",
+        "labels": "open_L2",
+        "direction": "forward",
+        "seed": "seed42",
+        "auc": 0.999,
+        "pos": 32462,
+        "neg": 33074,
+        "seconds": 2.34
+      },
+      {
+        "prep": "centerZ_open",
+        "labels": "open_L2",
+        "direction": "forward",
+        "seed": "seed43",
+        "auc": 0.9989,
+        "pos": 32462,
+        "neg": 33074,
+        "seconds": 2.11
+      },
+      {
+        "prep": "centerZ_open",
+        "labels": "open_L2",
+        "direction": "reverse",
+        "seed": "seed42",
+        "auc": 0.566,
+        "pos": 32462,
+        "neg": 33074,
+        "seconds": 1.87
+      },
+      {
+        "prep": "centerZ_open",
+        "labels": "open_L2",
+        "direction": "reverse",
+        "seed": "seed43",
+        "auc": 0.291,
+        "pos": 32462,
+        "neg": 33074,
+        "seconds": 2.08
+      }
+    ],
+    "tutorial_quote": "`--flip-normals` reproduces the depth orientation of the published renders and the training labels; for your own segment the orientation is unknown, which is what `--direction both` at inference time is for."
+  },
+  "holdout_46527": {
+    "segment": "pherc0814-46527",
+    "role": "online_validation_case + validation_mask",
+    "L2_yxhw": [
+      1624,
+      258,
+      411,
+      512
+    ],
+    "val_pixels_window": 150770,
+    "cells": [
+      {
+        "level": "0",
+        "in_plane_um": 2.399,
+        "direction": "forward",
+        "seed": "seed42",
+        "auc": 0.6415,
+        "pos": 926576,
+        "neg": 1485744,
+        "n_warnings": 1,
+        "seconds": 160.36
+      },
+      {
+        "level": "0",
+        "in_plane_um": 2.399,
+        "direction": "forward",
+        "seed": "seed43",
+        "auc": 0.678,
+        "pos": 926576,
+        "neg": 1485744,
+        "n_warnings": 1,
+        "seconds": 191.0
+      },
+      {
+        "level": "0",
+        "in_plane_um": 2.399,
+        "direction": "reverse",
+        "seed": "seed42",
+        "auc": 0.5329,
+        "pos": 926576,
+        "neg": 1485744,
+        "n_warnings": 1,
+        "seconds": 145.23
+      },
+      {
+        "level": "0",
+        "in_plane_um": 2.399,
+        "direction": "reverse",
+        "seed": "seed43",
+        "auc": 0.4875,
+        "pos": 926576,
+        "neg": 1485744,
+        "n_warnings": 1,
+        "seconds": 141.66
+      },
+      {
+        "level": "2",
+        "in_plane_um": 9.596,
+        "direction": "forward",
+        "seed": "seed42",
+        "auc": 0.8705,
+        "pos": 57911,
+        "neg": 92859,
+        "n_warnings": 0,
+        "seconds": 7.7
+      },
+      {
+        "level": "2",
+        "in_plane_um": 9.596,
+        "direction": "forward",
+        "seed": "seed43",
+        "auc": 0.8462,
+        "pos": 57911,
+        "neg": 92859,
+        "n_warnings": 0,
+        "seconds": 8.83
+      },
+      {
+        "level": "2",
+        "in_plane_um": 9.596,
+        "direction": "reverse",
+        "seed": "seed42",
+        "auc": 0.6145,
+        "pos": 57911,
+        "neg": 92859,
+        "n_warnings": 0,
+        "seconds": 8.92
+      },
+      {
+        "level": "2",
+        "in_plane_um": 9.596,
+        "direction": "reverse",
+        "seed": "seed43",
+        "auc": 0.6128,
+        "pos": 57911,
+        "neg": 92859,
+        "n_warnings": 0,
+        "seconds": 8.6
+      }
+    ]
+  },
+  "train_overlap_windows_AB_superseded": {
+    "note": "Retained for transparency; do not treat as generalization evidence.",
+    "windows": [
+      {
+        "id": "A",
+        "L2_yxhw": [
+          768,
+          1152,
+          256,
+          256
+        ],
+        "L0_yxhw": [
+          3072,
+          4608,
+          1024,
+          1024
+        ],
+        "sanity_L2": {
+          "prep_shape": [
+            21,
+            256,
+            256
+          ],
+          "label_shape": [
+            256,
+            256
+          ],
+          "positive_pixels": 32462,
+          "negative_pixels": 33074,
+          "positive_fraction": 0.4953,
+          "mean_proj_vs_label_pearson": -0.039,
+          "xy_shapes_match": true,
+          "label_l0_downsampled_vs_l2_agree": 0.9945
+        },
+        "sanity_L0": {
+          "prep_shape": [
+            21,
+            1024,
+            1024
+          ],
+          "label_shape": [
+            1024,
+            1024
+          ],
+          "positive_pixels": 519537,
+          "negative_pixels": 529039,
+          "positive_fraction": 0.4955,
+          "mean_proj_vs_label_pearson": -0.0367,
+          "xy_shapes_match": true
+        },
+        "cells": [
+          {
+            "level": "0",
+            "in_plane_um": 2.399,
+            "direction": "forward",
+            "seed": "seed42",
+            "auc": 0.6393,
+            "seconds": 39.44,
+            "n_warnings": 1,
+            "n_notes": 1,
+            "summary": "effective depth_order=forward; zarr_level=0; in_plane_scale_um=2.399",
+            "issue_ref_pair": [
+              0.555,
+              0.538
+            ]
+          },
+          {
+            "level": "0",
+            "in_plane_um": 2.399,
+            "direction": "forward",
+            "seed": "seed43",
+            "auc": 0.7271,
+            "seconds": 41.09,
+            "n_warnings": 1,
+            "n_notes": 1,
+            "summary": "effective depth_order=forward; zarr_level=0; in_plane_scale_um=2.399",
+            "issue_ref_pair": [
+              0.555,
+              0.538
+            ]
+          },
+          {
+            "level": "0",
+            "in_plane_um": 2.399,
+            "direction": "reverse",
+            "seed": "seed42",
+            "auc": 0.4881,
+            "seconds": 41.04,
+            "n_warnings": 1,
+            "n_notes": 1,
+            "summary": "effective depth_order=reverse; zarr_level=0; in_plane_scale_um=2.399",
+            "issue_ref_pair": [
+              0.637,
+              0.641
+            ]
+          },
+          {
+            "level": "0",
+            "in_plane_um": 2.399,
+            "direction": "reverse",
+            "seed": "seed43",
+            "auc": 0.5649,
+            "seconds": 38.52,
+            "n_warnings": 1,
+            "n_notes": 1,
+            "summary": "effective depth_order=reverse; zarr_level=0; in_plane_scale_um=2.399",
+            "issue_ref_pair": [
+              0.637,
+              0.641
+            ]
+          },
+          {
+            "level": "2",
+            "in_plane_um": 9.596,
+            "direction": "forward",
+            "seed": "seed42",
+            "auc": 0.999,
+            "seconds": 1.88,
+            "n_warnings": 0,
+            "n_notes": 1,
+            "summary": "effective depth_order=forward; zarr_level=0; in_plane_scale_um=9.596",
+            "issue_ref_pair": [
+              0.511,
+              0.53
+            ]
+          },
+          {
+            "level": "2",
+            "in_plane_um": 9.596,
+            "direction": "forward",
+            "seed": "seed43",
+            "auc": 0.9989,
+            "seconds": 1.73,
+            "n_warnings": 0,
+            "n_notes": 1,
+            "summary": "effective depth_order=forward; zarr_level=0; in_plane_scale_um=9.596",
+            "issue_ref_pair": [
+              0.511,
+              0.53
+            ]
+          },
+          {
+            "level": "2",
+            "in_plane_um": 9.596,
+            "direction": "reverse",
+            "seed": "seed42",
+            "auc": 0.566,
+            "seconds": 2.24,
+            "n_warnings": 0,
+            "n_notes": 1,
+            "summary": "effective depth_order=reverse; zarr_level=0; in_plane_scale_um=9.596",
+            "issue_ref_pair": [
+              0.949,
+              0.955
+            ]
+          },
+          {
+            "level": "2",
+            "in_plane_um": 9.596,
+            "direction": "reverse",
+            "seed": "seed43",
+            "auc": 0.291,
+            "seconds": 1.95,
+            "n_warnings": 0,
+            "n_notes": 1,
+            "summary": "effective depth_order=reverse; zarr_level=0; in_plane_scale_um=9.596",
+            "issue_ref_pair": [
+              0.949,
+              0.955
+            ]
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "L2_yxhw": [
+          2048,
+          2304,
+          512,
+          512
+        ],
+        "L0_yxhw": [
+          8192,
+          9216,
+          2048,
+          2048
+        ],
+        "sanity_L2": {
+          "prep_shape": [
+            21,
+            512,
+            512
+          ],
+          "label_shape": [
+            512,
+            512
+          ],
+          "positive_pixels": 50351,
+          "negative_pixels": 211793,
+          "positive_fraction": 0.1921,
+          "mean_proj_vs_label_pearson": -0.0459,
+          "xy_shapes_match": true,
+          "label_l0_downsampled_vs_l2_agree": 0.9966
+        },
+        "sanity_L0": {
+          "prep_shape": [
+            21,
+            2048,
+            2048
+          ],
+          "label_shape": [
+            2048,
+            2048
+          ],
+          "positive_pixels": 804271,
+          "negative_pixels": 3390033,
+          "positive_fraction": 0.1918,
+          "mean_proj_vs_label_pearson": -0.045,
+          "xy_shapes_match": true
+        },
+        "cells": [
+          {
+            "level": "0",
+            "in_plane_um": 2.399,
+            "direction": "forward",
+            "seed": "seed42",
+            "auc": 0.6814,
+            "seconds": 182.84,
+            "n_warnings": 1,
+            "n_notes": 1,
+            "summary": "effective depth_order=forward; zarr_level=0; in_plane_scale_um=2.399",
+            "issue_ref_pair": [
+              0.555,
+              0.538
+            ]
+          },
+          {
+            "level": "0",
+            "in_plane_um": 2.399,
+            "direction": "forward",
+            "seed": "seed43",
+            "auc": 0.677,
+            "seconds": 176.33,
+            "n_warnings": 1,
+            "n_notes": 1,
+            "summary": "effective depth_order=forward; zarr_level=0; in_plane_scale_um=2.399",
+            "issue_ref_pair": [
+              0.555,
+              0.538
+            ]
+          },
+          {
+            "level": "0",
+            "in_plane_um": 2.399,
+            "direction": "reverse",
+            "seed": "seed42",
+            "auc": 0.5511,
+            "seconds": 165.83,
+            "n_warnings": 1,
+            "n_notes": 1,
+            "summary": "effective depth_order=reverse; zarr_level=0; in_plane_scale_um=2.399",
+            "issue_ref_pair": [
+              0.637,
+              0.641
+            ]
+          },
+          {
+            "level": "0",
+            "in_plane_um": 2.399,
+            "direction": "reverse",
+            "seed": "seed43",
+            "auc": 0.5133,
+            "seconds": 161.1,
+            "n_warnings": 1,
+            "n_notes": 1,
+            "summary": "effective depth_order=reverse; zarr_level=0; in_plane_scale_um=2.399",
+            "issue_ref_pair": [
+              0.637,
+              0.641
+            ]
+          },
+          {
+            "level": "2",
+            "in_plane_um": 9.596,
+            "direction": "forward",
+            "seed": "seed42",
+            "auc": 0.9971,
+            "seconds": 8.44,
+            "n_warnings": 0,
+            "n_notes": 1,
+            "summary": "effective depth_order=forward; zarr_level=0; in_plane_scale_um=9.596",
+            "issue_ref_pair": [
+              0.511,
+              0.53
+            ]
+          },
+          {
+            "level": "2",
+            "in_plane_um": 9.596,
+            "direction": "forward",
+            "seed": "seed43",
+            "auc": 0.9952,
+            "seconds": 8.61,
+            "n_warnings": 0,
+            "n_notes": 1,
+            "summary": "effective depth_order=forward; zarr_level=0; in_plane_scale_um=9.596",
+            "issue_ref_pair": [
+              0.511,
+              0.53
+            ]
+          },
+          {
+            "level": "2",
+            "in_plane_um": 9.596,
+            "direction": "reverse",
+            "seed": "seed42",
+            "auc": 0.6127,
+            "seconds": 9.88,
+            "n_warnings": 0,
+            "n_notes": 1,
+            "summary": "effective depth_order=reverse; zarr_level=0; in_plane_scale_um=9.596",
+            "issue_ref_pair": [
+              0.949,
+              0.955
+            ]
+          },
+          {
+            "level": "2",
+            "in_plane_um": 9.596,
+            "direction": "reverse",
+            "seed": "seed43",
+            "auc": 0.5793,
+            "seconds": 11.11,
+            "n_warnings": 0,
+            "n_notes": 1,
+            "summary": "effective depth_order=reverse; zarr_level=0; in_plane_scale_um=9.596",
+            "issue_ref_pair": [
+              0.949,
+              0.955
+            ]
+          }
+        ]
+      }
+    ],
+    "issue_reference_AUCs": {
+      "0_forward": [
+        0.555,
+        0.538
+      ],
+      "0_reverse": [
+        0.637,
+        0.641
+      ],
+      "2_forward": [
+        0.511,
+        0.53
+      ],
+      "2_reverse": [
+        0.949,
+        0.955
+      ]
+    }
+  },
+  "cli_behavior": {
+    "default_direction": "forward (unchanged)",
+    "depth_order_warning": "none (INFO note: segment/render-dependent; recommend --direction both)",
+    "fine_scale_warning": "WARNING when in_plane_scale_um < 0.55 * 9.6 (fires on L0 / 2.399 \u00b5m; quiet on L2 / 9.596 \u00b5m)"
+  },
+  "sources": {
+    "checkpoint_config": "embedded in step-075000.pth (datasets + data_provenance)",
+    "villa_config": "vesuvius/.../configs/aligned21_hybrid_3d2d.json",
+    "hf_model_card": "https://huggingface.co/scrollprize/ink_9um",
+    "hf_labels": "ink_9um/labels/aligned-scrollprizeorg-21slices",
+    "issue": "ScrollPrize/villa#1648",
+    "tutorial": "scrollprize.org/docs/07_tutorial5.md"
+  }
+}

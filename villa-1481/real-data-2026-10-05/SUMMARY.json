@@ -1,0 +1,63 @@
+{
+  "volume": "PHercParis4/volumes/20260310170716-45.532um-11.0m-74keV-masked.zarr",
+  "chunk_key": "0/1/10/5",
+  "window_origin_zyx": [
+    48,
+    80,
+    0
+  ],
+  "source_zyx": [
+    32,
+    32,
+    32
+  ],
+  "source_zero_frac": 0.0,
+  "source_min_max_mean": [
+    13.0,
+    205.0,
+    108.73727416992188
+  ],
+  "corner_placement_96": {
+    "padded_zyx": [
+      32,
+      96,
+      96
+    ],
+    "pad_frac": 0.8888888888888888,
+    "before_buggy": {
+      "mae": 3.1733603477478027,
+      "maxae": 4.617264747619629,
+      "pad_mean": 0.0,
+      "pad_min": 0.0,
+      "pad_max": 0.0,
+      "pad_corner": 0.0
+    },
+    "after_fixed": {
+      "mae": 0.0,
+      "maxae": 0.0,
+      "pad_mean": 0.0,
+      "pad_min": 0.0,
+      "pad_max": 0.0,
+      "pad_corner": 0.0
+    },
+    "train": {
+      "pad_corner": 0.0,
+      "pad_mean": 0.0
+    }
+  },
+  "centered_placement_64": {
+    "padded_zyx": [
+      32,
+      64,
+      64
+    ],
+    "pad_frac": 0.75,
+    "before_buggy_MAE": 2.324083089828491,
+    "before_buggy_maxAE": 4.164140701293945,
+    "before_buggy_pad_corner": 0.0,
+    "after_fixed_MAE": 0.0,
+    "after_fixed_pad_corner": 0.0,
+    "train_pad_corner": 0.0
+  },
+  "env": "/tmp/v8clean + /workspace/envs/zarr3"
+}

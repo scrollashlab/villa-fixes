@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /tmp/zarr3-venv/bin/python
+cachedir: .pytest_cache
+rootdir: /tmp/v1586/vesuvius
+configfile: pytest.ini
+plugins: zarr-3.4.0
+collecting ... collected 16 items
+
+tests/ink_detection/test_volume_io.py::test_cache_store_hits_source_free_and_persists_full_values PASSED [  6%]
+tests/ink_detection/test_volume_io.py::test_cached_and_uncached_volume_reads_are_byte_identical PASSED [ 12%]
+tests/ink_detection/test_volume_io.py::test_open_sweep_prunes_oldest_recursively_and_leaves_under_budget PASSED [ 18%]
+tests/ink_detection/test_volume_io.py::test_reopening_reuses_one_budget_instead_of_granting_a_new_one PASSED [ 25%]
+tests/ink_detection/test_volume_io.py::test_seeded_entries_evict_oldest_first_and_survive_reuse PASSED [ 31%]
+tests/ink_detection/test_volume_io.py::test_unseedable_cache_store_is_reported_not_silently_overfilled PASSED [ 37%]
+tests/ink_detection/test_volume_io.py::test_shared_cache_multiprocess_reads_are_not_torn PASSED [ 43%]
+tests/ink_detection/test_volume_io.py::test_parent_populated_dataset_cache_misses_after_fork PASSED [ 50%]
+tests/ink_detection/test_volume_io.py::test_remote_open_keeps_authored_url_and_sets_process_options[False] PASSED [ 56%]
+tests/ink_detection/test_volume_io.py::test_remote_open_keeps_authored_url_and_sets_process_options[True] PASSED [ 62%]
+tests/ink_detection/test_volume_io.py::test_public_substring_http_uses_real_backend_without_s3_options PASSED [ 68%]
+tests/ink_detection/test_volume_io.py::test_private_https_basic_auth_is_unchanged PASSED [ 75%]
+tests/ink_detection/test_volume_io.py::test_zarr2_cached_open_raises_factually PASSED [ 81%]
+tests/ink_detection/test_volume_io.py::test_public_group_keys_include_arrays_and_groups PASSED [ 87%]
+tests/ink_detection/test_volume_io.py::test_missing_resolution_uses_node_error_when_listing_fails PASSED [ 93%]
+tests/ink_detection/test_volume_io.py::test_missing_node_error_has_zarr2_fallback PASSED [100%]
+
+============================== 16 passed in 6.30s ==============================

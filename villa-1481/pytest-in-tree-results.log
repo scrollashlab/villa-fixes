@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /workspace/vesuvius-lab/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/vesuvius-lab/experiments/find-valid-patches-plain-zarr/villa-src/vesuvius
+configfile: pytest.ini
+collecting ... collected 3 items
+
+vesuvius/tests/ink_detection/test_flat_robust_padding.py::test_flat_robust_normalization_excludes_reader_padding PASSED [ 33%]
+vesuvius/tests/ink_detection/test_flat_robust_padding.py::test_flat_divide_255_is_unchanged_by_the_padding_rule PASSED [ 66%]
+vesuvius/tests/ink_detection/test_flat_robust_padding.py::test_flat_robust_normalization_uses_source_placement_not_origin PASSED [100%]
+
+=============================== warnings summary ===============================
+tests/ink_detection/test_flat_robust_padding.py::test_flat_robust_normalization_excludes_reader_padding
+tests/ink_detection/test_flat_robust_padding.py::test_flat_divide_255_is_unchanged_by_the_padding_rule
+tests/ink_detection/test_flat_robust_padding.py::test_flat_robust_normalization_uses_source_placement_not_origin
+  /workspace/vesuvius-lab/.venv/lib/python3.13/site-packages/zarr/creation.py:610: UserWarning: ignoring keyword argument 'zarr_format'
+    compressor, fill_value = _kwargs_compat(compressor, fill_value, kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 3 passed, 3 warnings in 3.71s =========================

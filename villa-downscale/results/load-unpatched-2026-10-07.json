@@ -1,0 +1,170 @@
+{
+ "arm": "unpatched",
+ "vesuvius_tifxyz": "/workspace/vesuvius-lab/experiments/villa-downscale/main-check/vesuvius/src/vesuvius/tifxyz/__init__.py",
+ "villa_head": "e0bbb8b40a2db58b1d71864f286eb85717e59e64",
+ "uncommitted_changes_in_vesuvius_src": false,
+ "segments": [
+  {
+   "sample": "PHerc0139",
+   "segment": "20260422000000",
+   "shape": [
+    87,
+    261
+   ],
+   "n_valid": 20561,
+   "bbox": [
+    2291.887939453125,
+    2785.26123046875,
+    8233.3779296875,
+    3771.50927734375,
+    3763.0458984375,
+    9893.15625
+   ],
+   "scale": [
+    0.05,
+    0.05
+   ],
+   "full_resolution_shape": [
+    1740,
+    5220
+   ],
+   "applied": null,
+   "warnings": []
+  },
+  {
+   "sample": "PHerc0139",
+   "segment": "20250108000002",
+   "shape": [
+    356,
+    355
+   ],
+   "n_valid": 107318,
+   "bbox": [
+    2300.918701171875,
+    2214.240966796875,
+    919.6455688476562,
+    4567.8740234375,
+    4416.34521484375,
+    7629.6708984375
+   ],
+   "scale": [
+    0.05,
+    0.05
+   ],
+   "full_resolution_shape": [
+    7120,
+    7100
+   ],
+   "applied": null,
+   "warnings": []
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602204401",
+   "shape": [
+    990,
+    144
+   ],
+   "n_valid": 66373,
+   "bbox": [
+    2790.259765625,
+    3085.0263671875,
+    542.6205444335938,
+    5102.49755859375,
+    6037.89794921875,
+    18185.2578125
+   ],
+   "scale": [
+    0.05,
+    0.05
+   ],
+   "full_resolution_shape": [
+    19800,
+    2880
+   ],
+   "applied": null,
+   "warnings": []
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623153216",
+   "shape": [
+    619,
+    2453
+   ],
+   "n_valid": 1360233,
+   "bbox": [
+    2333.07177734375,
+    1862.20947265625,
+    6992.4140625,
+    7021.1689453125,
+    6984.43603515625,
+    17014.77734375
+   ],
+   "scale": [
+    0.05,
+    0.05
+   ],
+   "full_resolution_shape": [
+    12380,
+    49060
+   ],
+   "applied": null,
+   "warnings": []
+  },
+  {
+   "sample": "PHerc0500P2",
+   "segment": "20250825181939",
+   "shape": [
+    296,
+    167
+   ],
+   "n_valid": 31215,
+   "bbox": [
+    1002.7888793945312,
+    1881.1851806640625,
+    1380.2493896484375,
+    4116.955078125,
+    2996.57861328125,
+    7002.0791015625
+   ],
+   "scale": [
+    0.05,
+    0.05
+   ],
+   "full_resolution_shape": [
+    5920,
+    3340
+   ],
+   "applied": null,
+   "warnings": []
+  },
+  {
+   "sample": "PHerc0500P2",
+   "segment": "20250825181917",
+   "shape": [
+    299,
+    175
+   ],
+   "n_valid": 33071,
+   "bbox": [
+    754.5354614257812,
+    1952.1175537109375,
+    1114.331787109375,
+    4068.53564453125,
+    3084.993408203125,
+    6737.9375
+   ],
+   "scale": [
+    0.05,
+    0.05
+   ],
+   "full_resolution_shape": [
+    5980,
+    3500
+   ],
+   "applied": null,
+   "warnings": []
+  }
+ ]
+}

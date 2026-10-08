@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xframe"
+version = "0.1.0"
+description = "Explain, verify and convert tifxyz meshes across scan frames of the Vesuvius Challenge open data (CPU-only)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = ["numpy>=1.21", "tifffile>=2021.1", "imagecodecs>=2021.1"]  # imagecodecs: some published meshes are LZW-compressed
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+xframe = "xframe.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

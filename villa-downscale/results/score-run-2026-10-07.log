@@ -1,0 +1,24 @@
+PHerc0139 20260422000000 20250728140407 [89, 268] patched max 0.002 unpatched median vox/mm 7773 72.8 xframe 7773 True True True
+PHerc0139 20260422000000 20250822062710 [349, 1046] patched max 0.0044 unpatched median vox/mm 30300 72.8 xframe 30298 True True True
+PHerc0139 20260422000000 20260102150214 [348, 1044] patched max 0.0081 unpatched median vox/mm 30236 72.5 xframe 30234 True True True
+PHerc0139 20260422000000 20260319133050 [349, 1046] patched max 0.0044 unpatched median vox/mm 30300 72.8 xframe 30298 True True True
+PHerc0139 20250108000002 20250728140407 [366, 365] patched max 0.002 unpatched median vox/mm 5046 47.2 xframe 5045 True True True
+PHerc0139 20250108000002 20250820105138 [1429, 1425] patched max 0.0055 unpatched median vox/mm 19642 47.2 xframe 19642 True True True
+PHerc0139 20250108000002 20260102150214 [1424, 1420] patched max 0.0056 unpatched median vox/mm 19626 47.1 xframe 19629 True True True
+PHerc0139 20250108000002 20260319133554 [1429, 1425] patched max 0.0055 unpatched median vox/mm 19642 47.2 xframe 19642 True True True
+PHerc0139 20250108000002 20260413113053 [3029, 3021] patched max 0.0088 unpatched median vox/mm 41753 47.1 xframe 41758 True True True
+PHercParis4 20260602204401 20230205180739 [1215, 177] patched max 0.002 unpatched median vox/mm 10465 82.8 xframe 10434 True True True
+PHercParis4 20260602204401 20260310170716 [209, 30] patched max 0.0005 unpatched median vox/mm 1805 82.2 xframe 1800 True True True
+PHercParis4 20260602204401 20260411134726 [3960, 576] patched max 0.0161 unpatched median vox/mm 34108 81.9 xframe 34012 True True True
+PHercParis4 20260602204401 20260608103018 [8412, 1223] patched max 0.0175 unpatched median vox/mm 72441 81.8 xframe 72238 True True True
+PHercParis4 20260623153216 20230205180739 [760, 3014] patched max 0.0039 unpatched median vox/mm 12542 99.2 xframe 12542 True True True
+PHercParis4 20260623153216 20260310170716 [131, 518] patched max 0.0007 unpatched median vox/mm 2163 98.5 xframe 2163 True True True
+PHercParis4 20260623153216 20260411134726 [2476, 9812] patched max 0.0162 unpatched median vox/mm 40885 98.1 xframe 40886 True True True
+PHercParis4 20260623153216 20260608103018 [5259, 20841] patched max 0.0309 unpatched median vox/mm 86837 98.0 xframe 86839 True True True
+PHerc0500P2 20250825181939 20250526151718 [1152, 651] patched max 0.0045 unpatched median vox/mm 11837 26.2 xframe 11835 True True True
+PHerc0500P2 20250825181939 20250528085330 [592, 334] patched max 0.0021 unpatched median vox/mm 6089 26.3 xframe 6087 True True True
+PHerc0500P2 20250825181939 20250820143440 [274, 155] patched max 0.001 unpatched median vox/mm 2811 26.3 xframe 2810 True True True
+PHerc0500P2 20250825181917 20250526151718 [1164, 682] patched max 0.0048 unpatched median vox/mm 11378 25.2 xframe 11377 True True True
+PHerc0500P2 20250825181917 20250528085330 [598, 350] patched max 0.0021 unpatched median vox/mm 5854 25.3 xframe 5853 True True True
+PHerc0500P2 20250825181917 20250820143440 [276, 162] patched max 0.001 unpatched median vox/mm 2702 25.3 xframe 2701 True True True
+{"n_segments": 6, "n_derived_meshes": 23, "patched_pass": 23, "unpatched_offset_pass": 23, "agreement_2pct_pass": 23}

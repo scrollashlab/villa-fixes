@@ -1,0 +1,4 @@
+python=py313
+vesuvius_resolved=0.2.4
+requires_python=<3.14,>=3.10
+report=pip-dry-run-py313-report.json

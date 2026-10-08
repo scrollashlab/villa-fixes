@@ -1,0 +1,204 @@
+{
+  "scanned": [
+    "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20230205180739-7.91um.tifxyz",
+    "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz",
+    "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260411134726-2.4um.tifxyz",
+    "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260608103018-1.129um.tifxyz"
+  ],
+  "summary": {
+    "error": 0,
+    "warning": 5,
+    "info": 8
+  },
+  "findings": [
+    {
+      "code": "scale_ok",
+      "severity": "info",
+      "message": "scale=[0.05, 0.05] (grid cells per voxel of this mesh's scan)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20230205180739-7.91um.tifxyz/meta.json",
+      "data": {
+        "scale": [
+          0.05,
+          0.05
+        ]
+      }
+    },
+    {
+      "code": "voxel_size_um_inferable",
+      "severity": "warning",
+      "message": "voxel_size_um missing; dirname implies 7.91um (run --fix-meta --in-place or --fix-meta --output-dir ...)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20230205180739-7.91um.tifxyz",
+      "data": {
+        "parsed_um": 7.91
+      }
+    },
+    {
+      "code": "bbox_volume_unchecked",
+      "severity": "info",
+      "message": "bbox present; pass --volume-shape Z,Y,X to check containment",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20230205180739-7.91um.tifxyz",
+      "data": {
+        "bbox": [
+          [
+            2294.507568359375,
+            1851.0242919921875,
+            10.726357460021973
+          ],
+          [
+            4831.14697265625,
+            5389.3759765625,
+            13691.1943359375
+          ]
+        ]
+      }
+    },
+    {
+      "code": "scale_ok",
+      "severity": "info",
+      "message": "scale=[0.05000000074505806, 0.05000000074505806] (grid cells per voxel of this mesh's scan)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz/meta.json",
+      "data": {
+        "scale": [
+          0.05000000074505806,
+          0.05000000074505806
+        ]
+      }
+    },
+    {
+      "code": "voxel_size_um_inferable",
+      "severity": "warning",
+      "message": "voxel_size_um missing; dirname implies 45.532um (run --fix-meta --in-place or --fix-meta --output-dir ...)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz",
+      "data": {
+        "parsed_um": 45.532
+      }
+    },
+    {
+      "code": "bbox_volume_unchecked",
+      "severity": "info",
+      "message": "bbox present; pass --volume-shape Z,Y,X to check containment",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz",
+      "data": {
+        "bbox": [
+          [
+            1011.9265747070312,
+            884.1368408203125,
+            1619.98974609375
+          ],
+          [
+            1387.770263671875,
+            1550.7591552734375,
+            3965.0390625
+          ]
+        ]
+      }
+    },
+    {
+      "code": "scale_ok",
+      "severity": "info",
+      "message": "scale=[0.05000000074505806, 0.05000000074505806] (grid cells per voxel of this mesh's scan)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260411134726-2.4um.tifxyz/meta.json",
+      "data": {
+        "scale": [
+          0.05000000074505806,
+          0.05000000074505806
+        ]
+      }
+    },
+    {
+      "code": "voxel_size_um_inferable",
+      "severity": "warning",
+      "message": "voxel_size_um missing; dirname implies 2.4um (run --fix-meta --in-place or --fix-meta --output-dir ...)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260411134726-2.4um.tifxyz",
+      "data": {
+        "parsed_um": 2.4
+      }
+    },
+    {
+      "code": "bbox_volume_unchecked",
+      "severity": "info",
+      "message": "bbox present; pass --volume-shape Z,Y,X to check containment",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260411134726-2.4um.tifxyz",
+      "data": {
+        "bbox": [
+          [
+            14037.408203125,
+            11637.330078125,
+            29438.30859375
+          ],
+          [
+            21223.619140625,
+            24400.626953125,
+            73919.578125
+          ]
+        ]
+      }
+    },
+    {
+      "code": "scale_ok",
+      "severity": "info",
+      "message": "scale=[0.05000000074505806, 0.05000000074505806] (grid cells per voxel of this mesh's scan)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260608103018-1.129um.tifxyz/meta.json",
+      "data": {
+        "scale": [
+          0.05000000074505806,
+          0.05000000074505806
+        ]
+      }
+    },
+    {
+      "code": "voxel_size_um_inferable",
+      "severity": "warning",
+      "message": "voxel_size_um missing; dirname implies 1.129um (run --fix-meta --in-place or --fix-meta --output-dir ...)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260608103018-1.129um.tifxyz",
+      "data": {
+        "parsed_um": 1.129
+      }
+    },
+    {
+      "code": "bbox_volume_unchecked",
+      "severity": "info",
+      "message": "bbox present; pass --volume-shape Z,Y,X to check containment",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260608103018-1.129um.tifxyz",
+      "data": {
+        "bbox": [
+          [
+            16962.013671875,
+            13422.0791015625,
+            2818.317138671875
+          ],
+          [
+            32444.673828125,
+            40652.21484375,
+            97287.421875
+          ]
+        ]
+      }
+    },
+    {
+      "code": "scale_frame_ambiguity",
+      "severity": "warning",
+      "message": "villa #1522: 4 meshes share scale=[0.05, 0.05] but voxel sizes differ: [1.129, 2.4, 7.91, 45.532] (spread\u224840.33x)",
+      "path": "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh",
+      "data": {
+        "scale": [
+          0.05,
+          0.05
+        ],
+        "voxel_sizes_um": [
+          1.129,
+          2.4,
+          7.91,
+          45.532
+        ],
+        "spread_ratio": 40.329495128432235,
+        "paths": [
+          "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20230205180739-7.91um.tifxyz",
+          "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz",
+          "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260411134726-2.4um.tifxyz",
+          "/workspace/vesuvius-lab/experiments/tifxyz-auditor/smoke/PHercParis4-20230702185753/mesh/20230702185753-on-20260608103018-1.129um.tifxyz"
+        ]
+      }
+    }
+  ]
+}

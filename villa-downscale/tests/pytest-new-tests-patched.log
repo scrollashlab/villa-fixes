@@ -1,0 +1,17 @@
+## PATCHED f18316b86 ti on main, 0 uncommitted files; run 2026-10-07 11:45:26 HST
+## env /workspace/envs/zarr3: Python 3.13.5 numpy 2.5.3 tifffile 2026.9.20 cv2 5.0.0 zarr 3.4.0 pytest 9.1.1; vesuvius not installed, PYTHONPATH=src
+## patch: 0001-tifxyz-apply-open-data-original_volume_downscale-to-.patch sha256 f94dde2d2e646682dafafd09f98390c769a3965d404a9f4de9fe82c728bade2d
+$ pytest -v tests/tifxyz/test_open_data_downscale.py
+tests/tifxyz/test_open_data_downscale.py::test_downscale_scales_valid_points_bbox_and_grid_scale PASSED [  8%]
+tests/tifxyz/test_open_data_downscale.py::test_normalized_path_without_downscale_warns PASSED [ 16%]
+tests/tifxyz/test_open_data_downscale.py::test_explicit_downscale_and_other_paths_do_not_warn PASSED [ 25%]
+tests/tifxyz/test_open_data_downscale.py::test_catalog_lookup_by_id_and_long_id PASSED [ 33%]
+tests/tifxyz/test_open_data_downscale.py::test_read_open_data_normalized_uses_catalog_factor PASSED [ 41%]
+tests/tifxyz/test_open_data_downscale.py::test_written_scaled_mesh_is_not_scaled_twice PASSED [ 50%]
+tests/tifxyz/test_open_data_downscale.py::test_vc3d_scaled_cache_marker_is_respected PASSED [ 58%]
+tests/tifxyz/test_open_data_downscale.py::test_invalid_downscale_rejected[0] PASSED [ 66%]
+tests/tifxyz/test_open_data_downscale.py::test_invalid_downscale_rejected[-4] PASSED [ 75%]
+tests/tifxyz/test_open_data_downscale.py::test_invalid_downscale_rejected[nan] PASSED [ 83%]
+tests/tifxyz/test_open_data_downscale.py::test_invalid_downscale_rejected[inf] PASSED [ 91%]
+tests/tifxyz/test_open_data_downscale.py::test_tifxyz_info_load_passes_downscale PASSED [100%]
+============================== 12 passed in 1.75s ==============================

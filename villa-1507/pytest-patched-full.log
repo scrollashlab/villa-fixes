@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /tmp/zarr3-venv/bin/python
+cachedir: .pytest_cache
+rootdir: /tmp/villa-1507-work/vesuvius
+configfile: pytest.ini
+plugins: zarr-3.4.0
+collecting ... collected 15 items
+
+tests/ink_detection/test_native_full3d_inference.py::test_native_weight_selection_uses_only_ema_then_model PASSED [  6%]
+tests/ink_detection/test_native_full3d_inference.py::test_negative_resolution_fails_before_native_volume_open PASSED [ 13%]
+tests/ink_detection/test_native_full3d_inference.py::test_cli_accepts_both_flag_spellings_and_explicit_workers_alias PASSED [ 20%]
+tests/ink_detection/test_native_full3d_inference.py::test_volume_source_is_anchored_to_tifxyz_directory PASSED [ 26%]
+tests/ink_detection/test_native_full3d_inference.py::test_occupied_plan_handles_boundaries_halo_stride_and_truncation PASSED [ 33%]
+tests/ink_detection/test_native_full3d_inference.py::test_patch_lattice_covers_small_volume_and_validates_direct_calls PASSED [ 40%]
+tests/ink_detection/test_native_full3d_inference.py::test_probability_rules_resize_and_exact_eight_way_tta PASSED [ 46%]
+tests/ink_detection/test_native_full3d_inference.py::test_importance_maps_and_sparse_accumulator_round_half_to_even PASSED [ 53%]
+tests/ink_detection/test_native_full3d_inference.py::test_native_dataset_normalizes_only_valid_voxels_and_builds_surface_channel PASSED [ 60%]
+tests/ink_detection/test_native_full3d_inference.py::test_explicit_v2_sparse_ome_zarr_and_encoded_uint8_pyramid PASSED [ 66%]
+tests/ink_detection/test_native_full3d_inference.py::test_output_reject_overwrite_and_coherent_rerun PASSED [ 73%]
+tests/ink_detection/test_native_full3d_inference.py::test_plan_only_does_not_load_runtime_or_touch_existing_output PASSED [ 80%]
+tests/ink_detection/test_native_full3d_inference.py::test_injected_command_runtime_writes_then_builds_all_levels PASSED [ 86%]
+tests/ink_detection/test_native_full3d_inference.py::test_native_inference_honours_the_checkpoint_input_depth_padding PASSED [ 93%]
+tests/ink_detection/test_native_full3d_inference.py::test_native_inference_leaves_depth_alone_when_no_padding_is_configured PASSED [100%]
+
+============================== 15 passed in 3.11s ==============================

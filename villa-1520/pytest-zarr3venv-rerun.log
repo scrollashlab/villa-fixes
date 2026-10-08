@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /tmp/zarr3-venv/bin/python
+cachedir: .pytest_cache
+rootdir: /tmp/villa-stack-check/vesuvius
+configfile: pytest.ini
+plugins: zarr-3.4.0
+collecting ... collected 4 items
+
+tests/test_readme_entrypoints.py::test_readme_entrypoint_names_are_declared_scripts PASSED [ 25%]
+tests/test_readme_entrypoints.py::test_removed_entrypoints_are_not_listed_as_scripts PASSED [ 50%]
+tests/test_readme_entrypoints.py::test_readme_does_not_instruct_running_proofreader_console_script PASSED [ 75%]
+tests/test_readme_entrypoints.py::test_readme_warns_about_python314_pypi_lag PASSED [100%]
+
+============================== 4 passed in 0.02s ===============================

@@ -1,0 +1,10 @@
+Open-data volume chunk bytes and derived arrays.npz are NOT shipped in this
+handoff bundle (CC BY-NC). They were moved to
+experiments/handoff-open-data-holdouts/villa-1481-real-data-payloads/.
+
+S3 source (bucket vesuvius-challenge-open-data):
+  PHercParis4/volumes/20260310170716-45.532um-11.0m-74keV-masked.zarr/
+  chunk key used: 0/1/10/5
+  HTTPS: https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/PHercParis4/volumes/20260310170716-45.532um-11.0m-74keV-masked.zarr/
+
+Evidence numbers remain in SUMMARY.json (scalars only). License: CC BY-NC 4.0.

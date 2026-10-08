@@ -1,0 +1,2 @@
+padded zeros become ~ -2.2659 (train keeps 0)
+real-voxel MAE=0.4881 maxAE=1.1364

@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /workspace/vesuvius-lab/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/vesuvius-lab/experiments/find-valid-patches-plain-zarr/villa-src/vesuvius
+configfile: pytest.ini
+collecting ... collected 5 items
+
+vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py::test_plain_array_level0_finds_in_bounds_patch PASSED [ 20%]
+vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py::test_plain_array_level1_falls_back_to_full_resolution PASSED [ 40%]
+vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py::test_plain_array_level2_falls_back_to_full_resolution PASSED [ 60%]
+vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py::test_ome_group_level1_still_uses_downsampled_level PASSED [ 80%]
+vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py::test_ome_group_missing_level_falls_back PASSED [100%]
+
+============================== 5 passed in 1.71s ===============================

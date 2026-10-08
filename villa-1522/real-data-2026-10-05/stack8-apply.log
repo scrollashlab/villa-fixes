@@ -1,0 +1,28 @@
+base=0e14cf48c8cee74b11e5e40a9d1d520b74e35423
+date=2026-10-05T13:42:39-10:00
+=== Applying /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1970/0001-find_valid_patches-do-not-scale-plain-zarr-arrays-as.patch ===
+Applying: find_valid_patches: do not scale plain zarr arrays as if multiscale
+=== Applying /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1481/0001-ink_detection-exclude-reader-padding-from-robust-fla.patch ===
+Applying: ink_detection: exclude reader padding from robust flat normalization
+=== Applying /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/0001-tifxyz-record-optional-voxel_size_um-and-detect-scal.patch ===
+Applying: tifxyz: record optional voxel_size_um and detect scale/frame ambiguity
+=== Applying /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-tifxyz-audit/0001-tifxyz-add-vesuvius.tifxyz_audit-CLI-for-mesh-metada.patch ===
+Applying: tifxyz: add vesuvius.tifxyz_audit CLI for mesh metadata QA
+=== Applying /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1520/0001-readme-sync-entrypoint-table-with-project.scripts-15.patch ===
+Applying: readme: sync entrypoint table with [project.scripts] (#1520)
+=== Applying /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1586/0001-ink_detection-seed-CacheStore-LRU-so-cache_max_gb-bo.patch ===
+Applying: ink_detection: seed CacheStore LRU so cache_max_gb bounds the directory (#1586)
+=== Applying /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1300/0001-readme-warn-that-pip-on-Python-3.14-installs-vesuviu.patch ===
+Applying: readme: warn that pip on Python 3.14 installs vesuvius 0.1.10 (#1300)
+=== Applying /workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1507/0001-ink_detection-honour-input_pad_depth_to-in-native-fu.patch ===
+Applying: ink_detection: honour input_pad_depth_to in native full-3D inference (#1507)
+FINAL=37a40447830918daa123894caf24486d04205b43
+37a4044 ink_detection: honour input_pad_depth_to in native full-3D inference (#1507)
+0aa97ff readme: warn that pip on Python 3.14 installs vesuvius 0.1.10 (#1300)
+71c2f25 ink_detection: seed CacheStore LRU so cache_max_gb bounds the directory (#1586)
+01bd75c readme: sync entrypoint table with [project.scripts] (#1520)
+6ad0ebd tifxyz: add vesuvius.tifxyz_audit CLI for mesh metadata QA
+8ffb9c4 tifxyz: record optional voxel_size_um and detect scale/frame ambiguity
+c53a2b2 ink_detection: exclude reader padding from robust flat normalization
+f8168f5 find_valid_patches: do not scale plain zarr arrays as if multiscale
+0e14cf4 scrollprize.org: one sponsor list on the homepage, smaller gifts behind "Show more" (#1976)

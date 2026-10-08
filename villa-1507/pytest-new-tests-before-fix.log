@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /tmp/zarr3-venv/bin/python
+cachedir: .pytest_cache
+rootdir: /tmp/villa-1507-work/vesuvius
+configfile: pytest.ini
+plugins: zarr-3.4.0
+collecting ... collected 15 items / 13 deselected / 2 selected
+
+tests/ink_detection/test_native_full3d_inference.py::test_native_inference_honours_the_checkpoint_input_depth_padding FAILED [ 50%]
+tests/ink_detection/test_native_full3d_inference.py::test_native_inference_leaves_depth_alone_when_no_padding_is_configured PASSED [100%]
+
+=================================== FAILURES ===================================
+_______ test_native_inference_honours_the_checkpoint_input_depth_padding _______
+tests/ink_detection/test_native_full3d_inference.py:609: in test_native_inference_honours_the_checkpoint_input_depth_padding
+    assert recorder.seen == [(1, 1, 5, 4, 4)], (
+E   AssertionError: native inference fed the network depth 3 where training would have fed 5
+E   assert [(1, 1, 3, 4, 4)] == [(1, 1, 5, 4, 4)]
+E     
+E     At index 0 diff: (1, 1, 3, 4, 4) != (1, 1, 5, 4, 4)
+E     
+E     Full diff:
+E       [
+E           (
+E               1,...
+E     
+E     ...Full output truncated (9 lines hidden), use '-vv' to show
+=========================== short test summary info ============================
+FAILED tests/ink_detection/test_native_full3d_inference.py::test_native_inference_honours_the_checkpoint_input_depth_padding
+================== 1 failed, 1 passed, 13 deselected in 3.04s ==================

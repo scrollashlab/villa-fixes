@@ -1,0 +1,116 @@
+From a5a6bb5f9fa30f928c57de4489920b171e019c4a Mon Sep 17 00:00:00 2001
+From: Scroll Ash Lab <scrollash.lab@gmail.com>
+Date: Sun, 4 Oct 2026 23:03:50 -1000
+Subject: [PATCH] ink_detection: honour input_pad_depth_to in native full-3D
+ inference (#1507)
+
+Training and flat inference center-pad model inputs to
+model_config.input_pad_depth_to via TargetModel; native inference
+constructed TargetModel without that value, so padded checkpoints saw
+unpadded depth. Pass config.model.input_pad_depth_to through and add
+regression tests.
+
+Prior closed unmerged attempts: #1645, #1772.
+---
+ .../inference/infer_full3d_tifxyz.py          |  9 ++-
+ .../test_native_full3d_inference.py           | 67 +++++++++++++++++++
+ 2 files changed, 75 insertions(+), 1 deletion(-)
+
+diff --git a/vesuvius/src/vesuvius/ink_detection/inference/infer_full3d_tifxyz.py b/vesuvius/src/vesuvius/ink_detection/inference/infer_full3d_tifxyz.py
+index 25efc07..9837fa4 100644
+--- a/vesuvius/src/vesuvius/ink_detection/inference/infer_full3d_tifxyz.py
++++ b/vesuvius/src/vesuvius/ink_detection/inference/infer_full3d_tifxyz.py
+@@ -980,7 +980,14 @@ def _load_native_model(payload, config, args) -> NativeModelBundle:
+     )
+     base_model = make_model(config)
+     load_model_state(base_model, state)
+-    model = TargetModel(base_model.eval()).eval()
++    # Training center-pads the model input to model_config.input_pad_depth_to
++    # before every forward pass, and flat inference passes the same value into
++    # this wrapper.  Native inference has to honour the same contract, or a
++    # checkpoint trained at a padded depth is fed an unpadded one here.
++    model = TargetModel(
++        base_model.eval(),
++        input_pad_depth_to=config.model.input_pad_depth_to,
++    ).eval()
+     model, device = prepare_model_for_inference(
+         model,
+         gpu_ids=args.gpu_ids,
+diff --git a/vesuvius/tests/ink_detection/test_native_full3d_inference.py b/vesuvius/tests/ink_detection/test_native_full3d_inference.py
+index bad2b2c..9930b48 100644
+--- a/vesuvius/tests/ink_detection/test_native_full3d_inference.py
++++ b/vesuvius/tests/ink_detection/test_native_full3d_inference.py
+@@ -566,3 +566,70 @@ def test_injected_command_runtime_writes_then_builds_all_levels(tmp_path, monkey
+         np.all(np.asarray(zarr.open_group(output, mode="r")[str(level)]) == 128)
+         for level in range(6)
+     )
++
++
++
++class _DepthRecorder(torch.nn.Module):
++    """Records the BCZYX depth each forward pass actually receives."""
++
++    def __init__(self) -> None:
++        super().__init__()
++        self.seen: list[tuple[int, ...]] = []
++
++    def forward(self, image_BCZYX):
++        self.seen.append(tuple(image_BCZYX.shape))
++        return {"ink": image_BCZYX.mean(dim=2, keepdim=True)}
++
++
++def test_native_inference_honours_the_checkpoint_input_depth_padding(monkeypatch):
++    """Training center-pads the model input to model_config.input_pad_depth_to
++    and flat inference passes the same value into TargetModel.  Native
++    inference has to as well, or a checkpoint trained at a padded depth is fed
++    an unpadded one."""
++    recorder = _DepthRecorder()
++    monkeypatch.setattr(native, "make_model", lambda config: recorder)
++    monkeypatch.setattr(native, "load_model_state", lambda model, state: None)
++    monkeypatch.setattr(
++        native, "select_native_inference_weights", lambda payload, source=None: ("model", {})
++    )
++    monkeypatch.setattr(native, "resolve_amp_dtype", lambda *a, **k: None)
++
++    config = SimpleNamespace(model=SimpleNamespace(input_pad_depth_to=5))
++    args = SimpleNamespace(
++        checkpoint="memory://checkpoint",
++        gpu_ids=(),
++        compile_model=False,
++        compile_mode="default",
++        amp_dtype="fp32",
++    )
++
++    bundle = native._load_native_model({}, config, args)
++    bundle.model(torch.zeros(1, 1, 3, 4, 4))
++
++    assert recorder.seen == [(1, 1, 5, 4, 4)], (
++        "native inference fed the network depth "
++        f"{recorder.seen[0][2]} where training would have fed 5"
++    )
++
++
++def test_native_inference_leaves_depth_alone_when_no_padding_is_configured(monkeypatch):
++    recorder = _DepthRecorder()
++    monkeypatch.setattr(native, "make_model", lambda config: recorder)
++    monkeypatch.setattr(native, "load_model_state", lambda model, state: None)
++    monkeypatch.setattr(
++        native, "select_native_inference_weights", lambda payload, source=None: ("model", {})
++    )
++    monkeypatch.setattr(native, "resolve_amp_dtype", lambda *a, **k: None)
++
++    config = SimpleNamespace(model=SimpleNamespace(input_pad_depth_to=None))
++    args = SimpleNamespace(
++        checkpoint="memory://checkpoint",
++        gpu_ids=(),
++        compile_model=False,
++        compile_mode="default",
++        amp_dtype="fp32",
++    )
++
++    bundle = native._load_native_model({}, config, args)
++    bundle.model(torch.zeros(1, 1, 3, 4, 4))
++    assert recorder.seen == [(1, 1, 3, 4, 4)]
+-- 
+2.47.3
+

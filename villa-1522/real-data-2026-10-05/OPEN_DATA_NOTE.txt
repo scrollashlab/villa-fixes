@@ -1,0 +1,25 @@
+Open-data mesh TIFF payloads (x.tif/y.tif/z.tif) are NOT shipped in this handoff
+bundle (CC BY-NC). Evidence probes were run on anonymous HTTPS pulls from
+vesuvius-challenge-open-data. Local copies (if needed) live under
+experiments/handoff-open-data-holdouts/ — outside this public bundle.
+
+S3 sources used for #1522 evidence (bucket vesuvius-challenge-open-data,
+HTTPS https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/):
+
+  PHercParis4/segments/20230702185753/mesh/20230702185753-on-20230205180739-7.91um.tifxyz/
+  PHercParis4/segments/20230702185753/mesh/20230702185753-on-20260310170716-45.532um.tifxyz/
+  PHercParis4/segments/20230702185753/mesh/20230702185753-on-20260411134726-2.4um.tifxyz/
+  PHercParis4/segments/20230702185753/mesh/20230702185753-on-20260608103018-1.129um.tifxyz/
+  PHercParis4/segments/20230929220926/mesh/20230929220926-on-20230205180739-7.91um.tifxyz/
+  PHercParis4/segments/20230929220926/mesh/20230929220926-on-20260310170716-45.532um.tifxyz/
+  PHercParis4/segments/20230929220926/mesh/20230929220926-on-20260411134726-2.4um.tifxyz/
+  PHerc0172/segments/20250917143559-w062_20250917143559205_flatboi/mesh/20250917143559-on-20241024131838-7.91um.tifxyz/
+  PHerc0172/segments/20250917143559-w062_20250917143559205_flatboi/mesh/20250917143559-on-20241024131839-7.91um.tifxyz/
+  PHerc0139/segments/20250108000000-w025_2025010863/mesh/20250108000000-on-20250728140407-9.362um.tifxyz/
+  PHerc0139/segments/20250108000000-w025_2025010863/mesh/20250108000000-on-20250820105138-2.403um.tifxyz/
+  PHerc0139/segments/20250108000000-w025_2025010863/mesh/20250108000000-on-20260102150214-2.399um.tifxyz/
+  PHerc0139/segments/20250108000000-w025_2025010863/mesh/20250108000000-on-20260319133554-2.403um.tifxyz/
+  PHerc0139/segments/20250108000000-w025_2025010863/mesh/20250108000000-on-20260413113053-1.129um.tifxyz/
+
+Small meta.json copies may remain under fixtures*/ for scale/voxel_size_um quotes
+only (no TIFF/zarr bytes). License: CC BY-NC 4.0. Do not claim accept_terms.

@@ -1,0 +1,282 @@
+From 2e3957029e5a91d6b527deeb5b399124408baefd Mon Sep 17 00:00:00 2001
+From: Scroll Ash Lab <scrollash.lab@gmail.com>
+Date: Sun, 4 Oct 2026 21:35:16 -1000
+Subject: [PATCH] find_valid_patches: do not scale plain zarr arrays as if
+ multiscale
+
+Plain zarr Arrays have no multiscale levels. Requesting
+valid_patch_find_resolution >= 1 previously treated the full-resolution
+array as already downsampled and multiplied patch starts by 2**level,
+writing out-of-bounds positions into the patch cache (#1970).
+
+For objects without group keys, _resolve_resolution now only satisfies
+level 0; higher levels return None so the existing full-resolution
+fallback runs. OME-Zarr groups are unchanged.
+
+Diagnosis and fix direction: @mg255 on ScrollPrize/villa#1970.
+---
+ .../models/datasets/find_valid_patches.py     |  55 ++++--
+ .../test_find_valid_patches_resolution.py     | 162 ++++++++++++++++++
+ 2 files changed, 202 insertions(+), 15 deletions(-)
+ create mode 100644 vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py
+
+diff --git a/vesuvius/src/vesuvius/models/datasets/find_valid_patches.py b/vesuvius/src/vesuvius/models/datasets/find_valid_patches.py
+index 21b068d..5a8a4ec 100755
+--- a/vesuvius/src/vesuvius/models/datasets/find_valid_patches.py
++++ b/vesuvius/src/vesuvius/models/datasets/find_valid_patches.py
+@@ -297,19 +297,34 @@ def _collect_unlabeled_fg_from_image_only(
+     unlabeled_fg_patches = []
+ 
+     def _resolve_resolution(array_obj, level_key):
+-        """Access resolution level from a zarr group or return array directly."""
++        """Access resolution level from a zarr group or return array directly.
++
++        Plain arrays (no group keys) only satisfy level 0. Requesting a higher
++        level returns None so callers fall back to full resolution with factor 1,
++        instead of treating the full-res array as an already-downsampled level
++        and later multiplying positions by 2**level (out-of-bounds patches).
++        """
+         key = str(level_key)
+-        if hasattr(array_obj, 'shape') and hasattr(array_obj, 'dtype'):
+-            if not hasattr(array_obj, 'keys'):
+-                return array_obj
++        if hasattr(array_obj, "shape") and hasattr(array_obj, "dtype"):
++            if not hasattr(array_obj, "keys"):
++                # Plain array: only valid as level 0.
++                if key in ("0", "0.0"):
++                    return array_obj
++                try:
++                    if int(float(key)) == 0:
++                        return array_obj
++                except (TypeError, ValueError):
++                    pass
++                return None
+         try:
+             candidate = array_obj[key]
+-            if hasattr(candidate, 'shape'):
++            if hasattr(candidate, "shape"):
+                 return candidate
+         except Exception:
+             pass
+         return None
+ 
++
+     # Resolve image array at appropriate resolution level
+     actual_downsample_factor = downsample_factor
+     actual_downsampled_patch_size = downsampled_patch_size
+@@ -753,24 +768,34 @@ def find_valid_patches(
+         actual_downsampled_patch_size = downsampled_patch_size
+ 
+         def _resolve_resolution(array_obj, level_key):
+-            """Access resolution level from a zarr group or return array directly."""
+-            key = str(level_key)
++            """Access resolution level from a zarr group or return array directly.
+ 
+-            # If it's already an array (not a group), return it
+-            if hasattr(array_obj, 'shape') and hasattr(array_obj, 'dtype'):
+-                if not hasattr(array_obj, 'keys'):
+-                    return array_obj
+-
+-            # Try accessing as group[level]
++            Plain arrays (no group keys) only satisfy level 0. Requesting a higher
++            level returns None so callers fall back to full resolution with factor 1,
++            instead of treating the full-res array as an already-downsampled level
++            and later multiplying positions by 2**level (out-of-bounds patches).
++            """
++            key = str(level_key)
++            if hasattr(array_obj, "shape") and hasattr(array_obj, "dtype"):
++                if not hasattr(array_obj, "keys"):
++                    # Plain array: only valid as level 0.
++                    if key in ("0", "0.0"):
++                        return array_obj
++                    try:
++                        if int(float(key)) == 0:
++                            return array_obj
++                    except (TypeError, ValueError):
++                        pass
++                    return None
+             try:
+                 candidate = array_obj[key]
+-                if hasattr(candidate, 'shape'):
++                if hasattr(candidate, "shape"):
+                     return candidate
+             except Exception:
+                 pass
+-
+             return None
+ 
++
+         logger.info(
+             "Resolving downsample level %s for volume '%s'",
+             valid_patch_find_resolution,
+diff --git a/vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py b/vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py
+new file mode 100644
+index 0000000..e8c7a73
+--- /dev/null
++++ b/vesuvius/tests/models/datasets/test_find_valid_patches_resolution.py
+@@ -0,0 +1,162 @@
++"""Regression tests for villa #1970: plain zarr + valid_patch_find_resolution.
++
++When a label volume is a plain zarr Array (not an OME-Zarr multiscale group),
++requesting valid_patch_find_resolution >= 1 used to treat the full-resolution
++array as already downsampled and multiply patch starts by 2**level, writing
++out-of-bounds positions into the patch cache. Multiscale groups that lack the
++requested level already fell back to full resolution; plain arrays should too.
++"""
++
++from __future__ import annotations
++
++import importlib.util
++from pathlib import Path
++from typing import List
++
++import numpy as np
++import pytest
++import zarr
++
++
++def _load_find_valid_patches():
++    """Load the module without importing the heavy datasets package __init__."""
++    try:
++        from vesuvius.models.datasets.find_valid_patches import find_valid_patches
++
++        return find_valid_patches
++    except Exception:
++        pass
++
++    candidates = []
++    try:
++        import vesuvius
++
++        candidates.append(
++            Path(vesuvius.__file__).resolve().parent
++            / "models"
++            / "datasets"
++            / "find_valid_patches.py"
++        )
++    except Exception:
++        pass
++
++    # Source-tree layout: tests/models/datasets/ -> ../../.. = vesuvius package root
++    here = Path(__file__).resolve()
++    candidates.append(
++        here.parents[3] / "src" / "vesuvius" / "models" / "datasets" / "find_valid_patches.py"
++    )
++    candidates.append(
++        here.parents[2] / "src" / "vesuvius" / "models" / "datasets" / "find_valid_patches.py"
++    )
++
++    for path in candidates:
++        if path.is_file():
++            spec = importlib.util.spec_from_file_location(
++                "vesuvius_find_valid_patches_under_test", path
++            )
++            mod = importlib.util.module_from_spec(spec)
++            assert spec.loader is not None
++            spec.loader.exec_module(mod)
++            return mod.find_valid_patches
++
++    raise ImportError("Could not locate find_valid_patches.py")
++
++
++find_valid_patches = _load_find_valid_patches()
++
++PATCH = (128, 128, 128)
++SHAPE = (221, 132, 132)  # same shape class as PHerc0500P2 level-5 open-data crop
++
++
++def _start_positions(result) -> List[List[int]]:
++    return [list(p["start_pos"]) for p in result["fg_patches"]]
++
++
++def _oob(positions, shape=SHAPE, patch=PATCH) -> List[List[int]]:
++    shape_t = np.asarray(shape)
++    patch_t = np.asarray(patch)
++    bad = []
++    for pos in positions:
++        end = np.asarray(pos) + patch_t
++        if np.any(end > shape_t) or np.any(np.asarray(pos) < 0):
++            bad.append(list(pos))
++    return bad
++
++
++@pytest.fixture()
++def plain_label_array(tmp_path: Path):
++    """Plain zarr Array with a labeled blob in the first 128^3 corner."""
++    path = tmp_path / "plain_label.zarr"
++    arr = np.zeros(SHAPE, dtype=np.uint8)
++    arr[10:90, 10:90, 10:90] = 1
++    store = zarr.open(str(path), mode="w", shape=SHAPE, chunks=(64, 64, 64), dtype="u1")
++    store[:] = arr
++    opened = zarr.open(str(path), mode="r")
++    assert not hasattr(opened, "keys")
++    return opened
++
++
++@pytest.fixture()
++def ome_label_group(tmp_path: Path, plain_label_array):
++    """OME-style group with real level-1 downsample of the same voxels."""
++    path = tmp_path / "ome_label.zarr"
++    full = np.asarray(plain_label_array)
++    g = zarr.open_group(str(path), mode="w")
++    g.create_dataset("0", data=full, chunks=(64, 64, 64))
++    g.create_dataset("1", data=full[::2, ::2, ::2], chunks=(32, 32, 32))
++    g.attrs["multiscales"] = [{"datasets": [{"path": "0"}, {"path": "1"}]}]
++    return zarr.open(str(path), mode="r")
++
++
++@pytest.fixture()
++def ome_level0_only_group(tmp_path: Path, plain_label_array):
++    """Group that only has level 0 — should fall back when level 1 is requested."""
++    path = tmp_path / "ome_level0_only.zarr"
++    full = np.asarray(plain_label_array)
++    g = zarr.open_group(str(path), mode="w")
++    g.create_dataset("0", data=full, chunks=(64, 64, 64))
++    return zarr.open(str(path), mode="r")
++
++
++def _run(label, level: int):
++    return find_valid_patches(
++        [label],
++        ["synthetic"],
++        PATCH,
++        bbox_threshold=0.15,
++        label_threshold=0.01,
++        num_workers=1,
++        valid_patch_find_resolution=level,
++    )
++
++
++def test_plain_array_level0_finds_in_bounds_patch(plain_label_array):
++    pos = _start_positions(_run(plain_label_array, 0))
++    assert pos == [[0, 0, 0]]
++    assert _oob(pos) == []
++
++
++def test_plain_array_level1_falls_back_to_full_resolution(plain_label_array):
++    """#1970: must not scale positions by 2 when the array has no level 1."""
++    pos = _start_positions(_run(plain_label_array, 1))
++    assert pos == [[0, 0, 0]], f"expected single in-bounds patch, got {pos}"
++    assert _oob(pos) == []
++
++
++def test_plain_array_level2_falls_back_to_full_resolution(plain_label_array):
++    pos = _start_positions(_run(plain_label_array, 2))
++    assert pos == [[0, 0, 0]]
++    assert _oob(pos) == []
++
++
++def test_ome_group_level1_still_uses_downsampled_level(ome_label_group):
++    """Control: a real multiscale level 1 must still be used (in-bounds after scale-up)."""
++    pos = _start_positions(_run(ome_label_group, 1))
++    assert pos  # at least one patch
++    assert _oob(pos) == [], f"OME level-1 patches out of bounds: {pos}"
++
++
++def test_ome_group_missing_level_falls_back(ome_level0_only_group):
++    pos = _start_positions(_run(ome_level0_only_group, 1))
++    assert pos == [[0, 0, 0]]
++    assert _oob(pos) == []
+-- 
+2.47.3
+

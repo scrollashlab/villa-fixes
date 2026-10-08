@@ -1,0 +1,370 @@
+[
+  {
+    "mesh_root": "/workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures-after-v2/paris4-40x/mesh",
+    "ambiguous_groups": [
+      {
+        "scale": [
+          0.05,
+          0.05
+        ],
+        "voxel_sizes_um": [
+          1.129,
+          2.4,
+          7.91,
+          45.532
+        ],
+        "spread_ratio": 40.329495128432235,
+        "n": 4,
+        "names": [
+          "20230702185753-on-20230205180739-7.91um.tifxyz",
+          "20230702185753-on-20260310170716-45.532um.tifxyz",
+          "20230702185753-on-20260411134726-2.4um.tifxyz",
+          "20230702185753-on-20260608103018-1.129um.tifxyz"
+        ]
+      }
+    ],
+    "frames_comparable_pre_annotate": false,
+    "annotate": [
+      {
+        "name": "20230702185753-on-20230205180739-7.91um.tifxyz",
+        "wrote": 7.91,
+        "before": null,
+        "after": 7.91
+      },
+      {
+        "name": "20230702185753-on-20260310170716-45.532um.tifxyz",
+        "wrote": 45.532,
+        "before": null,
+        "after": 45.532
+      },
+      {
+        "name": "20230702185753-on-20260411134726-2.4um.tifxyz",
+        "wrote": 2.4,
+        "before": null,
+        "after": 2.4
+      },
+      {
+        "name": "20230702185753-on-20260608103018-1.129um.tifxyz",
+        "wrote": 1.129,
+        "before": null,
+        "after": 1.129
+      }
+    ],
+    "pairwise_comparable": [
+      {
+        "a": "20230702185753-on-20230205180739-7.91um.tifxyz",
+        "b": "20230702185753-on-20260310170716-45.532um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20230702185753-on-20230205180739-7.91um.tifxyz",
+        "b": "20230702185753-on-20260411134726-2.4um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20230702185753-on-20230205180739-7.91um.tifxyz",
+        "b": "20230702185753-on-20260608103018-1.129um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20230702185753-on-20260310170716-45.532um.tifxyz",
+        "b": "20230702185753-on-20260411134726-2.4um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20230702185753-on-20260310170716-45.532um.tifxyz",
+        "b": "20230702185753-on-20260608103018-1.129um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20230702185753-on-20260411134726-2.4um.tifxyz",
+        "b": "20230702185753-on-20260608103018-1.129um.tifxyz",
+        "comparable": false
+      }
+    ],
+    "frames_comparable_all_post_annotate": false,
+    "physical_after": [
+      {
+        "name": "20230702185753-on-20230205180739-7.91um.tifxyz",
+        "voxel_size_um": 7.91,
+        "um_per_grid_cell": 158.2
+      },
+      {
+        "name": "20230702185753-on-20260310170716-45.532um.tifxyz",
+        "voxel_size_um": 45.532,
+        "um_per_grid_cell": 910.6399864304067
+      },
+      {
+        "name": "20230702185753-on-20260411134726-2.4um.tifxyz",
+        "voxel_size_um": 2.4,
+        "um_per_grid_cell": 47.99999928474427
+      },
+      {
+        "name": "20230702185753-on-20260608103018-1.129um.tifxyz",
+        "voxel_size_um": 1.129,
+        "um_per_grid_cell": 22.579999663531783
+      }
+    ],
+    "label": "paris4-40x"
+  },
+  {
+    "mesh_root": "/workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures-after-v2/paris4-19x/mesh",
+    "ambiguous_groups": [
+      {
+        "scale": [
+          0.05,
+          0.05
+        ],
+        "voxel_sizes_um": [
+          2.4,
+          7.91,
+          45.532
+        ],
+        "spread_ratio": 18.971666666666668,
+        "n": 3,
+        "names": [
+          "20230929220926-on-20230205180739-7.91um.tifxyz",
+          "20230929220926-on-20260310170716-45.532um.tifxyz",
+          "20230929220926-on-20260411134726-2.4um.tifxyz"
+        ]
+      }
+    ],
+    "frames_comparable_pre_annotate": false,
+    "annotate": [
+      {
+        "name": "20230929220926-on-20230205180739-7.91um.tifxyz",
+        "wrote": 7.91,
+        "before": null,
+        "after": 7.91
+      },
+      {
+        "name": "20230929220926-on-20260310170716-45.532um.tifxyz",
+        "wrote": 45.532,
+        "before": null,
+        "after": 45.532
+      },
+      {
+        "name": "20230929220926-on-20260411134726-2.4um.tifxyz",
+        "wrote": 2.4,
+        "before": null,
+        "after": 2.4
+      }
+    ],
+    "pairwise_comparable": [
+      {
+        "a": "20230929220926-on-20230205180739-7.91um.tifxyz",
+        "b": "20230929220926-on-20260310170716-45.532um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20230929220926-on-20230205180739-7.91um.tifxyz",
+        "b": "20230929220926-on-20260411134726-2.4um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20230929220926-on-20260310170716-45.532um.tifxyz",
+        "b": "20230929220926-on-20260411134726-2.4um.tifxyz",
+        "comparable": false
+      }
+    ],
+    "frames_comparable_all_post_annotate": false,
+    "physical_after": [
+      {
+        "name": "20230929220926-on-20230205180739-7.91um.tifxyz",
+        "voxel_size_um": 7.91,
+        "um_per_grid_cell": 158.2
+      },
+      {
+        "name": "20230929220926-on-20260310170716-45.532um.tifxyz",
+        "voxel_size_um": 45.532,
+        "um_per_grid_cell": 910.6399864304067
+      },
+      {
+        "name": "20230929220926-on-20260411134726-2.4um.tifxyz",
+        "voxel_size_um": 2.4,
+        "um_per_grid_cell": 47.99999928474427
+      }
+    ],
+    "label": "paris4-19x"
+  },
+  {
+    "mesh_root": "/workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures-after-v2/pherc0172-same-um/mesh",
+    "ambiguous_groups": [],
+    "frames_comparable_pre_annotate": false,
+    "annotate": [
+      {
+        "name": "20250917143559-on-20241024131838-7.91um.tifxyz",
+        "wrote": 7.91,
+        "before": null,
+        "after": 7.91
+      },
+      {
+        "name": "20250917143559-on-20241024131839-7.91um.tifxyz",
+        "wrote": 7.91,
+        "before": null,
+        "after": 7.91
+      }
+    ],
+    "pairwise_comparable": [
+      {
+        "a": "20250917143559-on-20241024131838-7.91um.tifxyz",
+        "b": "20250917143559-on-20241024131839-7.91um.tifxyz",
+        "comparable": true
+      }
+    ],
+    "frames_comparable_all_post_annotate": true,
+    "physical_after": [
+      {
+        "name": "20250917143559-on-20241024131838-7.91um.tifxyz",
+        "voxel_size_um": 7.91,
+        "um_per_grid_cell": 158.2
+      },
+      {
+        "name": "20250917143559-on-20241024131839-7.91um.tifxyz",
+        "voxel_size_um": 7.91,
+        "um_per_grid_cell": 158.19999764263633
+      }
+    ],
+    "label": "pherc0172-same-um"
+  },
+  {
+    "mesh_root": "/workspace/vesuvius-lab/handoff/scroll-ash-lab-villa-fixes/villa-1522/real-data-2026-10-05/fixtures-after-v2/pherc0139-8x/mesh",
+    "ambiguous_groups": [
+      {
+        "scale": [
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "voxel_sizes_um": [
+          1.129,
+          2.399,
+          2.403,
+          9.362
+        ],
+        "spread_ratio": 8.29229406554473,
+        "n": 5,
+        "names": [
+          "20250108000000-on-20250728140407-9.362um.tifxyz",
+          "20250108000000-on-20250820105138-2.403um.tifxyz",
+          "20250108000000-on-20260102150214-2.399um.tifxyz",
+          "20250108000000-on-20260319133554-2.403um.tifxyz",
+          "20250108000000-on-20260413113053-1.129um.tifxyz"
+        ]
+      }
+    ],
+    "frames_comparable_pre_annotate": false,
+    "annotate": [
+      {
+        "name": "20250108000000-on-20250728140407-9.362um.tifxyz",
+        "wrote": 9.362,
+        "before": null,
+        "after": 9.362
+      },
+      {
+        "name": "20250108000000-on-20250820105138-2.403um.tifxyz",
+        "wrote": 2.403,
+        "before": null,
+        "after": 2.403
+      },
+      {
+        "name": "20250108000000-on-20260102150214-2.399um.tifxyz",
+        "wrote": 2.399,
+        "before": null,
+        "after": 2.399
+      },
+      {
+        "name": "20250108000000-on-20260319133554-2.403um.tifxyz",
+        "wrote": 2.403,
+        "before": null,
+        "after": 2.403
+      },
+      {
+        "name": "20250108000000-on-20260413113053-1.129um.tifxyz",
+        "wrote": 1.129,
+        "before": null,
+        "after": 1.129
+      }
+    ],
+    "pairwise_comparable": [
+      {
+        "a": "20250108000000-on-20250728140407-9.362um.tifxyz",
+        "b": "20250108000000-on-20250820105138-2.403um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20250108000000-on-20250728140407-9.362um.tifxyz",
+        "b": "20250108000000-on-20260102150214-2.399um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20250108000000-on-20250728140407-9.362um.tifxyz",
+        "b": "20250108000000-on-20260319133554-2.403um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20250108000000-on-20250728140407-9.362um.tifxyz",
+        "b": "20250108000000-on-20260413113053-1.129um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20250108000000-on-20250820105138-2.403um.tifxyz",
+        "b": "20250108000000-on-20260102150214-2.399um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20250108000000-on-20250820105138-2.403um.tifxyz",
+        "b": "20250108000000-on-20260319133554-2.403um.tifxyz",
+        "comparable": true
+      },
+      {
+        "a": "20250108000000-on-20250820105138-2.403um.tifxyz",
+        "b": "20250108000000-on-20260413113053-1.129um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20250108000000-on-20260102150214-2.399um.tifxyz",
+        "b": "20250108000000-on-20260319133554-2.403um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20250108000000-on-20260102150214-2.399um.tifxyz",
+        "b": "20250108000000-on-20260413113053-1.129um.tifxyz",
+        "comparable": false
+      },
+      {
+        "a": "20250108000000-on-20260319133554-2.403um.tifxyz",
+        "b": "20250108000000-on-20260413113053-1.129um.tifxyz",
+        "comparable": false
+      }
+    ],
+    "frames_comparable_all_post_annotate": false,
+    "physical_after": [
+      {
+        "name": "20250108000000-on-20250728140407-9.362um.tifxyz",
+        "voxel_size_um": 9.362,
+        "um_per_grid_cell": 187.23999720990662
+      },
+      {
+        "name": "20250108000000-on-20250820105138-2.403um.tifxyz",
+        "voxel_size_um": 2.403,
+        "um_per_grid_cell": 48.0599992838502
+      },
+      {
+        "name": "20250108000000-on-20260102150214-2.399um.tifxyz",
+        "voxel_size_um": 2.399,
+        "um_per_grid_cell": 47.9799992850423
+      },
+      {
+        "name": "20250108000000-on-20260319133554-2.403um.tifxyz",
+        "voxel_size_um": 2.403,
+        "um_per_grid_cell": 48.0599992838502
+      },
+      {
+        "name": "20250108000000-on-20260413113053-1.129um.tifxyz",
+        "voxel_size_um": 1.129,
+        "um_per_grid_cell": 22.579999663531783
+      }
+    ],
+    "label": "pherc0139-8x"
+  }
+]
