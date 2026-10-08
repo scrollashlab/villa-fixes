@@ -1,0 +1,587 @@
+{
+ "summary": {
+  "B_rows_by_reference_and_flag": {
+   "tifxyz|False": 906,
+   "tifxyz-normalized|True": 57,
+   "tifxyz-normalized|False": 368
+  },
+  "failing_rows": 57,
+  "failing_rows_with_published_tifxyz_original": 0,
+  "failing_own_volume_rows": 17,
+  "failing_own_volume_rows_equal_to_stored_bbox_times_ds(<0.01)": 17,
+  "failing_other_volume_rows_equal_to_corner_transform(<0.01)": 7,
+  "segments": 21
+ },
+ "rows": [
+  {
+   "sample": "PHerc0814",
+   "segment": "20260225160055",
+   "volume": "20260309142202",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 111.2509765625,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260225160055",
+   "volume": "20250804134230",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 75.93028332560789,
+   "declared_minus_normalized_max_abs": 29.757584696646973,
+   "tol": 5.155203972865644
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260225160055",
+   "volume": "20260521123630",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 35.80420183314709,
+   "declared_minus_normalized_max_abs": 237.1855589549741,
+   "tol": 42.56582319586928
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226113324",
+   "volume": "20260309142202",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 92.1875,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226113324",
+   "volume": "20250804134230",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 127.5119841914343,
+   "declared_minus_normalized_max_abs": 24.713446520176603,
+   "tol": 5.155203972865644
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226113324",
+   "volume": "20260521123630",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 58.238935372159176,
+   "declared_minus_normalized_max_abs": 196.78131856513573,
+   "tol": 42.56582319586928
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226121302",
+   "volume": "20260309142202",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 75.46484375,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226121302",
+   "volume": "20250804134230",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 132.00101378218733,
+   "declared_minus_normalized_max_abs": 19.786789456922634,
+   "tol": 5.155203972865644
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226121302",
+   "volume": "20260521123630",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 60.75465656094093,
+   "declared_minus_normalized_max_abs": 160.7411476117195,
+   "tol": 42.56582319586928
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20250928235954",
+   "volume": "20260309142202",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 61.953125,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20250928235954",
+   "volume": "20250804134230",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 132.93625914790664,
+   "declared_minus_normalized_max_abs": 16.126806665779895,
+   "tol": 5.155203972865644
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20250928235954",
+   "volume": "20260521123630",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 59.398031431806885,
+   "declared_minus_normalized_max_abs": 131.96628076657726,
+   "tol": 42.56582319586928
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226123353",
+   "volume": "20260309142202",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 82.43701171875,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226123353",
+   "volume": "20250804134230",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 115.86322495589411,
+   "declared_minus_normalized_max_abs": 20.19710227157475,
+   "tol": 5.155203972865644
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226123353",
+   "volume": "20260521123630",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 57.97842124658928,
+   "declared_minus_normalized_max_abs": 174.9648073211756,
+   "tol": 42.56582319586928
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226110425",
+   "volume": "20260309142202",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 93.2294921875,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226110425",
+   "volume": "20250804134230",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 126.91105713579782,
+   "declared_minus_normalized_max_abs": 17.40733821482263,
+   "tol": 5.155203972865644
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226110425",
+   "volume": "20260521123630",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 58.09703442008686,
+   "declared_minus_normalized_max_abs": 194.0120457994708,
+   "tol": 42.56582319586928
+  },
+  {
+   "sample": "PHerc1667",
+   "segment": "20260203210000",
+   "volume": "20251217075048",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 2077.611751546372,
+   "declared_minus_normalized_max_abs": 88.43919424604246,
+   "tol": 65.68525983715645
+  },
+  {
+   "sample": "PHerc1667",
+   "segment": "20260203210000",
+   "volume": "20260323082859",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 4592.242623793998,
+   "declared_minus_normalized_max_abs": 255.4712014165416,
+   "tol": 141.13740546021486
+  },
+  {
+   "sample": "PHerc1667",
+   "segment": "20260105050000",
+   "volume": "20231117161658",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 23.41796875,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc1667",
+   "segment": "20260105050000",
+   "volume": "20231107190228",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 136.6104056698469,
+   "declared_minus_normalized_max_abs": 56.835970418236684,
+   "tol": 48.43868427388069
+  },
+  {
+   "sample": "PHerc1667",
+   "segment": "20260105050000",
+   "volume": "20251217075048",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 2328.025394535942,
+   "declared_minus_normalized_max_abs": 81.14934514987544,
+   "tol": 65.68525983715645
+  },
+  {
+   "sample": "PHerc1667",
+   "segment": "20260105050000",
+   "volume": "20260323082859",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 4987.333003976644,
+   "declared_minus_normalized_max_abs": 176.35546984348912,
+   "tol": 141.13740546021486
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623164141",
+   "volume": "20230205180739",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 2076.2037287051844,
+   "declared_minus_normalized_max_abs": 26.93592883083693,
+   "tol": 24.592206253552543
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602225659",
+   "volume": "20260411134726",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 80.6181640625,
+   "tol": 80.01
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602225659",
+   "volume": "20260310170716",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 3.2589165942051466,
+   "declared_minus_normalized_max_abs": 4.257718026291855,
+   "tol": 4.2467541003986256
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602225659",
+   "volume": "20260323153942",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 187.47419754537987,
+   "declared_minus_normalized_max_abs": 80.35546439642167,
+   "tol": 80.06064421290172
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602225659",
+   "volume": "20260608103018",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 644.7850535866382,
+   "declared_minus_normalized_max_abs": 170.88241698778438,
+   "tol": 169.9721578526332
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623161921",
+   "volume": "20230205180739",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 2186.548648082644,
+   "declared_minus_normalized_max_abs": 26.147494011751405,
+   "tol": 24.592206253552543
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623145652",
+   "volume": "20260411134726",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 86.3046875,
+   "tol": 80.01
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623145652",
+   "volume": "20230205180739",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 1585.8218536622262,
+   "declared_minus_normalized_max_abs": 38.08849087097042,
+   "tol": 24.592206253552543
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623145652",
+   "volume": "20260310170716",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 3.578799143559536,
+   "declared_minus_normalized_max_abs": 5.283562609970886,
+   "tol": 4.2467541003986256
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623145652",
+   "volume": "20260323153942",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 153.98581273937452,
+   "declared_minus_normalized_max_abs": 86.46422208323202,
+   "tol": 80.06064421290172
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623145652",
+   "volume": "20260608103018",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 340.82875030590367,
+   "declared_minus_normalized_max_abs": 178.67549980347394,
+   "tol": 169.9721578526332
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623141649",
+   "volume": "20260310170716",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 2.7960098257935897,
+   "declared_minus_normalized_max_abs": 4.3795979989286025,
+   "tol": 4.2467541003986256
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623141649",
+   "volume": "20260323153942",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 161.61840086176744,
+   "declared_minus_normalized_max_abs": 80.64426281915803,
+   "tol": 80.06064421290172
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260623141649",
+   "volume": "20260608103018",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 313.7275875682353,
+   "declared_minus_normalized_max_abs": 185.3956493877049,
+   "tol": 169.9721578526332
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602230115",
+   "volume": "20260411134726",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 130.82186889648438,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602230115",
+   "volume": "20230205180739",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 2887.7774023391476,
+   "declared_minus_normalized_max_abs": 43.27660585832564,
+   "tol": 6.155551563388135
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602230115",
+   "volume": "20260310170716",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 7.504985565352399,
+   "declared_minus_normalized_max_abs": 6.907185872427533,
+   "tol": 1.0691885250996565
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602230115",
+   "volume": "20260323153942",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 250.25853260899385,
+   "declared_minus_normalized_max_abs": 129.72636196958774,
+   "tol": 20.02266105322543
+  },
+  {
+   "sample": "PHercParis4",
+   "segment": "20260602230115",
+   "volume": "20260608103018",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 629.3505050096974,
+   "declared_minus_normalized_max_abs": 276.54567506804597,
+   "tol": 42.5005394631583
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251204192708",
+   "volume": "20241024131838",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 909.47119140625,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251204192708",
+   "volume": "20241024131839",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 909.47119140625,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20250926153406",
+   "volume": "20241024131838",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 145.3607177734375,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20250926153406",
+   "volume": "20241024131839",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 145.3607177734375,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251204101314",
+   "volume": "20241024131838",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 27.424560546875,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251204101314",
+   "volume": "20241024131839",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 27.424560546875,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20250926122938",
+   "volume": "20241024131838",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 81.6461181640625,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20250926122938",
+   "volume": "20241024131839",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 81.6461181640625,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251109232817",
+   "volume": "20241024131838",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 322.504150390625,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251109232817",
+   "volume": "20241024131839",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 322.504150390625,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251106133152",
+   "volume": "20241024131838",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 164.005615234375,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251106133152",
+   "volume": "20241024131839",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 164.005615234375,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251206184729",
+   "volume": "20241024131838",
+   "own_volume": true,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 23.756591796875,
+   "tol": 20.01
+  },
+  {
+   "sample": "PHerc0172",
+   "segment": "20251206184729",
+   "volume": "20241024131839",
+   "own_volume": false,
+   "has_published_tifxyz_original": false,
+   "declared_minus_stored_bbox_corner_transform_max_abs": 0.0,
+   "declared_minus_normalized_max_abs": 23.756591796875,
+   "tol": 20.01
+  }
+ ]
+}

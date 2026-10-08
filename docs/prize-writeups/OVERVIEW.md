@@ -81,6 +81,19 @@
   - AI-assisted; not posted upstream.
 - **Credits:** kadenpool (#1734, #1769, #1731), gaogao94, bkalita-git (#1618), jonmarrs (#1522), ge-al (#1727).
 
+## Fourth item: `catalog-qa-audit` (added 2026-10-07)
+
+**What:** a pre-registered metadata audit comparing the open-data catalog with the published mesh points. Findings only; no code change proposed. It is not a villa patch.  
+**Status:** published on GitLab at `catalog-qa-audit/`.  
+**Evidence:** `catalog-qa-audit/` (`README.md`, `docs/preregistration.md` + sha256, `results/`, `scripts/`, `tests/`). Write-up: `catalog-qa-audit.md`.  
+**Evidence class:** **Real-data, full corpus**, metadata vs mesh points: 1,531 published meshes across 323 segments (2026-10-07 snapshot).
+
+- **New (small metadata finding):** 15 of 199 segments with a tifxyz original declare a `width`/`height` that doesn't match mesh grid ÷ scale (13 PHerc0500P2 wrap segments ~1.8–1.9× too large; 2 PHerc0332 off by ≤ 21 px). All 15 take their size from a rendered-layers `dimension_source`. Discovery 11/143, hold-out 4/56.
+- **Known failure mode, new data instance:** 29 PHerc0814 meshes declare 20 voxels per cell but measure ~78 (as reported for other files in #1319/#1379).
+- **Replications:** #1618, #1734 (now fixed upstream), #1730, #1617, #1504.
+- **Caveats:** single catalog snapshot; both new classes sit in one ingestion batch each, so the hold-out tests repeatability, not independent cause; the catalog builder isn't public, so the W cause is inferred from provenance; AI-assisted.
+- **Credits:** see `catalog-qa-audit.md`.
+
 This note summarizes the **9 shipping items** (eight villa patches + the `tifxyz-audit` entry-point patch). It does not invent metrics; figures come from per-folder READMEs / `SUMMARY.json` / `AUC_TABLE.json`.
 
 ## The nine shipping fixes

@@ -1,0 +1,13 @@
+{
+ "n_rows": 1531,
+ "n_unique": 1531,
+ "n_errors": 0,
+ "by_type": {
+  "tifxyz-transformed": 902,
+  "tifxyz-flattened": 123,
+  "tifxyz-normalized": 307,
+  "tifxyz": 199
+ },
+ "sha256_of_jsonl": "20c3f627faec4baedf19b191a8f733e13aeff9d877f4b59f0b836637225cb257",
+ "note": "Full per-mesh JSONL is local only (metadata-derived numbers, not redistributed). Regenerate with scripts/scan_meshes.py."
+}

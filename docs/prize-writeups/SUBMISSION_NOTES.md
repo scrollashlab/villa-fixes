@@ -13,7 +13,7 @@ The previously submitted form packet predates `xframe`. Adding it to the form wo
 
 **Suggested title (if the form is updated):** Scroll Ash Lab: `xframe`, full-corpus point-level verification of the open data's cross-frame meshes (902/902), plus nine tested villa tooling fixes
 
-**Short summary:** `xframe` (MIT CLI, AI-assisted) rebuilt all 902 published cross-frame tifxyz meshes from their source mesh and the catalog. It compared every grid cell (4.79 billion) and found all 902 consistent to ≤ 0.086 µm. It surfaced an undocumented downscale trap in 112 segments (PHercParis4, PHerc0139, PHerc0500P2): ignoring the factor misplaces points by 13–146 mm. It also showed that 67.2 GB of finer-frame meshes are interpolation only.
+**Short summary:** `xframe` (MIT CLI, AI-assisted) rebuilt all 902 published cross-frame tifxyz meshes from their source mesh and the catalog. It compared every grid cell (4.79 billion) and found all 902 consistent to ≤ 0.086 µm. It showed that in 112 segments the catalog's `original_volume_downscale` factor is not recorded in the mesh files themselves and is not applied by villa's Python package (PHercParis4, PHerc0139, PHerc0500P2): ignoring the factor misplaces points by 13–146 mm. It also showed that 67.2 GB of finer-frame meshes are interpolation only.
 
 **Form bullet (headline, before the villa items):**
 

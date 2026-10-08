@@ -1,0 +1,6 @@
+Open-data meshes (x/y/z.tif) and OBJ files read by this audit are CC BY-NC 4.0.
+They are NOT included in this bundle. Every number here is metadata-derived (counts, bounding boxes,
+spacings, areas, shapes). Re-fetch the meshes anonymously from
+https://vesuvius-challenge-open-data.s3.us-east-1.amazonaws.com/ with scripts/scan_meshes.py and
+scripts/crosscheck.py (paths are in results/mesh-listing-2026-10-07.json).
+Do not redistribute TIFs / OBJs / npy / zarr.

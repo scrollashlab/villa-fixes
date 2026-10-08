@@ -1,0 +1,194 @@
+{
+ "S": [
+  {
+   "sample": "PHerc0814",
+   "segment": "20260226113324",
+   "mesh": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/intermediate/tifxyz_normalized/",
+   "meta_scale": [
+    0.05,
+    0.05
+   ],
+   "declared_step_vx": [
+    20.0,
+    20.0
+   ],
+   "measured_mean_step_vx_u_v": [
+    77.92710386149997,
+    78.05283562853562
+   ],
+   "ratio_u_v": [
+    3.896355193074999,
+    3.902641781426781
+   ],
+   "grid_rows_cols": [
+    116,
+    192
+   ],
+   "original_volume": "20260309142202",
+   "render_on_original_volume_zyx": [
+    109,
+    2320,
+    3840
+   ],
+   "declared_width_height": [
+    3619,
+    3019
+   ]
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20250928235954",
+   "mesh": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/intermediate/tifxyz_normalized/",
+   "meta_scale": [
+    0.05,
+    0.05
+   ],
+   "declared_step_vx": [
+    20.0,
+    20.0
+   ],
+   "measured_mean_step_vx_u_v": [
+    78.35508886037188,
+    78.06063018278027
+   ],
+   "ratio_u_v": [
+    3.917754443018594,
+    3.903031509139014
+   ],
+   "grid_rows_cols": [
+    117,
+    174
+   ],
+   "original_volume": "20260309142202",
+   "render_on_original_volume_zyx": [
+    109,
+    2340,
+    3480
+   ],
+   "declared_width_height": [
+    3519,
+    2299
+   ]
+  },
+  {
+   "sample": "PHerc0814",
+   "segment": "20260225160055",
+   "mesh": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/intermediate/tifxyz_normalized/",
+   "meta_scale": [
+    0.05,
+    0.05
+   ],
+   "declared_step_vx": [
+    20.0,
+    20.0
+   ],
+   "measured_mean_step_vx_u_v": [
+    78.46796019379656,
+    78.48430556894633
+   ],
+   "ratio_u_v": [
+    3.923398009689828,
+    3.9242152784473165
+   ],
+   "grid_rows_cols": [
+    128,
+    127
+   ],
+   "original_volume": "20260309142202",
+   "render_on_original_volume_zyx": [
+    109,
+    2560,
+    2540
+   ],
+   "declared_width_height": [
+    1939,
+    1939
+   ]
+  }
+ ],
+ "W": [
+  {
+   "sample": "PHerc0500P2",
+   "segment": "20250919184432",
+   "mesh": "PHerc0500P2/segments/20250919184432-0500P2-wrap05_0919/mesh/intermediate/tifxyz_original/",
+   "declared_width_height": [
+    4746,
+    4241
+   ],
+   "vesuvius_full_resolution_shape_hw": [
+    2200,
+    2480
+   ],
+   "grid_rows_cols": [
+    110,
+    124
+   ],
+   "meta_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "original_volume": "20250528085330",
+   "original_volume_pixel_size_um": 4.317,
+   "render_on_original_volume_zyx": [
+    61,
+    2140,
+    2440
+   ],
+   "creation_metadata_has_dimension_source": true
+  },
+  {
+   "sample": "PHerc0500P2",
+   "segment": "20250919184431",
+   "mesh": "PHerc0500P2/segments/20250919184431-0500P2-wrap04_0919/mesh/intermediate/tifxyz_original/",
+   "declared_width_height": [
+    4046,
+    5523
+   ],
+   "vesuvius_full_resolution_shape_hw": [
+    2880,
+    2120
+   ],
+   "grid_rows_cols": [
+    144,
+    106
+   ],
+   "meta_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "original_volume": "20250528085330",
+   "original_volume_pixel_size_um": 4.317,
+   "render_on_original_volume_zyx": [
+    61,
+    2820,
+    2060
+   ],
+   "creation_metadata_has_dimension_source": true
+  },
+  {
+   "sample": "PHerc0332",
+   "segment": "20240828190516",
+   "mesh": "PHerc0332/segments/20240828190516-20240716140050/mesh/intermediate/tifxyz_original/",
+   "declared_width_height": [
+    25309,
+    2739
+   ],
+   "vesuvius_full_resolution_shape_hw": [
+    2760,
+    25320
+   ],
+   "grid_rows_cols": [
+    138,
+    1266
+   ],
+   "meta_scale": [
+    0.05000000074505806,
+    0.05000000074505806
+   ],
+   "original_volume": "20231117143551",
+   "original_volume_pixel_size_um": 7.91,
+   "render_on_original_volume_zyx": null,
+   "creation_metadata_has_dimension_source": true
+  }
+ ]
+}

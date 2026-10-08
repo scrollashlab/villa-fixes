@@ -1,0 +1,730 @@
+[
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183134",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2523.4638671875,
+   -2664.109375,
+   12000.064453125
+  ],
+  "computed_lo_vc": [
+   2523.4638671875,
+   -2664.109375,
+   12000.064453125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -2664.109375,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.064453125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183124",
+  "volume": "20260411134726",
+  "declared_lo": [
+   11296.619140625,
+   11237.7265625,
+   11923.033203125
+  ],
+  "computed_lo_vc": [
+   11296.619140625,
+   11237.7265625,
+   11923.033203125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11927.033203125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183139",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2336.55859375,
+   -3746.0859375,
+   11900.3515625
+  ],
+  "computed_lo_vc": [
+   2336.55859375,
+   -3746.0859375,
+   11900.3515625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -3746.0859375,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11904.3515625,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183145",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2904.1220703125,
+   2965.78125,
+   12000.01171875
+  ],
+  "computed_lo_vc": [
+   2904.1220703125,
+   2965.78125,
+   12000.01171875
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.01171875,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183129",
+  "volume": "20260411134726",
+  "declared_lo": [
+   6099.923828125,
+   4381.830078125,
+   12000.14453125
+  ],
+  "computed_lo_vc": [
+   6099.923828125,
+   4381.830078125,
+   12000.14453125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.14453125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183140",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2797.47265625,
+   2730.5859375,
+   12000.015625
+  ],
+  "computed_lo_vc": [
+   2797.47265625,
+   2730.5859375,
+   12000.015625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.015625,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183150",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2963.2265625,
+   2447.578125,
+   12000.0478515625
+  ],
+  "computed_lo_vc": [
+   2963.2265625,
+   2447.578125,
+   12000.0478515625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.0478515625,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183147",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2790.625,
+   -1125.181640625,
+   12000.01953125
+  ],
+  "computed_lo_vc": [
+   2790.625,
+   -1125.181640625,
+   12000.01953125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -1125.181640625,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.01953125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183131",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2768.501953125,
+   -1991.619140625,
+   12000.0634765625
+  ],
+  "computed_lo_vc": [
+   2768.501953125,
+   -1991.619140625,
+   12000.0634765625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -1991.619140625,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.0634765625,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183144",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2496.517578125,
+   2874.033203125,
+   12000.0361328125
+  ],
+  "computed_lo_vc": [
+   2496.517578125,
+   2874.033203125,
+   12000.0361328125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.0361328125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183133",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2949.0712890625,
+   -1189.736328125,
+   11962.5751953125
+  ],
+  "computed_lo_vc": [
+   2949.0712890625,
+   -1189.736328125,
+   11962.5751953125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -1189.736328125,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11966.5751953125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183132",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2505.5517578125,
+   -2675.04296875,
+   12000.013671875
+  ],
+  "computed_lo_vc": [
+   2505.5517578125,
+   -2675.04296875,
+   12000.013671875
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -2675.04296875,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.013671875,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183151",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2619.00390625,
+   2982.408203125,
+   12000.0595703125
+  ],
+  "computed_lo_vc": [
+   2619.00390625,
+   2982.408203125,
+   12000.0595703125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.0595703125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183137",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2674.3505859375,
+   -3008.525390625,
+   12000.04296875
+  ],
+  "computed_lo_vc": [
+   2674.3505859375,
+   -3008.525390625,
+   12000.04296875
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -3008.525390625,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.04296875,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183143",
+  "volume": "20260411134726",
+  "declared_lo": [
+   3141.6484375,
+   2819.07421875,
+   12000.0546875
+  ],
+  "computed_lo_vc": [
+   3141.6484375,
+   2819.07421875,
+   12000.0546875
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.0546875,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183146",
+  "volume": "20260411134726",
+  "declared_lo": [
+   3339.7763671875,
+   2936.201171875,
+   12000.02734375
+  ],
+  "computed_lo_vc": [
+   3339.7763671875,
+   2936.201171875,
+   12000.02734375
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.02734375,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183126",
+  "volume": "20260411134726",
+  "declared_lo": [
+   10150.978515625,
+   9758.6201171875,
+   11970.1572265625
+  ],
+  "computed_lo_vc": [
+   10150.978515625,
+   9758.6201171875,
+   11970.1572265625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11974.1572265625,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183135",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2409.8076171875,
+   -3276.5390625,
+   12000.048828125
+  ],
+  "computed_lo_vc": [
+   2409.8076171875,
+   -3276.5390625,
+   12000.048828125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -3276.5390625,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.048828125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183138",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2943.01953125,
+   -992.162109375,
+   12000.0732421875
+  ],
+  "computed_lo_vc": [
+   2943.01953125,
+   -992.162109375,
+   12000.0732421875
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -992.162109375,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.0732421875,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183148",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2541.240234375,
+   2979.033203125,
+   12000.072265625
+  ],
+  "computed_lo_vc": [
+   2541.240234375,
+   2979.033203125,
+   12000.072265625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.072265625,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183130",
+  "volume": "20260411134726",
+  "declared_lo": [
+   6490.91650390625,
+   5154.2626953125,
+   12000.0341796875
+  ],
+  "computed_lo_vc": [
+   6490.91650390625,
+   5154.2626953125,
+   12000.0341796875
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.0341796875,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183142",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2544.26953125,
+   2828.498046875,
+   12000.0107421875
+  ],
+  "computed_lo_vc": [
+   2544.26953125,
+   2828.498046875,
+   12000.0107421875
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.0107421875,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183141",
+  "volume": "20260411134726",
+  "declared_lo": [
+   3355.64453125,
+   2638.509765625,
+   12000.017578125
+  ],
+  "computed_lo_vc": [
+   3355.64453125,
+   2638.509765625,
+   12000.017578125
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 12004.017578125,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183136",
+  "volume": "20260411134726",
+  "declared_lo": [
+   6527.0859375,
+   7074.69970703125,
+   11953.708984375
+  ],
+  "computed_lo_vc": [
+   6527.0859375,
+   7074.69970703125,
+   11953.708984375
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11957.708984375,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183127",
+  "volume": "20260411134726",
+  "declared_lo": [
+   9507.966796875,
+   9226.890625,
+   11975.712890625
+  ],
+  "computed_lo_vc": [
+   9507.966796875,
+   9226.890625,
+   11975.712890625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11979.712890625,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183128",
+  "volume": "20260411134726",
+  "declared_lo": [
+   8853.2197265625,
+   8781.587890625,
+   11921.615234375
+  ],
+  "computed_lo_vc": [
+   8853.2197265625,
+   8781.587890625,
+   11921.615234375
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11925.615234375,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183149",
+  "volume": "20260411134726",
+  "declared_lo": [
+   2588.6904296875,
+   -1470.796875,
+   11926.8994140625
+  ],
+  "computed_lo_vc": [
+   2588.6904296875,
+   -1470.796875,
+   11926.8994140625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -1470.796875,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11930.8994140625,
+  "simulated_flagged": true
+ },
+ {
+  "sample": "PHercParis4",
+  "segment": "20260701183125",
+  "volume": "20260411134726",
+  "declared_lo": [
+   10678.078125,
+   10492.638671875,
+   11929.759765625
+  ],
+  "computed_lo_vc": [
+   10678.078125,
+   10492.638671875,
+   11929.759765625
+  ],
+  "max_abs_diff_current": 0.0,
+  "tol": 80.01,
+  "current_flagged": false,
+  "declared_has_minus_ds": false,
+  "simulated_1734_lo": [
+   -4.0,
+   -4.0,
+   -4.0
+  ],
+  "simulated_max_abs_diff_lo": 11933.759765625,
+  "simulated_flagged": true
+ }
+]

@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /workspace/envs/zarr3/bin/python
+rootdir: /workspace/vesuvius-lab/experiments/catalog-qa-audit
+plugins: zarr-3.4.0, anyio-4.15.1
+collecting ... collected 9 items
+
+tests/test_scanner.py::test_masks_vc_vs_strict PASSED                    [ 11%]
+tests/test_scanner.py::test_point_stats_flat_grid_across_blocks PASSED   [ 22%]
+tests/test_scanner.py::test_point_stats_sentinels_and_nan_match_naive_area PASSED [ 33%]
+tests/test_scanner.py::test_coverage_inside_fraction_and_transform PASSED [ 44%]
+tests/test_scanner.py::test_fisher_matches_known_values PASSED           [ 55%]
+tests/test_scanner.py::test_px_ok_rules PASSED                           [ 66%]
+tests/test_scanner.py::test_parse_date PASSED                            [ 77%]
+tests/test_scanner.py::test_holdout_deterministic_and_about_30pct PASSED [ 88%]
+tests/test_scanner.py::test_memmap_reader_matches_in_memory PASSED       [100%]
+
+============================== 9 passed in 0.30s ===============================

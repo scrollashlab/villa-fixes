@@ -1,0 +1,6003 @@
+{
+ "summary": {
+  "B": {
+   "denominator": 1331,
+   "defects": 57,
+   "discovery": [
+    35,
+    916
+   ],
+   "holdout": [
+    22,
+    415
+   ],
+   "fisher_p": 0.24229463740008556,
+   "replication": "replicates",
+   "subclasses": {
+    "B-loose": 57
+   },
+   "by_sample": {
+    "PHerc0814": 18,
+    "PHerc1667": 6,
+    "PHercParis4": 19,
+    "PHerc0172": 14
+   }
+  },
+  "O": {
+   "denominator": 1331,
+   "defects": 0,
+   "discovery": [
+    0,
+    916
+   ],
+   "holdout": [
+    0,
+    415
+   ],
+   "by_sample": {}
+  },
+  "F": {
+   "denominator": 1531,
+   "defects": 30,
+   "discovery": [
+    20,
+    1076
+   ],
+   "holdout": [
+    10,
+    455
+   ],
+   "fisher_p": 0.6879306866285632,
+   "replication": "replicates",
+   "subclasses": {
+    "F-other": 2,
+    "F-marker": 28
+   },
+   "by_sample": {
+    "PHercMAN5": 1,
+    "PHerc0139": 1,
+    "PHercParis4": 28
+   }
+  },
+  "S": {
+   "denominator": 1531,
+   "defects": 29,
+   "discovery": [
+    24,
+    1076
+   ],
+   "holdout": [
+    5,
+    455
+   ],
+   "fisher_p": 0.15562571870256542,
+   "replication": "replicates",
+   "by_sample": {
+    "PHerc0814": 29
+   }
+  },
+  "W": {
+   "denominator": 199,
+   "defects": 15,
+   "discovery": [
+    11,
+    143
+   ],
+   "holdout": [
+    4,
+    56
+   ],
+   "fisher_p": 1.0,
+   "replication": "replicates",
+   "by_sample": {
+    "PHerc0332": 2,
+    "PHerc0500P2": 13
+   }
+  },
+  "A1": {
+   "denominator": 830,
+   "defects": 44,
+   "discovery": [
+    33,
+    575
+   ],
+   "holdout": [
+    11,
+    255
+   ],
+   "fisher_p": 0.5021903660133363,
+   "replication": "replicates",
+   "by_sample": {
+    "PHercParis4": 28,
+    "PHerc0814": 11,
+    "PHercMANBp": 4,
+    "PHerc0841": 1
+   }
+  },
+  "A2": {
+   "denominator": 123,
+   "defects": 56,
+   "discovery": [
+    35,
+    84
+   ],
+   "holdout": [
+    21,
+    39
+   ],
+   "fisher_p": 0.245100854480418,
+   "replication": "replicates",
+   "by_sample": {
+    "PHercParis4": 3,
+    "PHerc0139": 29,
+    "PHerc0009B": 4,
+    "PHerc1447": 14,
+    "PHerc0800": 6
+   }
+  },
+  "N1": {
+   "denominator": 902,
+   "defects": 0,
+   "discovery": [
+    0,
+    634
+   ],
+   "holdout": [
+    0,
+    268
+   ],
+   "by_sample": {}
+  },
+  "N2": {
+   "denominator": 692,
+   "defects": 0,
+   "discovery": [
+    0,
+    491
+   ],
+   "holdout": [
+    0,
+    201
+   ],
+   "by_sample": {}
+  },
+  "N3": {
+   "denominator": 2223,
+   "defects": 0,
+   "discovery": [
+    0,
+    1567
+   ],
+   "holdout": [
+    0,
+    656
+   ],
+   "by_sample": {}
+  },
+  "D1": {
+   "denominator": 323,
+   "defects": 1,
+   "discovery": [
+    0,
+    227
+   ],
+   "holdout": [
+    1,
+    96
+   ],
+   "by_sample": {
+    "PHerc0009B": 1
+   }
+  },
+  "D2": {
+   "denominator": 692,
+   "defects": 0,
+   "discovery": [
+    0,
+    491
+   ],
+   "holdout": [
+    0,
+    201
+   ],
+   "by_sample": {}
+  },
+  "D3": {
+   "denominator": 1,
+   "defects": 0,
+   "discovery": [
+    0,
+    1
+   ],
+   "holdout": [
+    0,
+    0
+   ],
+   "by_sample": {}
+  },
+  "D4": {
+   "denominator": 902,
+   "defects": 0,
+   "discovery": [
+    0,
+    634
+   ],
+   "holdout": [
+    0,
+    268
+   ],
+   "by_sample": {}
+  },
+  "P1": {
+   "denominator": 595,
+   "defects": 0,
+   "discovery": [
+    0,
+    419
+   ],
+   "holdout": [
+    0,
+    176
+   ],
+   "by_sample": {}
+  },
+  "K1": {
+   "denominator": 1011,
+   "defects": 0,
+   "discovery": [
+    0,
+    689
+   ],
+   "holdout": [
+    0,
+    322
+   ],
+   "by_sample": {}
+  },
+  "K2": {
+   "denominator": 1011,
+   "defects": 0,
+   "discovery": [
+    0,
+    689
+   ],
+   "holdout": [
+    0,
+    322
+   ],
+   "by_sample": {}
+  },
+  "V1": {
+   "denominator": 70,
+   "defects": 1,
+   "discovery": [
+    1,
+    49
+   ],
+   "holdout": [
+    0,
+    21
+   ],
+   "by_sample": {
+    "PHercParis4": 1
+   }
+  },
+  "C1": {
+   "denominator": 323,
+   "defects": 20,
+   "discovery": [
+    13,
+    227
+   ],
+   "holdout": [
+    7,
+    96
+   ],
+   "fisher_p": 0.6169937137855775,
+   "replication": "replicates",
+   "by_sample": {
+    "PHerc0814": 1,
+    "PHerc0139": 8,
+    "PHerc1447": 11
+   }
+  }
+ },
+ "quirks": {
+  "derived_from_unresolved:ink-detection": 2,
+  "meta_without_area_vx2:tifxyz-flattened": 111,
+  "meta_without_area_vx2:tifxyz-transformed": 195,
+  "meta_without_area_vx2:tifxyz-normalized": 307,
+  "meta_without_area_vx2:tifxyz": 88,
+  "V1_catalog_shape_null": 4
+ },
+ "not_computable": {
+  "BO_no_reference_mesh": 3
+ },
+ "defects": {
+  "D1": [
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0009B",
+    "id": "20250910185200",
+    "declared": "20250718080859",
+    "original_volume_id": "20250820154339"
+   }
+  ],
+  "C1": [
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "segment_date": "2025-09-28 23:59:54+00:00",
+    "scan_date": "2025-12-06 19:45:43.153960+01:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250223000000",
+    "segment_date": "2025-02-23 00:00:00+00:00",
+    "scan_date": "2025-12-05 01:51:41.661917+01:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000004",
+    "segment_date": "2025-01-08 00:00:04+00:00",
+    "scan_date": "2025-12-05 01:51:41.661917+01:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250831000000",
+    "segment_date": "2025-08-31 00:00:00+00:00",
+    "scan_date": "2025-12-05 01:51:41.661917+01:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000002",
+    "segment_date": "2025-01-08 00:00:02+00:00",
+    "scan_date": "2025-12-05 01:51:41.661917+01:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000005",
+    "segment_date": "2025-01-08 00:00:05+00:00",
+    "scan_date": "2025-12-05 01:51:41.661917+01:00"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000003",
+    "segment_date": "2025-01-08 00:00:03+00:00",
+    "scan_date": "2025-12-05 01:51:41.661917+01:00"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000000",
+    "segment_date": "2025-01-08 00:00:00+00:00",
+    "scan_date": "2025-12-05 01:51:41.661917+01:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000001",
+    "segment_date": "2025-01-08 00:00:01+00:00",
+    "scan_date": "2025-12-05 01:51:41.661917+01:00"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502183421",
+    "segment_date": "2025-05-02 18:34:21.033620+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502182142",
+    "segment_date": "2025-05-02 18:21:42.178975+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502185519",
+    "segment_date": "2025-05-02 18:55:19.895510+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502205333",
+    "segment_date": "2025-05-02 20:53:33.415336+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502182456",
+    "segment_date": "2025-05-02 18:24:56.839216+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502183138",
+    "segment_date": "2025-05-02 18:31:38.696909+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502184845",
+    "segment_date": "2025-05-02 18:48:45.909110+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502180748",
+    "segment_date": "2025-05-02 18:07:48.723027+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502184658",
+    "segment_date": "2025-05-02 18:46:58.104233+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502184201",
+    "segment_date": "2025-05-02 18:42:01.906258+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502180708",
+    "segment_date": "2025-05-02 18:07:08.190352+00:00",
+    "scan_date": "2025-05-09 03:10:39.898839+02:00"
+   }
+  ],
+  "K1": [],
+  "K2": [],
+  "N3": [],
+  "W": [
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0332",
+    "id": "20240828190516",
+    "path": "PHerc0332/segments/20240828190516-20240716140050/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     25309,
+     2739
+    ],
+    "computed_wh": [
+     25319.999622702606,
+     2759.9999588727956
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     138,
+     1266
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0332",
+    "id": "20240711124827",
+    "path": "PHerc0332/segments/20240711124827-20240618142020/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     25706,
+     2491
+    ],
+    "computed_wh": [
+     25719.99961674214,
+     2519.9999624490742
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     126,
+     1286
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184432",
+    "path": "PHerc0500P2/segments/20250919184432-0500P2-wrap05_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     4746,
+     4241
+    ],
+    "computed_wh": [
+     2479.9999630451207,
+     2199.999967217446
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     110,
+     124
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184431",
+    "path": "PHerc0500P2/segments/20250919184431-0500P2-wrap04_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     4046,
+     5523
+    ],
+    "computed_wh": [
+     2119.9999684095387,
+     2879.999957084656
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     144,
+     106
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250922024644",
+    "path": "PHerc0500P2/segments/20250922024644-0500P2-wrap11_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     4202,
+     3034
+    ],
+    "computed_wh": [
+     2239.9999666213994,
+     1639.999975562096
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     82,
+     112
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184429",
+    "path": "PHerc0500P2/segments/20250919184429-0500P2-wrap02_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     2333,
+     1673
+    ],
+    "computed_wh": [
+     1239.9999815225603,
+     899.9999865889552
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     45,
+     62
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184436",
+    "path": "PHerc0500P2/segments/20250919184436-0500P2-wrap09_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     2762,
+     4396
+    ],
+    "computed_wh": [
+     1459.9999782443049,
+     2299.9999657273297
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     115,
+     73
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184428",
+    "path": "PHerc0500P2/segments/20250919184428-0500P2-wrap01_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     1440,
+     1207
+    ],
+    "computed_wh": [
+     779.9999883770945,
+     659.9999901652337
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     33,
+     39
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250920020223",
+    "path": "PHerc0500P2/segments/20250920020223-0500P2-wrap12_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     2996,
+     3852
+    ],
+    "computed_wh": [
+     1579.9999764561658,
+     1999.999970197678
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     100,
+     79
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184435",
+    "path": "PHerc0500P2/segments/20250919184435-0500P2-wrap08_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     3850,
+     4201
+    ],
+    "computed_wh": [
+     2019.9999698996548,
+     2199.999967217446
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     110,
+     101
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250920020224",
+    "path": "PHerc0500P2/segments/20250920020224-0500P2-wrap13_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     2880,
+     3695
+    ],
+    "computed_wh": [
+     1519.9999773502352,
+     1939.9999710917477
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     97,
+     76
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184430",
+    "path": "PHerc0500P2/segments/20250919184430-0500P2-wrap03_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     3268,
+     2451
+    ],
+    "computed_wh": [
+     1719.9999743700032,
+     1299.9999806284907
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     65,
+     86
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184434",
+    "path": "PHerc0500P2/segments/20250919184434-0500P2-wrap07_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     3813,
+     4201
+    ],
+    "computed_wh": [
+     1999.999970197678,
+     2199.999967217446
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     110,
+     100
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250919184433",
+    "path": "PHerc0500P2/segments/20250919184433-0500P2-wrap06_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     4006,
+     3966
+    ],
+    "computed_wh": [
+     2079.999969005585,
+     2079.999969005585
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     104,
+     104
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0500P2",
+    "id": "20250920020222",
+    "path": "PHerc0500P2/segments/20250920020222-0500P2-wrap10_0919/mesh/intermediate/tifxyz_original/",
+    "declared_wh": [
+     2763,
+     4123
+    ],
+    "computed_wh": [
+     1459.9999782443049,
+     2159.9999678134923
+    ],
+    "swap": false,
+    "grid_rows_cols": [
+     108,
+     73
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ]
+   }
+  ],
+  "B": [
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260225160055",
+    "volume": "20260309142202",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      6591.630859375,
+      9360.5078125,
+      14627.4384765625
+     ],
+     [
+      13283.8046875,
+      13792.064453125,
+      22930.92578125
+     ]
+    ],
+    "computed_vc": [
+     [
+      6664.36279296875,
+      9365.046875,
+      14723.2880859375
+     ],
+     [
+      13172.5537109375,
+      13790.7919921875,
+      22912.4296875
+     ]
+    ],
+    "max_abs_diff_vc": 111.2509765625,
+    "max_abs_diff_strict": 111.2509765625,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260225160055",
+    "volume": "20250804134230",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      2675.273377271304,
+      2716.640193818544,
+      3957.8666379751426
+     ],
+     [
+      4345.462903815311,
+      3891.9784621119165,
+      6102.695277964508
+     ]
+    ],
+    "computed_vc": [
+     [
+      2705.030961967951,
+      2717.1313471704425,
+      3982.8939336271396
+     ],
+     [
+      4326.377497267317,
+      3891.580047766482,
+      6097.878519236557
+     ]
+    ],
+    "max_abs_diff_vc": 29.757584696646973,
+    "max_abs_diff_strict": 29.757584696646973,
+    "tol": 5.155203972865644,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260225160055",
+    "volume": "20260521123630",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      -1318.4792992335333,
+      5445.1389864576995,
+      22800.448505618406
+     ],
+     [
+      12891.759588337569,
+      14891.750974737872,
+      40464.23104884383
+     ]
+    ],
+    "computed_vc": [
+     [
+      -1163.48775607254,
+      5454.766333146697,
+      23004.378721714456
+     ],
+     [
+      12654.574029382595,
+      14888.947046907087,
+      40424.93178893602
+     ]
+    ],
+    "max_abs_diff_vc": 237.1855589549741,
+    "max_abs_diff_strict": 237.1855589549741,
+    "tol": 42.56582319586928,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226113324",
+    "volume": "20260309142202",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      10111.33984375,
+      9207.1767578125,
+      8338.224609375
+     ],
+     [
+      17556.0859375,
+      17241.341796875,
+      16622.279296875
+     ]
+    ],
+    "computed_vc": [
+     [
+      10203.52734375,
+      9209.4091796875,
+      8383.2099609375
+     ],
+     [
+      17554.640625,
+      17237.904296875,
+      16552.619140625
+     ]
+    ],
+    "max_abs_diff_vc": 92.1875,
+    "max_abs_diff_strict": 92.1875,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226113324",
+    "volume": "20250804134230",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1532.042758722323,
+      1928.4407223924873,
+      2357.908372367387
+     ],
+     [
+      3374.2590911442094,
+      4010.27777288283,
+      4498.371482844605
+     ]
+    ],
+    "computed_vc": [
+     [
+      1532.1249500768463,
+      1928.8099905156687,
+      2368.827573917351
+     ],
+     [
+      3349.545644624033,
+      4010.1716545993963,
+      4480.596384196454
+     ]
+    ],
+    "max_abs_diff_vc": 24.713446520176603,
+    "max_abs_diff_strict": 24.713446520176603,
+    "tol": 5.155203972865644,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226113324",
+    "volume": "20260521123630",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      6193.61160774398,
+      5076.87781076079,
+      9411.168198895955
+     ],
+     [
+      21996.211543116755,
+      22171.960167467547,
+      27052.41695318721
+     ]
+    ],
+    "computed_vc": [
+     [
+      6390.392926309116,
+      5081.661128700587,
+      9506.373218670122
+     ],
+     [
+      21993.26439302422,
+      22164.8226649049,
+      26904.428205359407
+     ]
+    ],
+    "max_abs_diff_vc": 196.78131856513573,
+    "max_abs_diff_strict": 196.78131856513573,
+    "tol": 42.56582319586928,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226121302",
+    "volume": "20260309142202",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      10217.568359375,
+      9162.6953125,
+      8180.96826171875
+     ],
+     [
+      17613.501953125,
+      17257.970703125,
+      16615.4453125
+     ]
+    ],
+    "computed_vc": [
+     [
+      10293.033203125,
+      9182.2021484375,
+      8255.0703125
+     ],
+     [
+      17611.78515625,
+      17256.142578125,
+      16546.03125
+     ]
+    ],
+    "max_abs_diff_vc": 75.46484375,
+    "max_abs_diff_strict": 75.46484375,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226121302",
+    "volume": "20250804134230",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1513.6667168141603,
+      1922.1862732444552,
+      2317.1058902923305
+     ],
+     [
+      3343.271875017751,
+      4019.777205715798,
+      4496.780943372199
+     ]
+    ],
+    "computed_vc": [
+     [
+      1514.3516955570294,
+      1922.4430384434982,
+      2335.6553783311742
+     ],
+     [
+      3323.4850855608283,
+      4017.090059114174,
+      4478.8607519074385
+     ]
+    ],
+    "max_abs_diff_vc": 19.786789456922634,
+    "max_abs_diff_strict": 19.786789456922634,
+    "tol": 5.155203972865644,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226121302",
+    "volume": "20260521123630",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      6421.74492964465,
+      4983.314216076946,
+      9076.341690465584
+     ],
+     [
+      22118.338074125022,
+      22208.235695383464,
+      27037.832122526466
+     ]
+    ],
+    "computed_vc": [
+     [
+      6582.48607725637,
+      5023.639892655599,
+      9233.619179985171
+     ],
+     [
+      22115.069525586674,
+      22204.283096653995,
+      26890.65123358198
+     ]
+    ],
+    "max_abs_diff_vc": 160.7411476117195,
+    "max_abs_diff_strict": 160.7411476117195,
+    "tol": 42.56582319586928,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "volume": "20260309142202",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      10889.2080078125,
+      9252.2763671875,
+      8291.8642578125
+     ],
+     [
+      17472.22265625,
+      16986.283203125,
+      16624.1875
+     ]
+    ],
+    "computed_vc": [
+     [
+      10951.1611328125,
+      9263.9912109375,
+      8337.7314453125
+     ],
+     [
+      17470.73828125,
+      16984.861328125,
+      16598.880859375
+     ]
+    ],
+    "max_abs_diff_vc": 61.953125,
+    "max_abs_diff_strict": 61.953125,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "volume": "20250804134230",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1549.407651079946,
+      1995.0441485245847,
+      2348.401387207004
+     ],
+     [
+      3168.467051108313,
+      4000.671885505676,
+      4498.408854034868
+     ]
+    ],
+    "computed_vc": [
+     [
+      1549.9262396928598,
+      1995.3808699868532,
+      2355.963219577338
+     ],
+     [
+      3152.3402444425333,
+      3998.410471999904,
+      4491.948183109115
+     ]
+    ],
+    "max_abs_diff_vc": 16.126806665779895,
+    "max_abs_diff_strict": 16.126806665779895,
+    "tol": 5.155203972865644,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "volume": "20260521123630",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      7850.117099921805,
+      5171.850554825276,
+      9314.971315051689
+     ],
+     [
+      21818.832784182996,
+      21628.52648338106,
+      27055.56460611247
+     ]
+    ],
+    "computed_vc": [
+     [
+      7982.083380688382,
+      5196.418534650118,
+      9410.442858949895
+     ],
+     [
+      21816.26471368257,
+      21625.611201951175,
+      27001.811972123156
+     ]
+    ],
+    "max_abs_diff_vc": 131.96628076657726,
+    "max_abs_diff_strict": 131.96628076657726,
+    "tol": 42.56582319586928,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226123353",
+    "volume": "20260309142202",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      7794.54931640625,
+      12106.4951171875,
+      7128.24853515625
+     ],
+     [
+      19738.91015625,
+      19048.650390625,
+      12757.4609375
+     ]
+    ],
+    "computed_vc": [
+     [
+      7876.986328125,
+      12174.841796875,
+      7173.29296875
+     ],
+     [
+      19732.388671875,
+      19044.830078125,
+      12680.6298828125
+     ]
+    ],
+    "max_abs_diff_vc": 82.43701171875,
+    "max_abs_diff_strict": 82.43701171875,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226123353",
+    "volume": "20250804134230",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      946.2154323638624,
+      1485.9686564321664,
+      2062.307037352849
+     ],
+     [
+      3952.5702761548027,
+      3343.665402749066,
+      3511.3658288683305
+     ]
+    ],
+    "computed_vc": [
+     [
+      947.1582115708579,
+      1486.1578474495946,
+      2072.7446075896914
+     ],
+     [
+      3932.373173883228,
+      3326.457059116741,
+      3491.4659665964987
+     ]
+    ],
+    "max_abs_diff_vc": 20.19710227157475,
+    "max_abs_diff_strict": 20.19710227157475,
+    "tol": 5.155203972865644,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226123353",
+    "volume": "20260521123630",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1272.7161884195411,
+      11203.527689572398,
+      6845.498006730093
+     ],
+     [
+      26650.52119680836,
+      26005.38427541372,
+      18824.850557963793
+     ]
+    ],
+    "computed_vc": [
+     [
+      1447.6809957407168,
+      11348.659406821342,
+      6939.962623448524
+     ],
+     [
+      26637.003605914564,
+      25998.01014405714,
+      18661.28703328729
+     ]
+    ],
+    "max_abs_diff_vc": 174.9648073211756,
+    "max_abs_diff_strict": 174.9648073211756,
+    "tol": 42.56582319586928,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226110425",
+    "volume": "20260309142202",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      10290.474609375,
+      9340.71875,
+      8332.6904296875
+     ],
+     [
+      17492.685546875,
+      17164.67578125,
+      16488.80078125
+     ]
+    ],
+    "computed_vc": [
+     [
+      10341.189453125,
+      9343.6630859375,
+      8425.919921875
+     ],
+     [
+      17492.060546875,
+      17162.185546875,
+      16473.818359375
+     ]
+    ],
+    "max_abs_diff_vc": 93.2294921875,
+    "max_abs_diff_strict": 93.2294921875,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226110425",
+    "volume": "20250804134230",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1543.40459135934,
+      1948.0439833133887,
+      2360.6395614922067
+     ],
+     [
+      3326.153692545457,
+      3978.631940881646,
+      4463.8725829692885
+     ]
+    ],
+    "computed_vc": [
+     [
+      1544.0832441593748,
+      1948.1168858634219,
+      2378.0468997070293
+     ],
+     [
+      3312.1256513758253,
+      3978.262716568696,
+      4460.081617131461
+     ]
+    ],
+    "max_abs_diff_vc": 17.40733821482263,
+    "max_abs_diff_strict": 17.40733821482263,
+    "tol": 5.155203972865644,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226110425",
+    "volume": "20260521123630",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      6575.810522540665,
+      5362.356986166305,
+      9403.472976074036
+     ],
+     [
+      21863.180198688322,
+      22008.886113719414,
+      26768.695881294603
+     ]
+    ],
+    "computed_vc": [
+     [
+      6684.14146470738,
+      5368.373907007881,
+      9597.485021873506
+     ],
+     [
+      21861.92418594293,
+      22003.656013878997,
+      26736.814982270058
+     ]
+    ],
+    "max_abs_diff_vc": 194.0120457994708,
+    "max_abs_diff_strict": 194.0120457994708,
+    "tol": 42.56582319586928,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1667",
+    "id": "20260203210000",
+    "volume": "20251217075048",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc1667/segments/20260203210000-w040_2026020321_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      2653.472401964489,
+      1423.6207510365675,
+      7957.507964926306
+     ],
+     [
+      12978.48721365617,
+      12542.720314606891,
+      37366.701660360704
+     ]
+    ],
+    "computed_vc": [
+     [
+      2660.7366740099133,
+      1425.323413300317,
+      8045.947159172349
+     ],
+     [
+      12978.2797281669,
+      12532.919059768185,
+      37353.90271422376
+     ]
+    ],
+    "max_abs_diff_vc": 88.43919424604246,
+    "max_abs_diff_strict": 88.43919424604246,
+    "tol": 65.68525983715645,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1667",
+    "id": "20260203210000",
+    "volume": "20260323082859",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc1667/segments/20260203210000-w040_2026020321_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      -517.7414527955043,
+      -2041.0831648510575,
+      -9945.762105229122
+     ],
+     [
+      21303.469269881247,
+      21379.233361926,
+      53046.82337739997
+     ]
+    ],
+    "computed_vc": [
+     [
+      -503.5037071836814,
+      -2037.6241896496394,
+      -9690.29090381258
+     ],
+     [
+      21302.882853614024,
+      21359.33944883416,
+      53014.598684719356
+     ]
+    ],
+    "max_abs_diff_vc": 255.4712014165416,
+    "max_abs_diff_strict": 255.4712014165416,
+    "tol": 141.13740546021486,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1667",
+    "id": "20260105050000",
+    "volume": "20231117161658",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      199.7832489013672,
+      114.77237701416016,
+      39.64360046386719
+     ],
+     [
+      3314.5029296875,
+      3169.048583984375,
+      9748.4111328125
+     ]
+    ],
+    "computed_vc": [
+     [
+      202.0858612060547,
+      117.94840240478516,
+      46.11162185668945
+     ],
+     [
+      3312.9228515625,
+      3168.089599609375,
+      9724.9931640625
+     ]
+    ],
+    "max_abs_diff_vc": 23.41796875,
+    "max_abs_diff_strict": 23.41796875,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1667",
+    "id": "20260105050000",
+    "volume": "20231107190228",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      316.4914363577708,
+      378.60360984676583,
+      -65.46798379772554
+     ],
+     [
+      7796.669447634034,
+      7592.955446961098,
+      23412.05001865183
+     ]
+    ],
+    "computed_vc": [
+     [
+      318.02181540546894,
+      386.26279029294363,
+      -48.408806688285196
+     ],
+     [
+      7793.080972064494,
+      7590.786586989852,
+      23355.214048233593
+     ]
+    ],
+    "max_abs_diff_vc": 56.835970418236684,
+    "max_abs_diff_strict": 56.835970418236684,
+    "tol": 48.43868427388069,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1667",
+    "id": "20260105050000",
+    "volume": "20251217075048",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      2576.2070397771586,
+      1583.8478032941057,
+      5678.6207054187325
+     ],
+     [
+      12797.251189154164,
+      11722.39685979708,
+      37394.90019924821
+     ]
+    ],
+    "computed_vc": [
+     [
+      2580.4129074791144,
+      1594.989945355639,
+      5759.770050568608
+     ],
+     [
+      12789.296191198046,
+      11714.627784863003,
+      37371.47723943698
+     ]
+    ],
+    "max_abs_diff_vc": 81.14934514987544,
+    "max_abs_diff_strict": 81.14934514987544,
+    "tol": 65.68525983715645,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1667",
+    "id": "20260105050000",
+    "volume": "20260323082859",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      -623.2933316920789,
+      -1764.1215631621599,
+      -14667.505529227506
+     ],
+     [
+      20897.6916740894,
+      19784.025823758617,
+      53188.78926908219
+     ]
+    ],
+    "computed_vc": [
+     [
+      -615.9557776329748,
+      -1740.2836033210297,
+      -14491.150059384017
+     ],
+     [
+      20879.431872730744,
+      19767.80975854876,
+      53141.27713434786
+     ]
+    ],
+    "max_abs_diff_vc": 176.35546984348912,
+    "max_abs_diff_strict": 176.35546984348912,
+    "tol": 141.13740546021486,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623164141",
+    "volume": "20230205180739",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623164141-w113-115/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      266.00517069077614,
+      90.14393731005566,
+      -464.9289722723952
+     ],
+     [
+      7692.501864544963,
+      7662.672079959969,
+      11910.595985995351
+     ]
+    ],
+    "computed_vc": [
+     [
+      266.00517069077614,
+      90.14393731005566,
+      -451.7111966669272
+     ],
+     [
+      7692.501864544963,
+      7656.557334732744,
+      11883.660057164514
+     ]
+    ],
+    "max_abs_diff_vc": 26.93592883083693,
+    "max_abs_diff_strict": 26.93592883083693,
+    "tol": 24.592206253552543,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602225659",
+    "volume": "20260411134726",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602225659-5753_0/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      10054.1748046875,
+      11813.765625,
+      1625.11376953125
+     ],
+     [
+      22582.705078125,
+      24832.697265625,
+      73450.65625
+     ]
+    ],
+    "computed_vc": [
+     [
+      10134.79296875,
+      11820.091796875,
+      1645.2464599609375
+     ],
+     [
+      22535.09375,
+      24781.09375,
+      73413.7890625
+     ]
+    ],
+    "max_abs_diff_vc": 80.6181640625,
+    "max_abs_diff_strict": 80.6181640625,
+    "tol": 80.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602225659",
+    "volume": "20260310170716",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602225659-5753_0/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      799.1712245829202,
+      892.6562185637699,
+      153.09028905054492
+     ],
+     [
+      1460.9773190090625,
+      1578.9755369034178,
+      3943.846551151201
+     ]
+    ],
+    "computed_vc": [
+     [
+      803.4289426092121,
+      892.9875305109937,
+      154.24085293952928
+     ],
+     [
+      1458.4637887654492,
+      1576.2573263903491,
+      3941.91192444102
+     ]
+    ],
+    "max_abs_diff_vc": 4.257718026291855,
+    "max_abs_diff_strict": 4.257718026291855,
+    "tol": 4.2467541003986256,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602225659",
+    "volume": "20260323153942",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602225659-5753_0/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      601.5667776935134,
+      2261.51595954165,
+      -40523.54520457054
+     ],
+     [
+      13203.443783051778,
+      15169.315054950499,
+      31301.09829789104
+     ]
+    ],
+    "computed_vc": [
+     [
+      681.922242089935,
+      2267.346640602833,
+      -40503.72584224571
+     ],
+     [
+      13156.160320805382,
+      15118.454434895715,
+      31261.78430339248
+     ]
+    ],
+    "max_abs_diff_vc": 80.35546439642167,
+    "max_abs_diff_strict": 80.35546439642167,
+    "tol": 80.06064421290172,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602225659",
+    "volume": "20260608103018",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602225659-5753_0/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      8599.896102748728,
+      13813.831822740694,
+      -56300.60414878611
+     ],
+     [
+      35310.887332429535,
+      41102.550548043466,
+      96290.63947808745
+     ]
+    ],
+    "computed_vc": [
+     [
+      8770.778519736512,
+      13816.800121983875,
+      -56259.908509035384
+     ],
+     [
+      35210.09843466127,
+      40994.67990754487,
+      96202.82767359787
+     ]
+    ],
+    "max_abs_diff_vc": 170.88241698778438,
+    "max_abs_diff_strict": 170.88241698778438,
+    "tol": 169.9721578526332,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623161921",
+    "volume": "20230205180739",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623161921-w104-106/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      413.46981936193333,
+      171.03736144620098,
+      -468.2123472553394
+     ],
+     [
+      7509.030196632539,
+      7553.600218043027,
+      11905.873733850047
+     ]
+    ],
+    "computed_vc": [
+     [
+      413.46981936193333,
+      171.03736144620098,
+      -466.85925036952176
+     ],
+     [
+      7509.030196632539,
+      7542.920242184867,
+      11879.726239838295
+     ]
+    ],
+    "max_abs_diff_vc": 26.147494011751405,
+    "max_abs_diff_strict": 26.147494011751405,
+    "tol": 24.592206253552543,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623145652",
+    "volume": "20260411134726",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623145652-w059-063/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      11593.7578125,
+      8528.5654296875,
+      27933.6875
+     ],
+     [
+      25931.22265625,
+      26223.75390625,
+      68075.9921875
+     ]
+    ],
+    "computed_vc": [
+     [
+      11595.658203125,
+      8528.5654296875,
+      27933.6875
+     ],
+     [
+      25931.22265625,
+      26192.6484375,
+      67989.6875
+     ]
+    ],
+    "max_abs_diff_vc": 86.3046875,
+    "max_abs_diff_strict": 86.3046875,
+    "tol": 80.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623145652",
+    "volume": "20230205180739",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623145652-w059-063/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1409.6428713611422,
+      1130.9448799790262,
+      -460.24933482155575
+     ],
+     [
+      6387.415778897451,
+      6247.075958619715,
+      11916.215890410185
+     ]
+    ],
+    "computed_vc": [
+     [
+      1409.6428713611422,
+      1130.9448799790262,
+      -460.24933482155575
+     ],
+     [
+      6387.415778897451,
+      6244.342678238917,
+      11878.127399539215
+     ]
+    ],
+    "max_abs_diff_vc": 38.08849087097042,
+    "max_abs_diff_strict": 38.08849087097042,
+    "tol": 24.592206253552543,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623145652",
+    "volume": "20260310170716",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623145652-w059-063/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      880.8682399571069,
+      719.4324118172967,
+      1538.500051881505
+     ],
+     [
+      1637.854988789654,
+      1651.4037837824499,
+      3659.590263410013
+     ]
+    ],
+    "computed_vc": [
+     [
+      880.8682399571069,
+      719.4324118172967,
+      1538.500051881505
+     ],
+     [
+      1637.854988789654,
+      1649.7660482848028,
+      3654.306700800042
+     ]
+    ],
+    "max_abs_diff_vc": 5.283562609970886,
+    "max_abs_diff_strict": 5.283562609970886,
+    "tol": 4.2467541003986256,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623145652",
+    "volume": "20260323153942",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623145652-w059-063/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      2164.349993829852,
+      -1069.185231289859,
+      -14201.31807622181
+     ],
+     [
+      16550.249926985125,
+      16630.98448518235,
+      25930.7161055026
+     ]
+    ],
+    "computed_vc": [
+     [
+      2209.683932901913,
+      -1069.185231289859,
+      -14195.244995844027
+     ],
+     [
+      16550.249926985125,
+      16599.92388669368,
+      25844.25188341937
+     ]
+    ],
+    "max_abs_diff_vc": 86.46422208323202,
+    "max_abs_diff_strict": 86.46422208323202,
+    "tol": 80.06064421290172,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623145652",
+    "volume": "20260608103018",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623145652-w059-063/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      11796.032916639146,
+      6748.79428901728,
+      -367.22749458755425
+     ],
+     [
+      42418.35044303131,
+      44426.2233670934,
+      84886.66913644507
+     ]
+    ],
+    "computed_vc": [
+     [
+      11892.508372691434,
+      6748.79428901728,
+      -349.44717776447214
+     ],
+     [
+      42418.35044303131,
+      44360.012835576534,
+      84707.9936366416
+     ]
+    ],
+    "max_abs_diff_vc": 178.67549980347394,
+    "max_abs_diff_strict": 178.67549980347394,
+    "tol": 169.9721578526332,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623141649",
+    "volume": "20260310170716",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623141649-w053-058_jordi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      906.2111162250602,
+      735.8102578993168,
+      1539.1756351315526
+     ],
+     [
+      1595.76219454767,
+      1626.8432214783602,
+      3658.799464125441
+     ]
+    ],
+    "computed_vc": [
+     [
+      906.2111162250602,
+      735.8102578993168,
+      1539.3020018787074
+     ],
+     [
+      1595.76219454767,
+      1625.6072215130762,
+      3654.4198661265123
+     ]
+    ],
+    "max_abs_diff_vc": 4.3795979989286025,
+    "max_abs_diff_strict": 4.3795979989286025,
+    "tol": 4.2467541003986256,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623141649",
+    "volume": "20260323153942",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623141649-w053-058_jordi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      2740.9069707631297,
+      -752.5489084870169,
+      -14176.459367522988
+     ],
+     [
+      15747.594953263968,
+      16169.697343474947,
+      25909.844200415122
+     ]
+    ],
+    "computed_vc": [
+     [
+      2740.9069707631297,
+      -752.5489084870169,
+      -14174.279000099352
+     ],
+     [
+      15747.594953263968,
+      16146.30726061424,
+      25829.199937595964
+     ]
+    ],
+    "max_abs_diff_vc": 80.64426281915803,
+    "max_abs_diff_strict": 80.64426281915803,
+    "tol": 80.06064421290172,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260623141649",
+    "volume": "20260608103018",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260623141649-w053-058_jordi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      13037.062182828988,
+      7420.6047785298815,
+      -301.7674625844156
+     ],
+     [
+      40712.67326679631,
+      43446.95689588587,
+      84845.25314783465
+     ]
+    ],
+    "computed_vc": [
+     [
+      13037.062182828988,
+      7420.6047785298815,
+      -295.4974977718157
+     ],
+     [
+      40712.67326679631,
+      43397.0396439144,
+      84659.85749844695
+     ]
+    ],
+    "max_abs_diff_vc": 185.3956493877049,
+    "max_abs_diff_strict": 185.3956493877049,
+    "tol": 169.9721578526332,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602230115",
+    "volume": "20260411134726",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602230115-20230702185753_v14/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      215.87408447265625,
+      11755.650390625,
+      1533.536376953125
+     ],
+     [
+      21442.390625,
+      42394.93359375,
+      78739.3046875
+     ]
+    ],
+    "computed_vc": [
+     [
+      346.6959533691406,
+      11755.7294921875,
+      1533.6163330078125
+     ],
+     [
+      21442.333984375,
+      42323.5625,
+      78615.4609375
+     ]
+    ],
+    "max_abs_diff_vc": 130.82186889648438,
+    "max_abs_diff_strict": 130.82186889648438,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602230115",
+    "volume": "20230205180739",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602230115-20230702185753_v14/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      332.77386849402683,
+      1875.218175314413,
+      -8491.138450301994
+     ],
+     [
+      5976.643327620283,
+      10942.854945833344,
+      15177.918672571486
+     ]
+    ],
+    "computed_vc": [
+     [
+      351.58535358471636,
+      1875.2321742192087,
+      -8491.12247903196
+     ],
+     [
+      5933.366721761958,
+      10916.786729311745,
+      15140.374555561695
+     ]
+    ],
+    "max_abs_diff_vc": 43.27660585832564,
+    "max_abs_diff_strict": 43.27660585832564,
+    "tol": 6.155551563388135,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602230115",
+    "volume": "20260310170716",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602230115-20230702185753_v14/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      280.7720244782536,
+      889.6896617871689,
+      148.26279876972353
+     ],
+     [
+      1400.778473958854,
+      2503.2364775884726,
+      4221.803185214692
+     ]
+    ],
+    "computed_vc": [
+     [
+      287.67921035068116,
+      889.6937903257209,
+      148.269067376734
+     ],
+     [
+      1400.7755449226186,
+      2499.473800549783,
+      4215.346756243585
+     ]
+    ],
+    "max_abs_diff_vc": 6.907185872427533,
+    "max_abs_diff_strict": 6.907185872427533,
+    "tol": 1.0691885250996565,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602230115",
+    "volume": "20260323153942",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602230115-20230702185753_v14/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      -9259.327111692675,
+      2193.4765512346585,
+      -40615.82451924942
+     ],
+     [
+      12073.576429861525,
+      32751.256914503618,
+      36584.96321906539
+     ]
+    ],
+    "computed_vc": [
+     [
+      -9129.600749723088,
+      2193.542027423713,
+      -40615.75234328446
+     ],
+     [
+      12073.504793228749,
+      32678.007534874327,
+      36460.964864724425
+     ]
+    ],
+    "max_abs_diff_vc": 129.72636196958774,
+    "max_abs_diff_strict": 129.72636196958774,
+    "tol": 20.02266105322543,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602230115",
+    "volume": "20260608103018",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHercParis4/segments/20260602230115-20230702185753_v14/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      -12494.211606679413,
+      13644.232417257195,
+      -56499.58741513946
+     ],
+     [
+      32900.67167176907,
+      78689.44326239443,
+      107509.29017470498
+     ]
+    ],
+    "computed_vc": [
+     [
+      -12217.665931611367,
+      13644.374317041611,
+      -56499.58741513946
+     ],
+     [
+      32900.52046444095,
+      78533.55438523786,
+      107245.62183839685
+     ]
+    ],
+    "max_abs_diff_vc": 276.54567506804597,
+    "max_abs_diff_strict": 276.54567506804597,
+    "tol": 42.5005394631583,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251204192708",
+    "volume": "20241024131838",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251204192708-w093_20251204192708445_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1277.88134765625,
+      436.3680725097656,
+      1073.86572265625
+     ],
+     [
+      8117.81689453125,
+      5888.10791015625,
+      13489.2861328125
+     ]
+    ],
+    "computed_vc": [
+     [
+      1278.23681640625,
+      436.71124267578125,
+      1104.3568115234375
+     ],
+     [
+      8116.66259765625,
+      4978.63671875,
+      13484.2509765625
+     ]
+    ],
+    "max_abs_diff_vc": 909.47119140625,
+    "max_abs_diff_strict": 909.47119140625,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251204192708",
+    "volume": "20241024131839",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251204192708-w093_20251204192708445_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1277.88134765625,
+      436.3680725097656,
+      1073.86572265625
+     ],
+     [
+      8117.81689453125,
+      5888.10791015625,
+      13489.2861328125
+     ]
+    ],
+    "computed_vc": [
+     [
+      1278.23681640625,
+      436.71124267578125,
+      1104.3568115234375
+     ],
+     [
+      8116.66259765625,
+      4978.63671875,
+      13484.2509765625
+     ]
+    ],
+    "max_abs_diff_vc": 909.47119140625,
+    "max_abs_diff_strict": 909.47119140625,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20250926153406",
+    "volume": "20241024131838",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20250926153406-w088_20250926153406704_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1145.2674560546875,
+      554.59765625,
+      1368.880859375
+     ],
+     [
+      8111.8505859375,
+      5197.83154296875,
+      13495.6025390625
+     ]
+    ],
+    "computed_vc": [
+     [
+      1290.628173828125,
+      555.4039306640625,
+      1382.8642578125
+     ],
+     [
+      8094.73388671875,
+      5193.20361328125,
+      13487.5732421875
+     ]
+    ],
+    "max_abs_diff_vc": 145.3607177734375,
+    "max_abs_diff_strict": 145.3607177734375,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20250926153406",
+    "volume": "20241024131839",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20250926153406-w088_20250926153406704_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1145.2674560546875,
+      554.59765625,
+      1368.880859375
+     ],
+     [
+      8111.8505859375,
+      5197.83154296875,
+      13495.6025390625
+     ]
+    ],
+    "computed_vc": [
+     [
+      1290.628173828125,
+      555.4039306640625,
+      1382.8642578125
+     ],
+     [
+      8094.73388671875,
+      5193.20361328125,
+      13487.5732421875
+     ]
+    ],
+    "max_abs_diff_vc": 145.3607177734375,
+    "max_abs_diff_strict": 145.3607177734375,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251204101314",
+    "volume": "20241024131838",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251204101314-w092_20251204101314959_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1283.166748046875,
+      445.77850341796875,
+      1446.3609619140625
+     ],
+     [
+      8103.2763671875,
+      5157.8271484375,
+      13476.8798828125
+     ]
+    ],
+    "computed_vc": [
+     [
+      1283.7174072265625,
+      445.9017639160156,
+      1473.7855224609375
+     ],
+     [
+      8100.72802734375,
+      5145.42333984375,
+      13459.287109375
+     ]
+    ],
+    "max_abs_diff_vc": 27.424560546875,
+    "max_abs_diff_strict": 27.424560546875,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251204101314",
+    "volume": "20241024131839",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251204101314-w092_20251204101314959_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1283.166748046875,
+      445.77850341796875,
+      1446.3609619140625
+     ],
+     [
+      8103.2763671875,
+      5157.8271484375,
+      13476.8798828125
+     ]
+    ],
+    "computed_vc": [
+     [
+      1283.7174072265625,
+      445.9017639160156,
+      1473.7855224609375
+     ],
+     [
+      8100.72802734375,
+      5145.42333984375,
+      13459.287109375
+     ]
+    ],
+    "max_abs_diff_vc": 27.424560546875,
+    "max_abs_diff_strict": 27.424560546875,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20250926122938",
+    "volume": "20241024131838",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20250926122938-w082_20250926122938619_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1176.1846923828125,
+      721.056640625,
+      1066.37548828125
+     ],
+     [
+      7927.0751953125,
+      4797.89111328125,
+      13582.763671875
+     ]
+    ],
+    "computed_vc": [
+     [
+      1176.6474609375,
+      741.4741821289062,
+      1148.0216064453125
+     ],
+     [
+      7926.51171875,
+      4797.70361328125,
+      13578.7587890625
+     ]
+    ],
+    "max_abs_diff_vc": 81.6461181640625,
+    "max_abs_diff_strict": 81.6461181640625,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20250926122938",
+    "volume": "20241024131839",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20250926122938-w082_20250926122938619_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1176.1846923828125,
+      721.056640625,
+      1066.37548828125
+     ],
+     [
+      7927.0751953125,
+      4797.89111328125,
+      13582.763671875
+     ]
+    ],
+    "computed_vc": [
+     [
+      1176.6474609375,
+      741.4741821289062,
+      1148.0216064453125
+     ],
+     [
+      7926.51171875,
+      4797.70361328125,
+      13578.7587890625
+     ]
+    ],
+    "max_abs_diff_vc": 81.6461181640625,
+    "max_abs_diff_strict": 81.6461181640625,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251109232817",
+    "volume": "20241024131838",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251109232817-w065_20251109232817724_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1094.395263671875,
+      768.5332641601562,
+      592.474365234375
+     ],
+     [
+      7491.9833984375,
+      6001.5263671875,
+      13630.208984375
+     ]
+    ],
+    "computed_vc": [
+     [
+      1416.8994140625,
+      933.1091918945312,
+      745.2664794921875
+     ],
+     [
+      7491.89453125,
+      5998.61474609375,
+      13623.40234375
+     ]
+    ],
+    "max_abs_diff_vc": 322.504150390625,
+    "max_abs_diff_strict": 322.504150390625,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251109232817",
+    "volume": "20241024131839",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251109232817-w065_20251109232817724_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1094.395263671875,
+      768.5332641601562,
+      592.474365234375
+     ],
+     [
+      7491.9833984375,
+      6001.5263671875,
+      13630.208984375
+     ]
+    ],
+    "computed_vc": [
+     [
+      1416.8994140625,
+      933.1091918945312,
+      745.2664794921875
+     ],
+     [
+      7491.89453125,
+      5998.61474609375,
+      13623.40234375
+     ]
+    ],
+    "max_abs_diff_vc": 322.504150390625,
+    "max_abs_diff_strict": 322.504150390625,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251106133152",
+    "volume": "20241024131838",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251106133152-w077_20251106133152767_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      557.6875610351562,
+      433.5744934082031,
+      419.5723571777344
+     ],
+     [
+      7736.65234375,
+      5179.5673828125,
+      13770.748046875
+     ]
+    ],
+    "computed_vc": [
+     [
+      721.6931762695312,
+      567.7681274414062,
+      537.8760986328125
+     ],
+     [
+      7735.29736328125,
+      5173.8330078125,
+      13768.626953125
+     ]
+    ],
+    "max_abs_diff_vc": 164.005615234375,
+    "max_abs_diff_strict": 164.005615234375,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251106133152",
+    "volume": "20241024131839",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251106133152-w077_20251106133152767_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      557.6875610351562,
+      433.5744934082031,
+      419.5723571777344
+     ],
+     [
+      7736.65234375,
+      5179.5673828125,
+      13770.748046875
+     ]
+    ],
+    "computed_vc": [
+     [
+      721.6931762695312,
+      567.7681274414062,
+      537.8760986328125
+     ],
+     [
+      7735.29736328125,
+      5173.8330078125,
+      13768.626953125
+     ]
+    ],
+    "max_abs_diff_vc": 164.005615234375,
+    "max_abs_diff_strict": 164.005615234375,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251206184729",
+    "volume": "20241024131838",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251206184729-w095_20251206184729906_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1327.7493896484375,
+      394.8748779296875,
+      2057.54296875
+     ],
+     [
+      8012.236328125,
+      3930.650634765625,
+      13276.111328125
+     ]
+    ],
+    "computed_vc": [
+     [
+      1331.374755859375,
+      395.0486755371094,
+      2067.9013671875
+     ],
+     [
+      8008.7939453125,
+      3906.89404296875,
+      13266.3251953125
+     ]
+    ],
+    "max_abs_diff_vc": 23.756591796875,
+    "max_abs_diff_strict": 23.756591796875,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "identity"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0172",
+    "id": "20251206184729",
+    "volume": "20241024131839",
+    "reference": "tifxyz-normalized",
+    "reference_path": "PHerc0172/segments/20251206184729-w095_20251206184729906_flatboi/mesh/intermediate/tifxyz_normalized/",
+    "declared": [
+     [
+      1327.7493896484375,
+      394.8748779296875,
+      2057.54296875
+     ],
+     [
+      8012.236328125,
+      3930.650634765625,
+      13276.111328125
+     ]
+    ],
+    "computed_vc": [
+     [
+      1331.374755859375,
+      395.0486755371094,
+      2067.9013671875
+     ],
+     [
+      8008.7939453125,
+      3906.89404296875,
+      13266.3251953125
+     ]
+    ],
+    "max_abs_diff_vc": 23.756591796875,
+    "max_abs_diff_strict": 23.756591796875,
+    "tol": 20.01,
+    "sub": "B-loose",
+    "stored_bbox_has_marker": false,
+    "matrix": "catalog"
+   }
+  ],
+  "O": [],
+  "N1": [],
+  "D4": [],
+  "P1": [],
+  "N2": [],
+  "D2": [],
+  "D3": [],
+  "F": [
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercMAN5",
+    "id": "20260321025901",
+    "path": "PHercMAN5/segments/20260321025901-MAN5_outer_3/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "declared": [
+     [
+      2411.17919921875,
+      6051.287109375,
+      5027.04248046875
+     ],
+     [
+      15203.9951171875,
+      14701.23828125,
+      28674.71484375
+     ]
+    ],
+    "computed_vc": [
+     [
+      2411.17919921875,
+      5982.9931640625,
+      5027.04248046875
+     ],
+     [
+      15203.9951171875,
+      14701.23828125,
+      29071.591796875
+     ]
+    ],
+    "computed_strict": [
+     [
+      2411.17919921875,
+      5982.9931640625,
+      5027.04248046875
+     ],
+     [
+      15203.9951171875,
+      14701.23828125,
+      29071.591796875
+     ]
+    ],
+    "max_abs_diff_vc": 396.876953125,
+    "max_abs_diff_strict": 396.876953125,
+    "tol": 20.00999970197678,
+    "sub": "F-other"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260130000001",
+    "path": "PHerc0139/segments/20260130000001-w030_202601301912/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      7536.25634765625,
+      7795.6484375,
+      8194.7001953125
+     ],
+     [
+      19508.681640625,
+      18422.05078125,
+      29142.009765625
+     ]
+    ],
+    "computed_vc": [
+     [
+      5453.6787109375,
+      4743.9384765625,
+      3966.322998046875
+     ],
+     [
+      19505.669921875,
+      18422.01171875,
+      29140.173828125
+     ]
+    ],
+    "computed_strict": [
+     [
+      5453.6787109375,
+      4743.9384765625,
+      3966.322998046875
+     ],
+     [
+      19505.669921875,
+      18422.01171875,
+      29140.173828125
+     ]
+    ],
+    "max_abs_diff_vc": 4228.377197265625,
+    "max_abs_diff_strict": 4228.377197265625,
+    "tol": 20.014329004329003,
+    "sub": "F-other"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183135",
+    "path": "PHercParis4/segments/20260701183135-w085-088/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -819.134765625,
+      -1.0
+     ],
+     [
+      7135.384765625,
+      7826.9189453125,
+      18016.341796875
+     ]
+    ],
+    "computed_vc": [
+     [
+      602.451904296875,
+      -819.134765625,
+      3000.01220703125
+     ],
+     [
+      7135.384765625,
+      7826.9189453125,
+      18016.341796875
+     ]
+    ],
+    "computed_strict": [
+     [
+      602.451904296875,
+      -819.134765625,
+      3000.01220703125
+     ],
+     [
+      7135.384765625,
+      7826.9189453125,
+      18016.341796875
+     ]
+    ],
+    "max_abs_diff_vc": 3001.01220703125,
+    "max_abs_diff_strict": 3001.01220703125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183127",
+    "path": "PHercParis4/segments/20260701183127-w046-052/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      6101.82177734375,
+      7141.08251953125,
+      17999.99609375
+     ]
+    ],
+    "computed_vc": [
+     [
+      2376.99169921875,
+      2306.72265625,
+      2993.92822265625
+     ],
+     [
+      6101.82177734375,
+      7141.08251953125,
+      17999.99609375
+     ]
+    ],
+    "computed_strict": [
+     [
+      2376.99169921875,
+      2306.72265625,
+      2993.92822265625
+     ],
+     [
+      6101.82177734375,
+      7141.08251953125,
+      17999.99609375
+     ]
+    ],
+    "max_abs_diff_vc": 2994.92822265625,
+    "max_abs_diff_strict": 2994.92822265625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183124",
+    "path": "PHercParis4/segments/20260701183124-w010-027/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      5401.1923828125,
+      6047.11376953125,
+      18020.880859375
+     ]
+    ],
+    "computed_vc": [
+     [
+      2824.15478515625,
+      2809.431640625,
+      2980.75830078125
+     ],
+     [
+      5401.1923828125,
+      6047.11376953125,
+      18020.880859375
+     ]
+    ],
+    "computed_strict": [
+     [
+      2824.15478515625,
+      2809.431640625,
+      2980.75830078125
+     ],
+     [
+      5401.1923828125,
+      6047.11376953125,
+      18020.880859375
+     ]
+    ],
+    "max_abs_diff_vc": 2981.75830078125,
+    "max_abs_diff_strict": 2981.75830078125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183144",
+    "path": "PHercParis4/segments/20260701183144-w113-115/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7526.80078125,
+      7760.14453125,
+      17999.96484375
+     ]
+    ],
+    "computed_vc": [
+     [
+      624.12939453125,
+      718.50830078125,
+      3000.009033203125
+     ],
+     [
+      7526.80078125,
+      7760.14453125,
+      17999.96484375
+     ]
+    ],
+    "computed_strict": [
+     [
+      624.12939453125,
+      718.50830078125,
+      3000.009033203125
+     ],
+     [
+      7526.80078125,
+      7760.14453125,
+      17999.96484375
+     ]
+    ],
+    "max_abs_diff_vc": 3001.009033203125,
+    "max_abs_diff_strict": 3001.009033203125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183128",
+    "path": "PHercParis4/segments/20260701183128-w053-058/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      6311.345703125,
+      7371.8857421875,
+      18015.810546875
+     ]
+    ],
+    "computed_vc": [
+     [
+      2213.304931640625,
+      2195.39697265625,
+      2980.40380859375
+     ],
+     [
+      6311.345703125,
+      7371.8857421875,
+      18015.810546875
+     ]
+    ],
+    "computed_strict": [
+     [
+      2213.304931640625,
+      2195.39697265625,
+      2980.40380859375
+     ],
+     [
+      6311.345703125,
+      7371.8857421875,
+      18015.810546875
+     ]
+    ],
+    "max_abs_diff_vc": 2981.40380859375,
+    "max_abs_diff_strict": 2981.40380859375,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183126",
+    "path": "PHercParis4/segments/20260701183126-w038-045/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      5987.3984375,
+      6428.361328125,
+      17999.98828125
+     ]
+    ],
+    "computed_vc": [
+     [
+      2537.74462890625,
+      2439.655029296875,
+      2992.539306640625
+     ],
+     [
+      5987.3984375,
+      6428.361328125,
+      17999.98828125
+     ]
+    ],
+    "computed_strict": [
+     [
+      2537.74462890625,
+      2439.655029296875,
+      2992.539306640625
+     ],
+     [
+      5987.3984375,
+      6428.361328125,
+      17999.98828125
+     ]
+    ],
+    "max_abs_diff_vc": 2993.539306640625,
+    "max_abs_diff_strict": 2993.539306640625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183143",
+    "path": "PHercParis4/segments/20260701183143-w110-112/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7521.73046875,
+      7620.5791015625,
+      17999.984375
+     ]
+    ],
+    "computed_vc": [
+     [
+      785.412109375,
+      704.7685546875,
+      3000.013671875
+     ],
+     [
+      7521.73046875,
+      7620.5791015625,
+      17999.984375
+     ]
+    ],
+    "computed_strict": [
+     [
+      785.412109375,
+      704.7685546875,
+      3000.013671875
+     ],
+     [
+      7521.73046875,
+      7620.5791015625,
+      17999.984375
+     ]
+    ],
+    "max_abs_diff_vc": 3001.013671875,
+    "max_abs_diff_strict": 3001.013671875,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183130",
+    "path": "PHercParis4/segments/20260701183130-w064-068/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      6599.345703125,
+      7473.08642578125,
+      18017.251953125
+     ]
+    ],
+    "computed_vc": [
+     [
+      1622.7291259765625,
+      1288.565673828125,
+      3000.008544921875
+     ],
+     [
+      6599.345703125,
+      7473.08642578125,
+      18017.251953125
+     ]
+    ],
+    "computed_strict": [
+     [
+      1622.7291259765625,
+      1288.565673828125,
+      3000.008544921875
+     ],
+     [
+      6599.345703125,
+      7473.08642578125,
+      18017.251953125
+     ]
+    ],
+    "max_abs_diff_vc": 3001.008544921875,
+    "max_abs_diff_strict": 3001.008544921875,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183125",
+    "path": "PHercParis4/segments/20260701183125-w028-037/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      5860.517578125,
+      6249.259765625,
+      18019.84375
+     ]
+    ],
+    "computed_vc": [
+     [
+      2669.51953125,
+      2623.15966796875,
+      2982.43994140625
+     ],
+     [
+      5860.517578125,
+      6249.259765625,
+      18019.84375
+     ]
+    ],
+    "computed_strict": [
+     [
+      2669.51953125,
+      2623.15966796875,
+      2982.43994140625
+     ],
+     [
+      5860.517578125,
+      6249.259765625,
+      18019.84375
+     ]
+    ],
+    "max_abs_diff_vc": 2983.43994140625,
+    "max_abs_diff_strict": 2983.43994140625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183134",
+    "path": "PHercParis4/segments/20260701183134-w081-084/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -666.02734375,
+      -1.0
+     ],
+     [
+      7025.3603515625,
+      7969.7607421875,
+      18018.83984375
+     ]
+    ],
+    "computed_vc": [
+     [
+      630.865966796875,
+      -666.02734375,
+      3000.01611328125
+     ],
+     [
+      7025.3603515625,
+      7969.7607421875,
+      18018.83984375
+     ]
+    ],
+    "computed_strict": [
+     [
+      630.865966796875,
+      -666.02734375,
+      3000.01611328125
+     ],
+     [
+      7025.3603515625,
+      7969.7607421875,
+      18018.83984375
+     ]
+    ],
+    "max_abs_diff_vc": 3001.01611328125,
+    "max_abs_diff_strict": 3001.01611328125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183142",
+    "path": "PHercParis4/segments/20260701183142-w107-109/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7516.2158203125,
+      7953.326171875,
+      17999.984375
+     ]
+    ],
+    "computed_vc": [
+     [
+      636.0673828125,
+      707.12451171875,
+      3000.002685546875
+     ],
+     [
+      7516.2158203125,
+      7953.326171875,
+      17999.984375
+     ]
+    ],
+    "computed_strict": [
+     [
+      636.0673828125,
+      707.12451171875,
+      3000.002685546875
+     ],
+     [
+      7516.2158203125,
+      7953.326171875,
+      17999.984375
+     ]
+    ],
+    "max_abs_diff_vc": 3001.002685546875,
+    "max_abs_diff_strict": 3001.002685546875,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183133",
+    "path": "PHercParis4/segments/20260701183133-w077-080/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -297.43408203125,
+      -1.0
+     ],
+     [
+      6946.9716796875,
+      7630.763671875,
+      17999.9921875
+     ]
+    ],
+    "computed_vc": [
+     [
+      737.267822265625,
+      -297.43408203125,
+      2990.643798828125
+     ],
+     [
+      6946.9716796875,
+      7630.763671875,
+      17999.9921875
+     ]
+    ],
+    "computed_strict": [
+     [
+      737.267822265625,
+      -297.43408203125,
+      2990.643798828125
+     ],
+     [
+      6946.9716796875,
+      7630.763671875,
+      17999.9921875
+     ]
+    ],
+    "max_abs_diff_vc": 2991.643798828125,
+    "max_abs_diff_strict": 2991.643798828125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183141",
+    "path": "PHercParis4/segments/20260701183141-w104-106/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7506.7822265625,
+      7957.279296875,
+      17999.96875
+     ]
+    ],
+    "computed_vc": [
+     [
+      838.9111328125,
+      659.62744140625,
+      3000.00439453125
+     ],
+     [
+      7506.7822265625,
+      7957.279296875,
+      17999.96875
+     ]
+    ],
+    "computed_strict": [
+     [
+      838.9111328125,
+      659.62744140625,
+      3000.00439453125
+     ],
+     [
+      7506.7822265625,
+      7957.279296875,
+      17999.96875
+     ]
+    ],
+    "max_abs_diff_vc": 3001.00439453125,
+    "max_abs_diff_strict": 3001.00439453125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183129",
+    "path": "PHercParis4/segments/20260701183129-w059-063/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      6482.8896484375,
+      7401.326171875,
+      18020.171875
+     ]
+    ],
+    "computed_vc": [
+     [
+      1524.98095703125,
+      1095.45751953125,
+      3000.0361328125
+     ],
+     [
+      6482.8896484375,
+      7401.326171875,
+      18020.171875
+     ]
+    ],
+    "computed_strict": [
+     [
+      1524.98095703125,
+      1095.45751953125,
+      3000.0361328125
+     ],
+     [
+      6482.8896484375,
+      7401.326171875,
+      18020.171875
+     ]
+    ],
+    "max_abs_diff_vc": 3001.0361328125,
+    "max_abs_diff_strict": 3001.0361328125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183140",
+    "path": "PHercParis4/segments/20260701183140-w101-103/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7495.8310546875,
+      7957.6845703125,
+      18019.75390625
+     ]
+    ],
+    "computed_vc": [
+     [
+      699.3681640625,
+      682.646484375,
+      3000.00390625
+     ],
+     [
+      7495.8310546875,
+      7957.6845703125,
+      18019.75390625
+     ]
+    ],
+    "computed_strict": [
+     [
+      699.3681640625,
+      682.646484375,
+      3000.00390625
+     ],
+     [
+      7495.8310546875,
+      7957.6845703125,
+      18019.75390625
+     ]
+    ],
+    "max_abs_diff_vc": 3001.00390625,
+    "max_abs_diff_strict": 3001.00390625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183132",
+    "path": "PHercParis4/segments/20260701183132-w073-076/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -668.7607421875,
+      -1.0
+     ],
+     [
+      6888.14892578125,
+      7986.08935546875,
+      18016.478515625
+     ]
+    ],
+    "computed_vc": [
+     [
+      626.387939453125,
+      -668.7607421875,
+      3000.00341796875
+     ],
+     [
+      6888.14892578125,
+      7986.08935546875,
+      18016.478515625
+     ]
+    ],
+    "computed_strict": [
+     [
+      626.387939453125,
+      -668.7607421875,
+      3000.00341796875
+     ],
+     [
+      6888.14892578125,
+      7986.08935546875,
+      18016.478515625
+     ]
+    ],
+    "max_abs_diff_vc": 3001.00341796875,
+    "max_abs_diff_strict": 3001.00341796875,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183139",
+    "path": "PHercParis4/segments/20260701183139-w098-100/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -936.521484375,
+      -1.0
+     ],
+     [
+      7459.099609375,
+      7798.5302734375,
+      18018.765625
+     ]
+    ],
+    "computed_vc": [
+     [
+      584.1396484375,
+      -936.521484375,
+      2975.087890625
+     ],
+     [
+      7459.099609375,
+      7798.5302734375,
+      18018.765625
+     ]
+    ],
+    "computed_strict": [
+     [
+      584.1396484375,
+      -936.521484375,
+      2975.087890625
+     ],
+     [
+      7459.099609375,
+      7798.5302734375,
+      18018.765625
+     ]
+    ],
+    "max_abs_diff_vc": 2976.087890625,
+    "max_abs_diff_strict": 2976.087890625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183138",
+    "path": "PHercParis4/segments/20260701183138-w095-097/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -248.04052734375,
+      -1.0
+     ],
+     [
+      7410.72509765625,
+      7853.4384765625,
+      18011.64453125
+     ]
+    ],
+    "computed_vc": [
+     [
+      735.7548828125,
+      -248.04052734375,
+      3000.018310546875
+     ],
+     [
+      7410.72509765625,
+      7853.4384765625,
+      18011.64453125
+     ]
+    ],
+    "computed_strict": [
+     [
+      735.7548828125,
+      -248.04052734375,
+      3000.018310546875
+     ],
+     [
+      7410.72509765625,
+      7853.4384765625,
+      18011.64453125
+     ]
+    ],
+    "max_abs_diff_vc": 3001.018310546875,
+    "max_abs_diff_strict": 3001.018310546875,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183131",
+    "path": "PHercParis4/segments/20260701183131-w069-072/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -497.90478515625,
+      -1.0
+     ],
+     [
+      6721.8974609375,
+      7609.392578125,
+      17999.9921875
+     ]
+    ],
+    "computed_vc": [
+     [
+      692.12548828125,
+      -497.90478515625,
+      3000.015869140625
+     ],
+     [
+      6721.8974609375,
+      7609.392578125,
+      17999.9921875
+     ]
+    ],
+    "computed_strict": [
+     [
+      692.12548828125,
+      -497.90478515625,
+      3000.015869140625
+     ],
+     [
+      6721.8974609375,
+      7609.392578125,
+      17999.9921875
+     ]
+    ],
+    "max_abs_diff_vc": 3001.015869140625,
+    "max_abs_diff_strict": 3001.015869140625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183137",
+    "path": "PHercParis4/segments/20260701183137-w092-094/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -752.13134765625,
+      -1.0
+     ],
+     [
+      7364.39306640625,
+      7823.4462890625,
+      18006.3125
+     ]
+    ],
+    "computed_vc": [
+     [
+      668.587646484375,
+      -752.13134765625,
+      3000.0107421875
+     ],
+     [
+      7364.39306640625,
+      7823.4462890625,
+      18006.3125
+     ]
+    ],
+    "computed_strict": [
+     [
+      668.587646484375,
+      -752.13134765625,
+      3000.0107421875
+     ],
+     [
+      7364.39306640625,
+      7823.4462890625,
+      18006.3125
+     ]
+    ],
+    "max_abs_diff_vc": 3001.0107421875,
+    "max_abs_diff_strict": 3001.0107421875,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183136",
+    "path": "PHercParis4/segments/20260701183136-w089-091/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7287.005859375,
+      7869.400390625,
+      18019.37109375
+     ]
+    ],
+    "computed_vc": [
+     [
+      1631.771484375,
+      1768.6749267578125,
+      2988.42724609375
+     ],
+     [
+      7287.005859375,
+      7869.400390625,
+      18019.37109375
+     ]
+    ],
+    "computed_strict": [
+     [
+      1631.771484375,
+      1768.6749267578125,
+      2988.42724609375
+     ],
+     [
+      7287.005859375,
+      7869.400390625,
+      18019.37109375
+     ]
+    ],
+    "max_abs_diff_vc": 2989.42724609375,
+    "max_abs_diff_strict": 2989.42724609375,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183151",
+    "path": "PHercParis4/segments/20260701183151-w128-129/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7639.1484375,
+      7990.5068359375,
+      17999.984375
+     ]
+    ],
+    "computed_vc": [
+     [
+      654.7509765625,
+      745.60205078125,
+      3000.014892578125
+     ],
+     [
+      7639.1484375,
+      7990.5068359375,
+      17999.984375
+     ]
+    ],
+    "computed_strict": [
+     [
+      654.7509765625,
+      745.60205078125,
+      3000.014892578125
+     ],
+     [
+      7639.1484375,
+      7990.5068359375,
+      17999.984375
+     ]
+    ],
+    "max_abs_diff_vc": 3001.014892578125,
+    "max_abs_diff_strict": 3001.014892578125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183150",
+    "path": "PHercParis4/segments/20260701183150-w126-127/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7617.0830078125,
+      7885.58837890625,
+      17999.978515625
+     ]
+    ],
+    "computed_vc": [
+     [
+      740.806640625,
+      611.89453125,
+      3000.011962890625
+     ],
+     [
+      7617.0830078125,
+      7885.58837890625,
+      17999.978515625
+     ]
+    ],
+    "computed_strict": [
+     [
+      740.806640625,
+      611.89453125,
+      3000.011962890625
+     ],
+     [
+      7617.0830078125,
+      7885.58837890625,
+      17999.978515625
+     ]
+    ],
+    "max_abs_diff_vc": 3001.011962890625,
+    "max_abs_diff_strict": 3001.011962890625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183149",
+    "path": "PHercParis4/segments/20260701183149-w124-125/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -367.69921875,
+      -1.0
+     ],
+     [
+      7601.51171875,
+      7947.06884765625,
+      17999.990234375
+     ]
+    ],
+    "computed_vc": [
+     [
+      647.172607421875,
+      -367.69921875,
+      2981.724853515625
+     ],
+     [
+      7601.51171875,
+      7947.06884765625,
+      17999.990234375
+     ]
+    ],
+    "computed_strict": [
+     [
+      647.172607421875,
+      -367.69921875,
+      2981.724853515625
+     ],
+     [
+      7601.51171875,
+      7947.06884765625,
+      17999.990234375
+     ]
+    ],
+    "max_abs_diff_vc": 2982.724853515625,
+    "max_abs_diff_strict": 2982.724853515625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183148",
+    "path": "PHercParis4/segments/20260701183148-w122-123/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7585.734375,
+      7974.24951171875,
+      17999.978515625
+     ]
+    ],
+    "computed_vc": [
+     [
+      635.31005859375,
+      744.75830078125,
+      3000.01806640625
+     ],
+     [
+      7585.734375,
+      7974.24951171875,
+      17999.978515625
+     ]
+    ],
+    "computed_strict": [
+     [
+      635.31005859375,
+      744.75830078125,
+      3000.01806640625
+     ],
+     [
+      7585.734375,
+      7974.24951171875,
+      17999.978515625
+     ]
+    ],
+    "max_abs_diff_vc": 3001.01806640625,
+    "max_abs_diff_strict": 3001.01806640625,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183147",
+    "path": "PHercParis4/segments/20260701183147-w120-121/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -281.29541015625,
+      -1.0
+     ],
+     [
+      7572.3115234375,
+      7985.8916015625,
+      17999.962890625
+     ]
+    ],
+    "computed_vc": [
+     [
+      697.65625,
+      -281.29541015625,
+      3000.0048828125
+     ],
+     [
+      7572.3115234375,
+      7985.8916015625,
+      17999.962890625
+     ]
+    ],
+    "computed_strict": [
+     [
+      697.65625,
+      -281.29541015625,
+      3000.0048828125
+     ],
+     [
+      7572.3115234375,
+      7985.8916015625,
+      17999.962890625
+     ]
+    ],
+    "max_abs_diff_vc": 3001.0048828125,
+    "max_abs_diff_strict": 3001.0048828125,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183146",
+    "path": "PHercParis4/segments/20260701183146-w118-119/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7555.876953125,
+      7866.57177734375,
+      17999.99609375
+     ]
+    ],
+    "computed_vc": [
+     [
+      834.944091796875,
+      734.05029296875,
+      3000.0068359375
+     ],
+     [
+      7555.876953125,
+      7866.57177734375,
+      17999.99609375
+     ]
+    ],
+    "computed_strict": [
+     [
+      834.944091796875,
+      734.05029296875,
+      3000.0068359375
+     ],
+     [
+      7555.876953125,
+      7866.57177734375,
+      17999.99609375
+     ]
+    ],
+    "max_abs_diff_vc": 3001.0068359375,
+    "max_abs_diff_strict": 3001.0068359375,
+    "tol": 20.01,
+    "sub": "F-marker"
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183145",
+    "path": "PHercParis4/segments/20260701183145-w116-117/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": [
+     [
+      -1.0,
+      -1.0,
+      -1.0
+     ],
+     [
+      7535.1015625,
+      7958.19921875,
+      17999.96484375
+     ]
+    ],
+    "computed_vc": [
+     [
+      726.030517578125,
+      741.4453125,
+      3000.0029296875
+     ],
+     [
+      7535.1015625,
+      7958.19921875,
+      17999.96484375
+     ]
+    ],
+    "computed_strict": [
+     [
+      726.030517578125,
+      741.4453125,
+      3000.0029296875
+     ],
+     [
+      7535.1015625,
+      7958.19921875,
+      17999.96484375
+     ]
+    ],
+    "max_abs_diff_vc": 3001.0029296875,
+    "max_abs_diff_strict": 3001.0029296875,
+    "tol": 20.01,
+    "sub": "F-marker"
+   }
+  ],
+  "S": [
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226121302",
+    "path": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/20260226121302-on-20260521123630-1.129um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.04466244343948,
+    "ratio": 3.9022331803197785
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226113324",
+    "path": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/20260226113324-on-20260521123630-1.129um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.0056518161861,
+    "ratio": 3.900282648928045
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226110425",
+    "path": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/mesh/20260226110425-on-20260521123630-1.129um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.10712003027076,
+    "ratio": 3.9053560597078776
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "path": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/20250928235954-on-20260521123630-1.129um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.23218519461744,
+    "ratio": 3.9116093180183924
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260225160055",
+    "path": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/20260225160055-on-20260521123630-1.129um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.61644435557778,
+    "ratio": 3.9308222763527048
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226123353",
+    "path": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 77.92768905032275,
+    "ratio": 3.8963845105767905
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226113324",
+    "path": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 77.89652576591325,
+    "ratio": 3.894826346333097
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226121302",
+    "path": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/intermediate/tifxyz_normalized/",
+    "type": "tifxyz-normalized",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.02905585197853,
+    "ratio": 3.9014527925989264
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226121302",
+    "path": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/20260226121302-on-20260309142202-2.399um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.02905585197853,
+    "ratio": 3.9014527925989264
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226113324",
+    "path": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/intermediate/tifxyz_normalized/",
+    "type": "tifxyz-normalized",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.03685875756372,
+    "ratio": 3.901842937878186
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226113324",
+    "path": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/20260226113324-on-20260309142202-2.399um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.03685875756372,
+    "ratio": 3.901842937878186
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226110425",
+    "path": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/mesh/intermediate/tifxyz_normalized/",
+    "type": "tifxyz-normalized",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.23218519461744,
+    "ratio": 3.9116092597308723
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226110425",
+    "path": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/mesh/20260226110425-on-20260309142202-2.399um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.23218519461744,
+    "ratio": 3.9116092597308723
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "path": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/intermediate/tifxyz_normalized/",
+    "type": "tifxyz-normalized",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.27130911121563,
+    "ratio": 3.9135654555607817
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "path": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/20250928235954-on-20260309142202-2.399um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.27130911121563,
+    "ratio": 3.9135654555607817
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "path": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.06807818359043,
+    "ratio": 3.9034039673447722
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226123353",
+    "path": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/mesh/intermediate/tifxyz_normalized/",
+    "type": "tifxyz-normalized",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.13055450957155,
+    "ratio": 3.9065277254785777
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226123353",
+    "path": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/mesh/20260226123353-on-20260309142202-2.399um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.13055450957155,
+    "ratio": 3.9065277254785777
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226121302",
+    "path": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 77.84980420436288,
+    "ratio": 3.8924902682207683
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226110425",
+    "path": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.16962760066313,
+    "ratio": 3.908481438274068
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260225160055",
+    "path": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/intermediate/tifxyz_normalized/",
+    "type": "tifxyz-normalized",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.57714792311562,
+    "ratio": 3.928857396155781
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260225160055",
+    "path": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/20260225160055-on-20260309142202-2.399um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05,
+     0.05
+    ],
+    "spacing_median": 78.57714792311562,
+    "ratio": 3.928857396155781
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260225160055",
+    "path": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.10712003027076,
+    "ratio": 3.9053560597078776
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226110425",
+    "path": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/mesh/20260226110425-on-20250804134230-9.362um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 77.28359811004714,
+    "ratio": 3.8641799630831244
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226113324",
+    "path": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/mesh/20260226113324-on-20250804134230-9.362um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 77.88094879734429,
+    "ratio": 3.894047497893043
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226121302",
+    "path": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/mesh/20260226121302-on-20250804134230-9.362um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.5457249200899,
+    "ratio": 3.9272863045256203
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250928235954",
+    "path": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/mesh/20250928235954-on-20250804134230-9.362um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 77.91989706061669,
+    "ratio": 3.895994911085682
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260226123353",
+    "path": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/mesh/20260226123353-on-20250804134230-9.362um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 78.24783241397822,
+    "ratio": 3.912391678998089
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20260225160055",
+    "path": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/mesh/20260225160055-on-20250804134230-9.362um.tifxyz/",
+    "type": "tifxyz-transformed",
+    "scale": [
+     0.05000000074505806,
+     0.05000000074505806
+    ],
+    "spacing_median": 77.83423657870478,
+    "ratio": 3.891711886926264
+   }
+  ],
+  "A1": [
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183135",
+    "path": "PHercParis4/segments/20260701183135-w085-088/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 512036000.0,
+    "computed": 875735998.1717973,
+    "rel": -0.4153078084389178
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183127",
+    "path": "PHercParis4/segments/20260701183127-w046-052/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 510582400.0,
+    "computed": 836057617.1387846,
+    "rel": -0.389297592016025
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183124",
+    "path": "PHercParis4/segments/20260701183124-w010-027/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 505651600.0,
+    "computed": 707444112.6519648,
+    "rel": -0.2852416311664734
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183144",
+    "path": "PHercParis4/segments/20260701183144-w113-115/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 504920800.0,
+    "computed": 815922487.7084857,
+    "rel": -0.3811657263938544
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183128",
+    "path": "PHercParis4/segments/20260701183128-w053-058/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 494212800.0,
+    "computed": 821856240.2632555,
+    "rel": -0.39866271521927643
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183126",
+    "path": "PHercParis4/segments/20260701183126-w038-045/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 494736400.0,
+    "computed": 786373517.5155792,
+    "rel": -0.37086335058301534
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183143",
+    "path": "PHercParis4/segments/20260701183143-w110-112/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 491989200.0,
+    "computed": 801892987.4985154,
+    "rel": -0.386465266974403
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183130",
+    "path": "PHercParis4/segments/20260701183130-w064-068/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 488753200.0,
+    "computed": 821336247.3284401,
+    "rel": -0.40492922163149714
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183125",
+    "path": "PHercParis4/segments/20260701183125-w028-037/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 485862800.0,
+    "computed": 745349335.0160894,
+    "rel": -0.3481408285022325
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183134",
+    "path": "PHercParis4/segments/20260701183134-w081-084/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 488275200.0,
+    "computed": 835163050.8698375,
+    "rel": -0.415353445663751
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183142",
+    "path": "PHercParis4/segments/20260701183142-w107-109/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 479175200.0,
+    "computed": 789081555.7503197,
+    "rel": -0.39274312457555394
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183133",
+    "path": "PHercParis4/segments/20260701183133-w077-080/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 464380400.0,
+    "computed": 787401975.625507,
+    "rel": -0.4102371922154511
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183141",
+    "path": "PHercParis4/segments/20260701183141-w104-106/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 465666400.0,
+    "computed": 772265324.5519229,
+    "rel": -0.3970124189245646
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183129",
+    "path": "PHercParis4/segments/20260701183129-w059-063/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 452792400.0,
+    "computed": 762844594.1434469,
+    "rel": -0.40644214630843156
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183140",
+    "path": "PHercParis4/segments/20260701183140-w101-103/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 452096400.0,
+    "computed": 757030785.9008775,
+    "rel": -0.40280315091545604
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183132",
+    "path": "PHercParis4/segments/20260701183132-w073-076/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 441386000.0,
+    "computed": 744757624.4435781,
+    "rel": -0.40734275754509064
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183139",
+    "path": "PHercParis4/segments/20260701183139-w098-100/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 438900800.0,
+    "computed": 741377418.3350286,
+    "rel": -0.40799275895713805
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183138",
+    "path": "PHercParis4/segments/20260701183138-w095-097/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 426000000.0,
+    "computed": 728184635.9162396,
+    "rel": -0.41498353715746183
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183131",
+    "path": "PHercParis4/segments/20260701183131-w069-072/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 417849200.0,
+    "computed": 702270846.9524549,
+    "rel": -0.4050027823121509
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183137",
+    "path": "PHercParis4/segments/20260701183137-w092-094/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 412479600.0,
+    "computed": 708321625.871768,
+    "rel": -0.4176662339056215
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183136",
+    "path": "PHercParis4/segments/20260701183136-w089-091/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 399126400.0,
+    "computed": 685407676.5886354,
+    "rel": -0.41768028921633205
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183151",
+    "path": "PHercParis4/segments/20260701183151-w128-129/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 379924800.0,
+    "computed": 616080949.4236934,
+    "rel": -0.38331999982243126
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183150",
+    "path": "PHercParis4/segments/20260701183150-w126-127/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 373743600.0,
+    "computed": 633890272.3308848,
+    "rel": -0.41039700983941063
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183149",
+    "path": "PHercParis4/segments/20260701183149-w124-125/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 367610000.0,
+    "computed": 586534520.2060534,
+    "rel": -0.373250870433242
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183148",
+    "path": "PHercParis4/segments/20260701183148-w122-123/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 361741200.0,
+    "computed": 572303248.5421655,
+    "rel": -0.36792041470764425
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183147",
+    "path": "PHercParis4/segments/20260701183147-w120-121/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 355910400.0,
+    "computed": 567251835.8364402,
+    "rel": -0.37257073928162265
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183146",
+    "path": "PHercParis4/segments/20260701183146-w118-119/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 349868800.0,
+    "computed": 560452259.967602,
+    "rel": -0.37573844376999244
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260701183145",
+    "path": "PHercParis4/segments/20260701183145-w116-117/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 343915200.0,
+    "computed": 553242422.8115394,
+    "rel": -0.3783643737003266
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250926051122",
+    "path": "PHerc0814/segments/20250926051122-auto_grown_20250926051122829/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 124344000.0,
+    "computed": 94877740.09514856,
+    "rel": 0.31057084491368636
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercMANBp",
+    "id": "20251220015639",
+    "path": "PHercMANBp/segments/20251220015639-w6_20251220015639809/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 228087870.31783596,
+    "computed": 38025186.07975186,
+    "rel": 4.998336729752156
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercMANBp",
+    "id": "20251218010446",
+    "path": "PHercMANBp/segments/20251218010446-w0_20251218010446110/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 118976375.35885851,
+    "computed": 67657063.37229705,
+    "rel": 0.7585211274123189
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercMANBp",
+    "id": "20251220012955",
+    "path": "PHercMANBp/segments/20251220012955-w7_20251220012955200/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 111906479.22175716,
+    "computed": 31417022.046696514,
+    "rel": 2.561969656303694
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250925204843",
+    "path": "PHerc0814/segments/20250925204843-auto_grown_20250925204843950/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 70315200.0,
+    "computed": 54145962.34380585,
+    "rel": 0.2986231466997624
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250926165636",
+    "path": "PHerc0814/segments/20250926165636-auto_trace_20250926165636789/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 64108800.0,
+    "computed": 50202179.03331941,
+    "rel": 0.2770122977620293
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20251001060526",
+    "path": "PHerc0814/segments/20251001060526-auto_grown_20251001060526760/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 53380800.0,
+    "computed": 38927003.400466986,
+    "rel": 0.3713051439083961
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250926203608",
+    "path": "PHerc0814/segments/20250926203608-auto_grown_20250926203608932/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 51926400.0,
+    "computed": 40961821.773732334,
+    "rel": 0.26767799261552727
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250930083742",
+    "path": "PHerc0814/segments/20250930083742-auto_grown_20250930083742882/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 50054400.0,
+    "computed": 38729669.222670816,
+    "rel": 0.2924045313224657
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250925182632",
+    "path": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 47793600.0,
+    "computed": 38185762.3391006,
+    "rel": 0.25160785257025986
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250925161630",
+    "path": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 46944000.0,
+    "computed": 36480815.91451869,
+    "rel": 0.2868133242962132
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250925222237",
+    "path": "PHerc0814/segments/20250925222237-auto_grown_20250925222237459/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 26568000.0,
+    "computed": 20626300.49509149,
+    "rel": 0.28806423654704716
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250929040153",
+    "path": "PHerc0814/segments/20250929040153-auto_grown_20250929040153260/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 21772800.0,
+    "computed": 16477096.39186753,
+    "rel": 0.3213978653876315
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0814",
+    "id": "20250925212701",
+    "path": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 18691200.0,
+    "computed": 13574614.206508666,
+    "rel": 0.37692310924299166
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercMANBp",
+    "id": "20251219211451",
+    "path": "PHercMANBp/segments/20251219211451-w8_20251219211451561/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 8389886.072770655,
+    "computed": 6397896.537662494,
+    "rel": 0.3113506952452134
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0841",
+    "id": "20260221022814",
+    "path": "PHerc0841/segments/20260221022814-auto_grown_20260220174252405/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "declared": 26867937.566201854,
+    "computed": 13951666.239991479,
+    "rel": 0.9257870066577987
+   }
+  ],
+  "A2": [
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260604223808",
+    "path": "PHercParis4/segments/20260604223808-20231210121321_v8/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "implied_voxel_um": 0.0,
+    "frame_voxel_um": 2.4
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260603222816",
+    "path": "PHercParis4/segments/20260603222816-20231005123336_v2_flatboi/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "implied_voxel_um": 0.0,
+    "frame_voxel_um": 2.4
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20260602230115",
+    "path": "PHercParis4/segments/20260602230115-20230702185753_v14/mesh/intermediate/tifxyz_flattened/",
+    "type": "tifxyz-flattened",
+    "implied_voxel_um": 0.0,
+    "frame_voxel_um": 2.4
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260206000002",
+    "path": "PHerc0139/segments/20260206000002-w054_2026020617/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260210000000",
+    "path": "PHerc0139/segments/20260210000000-w058_2026021020/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20251226000000",
+    "path": "PHerc0139/segments/20251226000000-w055_2025122611/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260227000000",
+    "path": "PHerc0139/segments/20260227000000-w052_2026022705/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260306000001",
+    "path": "PHerc0139/segments/20260306000001-w051_2026030600/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250223000000",
+    "path": "PHerc0139/segments/20250223000000-w059_2025022312/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000465393066,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260220000000",
+    "path": "PHerc0139/segments/20260220000000-w053_2026022021/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260115000001",
+    "path": "PHerc0139/segments/20260115000001-w056_2026011514/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.806117316877064,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260219000000",
+    "path": "PHerc0139/segments/20260219000000-w033_2026021913/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260203000000",
+    "path": "PHerc0139/segments/20260203000000-w032_2026020303/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260303000000",
+    "path": "PHerc0139/segments/20260303000000-w034_2026030317/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000465393066,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260130000000",
+    "path": "PHerc0139/segments/20260130000000-w031_2026013019/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000005",
+    "path": "PHerc0139/segments/20250108000005-w030_2025010818/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0009B",
+    "id": "20250919125605",
+    "path": "PHerc0009B/segments/20250919125605-auto_grown_20250919055605407/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000597392935,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000001",
+    "path": "PHerc0139/segments/20250108000001-w026_2025010854/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000004",
+    "path": "PHerc0139/segments/20250108000004-w029_2025010827/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000003",
+    "path": "PHerc0139/segments/20250108000003-w028_2025010836/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0009B",
+    "id": "20250919064353",
+    "path": "PHerc0009B/segments/20250919064353-auto_grown_20250918234353791/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000751872861,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250108000002",
+    "path": "PHerc0139/segments/20250108000002-w027_2025010845/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260318000000",
+    "path": "PHerc0139/segments/20260318000000-w049_20260318/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000465393066,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0009B",
+    "id": "20250919130642",
+    "path": "PHerc0009B/segments/20250919130642-auto_grown_20250919060642061/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000484558507,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260126000000",
+    "path": "PHerc0139/segments/20260126000000-w045_2026012619/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260325000000",
+    "path": "PHerc0139/segments/20260325000000-w046_20260325/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000465393066,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260206000001",
+    "path": "PHerc0139/segments/20260206000001-w047_2026020613/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000465393066,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260219000001",
+    "path": "PHerc0139/segments/20260219000001-w048_2026021912/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000465393066,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20250831000000",
+    "path": "PHerc0139/segments/20250831000000-w040_2025083102/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 13.393540254445673,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260206000000",
+    "path": "PHerc0139/segments/20260206000000-w042_2026020613/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000465393066,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0009B",
+    "id": "20250919125302",
+    "path": "PHerc0009B/segments/20250919125302-auto_grown_20250919055302061/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000562986832,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260302000000",
+    "path": "PHerc0139/segments/20260302000000-w039_2026030210/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362000465393066,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260215000000",
+    "path": "PHerc0139/segments/20260215000000-w024_2026021572/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.361999999999998,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260311000000",
+    "path": "PHerc0139/segments/20260311000000-w023_202603112281/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250703034159",
+    "path": "PHerc1447/segments/20250703034159-auto_grown_20250703034159599/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.319999694824219,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250703025628",
+    "path": "PHerc1447/segments/20250703025628-auto_grown_20250703025628283/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.319999694824219,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260302000001",
+    "path": "PHerc0139/segments/20260302000001-w050_2026030220/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502182456",
+    "path": "PHerc1447/segments/20250502182456-auto_grown_20250502161202782/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.909999847412109,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502184658",
+    "path": "PHerc1447/segments/20250502184658-auto_grown_20250502163923577/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.909999847412109,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502183421",
+    "path": "PHerc1447/segments/20250502183421-auto_grown_20250502161744358/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.90999984741211,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0139",
+    "id": "20260317000000",
+    "path": "PHerc0139/segments/20260317000000-w035_2026031718/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 9.362,
+    "frame_voxel_um": 9.596
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502184845",
+    "path": "PHerc1447/segments/20250502184845-auto_grown_20250502164121265/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.909999847412109,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250702235910",
+    "path": "PHerc1447/segments/20250702235910-auto_grown_20250702235910292/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.319999694824219,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502180748",
+    "path": "PHerc1447/segments/20250502180748-auto_grown_20250502160748721/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.909999847412109,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502205333",
+    "path": "PHerc1447/segments/20250502205333-auto_grown_20250502181030065/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.90999984741211,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502182142",
+    "path": "PHerc1447/segments/20250502182142-auto_grown_20250502161324419/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.909999847412109,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502185519",
+    "path": "PHerc1447/segments/20250502185519-auto_grown_20250502164303733/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.909999847412109,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502184201",
+    "path": "PHerc1447/segments/20250502184201-auto_grown_20250502163549332/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.909999847412109,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502180708",
+    "path": "PHerc1447/segments/20250502180708-auto_grown_20250502160708188/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.909999847412109,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc1447",
+    "id": "20250502183138",
+    "path": "PHerc1447/segments/20250502183138-auto_grown_20250502162038685/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 7.9099998474121085,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0800",
+    "id": "20251028222030",
+    "path": "PHerc0800/segments/20251028222030-auto_grown_20251028222030940/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.32,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0800",
+    "id": "20251028225813",
+    "path": "PHerc0800/segments/20251028225813-auto_grown_20251028225813045/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.32,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0800",
+    "id": "20251028213516",
+    "path": "PHerc0800/segments/20251028213516-auto_grown_20251028213516907/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.32,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": true,
+    "defect": true,
+    "sample": "PHerc0800",
+    "id": "20251028220042",
+    "path": "PHerc0800/segments/20251028220042-auto_grown_20251028220042762/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.32,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0800",
+    "id": "20251028220955",
+    "path": "PHerc0800/segments/20251028220955-auto_grown_20251028220955262/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.320000000000002,
+    "frame_voxel_um": 8.64
+   },
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHerc0800",
+    "id": "20251029010146",
+    "path": "PHerc0800/segments/20251029010146-auto_grown_20251029010146642/mesh/intermediate/tifxyz_original/",
+    "type": "tifxyz",
+    "implied_voxel_um": 8.319999694824219,
+    "frame_voxel_um": 8.64
+   }
+  ],
+  "V1": [
+   {
+    "holdout": false,
+    "defect": true,
+    "sample": "PHercParis4",
+    "id": "20230205180739",
+    "catalog_shape": [
+     14369,
+     7888,
+     8096
+    ],
+    "zarray_shape": [
+     14258,
+     7888,
+     8096
+    ]
+   }
+  ]
+ }
+}
