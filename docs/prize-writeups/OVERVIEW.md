@@ -94,6 +94,16 @@
 - **Caveats:** single catalog snapshot; both new classes sit in one ingestion batch each, so the hold-out tests repeatability, not independent cause; the catalog builder isn't public, so the W cause is inferred from provenance; AI-assisted.
 - **Credits:** see `catalog-qa-audit.md`.
 
+## Fifth item: `gpu-1648-heldout` (added 2026-10-08)
+
+**What:** a pre-registered held-out test of the `villa-1648` in-plane-scale WARNING: does ink_9um score better on ~9.6 µm (L2) input than on ~2.4 µm (L0) input of the same crop? It is not a new villa patch; the 1648 patch is unchanged.  
+**Status:** published on GitLab at `gpu-1648-heldout/`.  
+**Evidence:** `gpu-1648-heldout/` (`README.md`, `docs/preregistration.md` + sha256, `results/`, `scripts/`, `pc/`, `tests/`); metrics mirrored in `villa-1648/heldout-matrix-2026-10-08/`. Write-up: `1648.md`.  
+**Evidence class:** **Real-data, pre-registered** (sealed 2026-10-08 07:57 HST), 3 validation masks × 2 seeds, one RTX 5060.
+
+- **Verdict: CONFIRM** (3/3 segments; 2/3 required). Forward AUC L2 **0.857–0.914** vs L0 **0.536–0.670**; Δ **+0.187 to +0.365**, every operative-direction 95% block-bootstrap CI above 0.
+- **Caveats:** all three are training segments with validation-mask carve-outs (adjacency leakage possible); 46527 overlaps the earlier exploratory window; the GPU masked-vs-unmasked check differed by ±1/255, so the plain unmasked CLI was used (`results/deviations.md`); ink_9um checkpoints only; AI-assisted.
+
 This note summarizes the **9 shipping items** (eight villa patches + the `tifxyz-audit` entry-point patch). It does not invent metrics; figures come from per-folder READMEs / `SUMMARY.json` / `AUC_TABLE.json`.
 
 ## The nine shipping fixes

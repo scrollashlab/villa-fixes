@@ -1,0 +1,17 @@
+{
+ "python": "3.14.8",
+ "torch": "2.14.1+cu130",
+ "torch_cuda": "13.0",
+ "cudnn": 92400,
+ "cuda_available": true,
+ "device_name": "NVIDIA GeForce RTX 5060",
+ "capability": [12, 0],
+ "total_mem_mib": 8150,
+ "arch_list": ["sm_75", "sm_80", "sm_86", "sm_90", "sm_100", "sm_120"],
+ "matmul_2048_fp32_s": 0.1351,
+ "matmul_max_abs_err_vs_cpu": 0.0002288818359375,
+ "matmul_rel_err": 5.072571411801619e-07,
+ "matmul_bf16_rel_err": 0.0028746440075337887,
+ "mem_free_mib": 6879,
+ "villa_infer_import": "ok"
+}

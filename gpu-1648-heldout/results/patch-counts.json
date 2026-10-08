@@ -1,0 +1,32 @@
+{
+ "pherc0814-46527_L2": {
+  "patches_unmasked": 107,
+  "patches_masked": 71,
+  "mask_frac_allzero_input": 0.0009438004110499158
+ },
+ "pherc0814-46527_L0": {
+  "patches_unmasked": 1106,
+  "patches_masked": 743,
+  "mask_frac_allzero_input": 0.0012899640486553948
+ },
+ "pherc0139-w016_L2": {
+  "patches_unmasked": 225,
+  "patches_masked": 91,
+  "mask_frac_allzero_input": 0.0
+ },
+ "pherc0139-w016_L0": {
+  "patches_unmasked": 1526,
+  "patches_masked": 886,
+  "mask_frac_allzero_input": 0.0
+ },
+ "pherc1667-w029_L2": {
+  "patches_unmasked": 352,
+  "patches_masked": 152,
+  "mask_frac_allzero_input": 0.0
+ },
+ "pherc1667-w029_L0": {
+  "patches_unmasked": 2632,
+  "patches_masked": 1723,
+  "mask_frac_allzero_input": 0.0
+ }
+}

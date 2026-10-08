@@ -1,0 +1,125 @@
+{
+ "pherc0139-w016": {
+  "crop_l2_yx": [
+   4816,
+   5553,
+   1675,
+   4083
+  ],
+  "source_surface_volume": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0139/segments/20250108000004-w029_2025010827/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr",
+  "levels": {
+   "L2": {
+    "source_shape": [
+     109,
+     7020,
+     7220
+    ],
+    "chunks_requested": 61,
+    "chunks_present": 61,
+    "bytes_downloaded": 108937216,
+    "prepared_shape": [
+     21,
+     737,
+     2408
+    ]
+   },
+   "L0": {
+    "source_shape": [
+     109,
+     28080,
+     28880
+    ],
+    "chunks_requested": 335,
+    "chunks_present": 335,
+    "bytes_downloaded": 598261760,
+    "prepared_shape": [
+     21,
+     2948,
+     9632
+    ]
+   }
+  }
+ },
+ "pherc0814-46527": {
+  "crop_l2_yx": [
+   1496,
+   2130,
+   130,
+   945
+  ],
+  "source_surface_volume": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0814/segments/20260226000000-46527_2um_try2/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr",
+  "levels": {
+   "L2": {
+    "source_shape": [
+     109,
+     2130,
+     3455
+    ],
+    "chunks_requested": 39,
+    "chunks_present": 34,
+    "bytes_downloaded": 60719104,
+    "prepared_shape": [
+     21,
+     634,
+     815
+    ]
+   },
+   "L0": {
+    "source_shape": [
+     109,
+     8520,
+     13820
+    ],
+    "chunks_requested": 255,
+    "chunks_present": 248,
+    "bytes_downloaded": 442892288,
+    "prepared_shape": [
+     21,
+     2536,
+     3260
+    ]
+   }
+  }
+ },
+ "pherc1667-w029": {
+  "crop_l2_yx": [
+   2982,
+   5301,
+   4789,
+   7347
+  ],
+  "source_surface_volume": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc1667/segments/20251212185248-w029_20251212185248662_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr",
+  "levels": {
+   "L2": {
+    "source_shape": [
+     109,
+     9500,
+     7830
+    ],
+    "chunks_requested": 90,
+    "chunks_present": 90,
+    "bytes_downloaded": 160727040,
+    "prepared_shape": [
+     21,
+     2319,
+     2558
+    ]
+   },
+   "L0": {
+    "source_shape": [
+     109,
+     38000,
+     31320
+    ],
+    "chunks_requested": 582,
+    "chunks_present": 582,
+    "bytes_downloaded": 1039368192,
+    "prepared_shape": [
+     21,
+     9276,
+     10232
+    ]
+   }
+  }
+ }
+}

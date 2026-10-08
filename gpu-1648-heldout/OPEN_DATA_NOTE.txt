@@ -1,0 +1,8 @@
+This bundle holds code and metrics only. It contains no scroll images, crops, ink labels, masks or predictions.
+
+Inputs (CC BY-NC 4.0, fetch them yourself; do not redistribute):
+- Labels and validation masks: Hugging Face bucket scrollprize/datasets, path ink_9um/labels/aligned-scrollprizeorg-21slices/<case>/ (channel 10).
+- Surface volumes: vesuvius-challenge-open-data S3. The exact URLs are in results/crops.json; only the chunks listed there are needed.
+- Checkpoints: Hugging Face scrollprize/ink_9um, hybrid_3d2d-seed42 and -seed43 step-075000.pth (sha256 values in pc/phase2/run_matrix.py).
+
+Derived data (prepared crops, masks, TIFF outputs, reduced arrays) was kept in do-not-redistribute folders on the machines that ran this.

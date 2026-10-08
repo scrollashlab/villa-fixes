@@ -20,6 +20,7 @@ See [`xframe/`](xframe/) for the cross-frame mesh audit tool (Oct 2026).
 See [`sv-canvas-1727/`](sv-canvas-1727/) for a pre-registered check that all 692 published surface volumes reproduce their canvas size from the catalog-named mesh (villa #1727, Oct 2026).
 See [`villa-downscale/`](villa-downscale/) for a patch that makes `vesuvius.tifxyz` apply the open data's `original_volume_downscale` to `tifxyz_normalized` meshes; pre-registered before/after on 23 published meshes (Oct 2026).
 See [`catalog-qa-audit/`](catalog-qa-audit/) for a pre-registered metadata audit of all 1,531 published meshes across 323 segments; it found 15 segments whose declared width/height don't match mesh grid ÷ scale (findings only, no patch; Oct 2026).
+See [`gpu-1648-heldout/`](gpu-1648-heldout/) for a pre-registered held-out GPU test of the `villa-1648` in-plane-scale warning on 3 validation masks × 2 seeds; it confirms the warning (3/3 segments, 2/3 required; code and metrics only; Oct 2026).
 
 ## Shipping fixes
 

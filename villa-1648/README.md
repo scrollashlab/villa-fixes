@@ -42,6 +42,35 @@ Qualitative match to #1648 without train ceiling: better depth×coarse is clearl
 
 **Caveat:** 46527 is still a training *segment*; the holdout is a spatial validation-mask carve-out (adjacency leakage possible per public ink_9um audits). It is still the strongest public binary-label holdout we could bind to these checkpoints.
 
+## Pre-registered held-out matrix (3 segments, 2026-10-08)
+
+The single-window result above was re-tested on all three `online_validation_cases` that ship a `validation_mask`: pherc0139-w016, pherc0814-46527 and pherc1667-w029.
+- The kill test was pre-registered before any inference (`heldout-matrix-2026-10-08/preregistration.md`, sha256 `157a375a…2ec6`, sealed 2026-10-08 07:57 HST).
+- Scoring used whole validation masks only. The L2 input (~9.6 µm) was compared with the L0 input (~2.4 µm) of the same crop: 2 seeds × 2 directions, villa main 8b63a2652, unpatched CLI, RTX 5060, torch 2.14.1+cu130.
+- L0 output was mean-pooled 4×4 onto the L2 grid.
+- Exact Mann–Whitney AUC; 95% CI from a paired 64×64-px block bootstrap (B=2000).
+
+| segment | seed | AUC L2 fwd | AUC L0 fwd | Δ (L2−L0) | 95% CI |
+|---|---|---|---|---|---|
+| pherc0139-w016 | 42 | 0.883 | 0.568 | +0.315 | [+0.257, +0.372] |
+| pherc0139-w016 | 43 | 0.914 | 0.603 | +0.312 | [+0.245, +0.386] |
+| pherc0814-46527 | 42 | 0.886 | 0.639 | +0.247 | [+0.177, +0.307] |
+| pherc0814-46527 | 43 | 0.857 | 0.670 | +0.187 | [+0.114, +0.256] |
+| pherc1667-w029 | 42 | 0.901 | 0.536 | +0.365 | [+0.315, +0.415] |
+| pherc1667-w029 | 43 | 0.898 | 0.544 | +0.355 | [+0.297, +0.411] |
+
+The operative direction was forward on all three segments, chosen by the mean of all 4 AUCs, a choice symmetric in L0/L2.
+
+**Verdict: CONFIRM (3/3 segments; 2/3 required).** The in-plane-scale WARNING stays as written; the patch is unchanged.
+- The result also holds when L0 is requantized to uint8.
+- Reverse-direction results and per-run average precision are in `heldout-matrix-2026-10-08/` (`summary.md`, `metrics.json`).
+- Re-verified: `git am` on main 8b63a2652, then pytest: **6 passed**.
+
+**Caveats:**
+- All three are training segments with validation-mask carve-outs, so spatial adjacency leakage within a segment cannot be excluded.
+- 46527 overlaps the earlier exploratory window.
+- The GPU masked-vs-unmasked check showed ±1/255 differences, so per the pre-registration all runs used the plain unmasked CLI (`deviations.md`).
+
 ## Depth-order flip vs the issue
 
 On the **public S3** w035 volume, CLI **`forward` beats `reverse`** for both open-data L2 labels and HF aligned ch10, with either the training Z window `[13,97]` or a center pool (HF vs open agree **99.31%** on window A). Holdout 46527 also prefers forward at L2.
@@ -67,3 +96,4 @@ git am /path/to/villa-fixes/villa-1648/0001-*.patch
 - `real-data-2026-10-05/MEMORIZATION_AND_HOLDOUT.json`
 - `real-data-2026-10-05/ckpt_config_seed42.excerpt.json`
 - pytest logs
+- `heldout-matrix-2026-10-08/` (pre-registration + sha256, metrics-only results, deviations; code in the separate `gpu-1648-heldout` bundle)

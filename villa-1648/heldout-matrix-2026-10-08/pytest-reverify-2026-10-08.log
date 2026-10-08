@@ -1,0 +1,1 @@
+6 passed: git am 0001-*.patch on villa main 8b63a2652 (fresh export of vesuvius/), pytest -B -p no:cacheprovider tests/test_inference_orientation_1648.py, 2026-10-08 HST
