@@ -1,4 +1,4 @@
-# #1648 in-plane-scale WARNING: intermediate-scale test at 4.68 µm vs 9.36 µm (DRAFT)
+# #1648 in-plane-scale WARNING: intermediate-scale test at 4.68 µm vs 9.36 µm
 
 **Result: SUPPORTED (3/3 segments; 2/3 required).** On PHerc0841, which is held out of ink_9um's training, the model reads the same data worse at 4.681 µm in-plane than at 9.362 µm. This holds for both seeds on all three segments, with every CI excluding 0. The #1648 WARNING threshold (`scale < 0.55 × 9.6 = 5.28 µm`) is supported at a point inside the band, not only at the ~2.4 µm extreme tested earlier. The patch is unchanged.
 

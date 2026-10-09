@@ -1,4 +1,4 @@
-# Are the 500p2a ink labels misaligned with the render? (No rigid misalignment found) DRAFT
+# Are the 500p2a ink labels misaligned with the render? (No rigid misalignment found)
 
 **Short answer:** no. Over 4 orientations and ±256 px shifts (±2.2 mm at 8.64 µm), no rigid transform of the 500p2a labels makes any of the four organizer-published predictions read the fragment. The verdict was pre-registered: **ALIGNED-UNREAD**. All four predictions agree.
 
