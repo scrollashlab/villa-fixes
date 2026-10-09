@@ -6,7 +6,7 @@ import json, time, urllib.request
 from pathlib import Path
 import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
-plan = json.load(open(ROOT.parent / "label-free-selector" / "meta" / "heldout-plan.json"))
+plan = json.load(open(ROOT / "meta" / "from-label-free-selector" / "heldout-plan.json"))
 def get(u):
     for i in range(5):
         try:

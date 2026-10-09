@@ -1,0 +1,30 @@
+{
+ "study": "gpu-1648-intermediate-scale",
+ "prereg_sha256": "b2a6e08d3840acab5923edf7d9744b58f649697615c288394a0584b3a599b4df",
+ "segments": {
+  "pherc0841-w00": {
+   "n": 6128158,
+   "n_pos": 1363830,
+   "auc": {
+    "seed42|S9|reverse": 0.6958990789984759,
+    "seed43|S9|reverse": 0.7194113935174384
+   }
+  },
+  "pherc0841-ag144": {
+   "n": 3720168,
+   "n_pos": 1206403,
+   "auc": {
+    "seed42|S9|reverse": 0.7357096495007504,
+    "seed43|S9|reverse": 0.7555777187340085
+   }
+  },
+  "pherc0841-ag174": {
+   "n": 4846350,
+   "n_pos": 1101717,
+   "auc": {
+    "seed42|S9|reverse": 0.6629764353843038,
+    "seed43|S9|reverse": 0.6717340126004497
+   }
+  }
+ }
+}

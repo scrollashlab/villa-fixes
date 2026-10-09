@@ -1,5 +1,5 @@
 """Build results/summary.md and results/census.json from audit.json, diagnose-other.json, diagnose-corr.json and the
-two earlier metrics files. Every number in summary.md comes from this script."""
+the AUC copies in meta/from-*/. Every number in summary.md comes from this script."""
 import json, math
 fl = lambda x: math.floor(x * 1000) / 1000; ce = lambda x: math.ceil(x * 1000) / 1000
 from collections import Counter, defaultdict
@@ -7,22 +7,9 @@ from pathlib import Path
 R = Path(__file__).resolve().parents[1]
 A = json.load(open(R / "results/audit.json")); st = A["stores"]
 D = json.load(open(R / "results/diagnose-other.json")); C = json.load(open(R / "results/diagnose-corr.json"))
-# Consequence inputs: AUCs from two earlier sealed studies. Read from their metrics when present, else from the copy
-# in results/consequence-inputs.json (which this script writes).
-CI = R / "results/consequence-inputs.json"
-_s, _9 = R.parent / "label-free-selector/results/metrics.json", R.parent / "gpu-1648-intermediate-scale/results/metrics.json"
-if _s.exists() and _9.exists():
-    _S, _N = json.load(open(_s)), json.load(open(_9))
-    keep = ("pherc0841-w00", "pherc0841-ag144", "pherc0841-ag174")
-    SEL = {k: {"n": _S["segments"][k]["n"], "n_pos": _S["segments"][k]["n_pos"],
-               "auc": {a: _S["segments"][k]["auc"][a] for a in ("seed42_step-075000|reverse", "seed43_step-075000|reverse")}} for k in keep}
-    S9 = {k: {"n": _N["segments"][k]["n"], "n_pos": _N["segments"][k]["n_pos"],
-              "auc": {a: _N["segments"][k]["auc"][a] for a in ("seed42|S9|reverse", "seed43|S9|reverse")}} for k in keep}
-    json.dump({"published_level1": {"study": "label-free-selector", "prereg_sha256": _S["prereg_sha256"], "segments": SEL},
-               "pooled_S9": {"study": "gpu-1648-intermediate-scale", "prereg_sha256": _N["prereg_sha256"], "segments": S9}},
-              open(CI, "w"), indent=1)
-else:
-    _c = json.load(open(CI)); SEL, S9 = _c["published_level1"]["segments"], _c["pooled_S9"]["segments"]
+# Consequence inputs: AUCs from two earlier sealed studies, copied into meta/ (see PROVENANCE.txt in each folder).
+SEL = json.load(open(R / "meta/from-label-free-selector/level1-auc.json"))["segments"]
+S9 = json.load(open(R / "meta/from-gpu-1648-intermediate-scale/s9-auc.json"))["segments"]
 pre = (R / "docs/preregistration.sha256").read_text().split()[0]
 KNOWN = {"ink/841/w00/w00.zarr", "ink/841/auto_grown_20260220144552896/auto_grown_20260220144552896.zarr",
          "ink/841/auto_grown_20260220174252405/auto_grown_20260220174252405.zarr", "ink/unused/500p2a/500p2a.zarr"}

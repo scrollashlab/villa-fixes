@@ -42,6 +42,12 @@ Operative direction: reverse on all three segments.
 - CIs come from a block bootstrap only (1,033–1,630 blocks of 64×64 per segment).
 
 ## Reproduce
+The pre-registration defines region R and the labels by reference to the label-free-selector study. Everything needed from that study is in this bundle:
+- `meta/from-label-free-selector/heldout-plan.json`: crop boxes, chunk cells and the R/ink counts. It is a verbatim copy; see `PROVENANCE.txt` and `SHA256SUMS` in that folder.
+- `scripts/make_region_labels.py`: rebuilds the region masks and packed labels from the public label TIFFs (`ink/841/<segment>/<segment>_{supervision_mask_v2,validation_mask_v2,inklabels_v2}.tif` in the bucket). It checks the R/ink counts against the plan. Its output is identical, array for array, to the files the run used.
+
+Steps:
+- `scripts/make_region_labels.py <root>`: writes `<root>/data-do-not-redistribute/lfs/{masks,labels}/`. Copy `meta/from-label-free-selector/heldout-plan.json` to `<root>/lfs/heldout-plan.json`, where `pc/phase1.ps1` picks it up.
 - `pc/run_mid.py <root> prep | probe | run --num-workers 0 | reduce`: fetch, build arms, infer, reduce to histograms.
 - `scripts/score_mid.py`: scoring.
 - `scripts/check_level1_rule.py`: step 0a.

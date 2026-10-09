@@ -1,0 +1,1 @@
+s9-auc.json holds n, positives and the seed42/seed43 S9 reverse-direction AUCs for the same three segments, copied exactly from results/metrics.json of the sealed gpu-1648-intermediate-scale study (preregistration sha256 b2a6e08d3840acab5923edf7d9744b58f649697615c288394a0584b3a599b4df); sha256 5645af0a4a24a0c93dfe4fbe4f3874eb7a2f461316c61b70a7d7ce080553a0b4.

@@ -71,4 +71,6 @@ python -B -m pytest -q -p no:cacheprovider tests/test_audit.py
 ```
 Python 3 with numpy and numcodecs. Read-only, unauthenticated HTTPS.
 
+The pre-registration points the consequence comparison at `label-free-selector/results/metrics.json` and `gpu-1648-intermediate-scale/results/metrics.json`. The six AUCs and their n come from those files and are copied exactly into `meta/from-label-free-selector/level1-auc.json` and `meta/from-gpu-1648-intermediate-scale/s9-auc.json`; each folder has a `PROVENANCE.txt` and `SHA256SUMS`. `scripts/build_summary.py` reads only these copies, and `results/summary.md` and `results/census.json` rebuild byte for byte.
+
 AI-assisted.

@@ -1,0 +1,1 @@
+label-sources.json records the public URL, byte size and sha256 of the two 500p2a label TIFFs that the label-free-selector study downloaded and this analysis read (metadata only, no pixels; the sha256 values match the files served at those URLs on 2026-10-09); sha256 2a2f6e3ec4b03569a36f1cda98c596ede76ed0f0d1343dcd37cf406cf2199352.

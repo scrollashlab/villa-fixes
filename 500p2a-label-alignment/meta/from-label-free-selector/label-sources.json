@@ -1,0 +1,12 @@
+{
+ "500p2a_inklabels.tif": {
+  "url": "https://huggingface.co/buckets/scrollprize/datasets/resolve/ink/unused/500p2a/500p2a_inklabels.tif",
+  "sha256": "4bd2a8ef8bd068539cde492755355b0cff8c5ebe5cc7f067a751e4423bf4e708",
+  "bytes": 3009475
+ },
+ "500p2a_supervision_mask.tif": {
+  "url": "https://huggingface.co/buckets/scrollprize/datasets/resolve/ink/unused/500p2a/500p2a_supervision_mask.tif",
+  "sha256": "802fb4cd7c1e56f6e92d33844ed3d0534616be0cdd87e501fa4bd82e53dc4bef",
+  "bytes": 2983168
+ }
+}

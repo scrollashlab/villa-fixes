@@ -1,0 +1,1 @@
+heldout-plan.json is copied verbatim from the meta/ folder of the sealed label-free-selector study (preregistration sha256 8ffae804800d3b189a5d8a298d58843769d08493beedd1bb59f771e451fab9dd). It holds metadata only (render URLs, level-1 shapes, crop boxes, chunk cells, region and ink pixel counts); sha256 bdb43fca96e8c5628f1c23c359a73a6e253149071a5ec9338cda2537f212d650.

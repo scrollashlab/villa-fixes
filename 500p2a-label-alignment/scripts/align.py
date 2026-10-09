@@ -107,7 +107,7 @@ def load_labels(D):
 def main():
     import tifffile
     root = Path(__file__).resolve().parents[1]; D = root / "data-do-not-redistribute"
-    L = root.parent / "label-free-selector" / "data-do-not-redistribute"
+    L = D  # labels in data-do-not-redistribute/labels/ (public sources: meta/from-label-free-selector/label-sources.json)
     R, ink = load_labels(L); ink &= R; H, W = R.shape
     cols = np.nonzero(R)[1]; med = int(np.median(cols)); colmap = np.arange(W)[None, :]
     A = np.broadcast_to(colmap < med, R.shape); Bh = np.broadcast_to(colmap >= med, R.shape)

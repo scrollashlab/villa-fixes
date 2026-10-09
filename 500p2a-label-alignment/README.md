@@ -39,7 +39,8 @@ Half B: 4,354,257 labelled pixels in 1,266 blocks.
 
 ## Reproduce
 1. Put the four prediction TIFFs in `data-do-not-redistribute/preds/` and the IR PNG in `data-do-not-redistribute/`.
-2. Put the labels in `../label-free-selector/data-do-not-redistribute/labels/`.
+2. Download `500p2a_inklabels.tif` and `500p2a_supervision_mask.tif` from the bucket (`ink/unused/500p2a/`) into `data-do-not-redistribute/labels/`. `meta/from-label-free-selector/label-sources.json` gives their URLs and the sha256 of the exact files used.
+   The pre-registration takes its ink rule from the label-free-selector study; the rule is implemented in `scripts/align.py` (`load_labels`), and the label files are pinned by sha256 in `meta/from-label-free-selector/`.
 3. Run `python -B scripts/align.py`. It takes a few minutes on CPU; peak memory is several GB.
 4. Tests: `python -B -m pytest -p no:cacheprovider tests/` (4 pass).
 
