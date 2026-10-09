@@ -1,6 +1,6 @@
 # Progress Prize submission draft: Scroll Ash Lab villa fixes (#1970, #1481, #1522) + tifxyz-audit
 
-> DRAFT, not submitted. Paste each section into the matching field of the Progress Prize Submission Form on https://scrollprize.org/prizes.
+> Text used for the October 2026 Progress Prize form.
 > Deadline: **Oct 31, 2026, 11:59pm Pacific** (that's Oct 31, 8:59pm HST).
 > Everything below comes from the READMEs in https://gitlab.com/scroll-ash-lab/villa-fixes and the Discord handoff draft. Fill in each `TBD` before submitting.
 
