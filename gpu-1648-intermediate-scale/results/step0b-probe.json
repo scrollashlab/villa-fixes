@@ -1,0 +1,41 @@
+{
+ "tile": "t0_0",
+ "runs": [
+  {
+   "run": 0,
+   "num_workers": 0,
+   "seconds": 13.7,
+   "peak_rss_mib": 2635.9,
+   "gpu_util_mean": 5.5,
+   "gpu_util_max": 32,
+   "gpu_util_samples": 38,
+   "sha_forward": "d2f8ce5235e14e8db7a47054afeec49232806db9312176310a5e044fd2b66e35",
+   "sha_reverse": "5638ef87fcb58560575007597de2aa78fb4bb62319a2a2b1f65525bb39584509"
+  },
+  {
+   "run": 1,
+   "num_workers": 2,
+   "seconds": 23.3,
+   "peak_rss_mib": 3200.8,
+   "gpu_util_mean": 6.1,
+   "gpu_util_max": 74,
+   "gpu_util_samples": 22,
+   "sha_forward": "d2f8ce5235e14e8db7a47054afeec49232806db9312176310a5e044fd2b66e35",
+   "sha_reverse": "5638ef87fcb58560575007597de2aa78fb4bb62319a2a2b1f65525bb39584509"
+  },
+  {
+   "run": 2,
+   "num_workers": 0,
+   "seconds": 6.2,
+   "peak_rss_mib": 2361.6,
+   "gpu_util_mean": 13.5,
+   "gpu_util_max": 53,
+   "gpu_util_samples": 6,
+   "sha_forward": "d2f8ce5235e14e8db7a47054afeec49232806db9312176310a5e044fd2b66e35",
+   "sha_reverse": "5638ef87fcb58560575007597de2aa78fb4bb62319a2a2b1f65525bb39584509"
+  }
+ ],
+ "nw2_identical_to_nw0": true,
+ "nw0_repeat_identical": true,
+ "keep_num_workers_2": false
+}

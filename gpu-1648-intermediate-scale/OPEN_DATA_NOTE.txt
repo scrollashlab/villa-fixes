@@ -1,0 +1,5 @@
+This bundle holds code and metrics only. It contains no scroll images, crops, ink labels, masks, predictions or per-block histograms.
+Inputs (CC BY-NC 4.0, fetch them yourself; do not redistribute):
+- PHerc0841 renders and labels (w00, auto_grown_20260220144552896, auto_grown_20260220174252405): Hugging Face bucket scrollprize/datasets, ink_9um label bucket (level 0 of each render; labels supervision_mask_v2, validation_mask_v2, inklabels_v2).
+- Checkpoints: Hugging Face scrollprize/ink_9um, hybrid_3d2d-seed42 and -seed43 step-075000.pth.
+Derived data (built arms, masks, prediction TIFFs, histogram arrays) was kept in do-not-redistribute folders on the machines that ran this.

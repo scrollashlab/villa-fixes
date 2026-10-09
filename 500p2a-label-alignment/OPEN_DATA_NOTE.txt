@@ -1,0 +1,2 @@
+This bundle holds code and metrics only. It contains no scroll images, ink labels, masks or predictions.
+Inputs (CC BY-NC 4.0, fetch them yourself; do not redistribute): Hugging Face bucket scrollprize/datasets, ink/unused/500p2a/ (four prediction TIFFs, 500p2a_inklabels.tif, 500p2a_supervision_mask.tif, PHerc.500_ACass.28M1050IR_017_aligned.png).

@@ -21,6 +21,8 @@ See [`sv-canvas-1727/`](sv-canvas-1727/) for a pre-registered check that all 692
 See [`villa-downscale/`](villa-downscale/) for a patch that makes `vesuvius.tifxyz` apply the open data's `original_volume_downscale` to `tifxyz_normalized` meshes; pre-registered before/after on 23 published meshes (Oct 2026).
 See [`catalog-qa-audit/`](catalog-qa-audit/) for a pre-registered metadata audit of all 1,531 published meshes across 323 segments; it found 15 segments whose declared width/height don't match mesh grid ÷ scale (findings only, no patch; Oct 2026).
 See [`gpu-1648-heldout/`](gpu-1648-heldout/) for a pre-registered held-out GPU test of the `villa-1648` in-plane-scale warning on 3 validation masks × 2 seeds; it confirms the warning (3/3 segments, 2/3 required; code and metrics only; Oct 2026).
+See [`gpu-1648-intermediate-scale/`](gpu-1648-intermediate-scale/) for a pre-registered test of the `villa-1648` warning at an intermediate scale (4.68 µm vs 9.36 µm) on PHerc0841, which is held out of ink_9um's training; 3/3 segments support the warning (code and metrics only; Oct 2026).
+See [`500p2a-label-alignment/`](500p2a-label-alignment/) for a pre-registered check of whether the 500p2a ink labels are rigidly misaligned with the render; verdict ALIGNED-UNREAD, so rigid misalignment does not explain chance-level scores there (negative result, code and metrics only; Oct 2026).
 
 ## Shipping fixes
 

@@ -104,6 +104,26 @@
 - **Verdict: CONFIRM** (3/3 segments; 2/3 required). Forward AUC L2 **0.857–0.914** vs L0 **0.536–0.670**; Δ **+0.187 to +0.365**, every operative-direction 95% block-bootstrap CI above 0.
 - **Caveats:** all three are training segments with validation-mask carve-outs (adjacency leakage possible); 46527 overlaps the earlier exploratory window; the GPU masked-vs-unmasked check differed by ±1/255, so the plain unmasked CLI was used (`results/deviations.md`); ink_9um checkpoints only; AI-assisted.
 
+## Sixth item: `gpu-1648-intermediate-scale` (added 2026-10-08)
+
+**What:** a pre-registered test of the `villa-1648` in-plane-scale WARNING at a point inside the band: ink_9um on 4.681 µm (S4) vs 9.362 µm (S9) input built from the same level-0 planes. It is not a new villa patch; the 1648 patch is unchanged.  
+**Status:** published on GitLab at `gpu-1648-intermediate-scale/`.  
+**Evidence:** `gpu-1648-intermediate-scale/` (`README.md`, `docs/preregistration.md` + sha256, `results/`, `scripts/`, `pc/`, `tests/`); metrics mirrored in `villa-1648/intermediate-scale-2026-10-08/`. Write-up: `1648.md`.  
+**Evidence class:** **Real-data, pre-registered** (sealed 2026-10-08 20:56 HST), PHerc0841 (held out of ink_9um's training), 3 segments × 2 seeds, one RTX 5060.
+
+- **Verdict: SUPPORTED** (3/3 segments; 2/3 required). Operative direction reverse on all three; AUC 9.36 µm **0.663–0.756** vs 4.68 µm **0.553–0.621**; Δ **+0.092 to +0.134**, every operative-direction 95% block-bootstrap CI above 0.
+- **Caveats:** one scroll and one intermediate scale; the forward direction is near chance in both arms (0.52–0.58); CIs are from the block bootstrap only; AI-assisted.
+
+## Seventh item: `500p2a-label-alignment` (added 2026-10-08)
+
+**What:** a pre-registered check of whether the 500p2a ink labels are rigidly misaligned with the render (4 orientations × ±256 px), scored on the four organizer-published predictions so the result does not depend on our model. Findings only; no patch.  
+**Status:** published on GitLab at `500p2a-label-alignment/`.  
+**Evidence:** `500p2a-label-alignment/` (`README.md`, `CLOSEOUT.md`, `docs/preregistration.md` + sha256, `results/`, `scripts/`, `tests/`).  
+**Evidence class:** **Real-data, pre-registered** (sealed 2026-10-08 20:30 HST); negative result.
+
+- **Verdict: ALIGNED-UNREAD** on the primary prediction; the three other organizer predictions agree. No rigid transform lifts any prediction to a usable AUC on held-out half B (best 0.517; identity AUC_B 0.407–0.510), so rigid label misregistration does not explain chance-level scores on 500p2a (#1867).
+- **Caveats:** non-rigid error and IR-to-CT registration error are not tested; the organizer models' training data is not documented; AI-assisted.
+
 This note summarizes the **9 shipping items** (eight villa patches + the `tifxyz-audit` entry-point patch). It does not invent metrics; figures come from per-folder READMEs / `SUMMARY.json` / `AUC_TABLE.json`.
 
 ## The nine shipping fixes
