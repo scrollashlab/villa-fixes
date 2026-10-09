@@ -1,15 +1,13 @@
-# SUBMISSION_NOTES — Progress Prize form / GitLab README draft text
+# Progress Prize submission notes
 
-**Status:** GitLab README updated from this draft. Form packet corrected in the lab form-answers file, not in this repo (2026-10-06). Corrected October form submitted 2026-10-06 (predates xframe, sv-canvas-1727 and villa-downscale); no Discord ask.  
+**Status:** Corrected October form submitted 2026-10-06 (predates xframe, sv-canvas-1727 and villa-downscale).  
 **Who did the work:** Scroll Ash Lab, AI-assisted (Grok Bot).
-
-Adapt freely.
 
 ---
 
 ## Headline tool item: `xframe` (added 2026-10-07; not yet in any submitted form)
 
-The previously submitted form packet predates `xframe`. Adding it to the form would mean an update or re-submit. Published on GitLab at `xframe/`.
+The previously submitted form packet predates `xframe`. Published on GitLab at `xframe/`.
 
 **Suggested title (if the form is updated):** Scroll Ash Lab: `xframe`, full-corpus point-level verification of the open data's cross-frame meshes (902/902), plus nine tested villa tooling fixes
 
@@ -55,7 +53,7 @@ Not yet in the submitted form. Published on GitLab at `sv-canvas-1727/`.
 
 ## Third headline item: `villa-downscale` (added 2026-10-07; not yet in any submitted form)
 
-Not yet in the submitted form. Published on GitLab at `villa-downscale/` (check_bundle OK, 2026-10-07). Form update target: 2026-10-24.
+Not yet in the submitted form. Published on GitLab at `villa-downscale/` (check_bundle OK, 2026-10-07).
 
 **Form bullet (after sv-canvas-1727):**
 
@@ -157,19 +155,7 @@ git am villa-1648/0001-*.patch
 - Not claiming w035 ~0.99 AUC as held-out generalization.
 - Not claiming we reproduced the issue #1648 reverse-better table on public S3 w035.
 - Not redistributing open-data scan payloads.
-- Not asking reviewers to use Discord as the submission path in this draft (no Discord ask).
 
 ## License
 
 MIT for patches (villa-compatible). Open data remains CC BY-NC 4.0 at source.
-
-## Checklist before any real submit
-
-- [ ] Confirm GitLab mirror URL and that bundle passes `check_bundle.sh` (no open-data payloads)
-- [ ] `xframe`: GitLab: https://gitlab.com/scroll-ash-lab/villa-fixes/-/tree/main/xframe ; check_bundle passes (2026-10-07)
-- [ ] `sv-canvas-1727`: GitLab: https://gitlab.com/scroll-ash-lab/villa-fixes/-/tree/main/sv-canvas-1727 ; check_bundle passes (2026-10-07)
-- [ ] `villa-downscale`: GitLab: https://gitlab.com/scroll-ash-lab/villa-fixes/-/tree/main/villa-downscale ; check_bundle passes (2026-10-07)
-- [ ] Re-read caveats in OVERVIEW.md
-- [ ] Decide whether #1970 is mentioned only as “prefer #1980” or omitted
-- [ ] Fill prize form fields from this draft
-- [ ] No Discord post unless separately approved
