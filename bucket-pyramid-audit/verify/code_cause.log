@@ -1,0 +1,55 @@
+URL https://api.github.com/repos/ScrollPrize/villa/commits/0fe91589fe
+full sha 0fe91589fe01a76c73e9cb5fb93300fa34c13a95 | date 2026-03-04T20:39:52Z | msg: Tiled renderer merge (#774)
+
+URL https://api.github.com/repos/ScrollPrize/villa/commits/6ce5d9bcc0
+full sha 6ce5d9bcc0da2f136ab8d758877f68b4ffdfd980 | date 2026-04-15T19:35:35Z | msg: vc_render_tifxyz: provide voxel size scale to ome-zarr (#804)
+   -        std::vector<size_t> shape = {(prevShape[0]+1)/2, (prevShape[1]+1)/2, (prevShape[2]+1)/2};
+   +        // Keep Z fixed and halve only Y/X at each level (anisotropic scaling).
+   +        std::vector<size_t> shape = {prevShape[0], (prevShape[1]+1)/2, (prevShape[2]+1)/2};
+
+URL https://api.github.com/repos/ScrollPrize/villa/pulls/774 | title: Tiled renderer merge | merged_at: 2026-03-04T20:39:52Z | merge_commit_sha: 0fe91589fe01a76c73e9cb5fb93300fa34c13a95
+URL https://api.github.com/repos/ScrollPrize/villa/pulls/804 | title: vc_render_tifxyz: provide voxel size scale to ome-zarr | merged_at: 2026-04-15T19:35:35Z | merge_commit_sha: 6ce5d9bcc0da2f136ab8d758877f68b4ffdfd980
+#774 files in response: 153 | parents: ['28ddb011d937661b9bf55b88d2428c3469b93cec']
+Zarr.cpp entries: [('volume-cartographer/core/src/Zarr.cpp', 'modified', False)]
+RAW https://raw.githubusercontent.com/ScrollPrize/villa/28ddb011d937661b9bf55b88d2428c3469b93cec/volume-cartographer/core/src/Zarr.cpp
+  L128: for (size_t zz = 0; zz < srcActualZ && zz < dstZ; zz++)
+  L137: dst[zz * dstY * dstX + (dstOffY + yy) * dstX + (dstOffX + xx)] = T((sum + cnt / 2) / std::max(1, cnt));
+  L244: // Keep Z fixed and halve only X/Y at each level.
+RAW https://raw.githubusercontent.com/ScrollPrize/villa/0fe91589fe01a76c73e9cb5fb93300fa34c13a95/volume-cartographer/core/src/Zarr.cpp
+  L128: for (size_t zz = 0; zz < srcActualZ && zz < dstZ; zz++)
+  L137: dst[zz * dstY * dstX + (dstOffY + yy) * dstX + (dstOffX + xx)] = T((sum + cnt / 2) / std::max(1, cnt));
+  L234: std::vector<size_t> shape = {(prevShape[0]+1)/2, (prevShape[1]+1)/2, (prevShape[2]+1)/2};
+RAW https://raw.githubusercontent.com/ScrollPrize/villa/28ddb011d937661b9bf55b88d2428c3469b93cec/volume-cartographer/core/src/Zarr.cpp
+  L236: void createPyramidDatasets(z5::filesystem::handle::File& outFile,
+  L237:                            const std::vector<size_t>& shape0,
+  L238:                            size_t CH, size_t CW, bool isU16)
+  L239: {
+  L240:     json compOpts = {{"cname","zstd"},{"clevel",1},{"shuffle",0}};
+  L241:     std::string dtype = isU16 ? "uint16" : "uint8";
+  L242: 
+  L243:     // All pyramid levels use the same chunk Y×X as the input volume (typically 128×128).
+  L244:     // Keep Z fixed and halve only X/Y at each level.
+  L245:     std::vector<size_t> prevShape = shape0;
+  L246:     for (int level = 1; level <= 5; level++) {
+  L247:         std::vector<size_t> ds = {prevShape[0], (prevShape[1] + 1) / 2, (prevShape[2] + 1) / 2};
+  L248:         size_t chZ = std::min(ds[0], shape0[0]);  // clamp to level shape Z
+  L249:         std::vector<size_t> dc = {chZ, std::min(CH, ds[1]), std::min(CW, ds[2])};
+  L250:         z5::createDataset(outFile, std::to_string(level), dtype, ds, dc, std::string("blosc"), compOpts);
+  L251:         prevShape = ds;
+  L252:     }
+RAW https://raw.githubusercontent.com/ScrollPrize/villa/0fe91589fe01a76c73e9cb5fb93300fa34c13a95/volume-cartographer/core/src/Zarr.cpp
+  L226: void createPyramidDatasets(const std::filesystem::path& outDir,
+  L227:                            const std::vector<size_t>& shape0,
+  L228:                            size_t CH, size_t CW, bool isU16)
+  L229: {
+  L230:     auto dtype = isU16 ? vc::VcDtype::uint16 : vc::VcDtype::uint8;
+  L231: 
+  L232:     std::vector<size_t> prevShape = shape0;
+  L233:     for (int level = 1; level <= 5; level++) {
+  L234:         std::vector<size_t> shape = {(prevShape[0]+1)/2, (prevShape[1]+1)/2, (prevShape[2]+1)/2};
+  L235:         size_t chZ = std::min(shape[0], shape0[0]);
+  L236:         std::vector<size_t> chunks = {chZ, std::min(CH, shape[1]), std::min(CW, shape[2])};
+  L237:         vc::createZarrDataset(outDir, std::to_string(level), shape, chunks, dtype, "blosc");
+  L238:         prevShape = shape;
+  L239:     }
+  L240: }

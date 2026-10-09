@@ -1,0 +1,13121 @@
+{
+ "stores": {
+  "ink/0009b/auto_grown_20250919055754487_inp_hr_2um/auto_grown_20250919055754487_inp_hr_2um.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     12992,
+     10624
+    ],
+    "parent_shape": [
+     65,
+     25984,
+     21248
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      50,
+      41
+     ],
+     [
+      25,
+      20
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      539956,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      135062,
+      1
+     ],
+     "TRUNC|ceil": [
+      269045,
+      1
+     ],
+     "CTR|floor": [
+      1074039,
+      253
+     ],
+     "CTR|half_up": [
+      1074103,
+      253
+     ],
+     "CTR|half_even": [
+      1074119,
+      253
+     ],
+     "CTR|ceil": [
+      1074182,
+      252
+     ],
+     "POOL|floor": [
+      1068796,
+      244
+     ],
+     "POOL|half_up": [
+      1068862,
+      244
+     ],
+     "POOL|half_even": [
+      1068814,
+      244
+     ],
+     "POOL|ceil": [
+      1069009,
+      244
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6496,
+     5312
+    ],
+    "parent_shape": [
+     33,
+     12992,
+     10624
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      25,
+      20
+     ],
+     [
+      12,
+      10
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      277056,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69705,
+      1
+     ],
+     "TRUNC|ceil": [
+      139296,
+      1
+     ],
+     "CTR|floor": [
+      551550,
+      244
+     ],
+     "CTR|half_up": [
+      551478,
+      244
+     ],
+     "CTR|half_even": [
+      551505,
+      244
+     ],
+     "CTR|ceil": [
+      551448,
+      244
+     ],
+     "POOL|floor": [
+      547222,
+      240
+     ],
+     "POOL|half_up": [
+      547074,
+      239
+     ],
+     "POOL|half_even": [
+      547083,
+      239
+     ],
+     "POOL|ceil": [
+      547173,
+      239
+     ]
+    }
+   },
+   "seconds": 12.2
+  },
+  "ink/0139/w016_2025010815/w016_2025010815.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14470,
+     13614
+    ],
+    "parent_shape": [
+     65,
+     28940,
+     27228
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      56,
+      53
+     ],
+     [
+      28,
+      26
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      540155,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      136814,
+      1
+     ],
+     "TRUNC|ceil": [
+      267076,
+      1
+     ],
+     "CTR|floor": [
+      1064418,
+      232
+     ],
+     "CTR|half_up": [
+      1064468,
+      232
+     ],
+     "CTR|half_even": [
+      1064393,
+      232
+     ],
+     "CTR|ceil": [
+      1064582,
+      232
+     ],
+     "POOL|floor": [
+      1045410,
+      236
+     ],
+     "POOL|half_up": [
+      1043703,
+      236
+     ],
+     "POOL|half_even": [
+      1043788,
+      236
+     ],
+     "POOL|ceil": [
+      1044804,
+      237
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7235,
+     6807
+    ],
+    "parent_shape": [
+     33,
+     14470,
+     13614
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      28,
+      26
+     ],
+     [
+      14,
+      13
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278853,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69707,
+      1
+     ],
+     "TRUNC|ceil": [
+      139445,
+      1
+     ],
+     "CTR|floor": [
+      524823,
+      226
+     ],
+     "CTR|half_up": [
+      523819,
+      226
+     ],
+     "CTR|half_even": [
+      523969,
+      226
+     ],
+     "CTR|ceil": [
+      523259,
+      226
+     ],
+     "POOL|floor": [
+      513049,
+      200
+     ],
+     "POOL|half_up": [
+      508203,
+      201
+     ],
+     "POOL|half_even": [
+      508406,
+      201
+     ],
+     "POOL|ceil": [
+      509321,
+      201
+     ]
+    }
+   },
+   "seconds": 10.0
+  },
+  "ink/0139/w017_2025010815/w017_2025010815.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14392,
+     13730
+    ],
+    "parent_shape": [
+     65,
+     28784,
+     27460
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      56,
+      53
+     ],
+     [
+      28,
+      26
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      540374,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      138789,
+      1
+     ],
+     "TRUNC|ceil": [
+      263955,
+      1
+     ],
+     "CTR|floor": [
+      1065163,
+      239
+     ],
+     "CTR|half_up": [
+      1064156,
+      238
+     ],
+     "CTR|half_even": [
+      1064512,
+      238
+     ],
+     "CTR|ceil": [
+      1063724,
+      238
+     ],
+     "POOL|floor": [
+      1039487,
+      255
+     ],
+     "POOL|half_up": [
+      1034995,
+      254
+     ],
+     "POOL|half_even": [
+      1035438,
+      254
+     ],
+     "POOL|ceil": [
+      1035175,
+      254
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7196,
+     6865
+    ],
+    "parent_shape": [
+     33,
+     14392,
+     13730
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      28,
+      26
+     ],
+     [
+      14,
+      13
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278858,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69508,
+      1
+     ],
+     "TRUNC|ceil": [
+      139240,
+      1
+     ],
+     "CTR|floor": [
+      525904,
+      234
+     ],
+     "CTR|half_up": [
+      522799,
+      234
+     ],
+     "CTR|half_even": [
+      523509,
+      234
+     ],
+     "CTR|ceil": [
+      521409,
+      233
+     ],
+     "POOL|floor": [
+      512700,
+      239
+     ],
+     "POOL|half_up": [
+      504078,
+      239
+     ],
+     "POOL|half_even": [
+      504856,
+      239
+     ],
+     "POOL|ceil": [
+      503817,
+      238
+     ]
+    }
+   },
+   "seconds": 9.9
+  },
+  "ink/0139/w028_20260115221/w028_20260115221.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11840,
+     15872
+    ],
+    "parent_shape": [
+     65,
+     23680,
+     31744
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      46,
+      62
+     ],
+     [
+      23,
+      31
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      540108,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      139030,
+      1
+     ],
+     "TRUNC|ceil": [
+      263044,
+      1
+     ],
+     "CTR|floor": [
+      1068274,
+      229
+     ],
+     "CTR|half_up": [
+      1067683,
+      230
+     ],
+     "CTR|half_even": [
+      1067907,
+      230
+     ],
+     "CTR|ceil": [
+      1067498,
+      230
+     ],
+     "POOL|floor": [
+      1040986,
+      227
+     ],
+     "POOL|half_up": [
+      1036350,
+      228
+     ],
+     "POOL|half_even": [
+      1036809,
+      228
+     ],
+     "POOL|ceil": [
+      1035718,
+      228
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5920,
+     7936
+    ],
+    "parent_shape": [
+     33,
+     11840,
+     15872
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      23,
+      31
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278724,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69982,
+      1
+     ],
+     "TRUNC|ceil": [
+      139225,
+      1
+     ],
+     "CTR|floor": [
+      530312,
+      229
+     ],
+     "CTR|half_up": [
+      528156,
+      229
+     ],
+     "CTR|half_even": [
+      528730,
+      229
+     ],
+     "CTR|ceil": [
+      527221,
+      230
+     ],
+     "POOL|floor": [
+      517050,
+      225
+     ],
+     "POOL|half_up": [
+      510692,
+      225
+     ],
+     "POOL|half_even": [
+      511265,
+      225
+     ],
+     "POOL|ceil": [
+      510349,
+      225
+     ]
+    }
+   },
+   "seconds": 9.5
+  },
+  "ink/0139/w029_202601261946/w029_202601261946.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11670,
+     15948
+    ],
+    "parent_shape": [
+     65,
+     23339,
+     31896
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      45,
+      62
+     ],
+     [
+      22,
+      31
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      873276,
+      53
+     ],
+     "TRUNC|half_up": [
+      861436,
+      53
+     ],
+     "TRUNC|half_even": [
+      862830,
+      53
+     ],
+     "TRUNC|ceil": [
+      864678,
+      53
+     ],
+     "CTR|floor": [
+      1070627,
+      231
+     ],
+     "CTR|half_up": [
+      1070462,
+      232
+     ],
+     "CTR|half_even": [
+      1070487,
+      232
+     ],
+     "CTR|ceil": [
+      1070378,
+      232
+     ],
+     "POOL|floor": [
+      1043887,
+      233
+     ],
+     "POOL|half_up": [
+      1041861,
+      234
+     ],
+     "POOL|half_even": [
+      1041991,
+      234
+     ],
+     "POOL|ceil": [
+      1041601,
+      234
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5835,
+     7974
+    ],
+    "parent_shape": [
+     33,
+     11670,
+     15948
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      22,
+      31
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278241,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69458,
+      1
+     ],
+     "TRUNC|ceil": [
+      139590,
+      1
+     ],
+     "CTR|floor": [
+      527227,
+      222
+     ],
+     "CTR|half_up": [
+      525257,
+      222
+     ],
+     "CTR|half_even": [
+      525802,
+      222
+     ],
+     "CTR|ceil": [
+      524494,
+      223
+     ],
+     "POOL|floor": [
+      513785,
+      230
+     ],
+     "POOL|half_up": [
+      507522,
+      230
+     ],
+     "POOL|half_even": [
+      508117,
+      230
+     ],
+     "POOL|ceil": [
+      507566,
+      231
+     ]
+    }
+   },
+   "seconds": 9.0
+  },
+  "ink/0139/w030_202601301912/w030_202601301912.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11553,
+     16182
+    ],
+    "parent_shape": [
+     65,
+     23105,
+     32363
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      45,
+      63
+     ],
+     [
+      22,
+      31
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      918952,
+      129
+     ],
+     "TRUNC|half_up": [
+      913069,
+      129
+     ],
+     "TRUNC|half_even": [
+      914048,
+      129
+     ],
+     "TRUNC|ceil": [
+      914636,
+      128
+     ],
+     "CTR|floor": [
+      1069486,
+      249
+     ],
+     "CTR|half_up": [
+      1069001,
+      249
+     ],
+     "CTR|half_even": [
+      1069142,
+      249
+     ],
+     "CTR|ceil": [
+      1068743,
+      249
+     ],
+     "POOL|floor": [
+      1051871,
+      251
+     ],
+     "POOL|half_up": [
+      1049877,
+      251
+     ],
+     "POOL|half_even": [
+      1049992,
+      251
+     ],
+     "POOL|ceil": [
+      1049427,
+      250
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5777,
+     8091
+    ],
+    "parent_shape": [
+     33,
+     11553,
+     16182
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      22,
+      31
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      458810,
+      78
+     ],
+     "TRUNC|half_up": [
+      453512,
+      78
+     ],
+     "TRUNC|half_even": [
+      454514,
+      78
+     ],
+     "TRUNC|ceil": [
+      454068,
+      78
+     ],
+     "CTR|floor": [
+      533624,
+      232
+     ],
+     "CTR|half_up": [
+      532508,
+      233
+     ],
+     "CTR|half_even": [
+      532820,
+      232
+     ],
+     "CTR|ceil": [
+      531987,
+      233
+     ],
+     "POOL|floor": [
+      528455,
+      235
+     ],
+     "POOL|half_up": [
+      526835,
+      236
+     ],
+     "POOL|half_even": [
+      526848,
+      236
+     ],
+     "POOL|ceil": [
+      526303,
+      236
+     ]
+    }
+   },
+   "seconds": 8.8
+  },
+  "ink/0139/w035_2026031718/w035_2026031718.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11320,
+     10000
+    ],
+    "parent_shape": [
+     65,
+     22640,
+     20000
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      22,
+      19
+     ],
+     [
+      11,
+      9
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4136906,
+      255
+     ],
+     "TRUNC|half_up": [
+      4135899,
+      255
+     ],
+     "TRUNC|half_even": [
+      4135789,
+      255
+     ],
+     "TRUNC|ceil": [
+      4137314,
+      255
+     ],
+     "CTR|floor": [
+      4116001,
+      255
+     ],
+     "CTR|half_up": [
+      4113981,
+      255
+     ],
+     "CTR|half_even": [
+      4114622,
+      255
+     ],
+     "CTR|ceil": [
+      4113643,
+      255
+     ],
+     "POOL|floor": [
+      3489129,
+      112
+     ],
+     "POOL|half_up": [
+      3509228,
+      112
+     ],
+     "POOL|half_even": [
+      3495668,
+      112
+     ],
+     "POOL|ceil": [
+      3528132,
+      112
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5660,
+     5000
+    ],
+    "parent_shape": [
+     33,
+     11320,
+     10000
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      9
+     ],
+     [
+      5,
+      4
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2140091,
+      255
+     ],
+     "TRUNC|half_up": [
+      2139904,
+      255
+     ],
+     "TRUNC|half_even": [
+      2139859,
+      255
+     ],
+     "TRUNC|ceil": [
+      2140505,
+      255
+     ],
+     "CTR|floor": [
+      2135451,
+      255
+     ],
+     "CTR|half_up": [
+      2133627,
+      255
+     ],
+     "CTR|half_even": [
+      2134324,
+      255
+     ],
+     "CTR|ceil": [
+      2133376,
+      255
+     ],
+     "POOL|floor": [
+      1960392,
+      160
+     ],
+     "POOL|half_up": [
+      1962297,
+      160
+     ],
+     "POOL|half_even": [
+      1961155,
+      160
+     ],
+     "POOL|ceil": [
+      1969749,
+      159
+     ]
+    }
+   },
+   "seconds": 12.4
+  },
+  "ink/0139/w039_2026030210/w039_2026030210.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     16520,
+     15040
+    ],
+    "parent_shape": [
+     65,
+     33040,
+     30080
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      32,
+      29
+     ],
+     [
+      48,
+      44
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4154796,
+      255
+     ],
+     "TRUNC|half_up": [
+      4154483,
+      255
+     ],
+     "TRUNC|half_even": [
+      4154209,
+      255
+     ],
+     "TRUNC|ceil": [
+      4156083,
+      255
+     ],
+     "CTR|floor": [
+      4160206,
+      255
+     ],
+     "CTR|half_up": [
+      4158625,
+      255
+     ],
+     "CTR|half_even": [
+      4159387,
+      255
+     ],
+     "CTR|ceil": [
+      4158586,
+      255
+     ],
+     "POOL|floor": [
+      3731857,
+      133
+     ],
+     "POOL|half_up": [
+      3720103,
+      133
+     ],
+     "POOL|half_even": [
+      3721863,
+      133
+     ],
+     "POOL|ceil": [
+      3728292,
+      133
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     8260,
+     7520
+    ],
+    "parent_shape": [
+     33,
+     16520,
+     15040
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      16,
+      14
+     ],
+     [
+      24,
+      22
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2153834,
+      255
+     ],
+     "TRUNC|half_up": [
+      2154210,
+      255
+     ],
+     "TRUNC|half_even": [
+      2154178,
+      255
+     ],
+     "TRUNC|ceil": [
+      2155029,
+      255
+     ],
+     "CTR|floor": [
+      2156982,
+      255
+     ],
+     "CTR|half_up": [
+      2155629,
+      255
+     ],
+     "CTR|half_even": [
+      2155969,
+      255
+     ],
+     "CTR|ceil": [
+      2155141,
+      255
+     ],
+     "POOL|floor": [
+      2041893,
+      151
+     ],
+     "POOL|half_up": [
+      2038792,
+      150
+     ],
+     "POOL|half_even": [
+      2039266,
+      150
+     ],
+     "POOL|ceil": [
+      2041204,
+      150
+     ]
+    }
+   },
+   "seconds": 12.2
+  },
+  "ink/0139/w040_2025083102/w040_2025083102.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     12440,
+     15520
+    ],
+    "parent_shape": [
+     65,
+     24880,
+     31040
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      24,
+      30
+     ],
+     [
+      12,
+      15
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4180128,
+      252
+     ],
+     "TRUNC|half_up": [
+      4179141,
+      252
+     ],
+     "TRUNC|half_even": [
+      4179389,
+      252
+     ],
+     "TRUNC|ceil": [
+      4179696,
+      252
+     ],
+     "CTR|floor": [
+      4164208,
+      254
+     ],
+     "CTR|half_up": [
+      4162900,
+      255
+     ],
+     "CTR|half_even": [
+      4163464,
+      254
+     ],
+     "CTR|ceil": [
+      4162704,
+      255
+     ],
+     "POOL|floor": [
+      3681168,
+      101
+     ],
+     "POOL|half_up": [
+      3695338,
+      100
+     ],
+     "POOL|half_even": [
+      3686790,
+      101
+     ],
+     "POOL|ceil": [
+      3705270,
+      100
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6220,
+     7760
+    ],
+    "parent_shape": [
+     33,
+     12440,
+     15520
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      12,
+      15
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2153093,
+      249
+     ],
+     "TRUNC|half_up": [
+      2153863,
+      249
+     ],
+     "TRUNC|half_even": [
+      2153467,
+      249
+     ],
+     "TRUNC|ceil": [
+      2154809,
+      249
+     ],
+     "CTR|floor": [
+      2165780,
+      250
+     ],
+     "CTR|half_up": [
+      2164325,
+      251
+     ],
+     "CTR|half_even": [
+      2164843,
+      250
+     ],
+     "CTR|ceil": [
+      2163803,
+      251
+     ],
+     "POOL|floor": [
+      2027285,
+      143
+     ],
+     "POOL|half_up": [
+      2026212,
+      142
+     ],
+     "POOL|half_even": [
+      2025956,
+      143
+     ],
+     "POOL|ceil": [
+      2030136,
+      142
+     ]
+    }
+   },
+   "seconds": 12.0
+  },
+  "ink/0139/w041_2026010816/w041_2026010816.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     12040,
+     15680
+    ],
+    "parent_shape": [
+     65,
+     24080,
+     31360
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      23,
+      30
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4181152,
+      251
+     ],
+     "TRUNC|half_up": [
+      4181405,
+      252
+     ],
+     "TRUNC|half_even": [
+      4181009,
+      251
+     ],
+     "TRUNC|ceil": [
+      4182584,
+      252
+     ],
+     "CTR|floor": [
+      4129406,
+      245
+     ],
+     "CTR|half_up": [
+      4126928,
+      245
+     ],
+     "CTR|half_even": [
+      4127792,
+      245
+     ],
+     "CTR|ceil": [
+      4126680,
+      245
+     ],
+     "POOL|floor": [
+      3591595,
+      120
+     ],
+     "POOL|half_up": [
+      3595283,
+      119
+     ],
+     "POOL|half_even": [
+      3589122,
+      119
+     ],
+     "POOL|ceil": [
+      3607363,
+      119
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6020,
+     7840
+    ],
+    "parent_shape": [
+     33,
+     12040,
+     15680
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      15
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2149152,
+      244
+     ],
+     "TRUNC|half_up": [
+      2149422,
+      243
+     ],
+     "TRUNC|half_even": [
+      2148989,
+      243
+     ],
+     "TRUNC|ceil": [
+      2150073,
+      243
+     ],
+     "CTR|floor": [
+      2142220,
+      245
+     ],
+     "CTR|half_up": [
+      2139705,
+      244
+     ],
+     "CTR|half_even": [
+      2140233,
+      244
+     ],
+     "CTR|ceil": [
+      2139332,
+      244
+     ],
+     "POOL|floor": [
+      1996877,
+      129
+     ],
+     "POOL|half_up": [
+      1994905,
+      129
+     ],
+     "POOL|half_even": [
+      1994326,
+      129
+     ],
+     "POOL|ceil": [
+      1999505,
+      129
+     ]
+    }
+   },
+   "seconds": 13.0
+  },
+  "ink/0139/w043_2026011217/w043_2026011217.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11880,
+     15840
+    ],
+    "parent_shape": [
+     65,
+     23760,
+     31680
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      23,
+      30
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4160939,
+      255
+     ],
+     "TRUNC|half_up": [
+      4161574,
+      255
+     ],
+     "TRUNC|half_even": [
+      4160968,
+      255
+     ],
+     "TRUNC|ceil": [
+      4162613,
+      255
+     ],
+     "CTR|floor": [
+      4164930,
+      255
+     ],
+     "CTR|half_up": [
+      4161666,
+      255
+     ],
+     "CTR|half_even": [
+      4162987,
+      255
+     ],
+     "CTR|ceil": [
+      4161229,
+      255
+     ],
+     "POOL|floor": [
+      3595427,
+      116
+     ],
+     "POOL|half_up": [
+      3604618,
+      115
+     ],
+     "POOL|half_even": [
+      3597224,
+      115
+     ],
+     "POOL|ceil": [
+      3616118,
+      115
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5940,
+     7920
+    ],
+    "parent_shape": [
+     33,
+     11880,
+     15840
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      15
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2145034,
+      255
+     ],
+     "TRUNC|half_up": [
+      2144720,
+      255
+     ],
+     "TRUNC|half_even": [
+      2144620,
+      255
+     ],
+     "TRUNC|ceil": [
+      2145731,
+      255
+     ],
+     "CTR|floor": [
+      2153239,
+      255
+     ],
+     "CTR|half_up": [
+      2150852,
+      255
+     ],
+     "CTR|half_even": [
+      2151574,
+      255
+     ],
+     "CTR|ceil": [
+      2150285,
+      255
+     ],
+     "POOL|floor": [
+      1995950,
+      141
+     ],
+     "POOL|half_up": [
+      1995027,
+      140
+     ],
+     "POOL|half_even": [
+      1994792,
+      140
+     ],
+     "POOL|ceil": [
+      2000470,
+      140
+     ]
+    }
+   },
+   "seconds": 13.7
+  },
+  "ink/0139/w044_2026011522/w044_2026011522.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11760,
+     15880
+    ],
+    "parent_shape": [
+     65,
+     23520,
+     31760
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      22,
+      31
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4140640,
+      249
+     ],
+     "TRUNC|half_up": [
+      4142776,
+      249
+     ],
+     "TRUNC|half_even": [
+      4141488,
+      249
+     ],
+     "TRUNC|ceil": [
+      4144149,
+      249
+     ],
+     "CTR|floor": [
+      4195461,
+      242
+     ],
+     "CTR|half_up": [
+      4193977,
+      242
+     ],
+     "CTR|half_even": [
+      4194562,
+      242
+     ],
+     "CTR|ceil": [
+      4193813,
+      242
+     ],
+     "POOL|floor": [
+      3697214,
+      106
+     ],
+     "POOL|half_up": [
+      3684154,
+      106
+     ],
+     "POOL|half_even": [
+      3686302,
+      106
+     ],
+     "POOL|ceil": [
+      3692117,
+      105
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5880,
+     7940
+    ],
+    "parent_shape": [
+     33,
+     11760,
+     15880
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      15
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2144400,
+      244
+     ],
+     "TRUNC|half_up": [
+      2145390,
+      245
+     ],
+     "TRUNC|half_even": [
+      2145015,
+      244
+     ],
+     "TRUNC|ceil": [
+      2146584,
+      245
+     ],
+     "CTR|floor": [
+      2176320,
+      253
+     ],
+     "CTR|half_up": [
+      2175008,
+      253
+     ],
+     "CTR|half_even": [
+      2175310,
+      253
+     ],
+     "CTR|ceil": [
+      2174756,
+      253
+     ],
+     "POOL|floor": [
+      2035718,
+      149
+     ],
+     "POOL|half_up": [
+      2031673,
+      149
+     ],
+     "POOL|half_even": [
+      2032122,
+      149
+     ],
+     "POOL|ceil": [
+      2033279,
+      148
+     ]
+    }
+   },
+   "seconds": 11.2
+  },
+  "ink/0500p2/-1/-1.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     12330,
+     6848
+    ],
+    "parent_shape": [
+     65,
+     24659,
+     13696
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      48,
+      26
+     ],
+     [
+      24,
+      13
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      540184,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      138389,
+      1
+     ],
+     "TRUNC|ceil": [
+      263036,
+      1
+     ],
+     "CTR|floor": [
+      1066529,
+      192
+     ],
+     "CTR|half_up": [
+      1066776,
+      192
+     ],
+     "CTR|half_even": [
+      1066765,
+      192
+     ],
+     "CTR|ceil": [
+      1066909,
+      193
+     ],
+     "POOL|floor": [
+      1055364,
+      191
+     ],
+     "POOL|half_up": [
+      1054806,
+      191
+     ],
+     "POOL|half_even": [
+      1054843,
+      191
+     ],
+     "POOL|ceil": [
+      1055429,
+      191
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6165,
+     3424
+    ],
+    "parent_shape": [
+     33,
+     12330,
+     6848
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      24,
+      13
+     ],
+     [
+      12,
+      6
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      277959,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69877,
+      1
+     ],
+     "TRUNC|ceil": [
+      139443,
+      1
+     ],
+     "CTR|floor": [
+      541587,
+      182
+     ],
+     "CTR|half_up": [
+      542310,
+      182
+     ],
+     "CTR|half_even": [
+      542073,
+      182
+     ],
+     "CTR|ceil": [
+      542608,
+      181
+     ],
+     "POOL|floor": [
+      536046,
+      178
+     ],
+     "POOL|half_up": [
+      535718,
+      179
+     ],
+     "POOL|half_even": [
+      535691,
+      179
+     ],
+     "POOL|ceil": [
+      536432,
+      179
+     ]
+    }
+   },
+   "seconds": 8.2
+  },
+  "ink/1667/w013_20240304141531_2um/w013_20240304141531_2um.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     21284,
+     40079
+    ],
+    "parent_shape": [
+     65,
+     42567,
+     80157
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      83,
+      156
+     ],
+     [
+      41,
+      78
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      957987,
+      104
+     ],
+     "TRUNC|half_up": [
+      956046,
+      103
+     ],
+     "TRUNC|half_even": [
+      956261,
+      104
+     ],
+     "TRUNC|ceil": [
+      957731,
+      103
+     ],
+     "CTR|floor": [
+      1072302,
+      252
+     ],
+     "CTR|half_up": [
+      1071867,
+      252
+     ],
+     "CTR|half_even": [
+      1071988,
+      252
+     ],
+     "CTR|ceil": [
+      1071803,
+      252
+     ],
+     "POOL|floor": [
+      1058892,
+      243
+     ],
+     "POOL|half_up": [
+      1058206,
+      242
+     ],
+     "POOL|half_even": [
+      1058248,
+      242
+     ],
+     "POOL|ceil": [
+      1057821,
+      242
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     10642,
+     20040
+    ],
+    "parent_shape": [
+     33,
+     21284,
+     40079
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      41,
+      78
+     ],
+     [
+      20,
+      39
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      465254,
+      104
+     ],
+     "TRUNC|half_up": [
+      462443,
+      103
+     ],
+     "TRUNC|half_even": [
+      462488,
+      103
+     ],
+     "TRUNC|ceil": [
+      464092,
+      103
+     ],
+     "CTR|floor": [
+      541077,
+      244
+     ],
+     "CTR|half_up": [
+      540197,
+      243
+     ],
+     "CTR|half_even": [
+      540393,
+      243
+     ],
+     "CTR|ceil": [
+      539660,
+      243
+     ],
+     "POOL|floor": [
+      534622,
+      240
+     ],
+     "POOL|half_up": [
+      533179,
+      240
+     ],
+     "POOL|half_even": [
+      533300,
+      240
+     ],
+     "POOL|ceil": [
+      532733,
+      240
+     ]
+    }
+   },
+   "seconds": 8.6
+  },
+  "ink/1667/w018_20240304144031_2um/w018_20240304144031_2um.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     21316,
+     49181
+    ],
+    "parent_shape": [
+     65,
+     42632,
+     98362
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      83,
+      192
+     ],
+     [
+      41,
+      96
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      540153,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      137033,
+      1
+     ],
+     "TRUNC|ceil": [
+      268128,
+      1
+     ],
+     "CTR|floor": [
+      1070099,
+      233
+     ],
+     "CTR|half_up": [
+      1069899,
+      233
+     ],
+     "CTR|half_even": [
+      1069992,
+      233
+     ],
+     "CTR|ceil": [
+      1069929,
+      233
+     ],
+     "POOL|floor": [
+      1059134,
+      239
+     ],
+     "POOL|half_up": [
+      1058840,
+      239
+     ],
+     "POOL|half_even": [
+      1058770,
+      239
+     ],
+     "POOL|ceil": [
+      1059238,
+      238
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     10658,
+     24591
+    ],
+    "parent_shape": [
+     33,
+     21316,
+     49181
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      41,
+      96
+     ],
+     [
+      20,
+      48
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      487399,
+      109
+     ],
+     "TRUNC|half_up": [
+      484499,
+      109
+     ],
+     "TRUNC|half_even": [
+      484910,
+      109
+     ],
+     "TRUNC|ceil": [
+      485167,
+      110
+     ],
+     "CTR|floor": [
+      537375,
+      233
+     ],
+     "CTR|half_up": [
+      536848,
+      233
+     ],
+     "CTR|half_even": [
+      537080,
+      233
+     ],
+     "CTR|ceil": [
+      536574,
+      232
+     ],
+     "POOL|floor": [
+      534115,
+      232
+     ],
+     "POOL|half_up": [
+      533423,
+      232
+     ],
+     "POOL|half_even": [
+      533488,
+      232
+     ],
+     "POOL|ceil": [
+      533371,
+      231
+     ]
+    }
+   },
+   "seconds": 7.9
+  },
+  "ink/1667/w023_20240304161941_2um/w023_20240304161941_2um.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     20989,
+     51310
+    ],
+    "parent_shape": [
+     65,
+     41977,
+     102619
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      81,
+      200
+     ],
+     [
+      40,
+      100
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      987593,
+      119
+     ],
+     "TRUNC|half_up": [
+      986121,
+      120
+     ],
+     "TRUNC|half_even": [
+      986215,
+      120
+     ],
+     "TRUNC|ceil": [
+      986385,
+      120
+     ],
+     "CTR|floor": [
+      1070303,
+      249
+     ],
+     "CTR|half_up": [
+      1070255,
+      249
+     ],
+     "CTR|half_even": [
+      1070279,
+      249
+     ],
+     "CTR|ceil": [
+      1070224,
+      249
+     ],
+     "POOL|floor": [
+      1064961,
+      246
+     ],
+     "POOL|half_up": [
+      1064970,
+      246
+     ],
+     "POOL|half_even": [
+      1064987,
+      246
+     ],
+     "POOL|ceil": [
+      1064938,
+      247
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     10495,
+     25655
+    ],
+    "parent_shape": [
+     33,
+     20989,
+     51310
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      40,
+      100
+     ],
+     [
+      20,
+      50
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      480936,
+      108
+     ],
+     "TRUNC|half_up": [
+      478162,
+      109
+     ],
+     "TRUNC|half_even": [
+      478487,
+      109
+     ],
+     "TRUNC|ceil": [
+      478473,
+      109
+     ],
+     "CTR|floor": [
+      529684,
+      237
+     ],
+     "CTR|half_up": [
+      528962,
+      237
+     ],
+     "CTR|half_even": [
+      529162,
+      237
+     ],
+     "CTR|ceil": [
+      528580,
+      236
+     ],
+     "POOL|floor": [
+      527204,
+      240
+     ],
+     "POOL|half_up": [
+      526027,
+      239
+     ],
+     "POOL|half_even": [
+      526046,
+      239
+     ],
+     "POOL|ceil": [
+      525691,
+      239
+     ]
+    }
+   },
+   "seconds": 9.5
+  },
+  "ink/1667/w028_20251208130119156_2um/w028_20251208130119156_2um.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     18926,
+     15292
+    ],
+    "parent_shape": [
+     65,
+     37852,
+     30583
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      73,
+      59
+     ],
+     [
+      36,
+      29
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      936750,
+      81
+     ],
+     "TRUNC|half_up": [
+      931250,
+      81
+     ],
+     "TRUNC|half_even": [
+      932301,
+      81
+     ],
+     "TRUNC|ceil": [
+      932670,
+      81
+     ],
+     "CTR|floor": [
+      1071999,
+      243
+     ],
+     "CTR|half_up": [
+      1072105,
+      242
+     ],
+     "CTR|half_even": [
+      1072123,
+      242
+     ],
+     "CTR|ceil": [
+      1072040,
+      242
+     ],
+     "POOL|floor": [
+      1059601,
+      241
+     ],
+     "POOL|half_up": [
+      1058986,
+      242
+     ],
+     "POOL|half_even": [
+      1059101,
+      242
+     ],
+     "POOL|ceil": [
+      1058775,
+      242
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     9463,
+     7646
+    ],
+    "parent_shape": [
+     33,
+     18926,
+     15292
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      36,
+      29
+     ],
+     [
+      18,
+      14
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278853,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69838,
+      1
+     ],
+     "TRUNC|ceil": [
+      138847,
+      1
+     ],
+     "CTR|floor": [
+      539220,
+      247
+     ],
+     "CTR|half_up": [
+      538527,
+      247
+     ],
+     "CTR|half_even": [
+      538647,
+      247
+     ],
+     "CTR|ceil": [
+      538262,
+      246
+     ],
+     "POOL|floor": [
+      529212,
+      250
+     ],
+     "POOL|half_up": [
+      526193,
+      249
+     ],
+     "POOL|half_even": [
+      526443,
+      249
+     ],
+     "POOL|ceil": [
+      526403,
+      249
+     ]
+    }
+   },
+   "seconds": 8.3
+  },
+  "ink/1667/w029_20251212185248662_2um/w029_20251212185248662_2um.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     19155,
+     15815
+    ],
+    "parent_shape": [
+     65,
+     38310,
+     31630
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      74,
+      61
+     ],
+     [
+      37,
+      30
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      539164,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      136241,
+      1
+     ],
+     "TRUNC|ceil": [
+      268358,
+      1
+     ],
+     "CTR|floor": [
+      1071900,
+      253
+     ],
+     "CTR|half_up": [
+      1072006,
+      253
+     ],
+     "CTR|half_even": [
+      1071929,
+      253
+     ],
+     "CTR|ceil": [
+      1072016,
+      253
+     ],
+     "POOL|floor": [
+      1058548,
+      255
+     ],
+     "POOL|half_up": [
+      1057972,
+      255
+     ],
+     "POOL|half_even": [
+      1058050,
+      255
+     ],
+     "POOL|ceil": [
+      1058447,
+      255
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     9578,
+     7908
+    ],
+    "parent_shape": [
+     33,
+     19155,
+     15815
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      37,
+      30
+     ],
+     [
+      18,
+      15
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      513651,
+      143
+     ],
+     "TRUNC|half_up": [
+      512861,
+      143
+     ],
+     "TRUNC|half_even": [
+      512925,
+      143
+     ],
+     "TRUNC|ceil": [
+      513255,
+      144
+     ],
+     "CTR|floor": [
+      541205,
+      239
+     ],
+     "CTR|half_up": [
+      540980,
+      240
+     ],
+     "CTR|half_even": [
+      541017,
+      240
+     ],
+     "CTR|ceil": [
+      540722,
+      240
+     ],
+     "POOL|floor": [
+      539515,
+      238
+     ],
+     "POOL|half_up": [
+      539275,
+      238
+     ],
+     "POOL|half_even": [
+      539316,
+      238
+     ],
+     "POOL|ceil": [
+      539067,
+      238
+     ]
+    }
+   },
+   "seconds": 8.1
+  },
+  "ink/1667/w031_2025122323_2um/w031_2025122323_2um.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     19516,
+     15848
+    ],
+    "parent_shape": [
+     65,
+     39031,
+     31696
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      76,
+      61
+     ],
+     [
+      38,
+      30
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      978145,
+      88
+     ],
+     "TRUNC|half_up": [
+      975876,
+      89
+     ],
+     "TRUNC|half_even": [
+      976044,
+      89
+     ],
+     "TRUNC|ceil": [
+      976346,
+      89
+     ],
+     "CTR|floor": [
+      1074923,
+      244
+     ],
+     "CTR|half_up": [
+      1074911,
+      244
+     ],
+     "CTR|half_even": [
+      1074936,
+      244
+     ],
+     "CTR|ceil": [
+      1074959,
+      245
+     ],
+     "POOL|floor": [
+      1065672,
+      245
+     ],
+     "POOL|half_up": [
+      1065873,
+      246
+     ],
+     "POOL|half_even": [
+      1065822,
+      246
+     ],
+     "POOL|ceil": [
+      1065965,
+      246
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     9758,
+     7924
+    ],
+    "parent_shape": [
+     33,
+     19516,
+     15848
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      38,
+      30
+     ],
+     [
+      19,
+      15
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      277918,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69423,
+      1
+     ],
+     "TRUNC|ceil": [
+      140058,
+      1
+     ],
+     "CTR|floor": [
+      547530,
+      250
+     ],
+     "CTR|half_up": [
+      547357,
+      249
+     ],
+     "CTR|half_even": [
+      547386,
+      250
+     ],
+     "CTR|ceil": [
+      547376,
+      249
+     ],
+     "POOL|floor": [
+      540671,
+      248
+     ],
+     "POOL|half_up": [
+      539784,
+      247
+     ],
+     "POOL|half_even": [
+      539814,
+      247
+     ],
+     "POOL|ceil": [
+      540092,
+      247
+     ]
+    }
+   },
+   "seconds": 8.9
+  },
+  "ink/814/814_46527_2um_try2/814_46527_2um_try2.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     5120,
+     6580
+    ],
+    "parent_shape": [
+     65,
+     10240,
+     13160
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      20,
+      25
+     ],
+     [
+      10,
+      12
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      541118,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      136577,
+      1
+     ],
+     "TRUNC|ceil": [
+      267578,
+      1
+     ],
+     "CTR|floor": [
+      1070226,
+      250
+     ],
+     "CTR|half_up": [
+      1069997,
+      251
+     ],
+     "CTR|half_even": [
+      1070005,
+      251
+     ],
+     "CTR|ceil": [
+      1069880,
+      251
+     ],
+     "POOL|floor": [
+      1055766,
+      248
+     ],
+     "POOL|half_up": [
+      1055199,
+      247
+     ],
+     "POOL|half_even": [
+      1055300,
+      247
+     ],
+     "POOL|ceil": [
+      1055467,
+      247
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     2560,
+     3290
+    ],
+    "parent_shape": [
+     33,
+     5120,
+     6580
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      10,
+      12
+     ],
+     [
+      5,
+      6
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278370,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69466,
+      1
+     ],
+     "TRUNC|ceil": [
+      139345,
+      1
+     ],
+     "CTR|floor": [
+      546963,
+      253
+     ],
+     "CTR|half_up": [
+      546745,
+      253
+     ],
+     "CTR|half_even": [
+      546828,
+      253
+     ],
+     "CTR|ceil": [
+      546740,
+      253
+     ],
+     "POOL|floor": [
+      542531,
+      254
+     ],
+     "POOL|half_up": [
+      542014,
+      255
+     ],
+     "POOL|half_even": [
+      542090,
+      255
+     ],
+     "POOL|ceil": [
+      541754,
+      255
+     ]
+    }
+   },
+   "seconds": 8.9
+  },
+  "ink/841/auto_grown_20260220144552896/auto_grown_20260220144552896.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     8382,
+     9356
+    ],
+    "parent_shape": [
+     65,
+     16763,
+     18712
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      32,
+      36
+     ],
+     [
+      16,
+      18
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      540588,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      139161,
+      1
+     ],
+     "TRUNC|ceil": [
+      264026,
+      1
+     ],
+     "CTR|floor": [
+      1062900,
+      229
+     ],
+     "CTR|half_up": [
+      1062807,
+      230
+     ],
+     "CTR|half_even": [
+      1062831,
+      230
+     ],
+     "CTR|ceil": [
+      1062790,
+      230
+     ],
+     "POOL|floor": [
+      1056604,
+      229
+     ],
+     "POOL|half_up": [
+      1055938,
+      230
+     ],
+     "POOL|half_even": [
+      1056090,
+      230
+     ],
+     "POOL|ceil": [
+      1056102,
+      230
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     4191,
+     4678
+    ],
+    "parent_shape": [
+     33,
+     8382,
+     9356
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      16,
+      18
+     ],
+     [
+      8,
+      9
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278138,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69725,
+      1
+     ],
+     "TRUNC|ceil": [
+      139671,
+      1
+     ],
+     "CTR|floor": [
+      549395,
+      222
+     ],
+     "CTR|half_up": [
+      549500,
+      222
+     ],
+     "CTR|half_even": [
+      549434,
+      222
+     ],
+     "CTR|ceil": [
+      549440,
+      223
+     ],
+     "POOL|floor": [
+      544282,
+      207
+     ],
+     "POOL|half_up": [
+      543558,
+      207
+     ],
+     "POOL|half_even": [
+      543670,
+      207
+     ],
+     "POOL|ceil": [
+      543559,
+      208
+     ]
+    }
+   },
+   "seconds": 7.0
+  },
+  "ink/841/auto_grown_20260220174252405/auto_grown_20260220174252405.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     7134,
+     9707
+    ],
+    "parent_shape": [
+     65,
+     14268,
+     19413
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      27,
+      37
+     ],
+     [
+      13,
+      18
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      540320,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      137708,
+      1
+     ],
+     "TRUNC|ceil": [
+      265466,
+      1
+     ],
+     "CTR|floor": [
+      1052729,
+      232
+     ],
+     "CTR|half_up": [
+      1053486,
+      231
+     ],
+     "CTR|half_even": [
+      1053101,
+      231
+     ],
+     "CTR|ceil": [
+      1053813,
+      231
+     ],
+     "POOL|floor": [
+      1048045,
+      226
+     ],
+     "POOL|half_up": [
+      1047997,
+      226
+     ],
+     "POOL|half_even": [
+      1047923,
+      226
+     ],
+     "POOL|ceil": [
+      1048962,
+      226
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     3567,
+     4854
+    ],
+    "parent_shape": [
+     33,
+     7134,
+     9707
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      18
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278432,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      69599,
+      1
+     ],
+     "TRUNC|ceil": [
+      139551,
+      1
+     ],
+     "CTR|floor": [
+      528962,
+      212
+     ],
+     "CTR|half_up": [
+      528441,
+      211
+     ],
+     "CTR|half_even": [
+      528574,
+      211
+     ],
+     "CTR|ceil": [
+      528511,
+      211
+     ],
+     "POOL|floor": [
+      519880,
+      219
+     ],
+     "POOL|half_up": [
+      517577,
+      219
+     ],
+     "POOL|half_even": [
+      517679,
+      219
+     ],
+     "POOL|ceil": [
+      518655,
+      218
+     ]
+    }
+   },
+   "seconds": 9.6
+  },
+  "ink/841/w00/w00.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     7936,
+     9472
+    ],
+    "parent_shape": [
+     65,
+     15872,
+     18944
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      31,
+      37
+     ],
+     [
+      15,
+      18
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      539557,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      137134,
+      1
+     ],
+     "TRUNC|ceil": [
+      265733,
+      1
+     ],
+     "CTR|floor": [
+      1070363,
+      232
+     ],
+     "CTR|half_up": [
+      1070259,
+      232
+     ],
+     "CTR|half_even": [
+      1070313,
+      232
+     ],
+     "CTR|ceil": [
+      1070204,
+      232
+     ],
+     "POOL|floor": [
+      1059594,
+      255
+     ],
+     "POOL|half_up": [
+      1058353,
+      255
+     ],
+     "POOL|half_even": [
+      1058529,
+      255
+     ],
+     "POOL|ceil": [
+      1058481,
+      255
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     3968,
+     4736
+    ],
+    "parent_shape": [
+     33,
+     7936,
+     9472
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      15,
+      18
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      278431,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      70045,
+      1
+     ],
+     "TRUNC|ceil": [
+      139229,
+      1
+     ],
+     "CTR|floor": [
+      537716,
+      230
+     ],
+     "CTR|half_up": [
+      537693,
+      231
+     ],
+     "CTR|half_even": [
+      537558,
+      231
+     ],
+     "CTR|ceil": [
+      537628,
+      231
+     ],
+     "POOL|floor": [
+      528741,
+      226
+     ],
+     "POOL|half_up": [
+      526477,
+      226
+     ],
+     "POOL|half_even": [
+      526615,
+      226
+     ],
+     "POOL|ceil": [
+      526867,
+      225
+     ]
+    }
+   },
+   "seconds": 6.8
+  },
+  "ink/man5/MAN5_outer_3/MAN5_outer_3.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     12060,
+     14950
+    ],
+    "parent_shape": [
+     65,
+     24120,
+     29900
+    ],
+    "child_chunks": [
+     128,
+     128,
+     128
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      47,
+      58
+     ],
+     [
+      23,
+      29
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      1045473,
+      241
+     ],
+     "TRUNC|half_up": [
+      1045404,
+      241
+     ],
+     "TRUNC|half_even": [
+      1045286,
+      241
+     ],
+     "TRUNC|ceil": [
+      1046220,
+      241
+     ],
+     "CTR|floor": [
+      1047944,
+      240
+     ],
+     "CTR|half_up": [
+      1047888,
+      240
+     ],
+     "CTR|half_even": [
+      1047876,
+      240
+     ],
+     "CTR|ceil": [
+      1047839,
+      239
+     ],
+     "POOL|floor": [
+      946228,
+      81
+     ],
+     "POOL|half_up": [
+      940841,
+      81
+     ],
+     "POOL|half_even": [
+      940878,
+      81
+     ],
+     "POOL|ceil": [
+      944654,
+      82
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6030,
+     7475
+    ],
+    "parent_shape": [
+     33,
+     12060,
+     14950
+    ],
+    "child_chunks": [
+     128,
+     128,
+     128
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      23,
+      29
+     ],
+     [
+      11,
+      14
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      527677,
+      254
+     ],
+     "TRUNC|half_up": [
+      527703,
+      254
+     ],
+     "TRUNC|half_even": [
+      527657,
+      254
+     ],
+     "TRUNC|ceil": [
+      528036,
+      253
+     ],
+     "CTR|floor": [
+      527615,
+      239
+     ],
+     "CTR|half_up": [
+      526998,
+      240
+     ],
+     "CTR|half_even": [
+      527104,
+      240
+     ],
+     "CTR|ceil": [
+      527185,
+      240
+     ],
+     "POOL|floor": [
+      495102,
+      106
+     ],
+     "POOL|half_up": [
+      493221,
+      106
+     ],
+     "POOL|half_even": [
+      493250,
+      106
+     ],
+     "POOL|ceil": [
+      494084,
+      105
+     ]
+    }
+   },
+   "seconds": 7.8
+  },
+  "ink/phercparis4/w00_20231016151002/w00_20231016151002.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     16125,
+     25690
+    ],
+    "parent_shape": [
+     65,
+     32249,
+     51380
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      62,
+      100
+     ],
+     [
+      31,
+      50
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1832390,
+      64
+     ],
+     "INPLANE_ALL|half_up": [
+      1819610,
+      64
+     ],
+     "INPLANE_ALL|half_even": [
+      1821050,
+      64
+     ],
+     "INPLANE_ALL|ceil": [
+      1823743,
+      63
+     ],
+     "TRUNC|floor": [
+      1832390,
+      64
+     ],
+     "TRUNC|half_up": [
+      1819610,
+      64
+     ],
+     "TRUNC|half_even": [
+      1821050,
+      64
+     ],
+     "TRUNC|ceil": [
+      1823743,
+      63
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     8063,
+     12845
+    ],
+    "parent_shape": [
+     65,
+     16125,
+     25690
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      31,
+      50
+     ],
+     [
+      15,
+      25
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1881755,
+      90
+     ],
+     "INPLANE_ALL|half_up": [
+      1871233,
+      90
+     ],
+     "INPLANE_ALL|half_even": [
+      1872663,
+      90
+     ],
+     "INPLANE_ALL|ceil": [
+      1872769,
+      90
+     ],
+     "TRUNC|floor": [
+      1881755,
+      90
+     ],
+     "TRUNC|half_up": [
+      1871233,
+      90
+     ],
+     "TRUNC|half_even": [
+      1872663,
+      90
+     ],
+     "TRUNC|ceil": [
+      1872769,
+      90
+     ]
+    }
+   },
+   "seconds": 9.8
+  },
+  "ink/phercparis4/w01_20230702185753_r15/w01_20230702185753_r15.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     32710,
+     28445
+    ],
+    "parent_shape": [
+     65,
+     65419,
+     56889
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      127,
+      111
+     ],
+     [
+      63,
+      55
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064416,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      271935,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      520436,
+      1
+     ],
+     "TRUNC|floor": [
+      1064416,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      271935,
+      1
+     ],
+     "TRUNC|ceil": [
+      520436,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     16355,
+     14223
+    ],
+    "parent_shape": [
+     65,
+     32710,
+     28445
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      63,
+      55
+     ],
+     [
+      31,
+      27
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064372,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266468,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      531717,
+      1
+     ],
+     "TRUNC|floor": [
+      1064372,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266468,
+      1
+     ],
+     "TRUNC|ceil": [
+      531717,
+      1
+     ]
+    }
+   },
+   "seconds": 8.1
+  },
+  "ink/phercparis4/w02_20231031143852/w02_20231031143852.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     17122,
+     22014
+    ],
+    "parent_shape": [
+     65,
+     34244,
+     44028
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      66,
+      85
+     ],
+     [
+      33,
+      42
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064132,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      273126,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      516148,
+      1
+     ],
+     "TRUNC|floor": [
+      1064132,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      273126,
+      1
+     ],
+     "TRUNC|ceil": [
+      516148,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     8561,
+     11007
+    ],
+    "parent_shape": [
+     65,
+     17122,
+     22014
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      33,
+      42
+     ],
+     [
+      16,
+      21
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1065841,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266108,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      531256,
+      1
+     ],
+     "TRUNC|floor": [
+      1065841,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266108,
+      1
+     ],
+     "TRUNC|ceil": [
+      531256,
+      1
+     ]
+    }
+   },
+   "seconds": 8.5
+  },
+  "ink/phercparis4/w03_20231106155351/w03_20231106155351.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     17108,
+     25459
+    ],
+    "parent_shape": [
+     65,
+     34215,
+     50917
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      66,
+      99
+     ],
+     [
+      33,
+      49
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1695981,
+      58
+     ],
+     "INPLANE_ALL|half_up": [
+      1673040,
+      58
+     ],
+     "INPLANE_ALL|half_even": [
+      1675753,
+      58
+     ],
+     "INPLANE_ALL|ceil": [
+      1680954,
+      58
+     ],
+     "TRUNC|floor": [
+      1695981,
+      58
+     ],
+     "TRUNC|half_up": [
+      1673040,
+      58
+     ],
+     "TRUNC|half_even": [
+      1675753,
+      58
+     ],
+     "TRUNC|ceil": [
+      1680954,
+      58
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     8554,
+     12730
+    ],
+    "parent_shape": [
+     65,
+     17108,
+     25459
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      33,
+      49
+     ],
+     [
+      16,
+      24
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064786,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      265480,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      532398,
+      1
+     ],
+     "TRUNC|floor": [
+      1064786,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      265480,
+      1
+     ],
+     "TRUNC|ceil": [
+      532398,
+      1
+     ]
+    }
+   },
+   "seconds": 9.4
+  },
+  "ink/phercparis4/w05_4424/w05_4424.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     25700,
+     38078
+    ],
+    "parent_shape": [
+     65,
+     51400,
+     76155
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      100,
+      148
+     ],
+     [
+      50,
+      74
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      863372,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      314560,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      234442,
+      1
+     ],
+     "TRUNC|floor": [
+      863372,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      314560,
+      1
+     ],
+     "TRUNC|ceil": [
+      234442,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     12850,
+     19039
+    ],
+    "parent_shape": [
+     65,
+     25700,
+     38078
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      50,
+      74
+     ],
+     [
+      25,
+      37
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1065497,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266233,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      532330,
+      1
+     ],
+     "TRUNC|floor": [
+      1065497,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266233,
+      1
+     ],
+     "TRUNC|ceil": [
+      532330,
+      1
+     ]
+    }
+   },
+   "seconds": 8.7
+  },
+  "ink/phercparis4/w06_1321/w06_1321.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     25489,
+     20269
+    ],
+    "parent_shape": [
+     65,
+     50978,
+     40538
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      99,
+      79
+     ],
+     [
+      49,
+      39
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1063995,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      271670,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      523257,
+      1
+     ],
+     "TRUNC|floor": [
+      1063995,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      271670,
+      1
+     ],
+     "TRUNC|ceil": [
+      523257,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     12745,
+     10135
+    ],
+    "parent_shape": [
+     65,
+     25489,
+     20269
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      49,
+      39
+     ],
+     [
+      24,
+      19
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1912385,
+      99
+     ],
+     "INPLANE_ALL|half_up": [
+      1904690,
+      99
+     ],
+     "INPLANE_ALL|half_even": [
+      1905909,
+      99
+     ],
+     "INPLANE_ALL|ceil": [
+      1905641,
+      99
+     ],
+     "TRUNC|floor": [
+      1912385,
+      99
+     ],
+     "TRUNC|half_up": [
+      1904690,
+      99
+     ],
+     "TRUNC|half_even": [
+      1905909,
+      99
+     ],
+     "TRUNC|ceil": [
+      1905641,
+      99
+     ]
+    }
+   },
+   "seconds": 7.9
+  },
+  "ink/phercparis4/w07_1619/w07_1619.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     26319,
+     54234
+    ],
+    "parent_shape": [
+     65,
+     52637,
+     108467
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      102,
+      211
+     ],
+     [
+      51,
+      105
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1816639,
+      62
+     ],
+     "INPLANE_ALL|half_up": [
+      1803012,
+      62
+     ],
+     "INPLANE_ALL|half_even": [
+      1807547,
+      62
+     ],
+     "INPLANE_ALL|ceil": [
+      1803065,
+      62
+     ],
+     "TRUNC|floor": [
+      1816639,
+      62
+     ],
+     "TRUNC|half_up": [
+      1803012,
+      62
+     ],
+     "TRUNC|half_even": [
+      1807547,
+      62
+     ],
+     "TRUNC|ceil": [
+      1803065,
+      62
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     13160,
+     27117
+    ],
+    "parent_shape": [
+     65,
+     26319,
+     54234
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      51,
+      105
+     ],
+     [
+      25,
+      52
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1901524,
+      76
+     ],
+     "INPLANE_ALL|half_up": [
+      1896051,
+      77
+     ],
+     "INPLANE_ALL|half_even": [
+      1896816,
+      77
+     ],
+     "INPLANE_ALL|ceil": [
+      1897854,
+      77
+     ],
+     "TRUNC|floor": [
+      1901524,
+      76
+     ],
+     "TRUNC|half_up": [
+      1896051,
+      77
+     ],
+     "TRUNC|half_even": [
+      1896816,
+      77
+     ],
+     "TRUNC|ceil": [
+      1897854,
+      77
+     ]
+    }
+   },
+   "seconds": 8.2
+  },
+  "ink/phercparis4/w09_20230929220926/w09_20230929220926.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     15993,
+     37855
+    ],
+    "parent_shape": [
+     65,
+     31986,
+     75710
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      62,
+      147
+     ],
+     [
+      31,
+      73
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064930,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      269420,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      527111,
+      1
+     ],
+     "TRUNC|floor": [
+      1064930,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      269420,
+      1
+     ],
+     "TRUNC|ceil": [
+      527111,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     7997,
+     18928
+    ],
+    "parent_shape": [
+     65,
+     15993,
+     37855
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      31,
+      73
+     ],
+     [
+      15,
+      36
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1879892,
+      77
+     ],
+     "INPLANE_ALL|half_up": [
+      1870099,
+      77
+     ],
+     "INPLANE_ALL|half_even": [
+      1871786,
+      77
+     ],
+     "INPLANE_ALL|ceil": [
+      1872226,
+      77
+     ],
+     "TRUNC|floor": [
+      1879892,
+      77
+     ],
+     "TRUNC|half_up": [
+      1870099,
+      77
+     ],
+     "TRUNC|half_even": [
+      1871786,
+      77
+     ],
+     "TRUNC|ceil": [
+      1872226,
+      77
+     ]
+    }
+   },
+   "seconds": 8.2
+  },
+  "ink/unused/0139/title2_2026033141569/title2_2026033141569.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11320,
+     8720
+    ],
+    "parent_shape": [
+     65,
+     22640,
+     17440
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      22,
+      17
+     ],
+     [
+      11,
+      8
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4205398,
+      227
+     ],
+     "TRUNC|half_up": [
+      4204158,
+      227
+     ],
+     "TRUNC|half_even": [
+      4204361,
+      227
+     ],
+     "TRUNC|ceil": [
+      4205226,
+      227
+     ],
+     "CTR|floor": [
+      4160661,
+      233
+     ],
+     "CTR|half_up": [
+      4159236,
+      233
+     ],
+     "CTR|half_even": [
+      4159942,
+      233
+     ],
+     "CTR|ceil": [
+      4159214,
+      233
+     ],
+     "POOL|floor": [
+      3734463,
+      112
+     ],
+     "POOL|half_up": [
+      3734224,
+      112
+     ],
+     "POOL|half_even": [
+      3731024,
+      112
+     ],
+     "POOL|ceil": [
+      3743494,
+      113
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5660,
+     4360
+    ],
+    "parent_shape": [
+     33,
+     11320,
+     8720
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      8
+     ],
+     [
+      5,
+      4
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2181043,
+      229
+     ],
+     "TRUNC|half_up": [
+      2180883,
+      228
+     ],
+     "TRUNC|half_even": [
+      2180833,
+      228
+     ],
+     "TRUNC|ceil": [
+      2181189,
+      228
+     ],
+     "CTR|floor": [
+      2172800,
+      237
+     ],
+     "CTR|half_up": [
+      2171594,
+      237
+     ],
+     "CTR|half_even": [
+      2172042,
+      237
+     ],
+     "CTR|ceil": [
+      2171277,
+      237
+     ],
+     "POOL|floor": [
+      2066863,
+      124
+     ],
+     "POOL|half_up": [
+      2065362,
+      123
+     ],
+     "POOL|half_even": [
+      2065245,
+      123
+     ],
+     "POOL|ceil": [
+      2067961,
+      123
+     ]
+    }
+   },
+   "seconds": 12.2
+  },
+  "ink/unused/0139/title3_2026040114/title3_2026040114.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     6560,
+     7320
+    ],
+    "parent_shape": [
+     65,
+     13120,
+     14640
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      12,
+      14
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4226131,
+      224
+     ],
+     "TRUNC|half_up": [
+      4225812,
+      224
+     ],
+     "TRUNC|half_even": [
+      4225825,
+      224
+     ],
+     "TRUNC|ceil": [
+      4226605,
+      224
+     ],
+     "CTR|floor": [
+      4213726,
+      224
+     ],
+     "CTR|half_up": [
+      4213778,
+      224
+     ],
+     "CTR|half_even": [
+      4213771,
+      224
+     ],
+     "CTR|ceil": [
+      4213705,
+      224
+     ],
+     "POOL|floor": [
+      3953641,
+      126
+     ],
+     "POOL|half_up": [
+      3947342,
+      126
+     ],
+     "POOL|half_even": [
+      3949272,
+      126
+     ],
+     "POOL|ceil": [
+      3948788,
+      125
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     3280,
+     3660
+    ],
+    "parent_shape": [
+     33,
+     6560,
+     7320
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      6,
+      7
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2184824,
+      228
+     ],
+     "TRUNC|half_up": [
+      2185004,
+      228
+     ],
+     "TRUNC|half_even": [
+      2184832,
+      228
+     ],
+     "TRUNC|ceil": [
+      2185282,
+      227
+     ],
+     "CTR|floor": [
+      2178772,
+      231
+     ],
+     "CTR|half_up": [
+      2179088,
+      231
+     ],
+     "CTR|half_even": [
+      2178904,
+      231
+     ],
+     "CTR|ceil": [
+      2179170,
+      231
+     ],
+     "POOL|floor": [
+      2095995,
+      131
+     ],
+     "POOL|half_up": [
+      2094409,
+      131
+     ],
+     "POOL|half_even": [
+      2094366,
+      131
+     ],
+     "POOL|ceil": [
+      2095587,
+      130
+     ]
+    }
+   },
+   "seconds": 11.7
+  },
+  "ink/unused/0139/w023_202603112281/w023_202603112281.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     13760,
+     11680
+    ],
+    "parent_shape": [
+     65,
+     27520,
+     23360
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      26,
+      22
+     ],
+     [
+      13,
+      11
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4061110,
+      255
+     ],
+     "TRUNC|half_up": [
+      4061782,
+      255
+     ],
+     "TRUNC|half_even": [
+      4061105,
+      255
+     ],
+     "TRUNC|ceil": [
+      4063290,
+      255
+     ],
+     "CTR|floor": [
+      4074303,
+      249
+     ],
+     "CTR|half_up": [
+      4072593,
+      248
+     ],
+     "CTR|half_even": [
+      4073587,
+      248
+     ],
+     "CTR|ceil": [
+      4072532,
+      248
+     ],
+     "POOL|floor": [
+      3514820,
+      126
+     ],
+     "POOL|half_up": [
+      3503661,
+      126
+     ],
+     "POOL|half_even": [
+      3503062,
+      126
+     ],
+     "POOL|ceil": [
+      3517197,
+      125
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6880,
+     5840
+    ],
+    "parent_shape": [
+     33,
+     13760,
+     11680
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      11
+     ],
+     [
+      6,
+      5
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2108394,
+      254
+     ],
+     "TRUNC|half_up": [
+      2109083,
+      254
+     ],
+     "TRUNC|half_even": [
+      2108352,
+      254
+     ],
+     "TRUNC|ceil": [
+      2110422,
+      254
+     ],
+     "CTR|floor": [
+      2126921,
+      255
+     ],
+     "CTR|half_up": [
+      2125128,
+      255
+     ],
+     "CTR|half_even": [
+      2125587,
+      255
+     ],
+     "CTR|ceil": [
+      2125155,
+      255
+     ],
+     "POOL|floor": [
+      1988308,
+      124
+     ],
+     "POOL|half_up": [
+      1981473,
+      125
+     ],
+     "POOL|half_even": [
+      1981993,
+      124
+     ],
+     "POOL|ceil": [
+      1985067,
+      125
+     ]
+    }
+   },
+   "seconds": 12.2
+  },
+  "ink/unused/0139/w024_2026021572/w024_2026021572.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14160,
+     12040
+    ],
+    "parent_shape": [
+     65,
+     28320,
+     24080
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      27,
+      23
+     ],
+     [
+      13,
+      11
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4087169,
+      247
+     ],
+     "TRUNC|half_up": [
+      4090344,
+      247
+     ],
+     "TRUNC|half_even": [
+      4088262,
+      247
+     ],
+     "TRUNC|ceil": [
+      4092678,
+      247
+     ],
+     "CTR|floor": [
+      4118135,
+      255
+     ],
+     "CTR|half_up": [
+      4114661,
+      255
+     ],
+     "CTR|half_even": [
+      4116161,
+      255
+     ],
+     "CTR|ceil": [
+      4114097,
+      255
+     ],
+     "POOL|floor": [
+      3620316,
+      127
+     ],
+     "POOL|half_up": [
+      3580615,
+      126
+     ],
+     "POOL|half_even": [
+      3591442,
+      126
+     ],
+     "POOL|ceil": [
+      3592207,
+      126
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7080,
+     6020
+    ],
+    "parent_shape": [
+     33,
+     14160,
+     12040
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      11
+     ],
+     [
+      6,
+      5
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2139281,
+      255
+     ],
+     "TRUNC|half_up": [
+      2140800,
+      255
+     ],
+     "TRUNC|half_even": [
+      2140248,
+      255
+     ],
+     "TRUNC|ceil": [
+      2142546,
+      255
+     ],
+     "CTR|floor": [
+      2166599,
+      255
+     ],
+     "CTR|half_up": [
+      2165008,
+      255
+     ],
+     "CTR|half_even": [
+      2165461,
+      255
+     ],
+     "CTR|ceil": [
+      2164530,
+      255
+     ],
+     "POOL|floor": [
+      2049510,
+      131
+     ],
+     "POOL|half_up": [
+      2043758,
+      130
+     ],
+     "POOL|half_even": [
+      2044265,
+      130
+     ],
+     "POOL|ceil": [
+      2045332,
+      130
+     ]
+    }
+   },
+   "seconds": 13.6
+  },
+  "ink/unused/0139/w025_2025010863/w025_2025010863.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14320,
+     12560
+    ],
+    "parent_shape": [
+     65,
+     28640,
+     25120
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      27,
+      24
+     ],
+     [
+      13,
+      12
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4186890,
+      255
+     ],
+     "TRUNC|half_up": [
+      4187096,
+      255
+     ],
+     "TRUNC|half_even": [
+      4186451,
+      255
+     ],
+     "TRUNC|ceil": [
+      4188237,
+      255
+     ],
+     "CTR|floor": [
+      4180698,
+      255
+     ],
+     "CTR|half_up": [
+      4179804,
+      255
+     ],
+     "CTR|half_even": [
+      4180202,
+      255
+     ],
+     "CTR|ceil": [
+      4179676,
+      255
+     ],
+     "POOL|floor": [
+      3775809,
+      110
+     ],
+     "POOL|half_up": [
+      3781479,
+      110
+     ],
+     "POOL|half_even": [
+      3776503,
+      110
+     ],
+     "POOL|ceil": [
+      3789702,
+      109
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7160,
+     6280
+    ],
+    "parent_shape": [
+     33,
+     14320,
+     12560
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      12
+     ],
+     [
+      6,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2156559,
+      255
+     ],
+     "TRUNC|half_up": [
+      2157662,
+      255
+     ],
+     "TRUNC|half_even": [
+      2157048,
+      255
+     ],
+     "TRUNC|ceil": [
+      2158916,
+      255
+     ],
+     "CTR|floor": [
+      2169416,
+      255
+     ],
+     "CTR|half_up": [
+      2167746,
+      255
+     ],
+     "CTR|half_even": [
+      2168218,
+      255
+     ],
+     "CTR|ceil": [
+      2167331,
+      255
+     ],
+     "POOL|floor": [
+      2049703,
+      145
+     ],
+     "POOL|half_up": [
+      2046745,
+      144
+     ],
+     "POOL|half_even": [
+      2046556,
+      144
+     ],
+     "POOL|ceil": [
+      2049637,
+      144
+     ]
+    }
+   },
+   "seconds": 12.8
+  },
+  "ink/unused/0139/w026_2025010854/w026_2025010854.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14840,
+     13600
+    ],
+    "parent_shape": [
+     65,
+     29680,
+     27200
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      26
+     ],
+     [
+      14,
+      13
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4125682,
+      251
+     ],
+     "TRUNC|half_up": [
+      4124440,
+      251
+     ],
+     "TRUNC|half_even": [
+      4124404,
+      251
+     ],
+     "TRUNC|ceil": [
+      4125611,
+      251
+     ],
+     "CTR|floor": [
+      4133714,
+      252
+     ],
+     "CTR|half_up": [
+      4131467,
+      252
+     ],
+     "CTR|half_even": [
+      4132556,
+      252
+     ],
+     "CTR|ceil": [
+      4131346,
+      252
+     ],
+     "POOL|floor": [
+      3563869,
+      107
+     ],
+     "POOL|half_up": [
+      3580771,
+      106
+     ],
+     "POOL|half_even": [
+      3569164,
+      106
+     ],
+     "POOL|ceil": [
+      3595848,
+      106
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7420,
+     6800
+    ],
+    "parent_shape": [
+     33,
+     14840,
+     13600
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      13
+     ],
+     [
+      7,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2140156,
+      250
+     ],
+     "TRUNC|half_up": [
+      2140282,
+      250
+     ],
+     "TRUNC|half_even": [
+      2139977,
+      250
+     ],
+     "TRUNC|ceil": [
+      2140834,
+      250
+     ],
+     "CTR|floor": [
+      2150109,
+      244
+     ],
+     "CTR|half_up": [
+      2148488,
+      244
+     ],
+     "CTR|half_even": [
+      2148985,
+      244
+     ],
+     "CTR|ceil": [
+      2147881,
+      244
+     ],
+     "POOL|floor": [
+      1999147,
+      114
+     ],
+     "POOL|half_up": [
+      1997381,
+      113
+     ],
+     "POOL|half_even": [
+      1996736,
+      113
+     ],
+     "POOL|ceil": [
+      2002334,
+      113
+     ]
+    }
+   },
+   "seconds": 12.4
+  },
+  "ink/unused/0139/w027_2025010845/w027_2025010845.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14640,
+     13320
+    ],
+    "parent_shape": [
+     65,
+     29280,
+     26640
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      26
+     ],
+     [
+      14,
+      13
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4122942,
+      255
+     ],
+     "TRUNC|half_up": [
+      4122017,
+      255
+     ],
+     "TRUNC|half_even": [
+      4122123,
+      255
+     ],
+     "TRUNC|ceil": [
+      4122834,
+      255
+     ],
+     "CTR|floor": [
+      4122967,
+      254
+     ],
+     "CTR|half_up": [
+      4122444,
+      254
+     ],
+     "CTR|half_even": [
+      4122629,
+      254
+     ],
+     "CTR|ceil": [
+      4122523,
+      254
+     ],
+     "POOL|floor": [
+      3666752,
+      119
+     ],
+     "POOL|half_up": [
+      3664117,
+      118
+     ],
+     "POOL|half_even": [
+      3661099,
+      118
+     ],
+     "POOL|ceil": [
+      3674820,
+      118
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7320,
+     6660
+    ],
+    "parent_shape": [
+     33,
+     14640,
+     13320
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      13
+     ],
+     [
+      7,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2147053,
+      255
+     ],
+     "TRUNC|half_up": [
+      2146714,
+      255
+     ],
+     "TRUNC|half_even": [
+      2146432,
+      255
+     ],
+     "TRUNC|ceil": [
+      2147770,
+      255
+     ],
+     "CTR|floor": [
+      2153812,
+      255
+     ],
+     "CTR|half_up": [
+      2152927,
+      255
+     ],
+     "CTR|half_even": [
+      2153060,
+      255
+     ],
+     "CTR|ceil": [
+      2152950,
+      255
+     ],
+     "POOL|floor": [
+      2042956,
+      135
+     ],
+     "POOL|half_up": [
+      2041171,
+      134
+     ],
+     "POOL|half_even": [
+      2041252,
+      134
+     ],
+     "POOL|ceil": [
+      2044868,
+      134
+     ]
+    }
+   },
+   "seconds": 15.0
+  },
+  "ink/unused/0139/w031_2026013019/w031_2026013019.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14360,
+     13800
+    ],
+    "parent_shape": [
+     65,
+     28720,
+     27600
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      26
+     ],
+     [
+      14,
+      13
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4149365,
+      255
+     ],
+     "TRUNC|half_up": [
+      4150076,
+      255
+     ],
+     "TRUNC|half_even": [
+      4149504,
+      255
+     ],
+     "TRUNC|ceil": [
+      4151452,
+      255
+     ],
+     "CTR|floor": [
+      4162772,
+      255
+     ],
+     "CTR|half_up": [
+      4161297,
+      255
+     ],
+     "CTR|half_even": [
+      4161829,
+      255
+     ],
+     "CTR|ceil": [
+      4161175,
+      255
+     ],
+     "POOL|floor": [
+      3624571,
+      107
+     ],
+     "POOL|half_up": [
+      3639979,
+      107
+     ],
+     "POOL|half_even": [
+      3629302,
+      107
+     ],
+     "POOL|ceil": [
+      3652977,
+      106
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7180,
+     6900
+    ],
+    "parent_shape": [
+     33,
+     14360,
+     13800
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      13
+     ],
+     [
+      7,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2160825,
+      254
+     ],
+     "TRUNC|half_up": [
+      2160483,
+      254
+     ],
+     "TRUNC|half_even": [
+      2160413,
+      254
+     ],
+     "TRUNC|ceil": [
+      2160999,
+      254
+     ],
+     "CTR|floor": [
+      2154871,
+      255
+     ],
+     "CTR|half_up": [
+      2153840,
+      255
+     ],
+     "CTR|half_even": [
+      2153936,
+      255
+     ],
+     "CTR|ceil": [
+      2153419,
+      255
+     ],
+     "POOL|floor": [
+      2012900,
+      123
+     ],
+     "POOL|half_up": [
+      2014597,
+      122
+     ],
+     "POOL|half_even": [
+      2013628,
+      123
+     ],
+     "POOL|ceil": [
+      2020009,
+      122
+     ]
+    }
+   },
+   "seconds": 13.2
+  },
+  "ink/unused/0139/w032_2026020303/w032_2026020303.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14400,
+     14000
+    ],
+    "parent_shape": [
+     65,
+     28800,
+     28000
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      27
+     ],
+     [
+      14,
+      13
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4142485,
+      232
+     ],
+     "TRUNC|half_up": [
+      4143337,
+      232
+     ],
+     "TRUNC|half_even": [
+      4142838,
+      232
+     ],
+     "TRUNC|ceil": [
+      4144149,
+      232
+     ],
+     "CTR|floor": [
+      4180864,
+      228
+     ],
+     "CTR|half_up": [
+      4179401,
+      228
+     ],
+     "CTR|half_even": [
+      4179932,
+      228
+     ],
+     "CTR|ceil": [
+      4179182,
+      228
+     ],
+     "POOL|floor": [
+      3731425,
+      99
+     ],
+     "POOL|half_up": [
+      3727844,
+      99
+     ],
+     "POOL|half_even": [
+      3726555,
+      99
+     ],
+     "POOL|ceil": [
+      3736404,
+      99
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7200,
+     7000
+    ],
+    "parent_shape": [
+     33,
+     14400,
+     14000
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      13
+     ],
+     [
+      7,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2137449,
+      255
+     ],
+     "TRUNC|half_up": [
+      2138799,
+      255
+     ],
+     "TRUNC|half_even": [
+      2138124,
+      255
+     ],
+     "TRUNC|ceil": [
+      2140469,
+      255
+     ],
+     "CTR|floor": [
+      2164843,
+      255
+     ],
+     "CTR|half_up": [
+      2163066,
+      255
+     ],
+     "CTR|half_even": [
+      2163512,
+      255
+     ],
+     "CTR|ceil": [
+      2162590,
+      255
+     ],
+     "POOL|floor": [
+      2031258,
+      119
+     ],
+     "POOL|half_up": [
+      2027323,
+      118
+     ],
+     "POOL|half_even": [
+      2027634,
+      118
+     ],
+     "POOL|ceil": [
+      2030231,
+      118
+     ]
+    }
+   },
+   "seconds": 12.9
+  },
+  "ink/unused/0139/w033_2026021913/w033_2026021913.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     13560,
+     14120
+    ],
+    "parent_shape": [
+     65,
+     27120,
+     28240
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      26,
+      27
+     ],
+     [
+      13,
+      13
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4195636,
+      255
+     ],
+     "TRUNC|half_up": [
+      4195369,
+      255
+     ],
+     "TRUNC|half_even": [
+      4195313,
+      255
+     ],
+     "TRUNC|ceil": [
+      4196415,
+      255
+     ],
+     "CTR|floor": [
+      4201400,
+      255
+     ],
+     "CTR|half_up": [
+      4201244,
+      255
+     ],
+     "CTR|half_even": [
+      4201472,
+      255
+     ],
+     "CTR|ceil": [
+      4201016,
+      255
+     ],
+     "POOL|floor": [
+      3816437,
+      112
+     ],
+     "POOL|half_up": [
+      3821795,
+      112
+     ],
+     "POOL|half_even": [
+      3817047,
+      112
+     ],
+     "POOL|ceil": [
+      3829507,
+      112
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6780,
+     7060
+    ],
+    "parent_shape": [
+     33,
+     13560,
+     14120
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      13
+     ],
+     [
+      6,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2161165,
+      255
+     ],
+     "TRUNC|half_up": [
+      2161975,
+      255
+     ],
+     "TRUNC|half_even": [
+      2161602,
+      255
+     ],
+     "TRUNC|ceil": [
+      2162932,
+      255
+     ],
+     "CTR|floor": [
+      2170346,
+      255
+     ],
+     "CTR|half_up": [
+      2169193,
+      255
+     ],
+     "CTR|half_even": [
+      2169620,
+      255
+     ],
+     "CTR|ceil": [
+      2168726,
+      255
+     ],
+     "POOL|floor": [
+      2056186,
+      135
+     ],
+     "POOL|half_up": [
+      2054723,
+      134
+     ],
+     "POOL|half_even": [
+      2054584,
+      134
+     ],
+     "POOL|ceil": [
+      2057671,
+      134
+     ]
+    }
+   },
+   "seconds": 13.2
+  },
+  "ink/unused/0139/w034_2026030317/w034_2026030317.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14320,
+     14240
+    ],
+    "parent_shape": [
+     65,
+     28640,
+     28480
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      27,
+      27
+     ],
+     [
+      13,
+      13
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4201924,
+      255
+     ],
+     "TRUNC|half_up": [
+      4201447,
+      255
+     ],
+     "TRUNC|half_even": [
+      4201165,
+      255
+     ],
+     "TRUNC|ceil": [
+      4202567,
+      255
+     ],
+     "CTR|floor": [
+      4210766,
+      255
+     ],
+     "CTR|half_up": [
+      4210478,
+      255
+     ],
+     "CTR|half_even": [
+      4210462,
+      255
+     ],
+     "CTR|ceil": [
+      4210432,
+      255
+     ],
+     "POOL|floor": [
+      3833147,
+      129
+     ],
+     "POOL|half_up": [
+      3836570,
+      128
+     ],
+     "POOL|half_even": [
+      3832656,
+      128
+     ],
+     "POOL|ceil": [
+      3843969,
+      128
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7160,
+     7120
+    ],
+    "parent_shape": [
+     33,
+     14320,
+     14240
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      13
+     ],
+     [
+      6,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2175311,
+      255
+     ],
+     "TRUNC|half_up": [
+      2175171,
+      255
+     ],
+     "TRUNC|half_even": [
+      2175004,
+      255
+     ],
+     "TRUNC|ceil": [
+      2175674,
+      255
+     ],
+     "CTR|floor": [
+      2182422,
+      255
+     ],
+     "CTR|half_up": [
+      2182229,
+      255
+     ],
+     "CTR|half_even": [
+      2182338,
+      255
+     ],
+     "CTR|ceil": [
+      2182254,
+      255
+     ],
+     "POOL|floor": [
+      2077597,
+      145
+     ],
+     "POOL|half_up": [
+      2077843,
+      144
+     ],
+     "POOL|half_even": [
+      2077632,
+      144
+     ],
+     "POOL|ceil": [
+      2079748,
+      144
+     ]
+    }
+   },
+   "seconds": 12.1
+  },
+  "ink/unused/0139/w036_2026031607/w036_2026031607.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     3800,
+     13480
+    ],
+    "parent_shape": [
+     65,
+     7600,
+     26960
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      7,
+      26
+     ],
+     [
+      3,
+      13
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4153760,
+      244
+     ],
+     "TRUNC|half_up": [
+      4155613,
+      244
+     ],
+     "TRUNC|half_even": [
+      4154546,
+      244
+     ],
+     "TRUNC|ceil": [
+      4157141,
+      244
+     ],
+     "CTR|floor": [
+      4195262,
+      255
+     ],
+     "CTR|half_up": [
+      4194033,
+      255
+     ],
+     "CTR|half_even": [
+      4194599,
+      255
+     ],
+     "CTR|ceil": [
+      4193691,
+      255
+     ],
+     "POOL|floor": [
+      3765923,
+      117
+     ],
+     "POOL|half_up": [
+      3748933,
+      117
+     ],
+     "POOL|half_even": [
+      3752465,
+      117
+     ],
+     "POOL|ceil": [
+      3756425,
+      116
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     1900,
+     6740
+    ],
+    "parent_shape": [
+     33,
+     3800,
+     13480
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      3,
+      13
+     ],
+     [
+      1,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2152154,
+      246
+     ],
+     "TRUNC|half_up": [
+      2152932,
+      246
+     ],
+     "TRUNC|half_even": [
+      2152518,
+      246
+     ],
+     "TRUNC|ceil": [
+      2154193,
+      246
+     ],
+     "CTR|floor": [
+      2162245,
+      254
+     ],
+     "CTR|half_up": [
+      2161046,
+      255
+     ],
+     "CTR|half_even": [
+      2161556,
+      255
+     ],
+     "CTR|ceil": [
+      2160529,
+      255
+     ],
+     "POOL|floor": [
+      2028403,
+      148
+     ],
+     "POOL|half_up": [
+      2024791,
+      148
+     ],
+     "POOL|half_even": [
+      2024598,
+      148
+     ],
+     "POOL|ceil": [
+      2028665,
+      147
+     ]
+    }
+   },
+   "seconds": 12.5
+  },
+  "ink/unused/0139/w037_2026031015/w037_2026031015.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11920,
+     14040
+    ],
+    "parent_shape": [
+     65,
+     23840,
+     28080
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      23,
+      27
+     ],
+     [
+      11,
+      13
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4161149,
+      255
+     ],
+     "TRUNC|half_up": [
+      4161898,
+      255
+     ],
+     "TRUNC|half_even": [
+      4161363,
+      255
+     ],
+     "TRUNC|ceil": [
+      4162933,
+      255
+     ],
+     "CTR|floor": [
+      4193843,
+      249
+     ],
+     "CTR|half_up": [
+      4192642,
+      249
+     ],
+     "CTR|half_even": [
+      4193183,
+      249
+     ],
+     "CTR|ceil": [
+      4192593,
+      249
+     ],
+     "POOL|floor": [
+      3736945,
+      114
+     ],
+     "POOL|half_up": [
+      3743444,
+      115
+     ],
+     "POOL|half_even": [
+      3737767,
+      115
+     ],
+     "POOL|ceil": [
+      3752678,
+      115
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5960,
+     7020
+    ],
+    "parent_shape": [
+     33,
+     11920,
+     14040
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      13
+     ],
+     [
+      5,
+      6
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2165200,
+      247
+     ],
+     "TRUNC|half_up": [
+      2165612,
+      248
+     ],
+     "TRUNC|half_even": [
+      2165295,
+      247
+     ],
+     "TRUNC|ceil": [
+      2166579,
+      248
+     ],
+     "CTR|floor": [
+      2176074,
+      255
+     ],
+     "CTR|half_up": [
+      2175621,
+      255
+     ],
+     "CTR|half_even": [
+      2175635,
+      255
+     ],
+     "CTR|ceil": [
+      2175573,
+      255
+     ],
+     "POOL|floor": [
+      2050116,
+      149
+     ],
+     "POOL|half_up": [
+      2049870,
+      149
+     ],
+     "POOL|half_even": [
+      2049559,
+      149
+     ],
+     "POOL|ceil": [
+      2053713,
+      149
+     ]
+    }
+   },
+   "seconds": 13.2
+  },
+  "ink/unused/0139/w038_2026030608/w038_2026030608.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     12040,
+     14520
+    ],
+    "parent_shape": [
+     65,
+     24080,
+     29040
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      23,
+      28
+     ],
+     [
+      11,
+      14
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4195797,
+      255
+     ],
+     "TRUNC|half_up": [
+      4194475,
+      255
+     ],
+     "TRUNC|half_even": [
+      4194555,
+      255
+     ],
+     "TRUNC|ceil": [
+      4195146,
+      255
+     ],
+     "CTR|floor": [
+      4197346,
+      255
+     ],
+     "CTR|half_up": [
+      4196793,
+      255
+     ],
+     "CTR|half_even": [
+      4197083,
+      255
+     ],
+     "CTR|ceil": [
+      4196842,
+      255
+     ],
+     "POOL|floor": [
+      3819782,
+      122
+     ],
+     "POOL|half_up": [
+      3833829,
+      121
+     ],
+     "POOL|half_even": [
+      3825775,
+      121
+     ],
+     "POOL|ceil": [
+      3839984,
+      121
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6020,
+     7260
+    ],
+    "parent_shape": [
+     33,
+     12040,
+     14520
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      14
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2171906,
+      255
+     ],
+     "TRUNC|half_up": [
+      2171755,
+      255
+     ],
+     "TRUNC|half_even": [
+      2171856,
+      255
+     ],
+     "TRUNC|ceil": [
+      2172015,
+      255
+     ],
+     "CTR|floor": [
+      2176567,
+      252
+     ],
+     "CTR|half_up": [
+      2176216,
+      252
+     ],
+     "CTR|half_even": [
+      2176383,
+      252
+     ],
+     "CTR|ceil": [
+      2175968,
+      252
+     ],
+     "POOL|floor": [
+      2048890,
+      141
+     ],
+     "POOL|half_up": [
+      2051130,
+      140
+     ],
+     "POOL|half_even": [
+      2050416,
+      140
+     ],
+     "POOL|ceil": [
+      2055190,
+      140
+     ]
+    }
+   },
+   "seconds": 12.8
+  },
+  "ink/unused/0139/w042_2026020613/w042_2026020613.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11680,
+     15360
+    ],
+    "parent_shape": [
+     65,
+     23360,
+     30720
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      22,
+      30
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4191483,
+      246
+     ],
+     "TRUNC|half_up": [
+      4190355,
+      246
+     ],
+     "TRUNC|half_even": [
+      4190567,
+      246
+     ],
+     "TRUNC|ceil": [
+      4190882,
+      246
+     ],
+     "CTR|floor": [
+      4133303,
+      251
+     ],
+     "CTR|half_up": [
+      4132062,
+      251
+     ],
+     "CTR|half_even": [
+      4132869,
+      251
+     ],
+     "CTR|ceil": [
+      4131720,
+      251
+     ],
+     "POOL|floor": [
+      3641158,
+      128
+     ],
+     "POOL|half_up": [
+      3656796,
+      127
+     ],
+     "POOL|half_even": [
+      3647463,
+      127
+     ],
+     "POOL|ceil": [
+      3667298,
+      127
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5840,
+     7680
+    ],
+    "parent_shape": [
+     33,
+     11680,
+     15360
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      15
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2163620,
+      248
+     ],
+     "TRUNC|half_up": [
+      2163597,
+      248
+     ],
+     "TRUNC|half_even": [
+      2163563,
+      248
+     ],
+     "TRUNC|ceil": [
+      2164026,
+      248
+     ],
+     "CTR|floor": [
+      2156191,
+      248
+     ],
+     "CTR|half_up": [
+      2154911,
+      247
+     ],
+     "CTR|half_even": [
+      2155186,
+      247
+     ],
+     "CTR|ceil": [
+      2154972,
+      247
+     ],
+     "POOL|floor": [
+      2022280,
+      134
+     ],
+     "POOL|half_up": [
+      2022308,
+      134
+     ],
+     "POOL|half_even": [
+      2021478,
+      134
+     ],
+     "POOL|ceil": [
+      2026282,
+      133
+     ]
+    }
+   },
+   "seconds": 12.1
+  },
+  "ink/unused/0139/w045_2026012619/w045_2026012619.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11680,
+     15960
+    ],
+    "parent_shape": [
+     65,
+     23360,
+     31920
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      22,
+      31
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4141375,
+      245
+     ],
+     "TRUNC|half_up": [
+      4142229,
+      245
+     ],
+     "TRUNC|half_even": [
+      4141836,
+      245
+     ],
+     "TRUNC|ceil": [
+      4142943,
+      245
+     ],
+     "CTR|floor": [
+      4161120,
+      254
+     ],
+     "CTR|half_up": [
+      4158850,
+      254
+     ],
+     "CTR|half_even": [
+      4159828,
+      254
+     ],
+     "CTR|ceil": [
+      4158683,
+      254
+     ],
+     "POOL|floor": [
+      3621698,
+      112
+     ],
+     "POOL|half_up": [
+      3624891,
+      111
+     ],
+     "POOL|half_even": [
+      3619686,
+      111
+     ],
+     "POOL|ceil": [
+      3634558,
+      111
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5840,
+     7980
+    ],
+    "parent_shape": [
+     33,
+     11680,
+     15960
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      15
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2152791,
+      248
+     ],
+     "TRUNC|half_up": [
+      2152755,
+      249
+     ],
+     "TRUNC|half_even": [
+      2152588,
+      249
+     ],
+     "TRUNC|ceil": [
+      2153439,
+      249
+     ],
+     "CTR|floor": [
+      2169278,
+      253
+     ],
+     "CTR|half_up": [
+      2167947,
+      253
+     ],
+     "CTR|half_even": [
+      2168421,
+      253
+     ],
+     "CTR|ceil": [
+      2167529,
+      253
+     ],
+     "POOL|floor": [
+      2038483,
+      133
+     ],
+     "POOL|half_up": [
+      2036995,
+      132
+     ],
+     "POOL|half_even": [
+      2036828,
+      133
+     ],
+     "POOL|ceil": [
+      2040112,
+      132
+     ]
+    }
+   },
+   "seconds": 12.1
+  },
+  "ink/unused/0139/w046_20260325/w046_20260325.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11680,
+     15960
+    ],
+    "parent_shape": [
+     65,
+     23360,
+     31920
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      22,
+      31
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4138334,
+      246
+     ],
+     "TRUNC|half_up": [
+      4139857,
+      246
+     ],
+     "TRUNC|half_even": [
+      4139089,
+      246
+     ],
+     "TRUNC|ceil": [
+      4140524,
+      246
+     ],
+     "CTR|floor": [
+      4162697,
+      254
+     ],
+     "CTR|half_up": [
+      4160642,
+      255
+     ],
+     "CTR|half_even": [
+      4161504,
+      254
+     ],
+     "CTR|ceil": [
+      4160457,
+      255
+     ],
+     "POOL|floor": [
+      3624621,
+      121
+     ],
+     "POOL|half_up": [
+      3628939,
+      120
+     ],
+     "POOL|half_even": [
+      3623994,
+      120
+     ],
+     "POOL|ceil": [
+      3637478,
+      120
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5840,
+     7980
+    ],
+    "parent_shape": [
+     33,
+     11680,
+     15960
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      15
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2154024,
+      247
+     ],
+     "TRUNC|half_up": [
+      2153910,
+      247
+     ],
+     "TRUNC|half_even": [
+      2153974,
+      247
+     ],
+     "TRUNC|ceil": [
+      2154589,
+      247
+     ],
+     "CTR|floor": [
+      2170923,
+      248
+     ],
+     "CTR|half_up": [
+      2169705,
+      248
+     ],
+     "CTR|half_even": [
+      2170176,
+      248
+     ],
+     "CTR|ceil": [
+      2169316,
+      248
+     ],
+     "POOL|floor": [
+      2039986,
+      142
+     ],
+     "POOL|half_up": [
+      2038798,
+      141
+     ],
+     "POOL|half_even": [
+      2038690,
+      141
+     ],
+     "POOL|ceil": [
+      2042005,
+      141
+     ]
+    }
+   },
+   "seconds": 14.2
+  },
+  "ink/unused/0139/w047_2026020613/w047_2026020613.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11440,
+     16320
+    ],
+    "parent_shape": [
+     65,
+     22880,
+     32640
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      22,
+      31
+     ],
+     [
+      11,
+      15
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4086857,
+      233
+     ],
+     "TRUNC|half_up": [
+      4089621,
+      232
+     ],
+     "TRUNC|half_even": [
+      4088139,
+      233
+     ],
+     "TRUNC|ceil": [
+      4090686,
+      232
+     ],
+     "CTR|floor": [
+      4137791,
+      251
+     ],
+     "CTR|half_up": [
+      4135119,
+      251
+     ],
+     "CTR|half_even": [
+      4136201,
+      251
+     ],
+     "CTR|ceil": [
+      4134715,
+      251
+     ],
+     "POOL|floor": [
+      3593433,
+      100
+     ],
+     "POOL|half_up": [
+      3572291,
+      99
+     ],
+     "POOL|half_even": [
+      3577753,
+      99
+     ],
+     "POOL|ceil": [
+      3581802,
+      99
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5720,
+     8160
+    ],
+    "parent_shape": [
+     33,
+     11440,
+     16320
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      11,
+      15
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2141422,
+      255
+     ],
+     "TRUNC|half_up": [
+      2141827,
+      255
+     ],
+     "TRUNC|half_even": [
+      2141633,
+      255
+     ],
+     "TRUNC|ceil": [
+      2142714,
+      254
+     ],
+     "CTR|floor": [
+      2155538,
+      255
+     ],
+     "CTR|half_up": [
+      2153928,
+      255
+     ],
+     "CTR|half_even": [
+      2154549,
+      255
+     ],
+     "CTR|ceil": [
+      2153646,
+      255
+     ],
+     "POOL|floor": [
+      2028893,
+      161
+     ],
+     "POOL|half_up": [
+      2025884,
+      161
+     ],
+     "POOL|half_even": [
+      2025980,
+      161
+     ],
+     "POOL|ceil": [
+      2027876,
+      160
+     ]
+    }
+   },
+   "seconds": 12.1
+  },
+  "ink/unused/0139/w048_2026021912/w048_2026021912.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11200,
+     16440
+    ],
+    "parent_shape": [
+     65,
+     22400,
+     32880
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      21,
+      32
+     ],
+     [
+      10,
+      16
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4161079,
+      239
+     ],
+     "TRUNC|half_up": [
+      4161226,
+      239
+     ],
+     "TRUNC|half_even": [
+      4161024,
+      239
+     ],
+     "TRUNC|ceil": [
+      4161964,
+      239
+     ],
+     "CTR|floor": [
+      4152693,
+      250
+     ],
+     "CTR|half_up": [
+      4151159,
+      250
+     ],
+     "CTR|half_even": [
+      4151666,
+      250
+     ],
+     "CTR|ceil": [
+      4150942,
+      251
+     ],
+     "POOL|floor": [
+      3732633,
+      131
+     ],
+     "POOL|half_up": [
+      3728407,
+      130
+     ],
+     "POOL|half_even": [
+      3727799,
+      130
+     ],
+     "POOL|ceil": [
+      3735032,
+      130
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5600,
+     8220
+    ],
+    "parent_shape": [
+     33,
+     11200,
+     16440
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      10,
+      16
+     ],
+     [
+      5,
+      8
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2156737,
+      255
+     ],
+     "TRUNC|half_up": [
+      2156765,
+      255
+     ],
+     "TRUNC|half_even": [
+      2156837,
+      255
+     ],
+     "TRUNC|ceil": [
+      2157240,
+      255
+     ],
+     "CTR|floor": [
+      2158649,
+      249
+     ],
+     "CTR|half_up": [
+      2157941,
+      249
+     ],
+     "CTR|half_even": [
+      2158279,
+      249
+     ],
+     "CTR|ceil": [
+      2157768,
+      249
+     ],
+     "POOL|floor": [
+      2037457,
+      149
+     ],
+     "POOL|half_up": [
+      2035227,
+      149
+     ],
+     "POOL|half_even": [
+      2035353,
+      149
+     ],
+     "POOL|ceil": [
+      2038565,
+      148
+     ]
+    }
+   },
+   "seconds": 12.0
+  },
+  "ink/unused/0139/w049_20260318/w049_20260318.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     11120,
+     18200
+    ],
+    "parent_shape": [
+     65,
+     22240,
+     36400
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      21,
+      35
+     ],
+     [
+      10,
+      17
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4185149,
+      231
+     ],
+     "TRUNC|half_up": [
+      4185298,
+      231
+     ],
+     "TRUNC|half_even": [
+      4184738,
+      231
+     ],
+     "TRUNC|ceil": [
+      4186727,
+      231
+     ],
+     "CTR|floor": [
+      4175026,
+      245
+     ],
+     "CTR|half_up": [
+      4174205,
+      245
+     ],
+     "CTR|half_even": [
+      4174678,
+      245
+     ],
+     "CTR|ceil": [
+      4174095,
+      245
+     ],
+     "POOL|floor": [
+      3758721,
+      104
+     ],
+     "POOL|half_up": [
+      3755280,
+      104
+     ],
+     "POOL|half_even": [
+      3754531,
+      104
+     ],
+     "POOL|ceil": [
+      3762820,
+      103
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5560,
+     9100
+    ],
+    "parent_shape": [
+     33,
+     11120,
+     18200
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      10,
+      17
+     ],
+     [
+      5,
+      8
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2151595,
+      247
+     ],
+     "TRUNC|half_up": [
+      2152160,
+      247
+     ],
+     "TRUNC|half_even": [
+      2151718,
+      247
+     ],
+     "TRUNC|ceil": [
+      2153074,
+      247
+     ],
+     "CTR|floor": [
+      2154728,
+      241
+     ],
+     "CTR|half_up": [
+      2153518,
+      240
+     ],
+     "CTR|half_even": [
+      2153840,
+      241
+     ],
+     "CTR|ceil": [
+      2153335,
+      240
+     ],
+     "POOL|floor": [
+      2038152,
+      148
+     ],
+     "POOL|half_up": [
+      2035490,
+      147
+     ],
+     "POOL|half_even": [
+      2035046,
+      148
+     ],
+     "POOL|ceil": [
+      2038154,
+      147
+     ]
+    }
+   },
+   "seconds": 11.6
+  },
+  "ink/unused/0139/w050_2026030220/w050_2026030220.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     10240,
+     7680
+    ],
+    "parent_shape": [
+     65,
+     20480,
+     15360
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      20,
+      15
+     ],
+     [
+      10,
+      7
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4200503,
+      251
+     ],
+     "TRUNC|half_up": [
+      4199814,
+      251
+     ],
+     "TRUNC|half_even": [
+      4199475,
+      251
+     ],
+     "TRUNC|ceil": [
+      4202033,
+      251
+     ],
+     "CTR|floor": [
+      4217684,
+      233
+     ],
+     "CTR|half_up": [
+      4217419,
+      233
+     ],
+     "CTR|half_even": [
+      4217470,
+      233
+     ],
+     "CTR|ceil": [
+      4217409,
+      233
+     ],
+     "POOL|floor": [
+      3875593,
+      103
+     ],
+     "POOL|half_up": [
+      3863568,
+      103
+     ],
+     "POOL|half_even": [
+      3865924,
+      103
+     ],
+     "POOL|ceil": [
+      3867577,
+      104
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     5120,
+     3840
+    ],
+    "parent_shape": [
+     33,
+     10240,
+     7680
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      10,
+      7
+     ],
+     [
+      5,
+      3
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2175988,
+      247
+     ],
+     "TRUNC|half_up": [
+      2176329,
+      247
+     ],
+     "TRUNC|half_even": [
+      2176074,
+      247
+     ],
+     "TRUNC|ceil": [
+      2176939,
+      247
+     ],
+     "CTR|floor": [
+      2187520,
+      249
+     ],
+     "CTR|half_up": [
+      2187090,
+      249
+     ],
+     "CTR|half_even": [
+      2187279,
+      249
+     ],
+     "CTR|ceil": [
+      2187051,
+      249
+     ],
+     "POOL|floor": [
+      2091673,
+      137
+     ],
+     "POOL|half_up": [
+      2088384,
+      137
+     ],
+     "POOL|half_even": [
+      2088661,
+      137
+     ],
+     "POOL|ceil": [
+      2088832,
+      138
+     ]
+    }
+   },
+   "seconds": 11.2
+  },
+  "ink/unused/0139/w051_2026030600/w051_2026030600.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14720,
+     18680
+    ],
+    "parent_shape": [
+     65,
+     29440,
+     37360
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      36
+     ],
+     [
+      14,
+      18
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4181341,
+      235
+     ],
+     "TRUNC|half_up": [
+      4180854,
+      235
+     ],
+     "TRUNC|half_even": [
+      4180519,
+      235
+     ],
+     "TRUNC|ceil": [
+      4181857,
+      235
+     ],
+     "CTR|floor": [
+      4195123,
+      245
+     ],
+     "CTR|half_up": [
+      4194217,
+      245
+     ],
+     "CTR|half_even": [
+      4194710,
+      245
+     ],
+     "CTR|ceil": [
+      4194196,
+      245
+     ],
+     "POOL|floor": [
+      3817481,
+      117
+     ],
+     "POOL|half_up": [
+      3818618,
+      116
+     ],
+     "POOL|half_even": [
+      3815724,
+      116
+     ],
+     "POOL|ceil": [
+      3824278,
+      116
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7360,
+     9340
+    ],
+    "parent_shape": [
+     33,
+     14720,
+     18680
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      18
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2168226,
+      244
+     ],
+     "TRUNC|half_up": [
+      2168711,
+      244
+     ],
+     "TRUNC|half_even": [
+      2168637,
+      244
+     ],
+     "TRUNC|ceil": [
+      2169220,
+      243
+     ],
+     "CTR|floor": [
+      2177632,
+      251
+     ],
+     "CTR|half_up": [
+      2177193,
+      252
+     ],
+     "CTR|half_even": [
+      2177610,
+      251
+     ],
+     "CTR|ceil": [
+      2177087,
+      252
+     ],
+     "POOL|floor": [
+      2078040,
+      148
+     ],
+     "POOL|half_up": [
+      2077789,
+      147
+     ],
+     "POOL|half_even": [
+      2077417,
+      147
+     ],
+     "POOL|ceil": [
+      2080153,
+      147
+     ]
+    }
+   },
+   "seconds": 12.4
+  },
+  "ink/unused/0139/w052_2026022705/w052_2026022705.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14960,
+     19000
+    ],
+    "parent_shape": [
+     65,
+     29920,
+     38000
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      29,
+      37
+     ],
+     [
+      14,
+      18
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4217938,
+      240
+     ],
+     "TRUNC|half_up": [
+      4216506,
+      240
+     ],
+     "TRUNC|half_even": [
+      4216684,
+      240
+     ],
+     "TRUNC|ceil": [
+      4218150,
+      240
+     ],
+     "CTR|floor": [
+      4209415,
+      254
+     ],
+     "CTR|half_up": [
+      4209692,
+      253
+     ],
+     "CTR|half_even": [
+      4209519,
+      253
+     ],
+     "CTR|ceil": [
+      4209726,
+      253
+     ],
+     "POOL|floor": [
+      3904899,
+      137
+     ],
+     "POOL|half_up": [
+      3907966,
+      137
+     ],
+     "POOL|half_even": [
+      3905502,
+      137
+     ],
+     "POOL|ceil": [
+      3913029,
+      136
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7480,
+     9500
+    ],
+    "parent_shape": [
+     33,
+     14960,
+     19000
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      18
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2177618,
+      239
+     ],
+     "TRUNC|half_up": [
+      2177568,
+      239
+     ],
+     "TRUNC|half_even": [
+      2177448,
+      239
+     ],
+     "TRUNC|ceil": [
+      2177949,
+      239
+     ],
+     "CTR|floor": [
+      2184072,
+      246
+     ],
+     "CTR|half_up": [
+      2183819,
+      246
+     ],
+     "CTR|half_even": [
+      2183792,
+      246
+     ],
+     "CTR|ceil": [
+      2183656,
+      245
+     ],
+     "POOL|floor": [
+      2096946,
+      142
+     ],
+     "POOL|half_up": [
+      2096129,
+      142
+     ],
+     "POOL|half_even": [
+      2096024,
+      142
+     ],
+     "POOL|ceil": [
+      2097390,
+      141
+     ]
+    }
+   },
+   "seconds": 11.9
+  },
+  "ink/unused/0139/w053_2026022021/w053_2026022021.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14480,
+     20160
+    ],
+    "parent_shape": [
+     65,
+     28960,
+     40320
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      39
+     ],
+     [
+      14,
+      19
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4210871,
+      233
+     ],
+     "TRUNC|half_up": [
+      4209937,
+      233
+     ],
+     "TRUNC|half_even": [
+      4210043,
+      233
+     ],
+     "TRUNC|ceil": [
+      4210620,
+      233
+     ],
+     "CTR|floor": [
+      4201731,
+      249
+     ],
+     "CTR|half_up": [
+      4201662,
+      249
+     ],
+     "CTR|half_even": [
+      4201684,
+      249
+     ],
+     "CTR|ceil": [
+      4201777,
+      249
+     ],
+     "POOL|floor": [
+      3886496,
+      115
+     ],
+     "POOL|half_up": [
+      3885649,
+      115
+     ],
+     "POOL|half_even": [
+      3884419,
+      115
+     ],
+     "POOL|ceil": [
+      3888882,
+      115
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7240,
+     10080
+    ],
+    "parent_shape": [
+     33,
+     14480,
+     20160
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      19
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2174038,
+      242
+     ],
+     "TRUNC|half_up": [
+      2173806,
+      242
+     ],
+     "TRUNC|half_even": [
+      2173733,
+      242
+     ],
+     "TRUNC|ceil": [
+      2174210,
+      242
+     ],
+     "CTR|floor": [
+      2175652,
+      251
+     ],
+     "CTR|half_up": [
+      2175552,
+      252
+     ],
+     "CTR|half_even": [
+      2175548,
+      252
+     ],
+     "CTR|ceil": [
+      2175657,
+      252
+     ],
+     "POOL|floor": [
+      2075087,
+      127
+     ],
+     "POOL|half_up": [
+      2075349,
+      127
+     ],
+     "POOL|half_even": [
+      2075080,
+      127
+     ],
+     "POOL|ceil": [
+      2077335,
+      126
+     ]
+    }
+   },
+   "seconds": 12.0
+  },
+  "ink/unused/0139/w054_2026020617/w054_2026020617.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14880,
+     21680
+    ],
+    "parent_shape": [
+     65,
+     29760,
+     43360
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      29,
+      42
+     ],
+     [
+      14,
+      21
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4155640,
+      255
+     ],
+     "TRUNC|half_up": [
+      4156586,
+      255
+     ],
+     "TRUNC|half_even": [
+      4156142,
+      255
+     ],
+     "TRUNC|ceil": [
+      4158004,
+      255
+     ],
+     "CTR|floor": [
+      4158436,
+      239
+     ],
+     "CTR|half_up": [
+      4156650,
+      239
+     ],
+     "CTR|half_even": [
+      4157279,
+      239
+     ],
+     "CTR|ceil": [
+      4156572,
+      239
+     ],
+     "POOL|floor": [
+      3691637,
+      107
+     ],
+     "POOL|half_up": [
+      3686678,
+      107
+     ],
+     "POOL|half_even": [
+      3685739,
+      107
+     ],
+     "POOL|ceil": [
+      3695788,
+      107
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7440,
+     10840
+    ],
+    "parent_shape": [
+     33,
+     14880,
+     21680
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      21
+     ],
+     [
+      7,
+      10
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2154864,
+      253
+     ],
+     "TRUNC|half_up": [
+      2155561,
+      253
+     ],
+     "TRUNC|half_even": [
+      2155233,
+      253
+     ],
+     "TRUNC|ceil": [
+      2156337,
+      252
+     ],
+     "CTR|floor": [
+      2163230,
+      254
+     ],
+     "CTR|half_up": [
+      2161938,
+      253
+     ],
+     "CTR|half_even": [
+      2162394,
+      253
+     ],
+     "CTR|ceil": [
+      2161624,
+      253
+     ],
+     "POOL|floor": [
+      2048809,
+      132
+     ],
+     "POOL|half_up": [
+      2047619,
+      132
+     ],
+     "POOL|half_even": [
+      2047290,
+      132
+     ],
+     "POOL|ceil": [
+      2050602,
+      131
+     ]
+    }
+   },
+   "seconds": 12.1
+  },
+  "ink/unused/0139/w055_2025122611/w055_2025122611.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     15000,
+     20280
+    ],
+    "parent_shape": [
+     65,
+     30000,
+     40560
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      29,
+      39
+     ],
+     [
+      14,
+      19
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4218859,
+      238
+     ],
+     "TRUNC|half_up": [
+      4217290,
+      237
+     ],
+     "TRUNC|half_even": [
+      4217291,
+      238
+     ],
+     "TRUNC|ceil": [
+      4218374,
+      237
+     ],
+     "CTR|floor": [
+      4204637,
+      255
+     ],
+     "CTR|half_up": [
+      4204767,
+      255
+     ],
+     "CTR|half_even": [
+      4204604,
+      255
+     ],
+     "CTR|ceil": [
+      4204811,
+      255
+     ],
+     "POOL|floor": [
+      3836241,
+      112
+     ],
+     "POOL|half_up": [
+      3845731,
+      113
+     ],
+     "POOL|half_even": [
+      3839952,
+      113
+     ],
+     "POOL|ceil": [
+      3854550,
+      113
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7500,
+     10140
+    ],
+    "parent_shape": [
+     33,
+     15000,
+     20280
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      19
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2170736,
+      242
+     ],
+     "TRUNC|half_up": [
+      2170531,
+      242
+     ],
+     "TRUNC|half_even": [
+      2170424,
+      242
+     ],
+     "TRUNC|ceil": [
+      2170941,
+      242
+     ],
+     "CTR|floor": [
+      2163782,
+      247
+     ],
+     "CTR|half_up": [
+      2163332,
+      246
+     ],
+     "CTR|half_even": [
+      2163329,
+      247
+     ],
+     "CTR|ceil": [
+      2163519,
+      246
+     ],
+     "POOL|floor": [
+      2065123,
+      126
+     ],
+     "POOL|half_up": [
+      2064867,
+      125
+     ],
+     "POOL|half_even": [
+      2064516,
+      125
+     ],
+     "POOL|ceil": [
+      2067812,
+      125
+     ]
+    }
+   },
+   "seconds": 12.3
+  },
+  "ink/unused/0139/w056_2026011514/w056_2026011514.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     12560,
+     18040
+    ],
+    "parent_shape": [
+     65,
+     25120,
+     36080
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      24,
+      35
+     ],
+     [
+      12,
+      17
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4153346,
+      230
+     ],
+     "TRUNC|half_up": [
+      4152938,
+      230
+     ],
+     "TRUNC|half_even": [
+      4152568,
+      230
+     ],
+     "TRUNC|ceil": [
+      4153910,
+      229
+     ],
+     "CTR|floor": [
+      4115798,
+      244
+     ],
+     "CTR|half_up": [
+      4115714,
+      244
+     ],
+     "CTR|half_even": [
+      4115876,
+      244
+     ],
+     "CTR|ceil": [
+      4115993,
+      244
+     ],
+     "POOL|floor": [
+      3710001,
+      92
+     ],
+     "POOL|half_up": [
+      3704773,
+      93
+     ],
+     "POOL|half_even": [
+      3704143,
+      93
+     ],
+     "POOL|ceil": [
+      3712751,
+      93
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6280,
+     9020
+    ],
+    "parent_shape": [
+     33,
+     12560,
+     18040
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      12,
+      17
+     ],
+     [
+      6,
+      8
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2134069,
+      255
+     ],
+     "TRUNC|half_up": [
+      2133353,
+      255
+     ],
+     "TRUNC|half_even": [
+      2133128,
+      255
+     ],
+     "TRUNC|ceil": [
+      2134164,
+      255
+     ],
+     "CTR|floor": [
+      2125191,
+      255
+     ],
+     "CTR|half_up": [
+      2123939,
+      255
+     ],
+     "CTR|half_even": [
+      2124279,
+      255
+     ],
+     "CTR|ceil": [
+      2124273,
+      255
+     ],
+     "POOL|floor": [
+      2005545,
+      126
+     ],
+     "POOL|half_up": [
+      2002254,
+      126
+     ],
+     "POOL|half_even": [
+      2002024,
+      126
+     ],
+     "POOL|ceil": [
+      2005330,
+      125
+     ]
+    }
+   },
+   "seconds": 11.0
+  },
+  "ink/unused/0139/w057_2026012713/w057_2026012713.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14720,
+     19040
+    ],
+    "parent_shape": [
+     65,
+     29440,
+     38080
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      37
+     ],
+     [
+      14,
+      18
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4160913,
+      255
+     ],
+     "TRUNC|half_up": [
+      4162092,
+      255
+     ],
+     "TRUNC|half_even": [
+      4161332,
+      255
+     ],
+     "TRUNC|ceil": [
+      4162807,
+      255
+     ],
+     "CTR|floor": [
+      4181960,
+      255
+     ],
+     "CTR|half_up": [
+      4179378,
+      255
+     ],
+     "CTR|half_even": [
+      4180608,
+      255
+     ],
+     "CTR|ceil": [
+      4179052,
+      255
+     ],
+     "POOL|floor": [
+      3641508,
+      98
+     ],
+     "POOL|half_up": [
+      3637731,
+      97
+     ],
+     "POOL|half_even": [
+      3635439,
+      97
+     ],
+     "POOL|ceil": [
+      3645191,
+      97
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7360,
+     9520
+    ],
+    "parent_shape": [
+     33,
+     14720,
+     19040
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      18
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2156065,
+      252
+     ],
+     "TRUNC|half_up": [
+      2157303,
+      253
+     ],
+     "TRUNC|half_even": [
+      2156697,
+      253
+     ],
+     "TRUNC|ceil": [
+      2158136,
+      253
+     ],
+     "CTR|floor": [
+      2176933,
+      255
+     ],
+     "CTR|half_up": [
+      2175429,
+      255
+     ],
+     "CTR|half_even": [
+      2175812,
+      255
+     ],
+     "CTR|ceil": [
+      2174787,
+      255
+     ],
+     "POOL|floor": [
+      2024967,
+      121
+     ],
+     "POOL|half_up": [
+      2021798,
+      120
+     ],
+     "POOL|half_even": [
+      2021876,
+      120
+     ],
+     "POOL|ceil": [
+      2024133,
+      120
+     ]
+    }
+   },
+   "seconds": 13.0
+  },
+  "ink/unused/0139/w058_2026021020/w058_2026021020.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14560,
+     19200
+    ],
+    "parent_shape": [
+     65,
+     29120,
+     38400
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      37
+     ],
+     [
+      14,
+      18
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4154001,
+      255
+     ],
+     "TRUNC|half_up": [
+      4155165,
+      255
+     ],
+     "TRUNC|half_even": [
+      4154371,
+      255
+     ],
+     "TRUNC|ceil": [
+      4156103,
+      255
+     ],
+     "CTR|floor": [
+      4180285,
+      254
+     ],
+     "CTR|half_up": [
+      4177781,
+      254
+     ],
+     "CTR|half_even": [
+      4178939,
+      254
+     ],
+     "CTR|ceil": [
+      4177622,
+      254
+     ],
+     "POOL|floor": [
+      3639834,
+      104
+     ],
+     "POOL|half_up": [
+      3636493,
+      105
+     ],
+     "POOL|half_even": [
+      3634305,
+      105
+     ],
+     "POOL|ceil": [
+      3644723,
+      105
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7280,
+     9600
+    ],
+    "parent_shape": [
+     33,
+     14560,
+     19200
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      18
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2163658,
+      255
+     ],
+     "TRUNC|half_up": [
+      2163956,
+      255
+     ],
+     "TRUNC|half_even": [
+      2163792,
+      255
+     ],
+     "TRUNC|ceil": [
+      2164792,
+      255
+     ],
+     "CTR|floor": [
+      2176804,
+      252
+     ],
+     "CTR|half_up": [
+      2175761,
+      252
+     ],
+     "CTR|half_even": [
+      2175966,
+      252
+     ],
+     "CTR|ceil": [
+      2175191,
+      252
+     ],
+     "POOL|floor": [
+      2041126,
+      127
+     ],
+     "POOL|half_up": [
+      2039591,
+      126
+     ],
+     "POOL|half_even": [
+      2039618,
+      126
+     ],
+     "POOL|ceil": [
+      2042502,
+      126
+     ]
+    }
+   },
+   "seconds": 14.2
+  },
+  "ink/unused/0139/w059_2025022312/w059_2025022312.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     14040,
+     19480
+    ],
+    "parent_shape": [
+     65,
+     28080,
+     38960
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      27,
+      38
+     ],
+     [
+      13,
+      19
+     ]
+    ],
+    "voxels_compared": 4325376,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      4104535,
+      238
+     ],
+     "TRUNC|half_up": [
+      4106927,
+      238
+     ],
+     "TRUNC|half_even": [
+      4105508,
+      238
+     ],
+     "TRUNC|ceil": [
+      4108323,
+      238
+     ],
+     "CTR|floor": [
+      4174663,
+      255
+     ],
+     "CTR|half_up": [
+      4172001,
+      255
+     ],
+     "CTR|half_even": [
+      4173003,
+      255
+     ],
+     "CTR|ceil": [
+      4171709,
+      255
+     ],
+     "POOL|floor": [
+      3707845,
+      112
+     ],
+     "POOL|half_up": [
+      3683147,
+      112
+     ],
+     "POOL|half_even": [
+      3690120,
+      112
+     ],
+     "POOL|ceil": [
+      3689778,
+      111
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     7020,
+     9740
+    ],
+    "parent_shape": [
+     33,
+     14040,
+     19480
+    ],
+    "child_chunks": [
+     64,
+     256,
+     256
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      19
+     ],
+     [
+      6,
+      9
+     ]
+    ],
+    "voxels_compared": 2228224,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      2134584,
+      246
+     ],
+     "TRUNC|half_up": [
+      2135716,
+      247
+     ],
+     "TRUNC|half_even": [
+      2135015,
+      246
+     ],
+     "TRUNC|ceil": [
+      2137063,
+      247
+     ],
+     "CTR|floor": [
+      2168189,
+      255
+     ],
+     "CTR|half_up": [
+      2166716,
+      255
+     ],
+     "CTR|half_even": [
+      2167152,
+      255
+     ],
+     "CTR|ceil": [
+      2166190,
+      255
+     ],
+     "POOL|floor": [
+      2042857,
+      122
+     ],
+     "POOL|half_up": [
+      2038340,
+      122
+     ],
+     "POOL|half_even": [
+      2038528,
+      122
+     ],
+     "POOL|ceil": [
+      2039306,
+      122
+     ]
+    }
+   },
+   "seconds": 14.0
+  },
+  "ink/unused/500p2a/500p2a.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     13120,
+     8091
+    ],
+    "parent_shape": [
+     65,
+     26239,
+     16182
+    ],
+    "child_chunks": [
+     33,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      51,
+      31
+     ],
+     [
+      25,
+      15
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "TRUNC",
+    "rounding": "half_up",
+    "diffs": {
+     "TRUNC|floor": [
+      394756,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      105522,
+      1
+     ],
+     "TRUNC|ceil": [
+      188498,
+      1
+     ],
+     "CTR|floor": [
+      762396,
+      225
+     ],
+     "CTR|half_up": [
+      759147,
+      225
+     ],
+     "CTR|half_even": [
+      761975,
+      225
+     ],
+     "CTR|ceil": [
+      759412,
+      225
+     ],
+     "POOL|floor": [
+      753039,
+      225
+     ],
+     "POOL|half_up": [
+      747124,
+      225
+     ],
+     "POOL|half_even": [
+      749969,
+      225
+     ],
+     "POOL|ceil": [
+      747186,
+      225
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     6560,
+     4046
+    ],
+    "parent_shape": [
+     33,
+     13120,
+     8091
+    ],
+    "child_chunks": [
+     17,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      25,
+      15
+     ],
+     [
+      12,
+      7
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      253339,
+      59
+     ],
+     "TRUNC|half_up": [
+      247577,
+      60
+     ],
+     "TRUNC|half_even": [
+      248835,
+      60
+     ],
+     "TRUNC|ceil": [
+      249205,
+      60
+     ],
+     "CTR|floor": [
+      302928,
+      194
+     ],
+     "CTR|half_up": [
+      301691,
+      195
+     ],
+     "CTR|half_even": [
+      302225,
+      195
+     ],
+     "CTR|ceil": [
+      301500,
+      195
+     ],
+     "POOL|floor": [
+      299509,
+      222
+     ],
+     "POOL|half_up": [
+      297519,
+      223
+     ],
+     "POOL|half_even": [
+      298089,
+      223
+     ],
+     "POOL|ceil": [
+      297516,
+      223
+     ]
+    }
+   },
+   "seconds": 8.7
+  },
+  "ink/unused/P343p/20250511003658/20250511003658.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     33,
+     6746,
+     4050
+    ],
+    "parent_shape": [
+     65,
+     13491,
+     8099
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      26,
+      15
+     ],
+     [
+      13,
+      7
+     ]
+    ],
+    "voxels_compared": 1081344,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      1059044,
+      210
+     ],
+     "TRUNC|half_up": [
+      1058953,
+      210
+     ],
+     "TRUNC|half_even": [
+      1058850,
+      210
+     ],
+     "TRUNC|ceil": [
+      1059179,
+      210
+     ],
+     "CTR|floor": [
+      1048765,
+      185
+     ],
+     "CTR|half_up": [
+      1048645,
+      186
+     ],
+     "CTR|half_even": [
+      1048499,
+      186
+     ],
+     "CTR|ceil": [
+      1048931,
+      186
+     ],
+     "POOL|floor": [
+      919343,
+      45
+     ],
+     "POOL|half_up": [
+      912359,
+      44
+     ],
+     "POOL|half_even": [
+      912450,
+      44
+     ],
+     "POOL|ceil": [
+      917219,
+      44
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     17,
+     3373,
+     2025
+    ],
+    "parent_shape": [
+     33,
+     6746,
+     4050
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     4.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      7
+     ],
+     [
+      6,
+      3
+     ]
+    ],
+    "voxels_compared": 557056,
+    "rule": "OTHER",
+    "rounding": null,
+    "diffs": {
+     "TRUNC|floor": [
+      544170,
+      210
+     ],
+     "TRUNC|half_up": [
+      544202,
+      210
+     ],
+     "TRUNC|half_even": [
+      544155,
+      210
+     ],
+     "TRUNC|ceil": [
+      544335,
+      210
+     ],
+     "CTR|floor": [
+      538854,
+      206
+     ],
+     "CTR|half_up": [
+      538947,
+      205
+     ],
+     "CTR|half_even": [
+      538880,
+      205
+     ],
+     "CTR|ceil": [
+      539088,
+      205
+     ],
+     "POOL|floor": [
+      502682,
+      82
+     ],
+     "POOL|half_up": [
+      502164,
+      82
+     ],
+     "POOL|half_even": [
+      502208,
+      82
+     ],
+     "POOL|ceil": [
+      503011,
+      81
+     ]
+    }
+   },
+   "seconds": 9.5
+  },
+  "ink/unused/manbp/w02/w02.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     7990,
+     3920
+    ],
+    "parent_shape": [
+     65,
+     15980,
+     7840
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      31,
+      15
+     ],
+     [
+      15,
+      7
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1065187,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      267353,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      529387,
+      1
+     ],
+     "TRUNC|floor": [
+      1065187,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      267353,
+      1
+     ],
+     "TRUNC|ceil": [
+      529387,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     3995,
+     1960
+    ],
+    "parent_shape": [
+     65,
+     7990,
+     3920
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      15,
+      7
+     ],
+     [
+      7,
+      3
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1065805,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266699,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      532367,
+      1
+     ],
+     "TRUNC|floor": [
+      1065805,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266699,
+      1
+     ],
+     "TRUNC|ceil": [
+      532367,
+      1
+     ]
+    }
+   },
+   "seconds": 9.6
+  },
+  "ink/unused/manbp/w03/w03.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     7760,
+     4030
+    ],
+    "parent_shape": [
+     65,
+     15520,
+     8060
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      30,
+      15
+     ],
+     [
+      15,
+      7
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064157,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      267858,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      528090,
+      1
+     ],
+     "TRUNC|floor": [
+      1064157,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      267858,
+      1
+     ],
+     "TRUNC|ceil": [
+      528090,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     3880,
+     2015
+    ],
+    "parent_shape": [
+     65,
+     7760,
+     4030
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      15,
+      7
+     ],
+     [
+      7,
+      3
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064515,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266256,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      533309,
+      1
+     ],
+     "TRUNC|floor": [
+      1064515,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266256,
+      1
+     ],
+     "TRUNC|ceil": [
+      533309,
+      1
+     ]
+    }
+   },
+   "seconds": 9.3
+  },
+  "ink/unused/manbp/w04/w04.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     7210,
+     3700
+    ],
+    "parent_shape": [
+     65,
+     14420,
+     7400
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      28,
+      14
+     ],
+     [
+      14,
+      7
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1063847,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      268073,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      528136,
+      1
+     ],
+     "TRUNC|floor": [
+      1063847,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      268073,
+      1
+     ],
+     "TRUNC|ceil": [
+      528136,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     3605,
+     1850
+    ],
+    "parent_shape": [
+     65,
+     7210,
+     3700
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      7
+     ],
+     [
+      7,
+      3
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1029614,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      257751,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      515769,
+      1
+     ],
+     "TRUNC|floor": [
+      1029614,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      257751,
+      1
+     ],
+     "TRUNC|ceil": [
+      515769,
+      1
+     ]
+    }
+   },
+   "seconds": 9.7
+  },
+  "ink/unused/manbp/w05/w05.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     6940,
+     3600
+    ],
+    "parent_shape": [
+     65,
+     13880,
+     7200
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      27,
+      14
+     ],
+     [
+      13,
+      7
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1065880,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      268687,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      526649,
+      1
+     ],
+     "TRUNC|floor": [
+      1065880,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      268687,
+      1
+     ],
+     "TRUNC|ceil": [
+      526649,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     3470,
+     1800
+    ],
+    "parent_shape": [
+     65,
+     6940,
+     3600
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      7
+     ],
+     [
+      6,
+      3
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064320,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      265746,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      532674,
+      1
+     ],
+     "TRUNC|floor": [
+      1064320,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      265746,
+      1
+     ],
+     "TRUNC|ceil": [
+      532674,
+      1
+     ]
+    }
+   },
+   "seconds": 8.6
+  },
+  "ink/unused/manbp/w0_20251218010446110/w0_20251218010446110.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     7650,
+     6890
+    ],
+    "parent_shape": [
+     65,
+     15300,
+     13780
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      29,
+      26
+     ],
+     [
+      14,
+      13
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      592869,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      149887,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      294286,
+      1
+     ],
+     "TRUNC|floor": [
+      592869,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      149887,
+      1
+     ],
+     "TRUNC|ceil": [
+      294286,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     3825,
+     3445
+    ],
+    "parent_shape": [
+     65,
+     7650,
+     6890
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      14,
+      13
+     ],
+     [
+      7,
+      6
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      646671,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      161309,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      322780,
+      1
+     ],
+     "TRUNC|floor": [
+      646671,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      161309,
+      1
+     ],
+     "TRUNC|ceil": [
+      322780,
+      1
+     ]
+    }
+   },
+   "seconds": 9.0
+  },
+  "ink/unused/manbp/w5_20251218212713988/w5_20251218212713988.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     9170,
+     7180
+    ],
+    "parent_shape": [
+     65,
+     18340,
+     14360
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      35,
+      28
+     ],
+     [
+      35,
+      14
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1065523,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      270025,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      523794,
+      1
+     ],
+     "TRUNC|floor": [
+      1065523,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      270025,
+      1
+     ],
+     "TRUNC|ceil": [
+      523794,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     4585,
+     3590
+    ],
+    "parent_shape": [
+     65,
+     9170,
+     7180
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      17,
+      14
+     ],
+     [
+      17,
+      7
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064966,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266092,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      531365,
+      1
+     ],
+     "TRUNC|floor": [
+      1064966,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266092,
+      1
+     ],
+     "TRUNC|ceil": [
+      531365,
+      1
+     ]
+    }
+   },
+   "seconds": 9.0
+  },
+  "ink/unused/manbp/w6_20251220015639809/w6_20251220015639809.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     9200,
+     7050
+    ],
+    "parent_shape": [
+     65,
+     18400,
+     14100
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      35,
+      27
+     ],
+     [
+      53,
+      41
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1065498,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      267190,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      529907,
+      1
+     ],
+     "TRUNC|floor": [
+      1065498,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      267190,
+      1
+     ],
+     "TRUNC|ceil": [
+      529907,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     4600,
+     3525
+    ],
+    "parent_shape": [
+     65,
+     9200,
+     7050
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      17,
+      13
+     ],
+     [
+      26,
+      20
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064947,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266210,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      531957,
+      1
+     ],
+     "TRUNC|floor": [
+      1064947,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266210,
+      1
+     ],
+     "TRUNC|ceil": [
+      531957,
+      1
+     ]
+    }
+   },
+   "seconds": 10.4
+  },
+  "ink/unused/manbp/w6_20251222204911527/w6_20251222204911527.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     3600,
+     2240
+    ],
+    "parent_shape": [
+     65,
+     7200,
+     4480
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      14,
+      8
+     ],
+     [
+      7,
+      4
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064745,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266410,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      531116,
+      1
+     ],
+     "TRUNC|floor": [
+      1064745,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266410,
+      1
+     ],
+     "TRUNC|ceil": [
+      531116,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     1800,
+     1120
+    ],
+    "parent_shape": [
+     65,
+     3600,
+     2240
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      7,
+      4
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1049272,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      262367,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      525398,
+      1
+     ],
+     "TRUNC|floor": [
+      1049272,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      262367,
+      1
+     ],
+     "TRUNC|ceil": [
+      525398,
+      1
+     ]
+    }
+   },
+   "seconds": 9.6
+  },
+  "ink/unused/manbp/w7_20251220012955200/w7_20251220012955200.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     6980,
+     4920
+    ],
+    "parent_shape": [
+     65,
+     13960,
+     9840
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      27,
+      19
+     ],
+     [
+      13,
+      9
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1066167,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      267125,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      529811,
+      1
+     ],
+     "TRUNC|floor": [
+      1066167,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      267125,
+      1
+     ],
+     "TRUNC|ceil": [
+      529811,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     3490,
+     2460
+    ],
+    "parent_shape": [
+     65,
+     6980,
+     4920
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      13,
+      9
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1061672,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      265519,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      530915,
+      1
+     ],
+     "TRUNC|floor": [
+      1061672,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      265519,
+      1
+     ],
+     "TRUNC|ceil": [
+      530915,
+      1
+     ]
+    }
+   },
+   "seconds": 10.7
+  },
+  "ink/unused/manbp/w7_20251222223312675/w7_20251222223312675.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     3520,
+     2240
+    ],
+    "parent_shape": [
+     65,
+     7040,
+     4480
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      13,
+      8
+     ],
+     [
+      6,
+      4
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      804958,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      202584,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      399624,
+      1
+     ],
+     "TRUNC|floor": [
+      804958,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      202584,
+      1
+     ],
+     "TRUNC|ceil": [
+      399624,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     1760,
+     1120
+    ],
+    "parent_shape": [
+     65,
+     3520,
+     2240
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      6,
+      4
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1000691,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      249821,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      498568,
+      1
+     ],
+     "TRUNC|floor": [
+      1000691,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      249821,
+      1
+     ],
+     "TRUNC|ceil": [
+      498568,
+      1
+     ]
+    }
+   },
+   "seconds": 8.2
+  },
+  "ink/unused/manbp/w8_20251219211451561/w8_20251219211451561.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     2330,
+     2260
+    ],
+    "parent_shape": [
+     65,
+     4660,
+     4520
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      9,
+      8
+     ],
+     [
+      4,
+      4
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      624811,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      156754,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      311624,
+      1
+     ],
+     "TRUNC|floor": [
+      624811,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      156754,
+      1
+     ],
+     "TRUNC|ceil": [
+      311624,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     1165,
+     1130
+    ],
+    "parent_shape": [
+     65,
+     2330,
+     2260
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      4,
+      4
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      890112,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      222995,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      444106,
+      1
+     ],
+     "TRUNC|floor": [
+      890112,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      222995,
+      1
+     ],
+     "TRUNC|ceil": [
+      444106,
+      1
+     ]
+    }
+   },
+   "seconds": 8.1
+  },
+  "ink/unused/phercparis4/w08_3336/w08_3336.zarr": {
+   "levels_declared": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "L1": {
+    "child_shape": [
+     65,
+     17850,
+     48631
+    ],
+    "parent_shape": [
+     65,
+     35700,
+     97262
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     2.0,
+     2.0
+    ],
+    "cells": [
+     [
+      69,
+      189
+     ],
+     [
+      34,
+      94
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      789572,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      313602,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      162281,
+      1
+     ],
+     "TRUNC|floor": [
+      789572,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      313602,
+      1
+     ],
+     "TRUNC|ceil": [
+      162281,
+      1
+     ]
+    }
+   },
+   "L2": {
+    "child_shape": [
+     65,
+     8925,
+     24316
+    ],
+    "parent_shape": [
+     65,
+     17850,
+     48631
+    ],
+    "child_chunks": [
+     65,
+     128,
+     128
+    ],
+    "declared_scale": [
+     1.0,
+     4.0,
+     4.0
+    ],
+    "cells": [
+     [
+      34,
+      94
+     ],
+     [
+      17,
+      47
+     ]
+    ],
+    "voxels_compared": 2129920,
+    "rule": "INPLANE_ALL",
+    "rounding": "half_up",
+    "diffs": {
+     "INPLANE_ALL|floor": [
+      1064830,
+      1
+     ],
+     "INPLANE_ALL|half_up": [
+      0,
+      0
+     ],
+     "INPLANE_ALL|half_even": [
+      266231,
+      1
+     ],
+     "INPLANE_ALL|ceil": [
+      532490,
+      1
+     ],
+     "TRUNC|floor": [
+      1064830,
+      1
+     ],
+     "TRUNC|half_up": [
+      0,
+      0
+     ],
+     "TRUNC|half_even": [
+      266231,
+      1
+     ],
+     "TRUNC|ceil": [
+      532490,
+      1
+     ]
+    }
+   },
+   "seconds": 9.7
+  }
+ },
+ "bytes_fetched": 1553161120
+}

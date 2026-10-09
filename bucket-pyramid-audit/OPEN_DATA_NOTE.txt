@@ -1,0 +1,2 @@
+This bundle holds code, store metadata and metrics only. It contains no volume chunks, scroll images, ink labels, masks or predictions.
+Inputs (CC BY-NC 4.0, read them yourself; do not redistribute): Hugging Face bucket scrollprize/datasets, render stores under ink/ (listed in meta/stores.json).

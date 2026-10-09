@@ -23,6 +23,7 @@ See [`catalog-qa-audit/`](catalog-qa-audit/) for a pre-registered metadata audit
 See [`gpu-1648-heldout/`](gpu-1648-heldout/) for a pre-registered held-out GPU test of the `villa-1648` in-plane-scale warning on 3 validation masks × 2 seeds; it confirms the warning (3/3 segments, 2/3 required; code and metrics only; Oct 2026).
 See [`gpu-1648-intermediate-scale/`](gpu-1648-intermediate-scale/) for a pre-registered test of the `villa-1648` warning at an intermediate scale (4.68 µm vs 9.36 µm) on PHerc0841, which is held out of ink_9um's training; 3/3 segments support the warning (code and metrics only; Oct 2026).
 See [`500p2a-label-alignment/`](500p2a-label-alignment/) for a pre-registered check of whether the 500p2a ink labels are rigidly misaligned with the render; verdict ALIGNED-UNREAD, so rigid misalignment does not explain chance-level scores there (negative result, code and metrics only; Oct 2026).
+See [`bucket-pyramid-audit/`](bucket-pyramid-audit/) for a pre-registered census of the 76 ink render pyramids in the `scrollprize/datasets` bucket: in 18 stores level 1 holds only the first 33 of 65 planes while declaring in-plane-only scale, traced to villa `vc_render_tifxyz` builds between #774 and #804 (findings only, code and metrics only; Oct 2026).
 
 ## Shipping fixes
 

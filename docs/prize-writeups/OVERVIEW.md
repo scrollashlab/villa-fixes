@@ -124,6 +124,18 @@
 - **Verdict: ALIGNED-UNREAD** on the primary prediction; the three other organizer predictions agree. No rigid transform lifts any prediction to a usable AUC on held-out half B (best 0.517; identity AUC_B 0.407–0.510), so rigid label misregistration does not explain chance-level scores on 500p2a (#1867).
 - **Caveats:** non-rigid error and IR-to-CT registration error are not tested; the organizer models' training data is not documented; AI-assisted.
 
+## Eighth item: `bucket-pyramid-audit` (added 2026-10-08)
+
+**What:** a pre-registered, chunk-level census of the render pyramids of all 76 ink render stores in the Hugging Face bucket `scrollprize/datasets` (`ink/`). It asks whether level 1 and level 2 keep the full depth. Findings only; no patch.  
+**Status:** in this repository at `bucket-pyramid-audit/`.  
+**Evidence:** `bucket-pyramid-audit/` (`README.md`, `docs/preregistration.md` + sha256, `docs/scoop-check.md`, `results/`, `scripts/`, `tests/`). Write-up: `bucket-pyramid-audit.md`.  
+**Evidence class:** **Real-data, pre-registered** (sealed 2026-10-08 21:54 HST), all 76 stores, exact voxel comparison on two probe chunks per level.
+
+- **12 stores** have a level 1 that is exactly the first 33 of 65 level-0 planes, pooled 2×2 in-plane (0 differing voxels). The positive control (4 known stores) passed. **6 more** hold the first 33 planes by plane correlation (post hoc). That makes **18 of 76** stores, 14 of them new. All 18 declare the in-plane-only scale [1, 2, 2].
+- **Source:** villa `createPyramidDatasets` halved z between #774 and #804, while the data writer kept the planes in order and stopped at the halved depth. The code is fixed on `main`; the published renders are not.
+- **Consequence (post hoc, descriptive):** on 3 PHerc0841 segments × 2 seeds, ink_9um scores **0.018–0.097 AUC** lower on the published level 1 than on a correctly pooled input of the same pixels.
+- **Caveats:** two probe chunks per level; the in-plane rule of the 6 correlation-matched stores is not identified; the AUC comparison mixes window position and z spacing; AI-assisted.
+
 This note summarizes the **9 shipping items** (eight villa patches + the `tifxyz-audit` entry-point patch). It does not invent metrics; figures come from per-folder READMEs / `SUMMARY.json` / `AUC_TABLE.json`.
 
 ## The nine shipping fixes
