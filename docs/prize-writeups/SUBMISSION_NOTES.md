@@ -25,7 +25,7 @@ The previously submitted form packet predates `xframe`. Published on GitLab at `
    - **Credit:** #1468/#1469 `tifxyz-audit` (jaideepsaipadhi), #1522, PR #1944, #1835/PR #1994, #1843, #1845/PR #1851, #1734.
    - Evidence: `xframe/FINDINGS.md`, `docs/prize-writeups/xframe.md`.
 
-**Non-claims for xframe:**
+**Scope for xframe:**
 - It does not show any matrix is right or wrong.
 - It does not open misplaced meshes against volumes; the offsets are computed from the verified rule.
 
@@ -45,7 +45,7 @@ Not yet in the submitted form. Published on GitLab at `sv-canvas-1727/`.
    - **Credit:** #1727 ge-al, gaogao94, #1699 (ge-al, Bullo27), #1845, PR #1901, #1892/#1963.
    - Evidence: `sv-canvas-1727/README.md`, `docs/prize-writeups/sv-canvas-1727.md`.
 
-**Non-claims for sv-canvas-1727:**
+**Scope for sv-canvas-1727:**
 - It says nothing about whether rendered voxels are correct.
 - It is not a criticism of #1727, whose measurement is careful and whose hypothesis this confirms.
 - No upstream comment has been posted.
@@ -71,7 +71,7 @@ Not yet in the submitted form. Published on GitLab at `villa-downscale/` (check_
    - **Credit:** kadenpool (#1734, #1769, #1731), gaogao94, bkalita-git (#1618), jonmarrs (#1522), ge-al (#1727).
    - Evidence: `villa-downscale/README.md`, `docs/prize-writeups/villa-downscale.md`.
 
-**Non-claims for villa-downscale:**
+**Scope for villa-downscale:**
 - It does not claim to have found the downscale factor. The catalog factor is known (#1734 uses it; #1727 found renders reproduce from `tifxyz_normalized` at ×4.0). The claim is the Python-side handling plus the measured before/after.
 - It does not show any catalog matrix is right.
 - It is not an upstream PR, and nothing was posted upstream.
@@ -148,13 +148,12 @@ git am villa-1507/0001-*.patch
 git am villa-1648/0001-*.patch
 ```
 
-## Explicit non-claims (keep in form or README)
+## Scope notes
 
-- Not claiming Grand Prize / ink-reading breakthroughs — tooling and correctness fixes.
-- Not claiming #1507 real-data before/after.
-- Not claiming w035 ~0.99 AUC as held-out generalization.
-- Not claiming we reproduced the issue #1648 reverse-better table on public S3 w035.
-- Not redistributing open-data scan payloads.
+- #1507 has wiring tests only; there is no real-data before/after.
+- The w035 ~0.99 AUC is on windows that overlap ink_9um's training data, not a held-out result.
+- The #1648 reverse-better w035 table from the issue was not reproduced on public S3 w035.
+- No open-data scan payloads are redistributed.
 
 ## License
 

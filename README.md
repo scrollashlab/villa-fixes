@@ -55,14 +55,13 @@ git am villa-1648/0001-*.patch
 
 Do **not** apply `villa-1855/` (on hold).
 
-## Explicit non-claims
+## Scope notes
 
-- Not claiming Grand Prize / ink-reading breakthroughs — tooling and correctness fixes.
-- Not claiming #1507 real-data before/after.
-- Not claiming w035 ~0.99 AUC as held-out generalization (#1648 primary table is validation_mask carve-out on 46527).
-- Not claiming we reproduced issue #1648’s reverse-better w035 table on public S3.
-- Not redistributing open-data scan payloads (see per-folder `OPEN_DATA_NOTE` / `OPEN_DATA_NOTE.txt`).
-- #1970: recommend independent upstream PR #1980 over our earlier patch.
+- #1507 has wiring tests only; there is no real-data before/after.
+- The w035 ~0.99 AUC is on windows that overlap ink_9um's training data (no validation_mask), so it is not a held-out result; the #1648 primary table uses the validation_mask carve-out on 46527.
+- The #1648 reverse-better w035 table from the issue was not reproduced on public S3.
+- No open-data scan payloads are redistributed (see per-folder `OPEN_DATA_NOTE` / `OPEN_DATA_NOTE.txt`).
+- #1970: we recommend independent upstream PR #1980 over our earlier patch.
 
 ## Credits
 
