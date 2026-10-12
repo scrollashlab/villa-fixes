@@ -1,0 +1,6 @@
+Vendored, unmodified, MIT-licensed files (repo, path, commit, sha256 prefix):
+Bullo27/first-letters-survey analysis/rowscore.py a5f9c511f23093ea271904b9610135a391e15854 dbeac4af9b1fede0
+DomRusso2/reader-v2 scripts/textscore2.py 02c7b46987813c78f56dd99f38c5a84b65a9cd2a f7e2a589ec84816f
+AndreasHad04/villa-apple-silicon bench/depth_sharpen_9um.py f9002b811b238bf864ff99fe77dd1b10b370fc73 823fa77bcad0176f
+AndreasHad04/villa-apple-silicon bench/depth_sharpen_9um.json f9002b811b238bf864ff99fe77dd1b10b370fc73 2d9381f329f61f07
+DomRusso2/reader-v2 scripts/infer_with_hecate.py 02c7b46987813c78f56dd99f38c5a84b65a9cd2a 2801826b36aab56e (reference for the Hecate resampling; resample_96 is re-used verbatim in run.py)
